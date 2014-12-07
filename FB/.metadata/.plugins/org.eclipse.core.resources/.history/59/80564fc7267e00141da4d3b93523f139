@@ -17,12 +17,9 @@ int main()
 	printf("%d",VCR.Value);
 
 
-	unsigned int i=0;
-	unsigned int count=0;
-	unsigned int p=0;
+	//unsigned int i=0;
 	while(1)
 	{
-		/*
 		int x,y;
 		for(x=0;x<640;x++)
 		{
@@ -35,17 +32,6 @@ int main()
 				Vga_Clr_Pixel(VGA_0_BASE,x,y);
 			}
 		}
-		*/
-
-		i=IORD(KEY_BASE,0);
-		if (p==i) count++;
-		else
-		{
-			printf("%d\n",count);
-			count=0;
-			p=i;
-		}
-		usleep(1000);
 	}
 
   printf("Hello from Nios II!\n");

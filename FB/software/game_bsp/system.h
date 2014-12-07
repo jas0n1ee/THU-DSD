@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'kernel'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/FB/kernel.sopcinfo
  *
- * Generated: Sun Dec 07 22:54:39 CST 2014
+ * Generated: Sun Dec 07 23:53:40 CST 2014
  */
 
 /*
@@ -162,11 +162,12 @@
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDOUT "/dev/lcd_0"
-#define ALT_STDOUT_BASE 0xb04040
-#define ALT_STDOUT_DEV lcd_0
+#define ALT_STDOUT "/dev/jtag_uart"
+#define ALT_STDOUT_BASE 0xb04050
+#define ALT_STDOUT_DEV jtag_uart
+#define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
-#define ALT_STDOUT_TYPE "altera_avalon_lcd_16207"
+#define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
 #define ALT_SYSTEM_NAME "kernel"
 
 
