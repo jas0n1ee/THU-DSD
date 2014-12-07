@@ -3,3 +3,4 @@ Warning (10037): Verilog HDL or VHDL warning at cpu.v(1692): conditional express
 Warning (10037): Verilog HDL or VHDL warning at cpu.v(1848): conditional expression evaluates to a constant
 Warning (10037): Verilog HDL or VHDL warning at cpu.v(2767): conditional expression evaluates to a constant
 Warning (10037): Verilog HDL or VHDL warning at epcs_flash_controller.v(401): conditional expression evaluates to a constant
+Warning (10273): Verilog HDL warning at lcd_0.v(61): extended using "x" or "z"

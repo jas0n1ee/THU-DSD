@@ -6,7 +6,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|cpu:the_cpu|cpu_mult_cell:the_cpu_mult_cell|altmult_add:the_altmult_add_part_2" CBX_FILE_NAME="mult_add_6cr2.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|cpu:the_cpu|cpu_register_bank_b_module:cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4nf1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|cpu:the_cpu|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_8ri.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|binary_vga:the_binary_vga|VGA_NIOS_CTRL:binary_vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q7o1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|cpu:the_cpu|cpu_nios2_oci:the_cpu_nios2_oci|cpu_nios2_oci_im:the_cpu_nios2_oci_im|cpu_traceram_lpm_dram_bdp_component_module:cpu_traceram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_e502.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|cpu:the_cpu|cpu_nios2_oci:the_cpu_nios2_oci|cpu_nios2_ocimem:the_cpu_nios2_ocimem|cpu_ociram_lpm_dram_bdp_component_module:cpu_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_t072.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|cpu:the_cpu|cpu_register_bank_a_module:cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3nf1.tdf"/>
@@ -15,5 +14,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|epcs_flash_controller:the_epcs_flash_controller|altsyncram:the_boot_copier_rom" CBX_FILE_NAME="altsyncram_n051.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|onchip_memory:the_onchip_memory|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_etb1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|flappy_bird|kernel:kernel_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q7o1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

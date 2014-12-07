@@ -16,6 +16,7 @@
    <frequency preferredWidth="104" />
   </columns>
  </clocktable>
- <window width="900" height="600" x="137" y="59" />
- <library expandedCategories="Project,Project/Terasic Technologies Inc" />
+ <window width="900" height="588" x="375" y="111" />
+ <library
+   expandedCategories="Library/Peripherals,Library/Peripherals/Display,Project,Library" />
 </preferences>

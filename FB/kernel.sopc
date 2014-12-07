@@ -6,15 +6,15 @@
    {
       datum baseAddress
       {
-         value = "8405104";
+         value = "11550800";
          type = "long";
       }
    }
-   element binary_vga.avalon_slave_0
+   element vga_0.avalon_slave_0
    {
       datum baseAddress
       {
-         value = "2097152";
+         value = "8388608";
          type = "long";
       }
    }
@@ -22,16 +22,8 @@
    {
       datum baseAddress
       {
-         value = "524288";
+         value = "11010048";
          type = "long";
-      }
-   }
-   element binary_vga
-   {
-      datum _sortIndex
-      {
-         value = "14";
-         type = "int";
       }
    }
    element cfi_flash
@@ -55,6 +47,14 @@
          type = "int";
       }
    }
+   element lcd_0.control_slave
+   {
+      datum baseAddress
+      {
+         value = "11550784";
+         type = "long";
+      }
+   }
    element cpu
    {
       datum _sortIndex
@@ -72,7 +72,7 @@
    {
       datum baseAddress
       {
-         value = "8402944";
+         value = "11548672";
          type = "long";
       }
    }
@@ -93,7 +93,7 @@
    {
       datum _sortIndex
       {
-         value = "12";
+         value = "9";
          type = "int";
       }
    }
@@ -101,7 +101,7 @@
    {
       datum baseAddress
       {
-         value = "8400896";
+         value = "11546624";
          type = "long";
       }
    }
@@ -120,8 +120,21 @@
    {
       datum _sortIndex
       {
-         value = "11";
+         value = "8";
          type = "int";
+      }
+   }
+   element lcd_0
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
       }
    }
    element onchip_memory
@@ -132,35 +145,11 @@
          type = "int";
       }
    }
-   element pio_green
-   {
-      datum _sortIndex
-      {
-         value = "8";
-         type = "int";
-      }
-   }
-   element pio_red
-   {
-      datum _sortIndex
-      {
-         value = "9";
-         type = "int";
-      }
-   }
-   element pio_sw
-   {
-      datum _sortIndex
-      {
-         value = "10";
-         type = "int";
-      }
-   }
-   element pio_red.s1
+   element onchip_memory.s1
    {
       datum baseAddress
       {
-         value = "8405040";
+         value = "11538432";
          type = "long";
       }
    }
@@ -168,23 +157,7 @@
    {
       datum baseAddress
       {
-         value = "8405072";
-         type = "long";
-      }
-   }
-   element pio_sw.s1
-   {
-      datum baseAddress
-      {
-         value = "8405056";
-         type = "long";
-      }
-   }
-   element timer.s1
-   {
-      datum baseAddress
-      {
-         value = "8404992";
+         value = "11550752";
          type = "long";
       }
    }
@@ -196,19 +169,11 @@
          type = "long";
       }
    }
-   element onchip_memory.s1
+   element timer.s1
    {
       datum baseAddress
       {
-         value = "8392704";
-         type = "long";
-      }
-   }
-   element pio_green.s1
-   {
-      datum baseAddress
-      {
-         value = "8405024";
+         value = "11550720";
          type = "long";
       }
    }
@@ -216,7 +181,7 @@
    {
       datum baseAddress
       {
-         value = "8405088";
+         value = "11550768";
          type = "long";
       }
    }
@@ -224,7 +189,7 @@
    {
       datum _sortIndex
       {
-         value = "13";
+         value = "10";
          type = "int";
       }
    }
@@ -249,6 +214,14 @@
          type = "String";
       }
    }
+   element vga_0
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
 }
 ]]></parameter>
  <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
@@ -263,8 +236,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="flappy_bird.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="30913763468" />
- <parameter name="timeStamp" value="1417931173114" />
+ <parameter name="systemHash" value="25703253002" />
+ <parameter name="timeStamp" value="1417963258016" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="12.0" enabled="1" name="clk_50">
   <parameter name="clockFrequency" value="50000000" />
@@ -341,7 +314,7 @@
   <parameter name="mmu_TLBMissExcOffset" value="0" />
   <parameter name="manuallyAssignCpuID" value="false" />
   <parameter name="internalIrqMaskSystemInfo" value="31" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sram_16bit_512k_0.avalon_slave_0' start='0x80000' end='0x100000' /><slave name='cfi_flash.s1' start='0x400000' end='0x800000' /><slave name='onchip_memory.s1' start='0x801000' end='0x802000' /><slave name='cpu.jtag_debug_module' start='0x803000' end='0x803800' /><slave name='epcs_flash_controller.epcs_control_port' start='0x803800' end='0x804000' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='cfi_flash.s1' start='0x400000' end='0x800000' /><slave name='sram_16bit_512k_0.avalon_slave_0' start='0xA80000' end='0xB00000' /><slave name='onchip_memory.s1' start='0xB01000' end='0xB02000' /><slave name='cpu.jtag_debug_module' start='0xB03000' end='0xB03800' /><slave name='epcs_flash_controller.epcs_control_port' start='0xB03800' end='0xB04000' /></address-map>]]></parameter>
   <parameter name="instAddrWidth" value="24" />
   <parameter name="impl" value="Small" />
   <parameter name="icache_size" value="_4096" />
@@ -365,7 +338,7 @@
   <parameter name="dcache_numTCDM" value="_0" />
   <parameter name="dcache_lineSize" value="_32" />
   <parameter name="dcache_bursts" value="false" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sram_16bit_512k_0.avalon_slave_0' start='0x80000' end='0x100000' /><slave name='binary_vga.avalon_slave_0' start='0x200000' end='0x400000' /><slave name='cfi_flash.s1' start='0x400000' end='0x800000' /><slave name='onchip_memory.s1' start='0x801000' end='0x802000' /><slave name='cpu.jtag_debug_module' start='0x803000' end='0x803800' /><slave name='epcs_flash_controller.epcs_control_port' start='0x803800' end='0x804000' /><slave name='timer.s1' start='0x804000' end='0x804020' /><slave name='pio_green.s1' start='0x804020' end='0x804030' /><slave name='pio_red.s1' start='0x804030' end='0x804040' /><slave name='pio_sw.s1' start='0x804040' end='0x804050' /><slave name='key.s1' start='0x804050' end='0x804060' /><slave name='gpio.s1' start='0x804060' end='0x804070' /><slave name='jtag_uart.avalon_jtag_slave' start='0x804070' end='0x804078' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='cfi_flash.s1' start='0x400000' end='0x800000' /><slave name='vga_0.avalon_slave_0' start='0x800000' end='0xA00000' /><slave name='sram_16bit_512k_0.avalon_slave_0' start='0xA80000' end='0xB00000' /><slave name='onchip_memory.s1' start='0xB01000' end='0xB02000' /><slave name='cpu.jtag_debug_module' start='0xB03000' end='0xB03800' /><slave name='epcs_flash_controller.epcs_control_port' start='0xB03800' end='0xB04000' /><slave name='timer.s1' start='0xB04000' end='0xB04020' /><slave name='key.s1' start='0xB04020' end='0xB04030' /><slave name='gpio.s1' start='0xB04030' end='0xB04040' /><slave name='lcd_0.control_slave' start='0xB04040' end='0xB04050' /><slave name='jtag_uart.avalon_jtag_slave' start='0xB04050' end='0xB04058' /></address-map>]]></parameter>
   <parameter name="dataAddrWidth" value="24" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="cpuReset" value="false" />
@@ -461,48 +434,6 @@
   <parameter name="timeoutPulseOutput" value="false" />
   <parameter name="timerPreset" value="CUSTOM" />
  </module>
- <module kind="altera_avalon_pio" version="12.0" enabled="1" name="pio_green">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="9" />
- </module>
- <module kind="altera_avalon_pio" version="12.0" enabled="1" name="pio_red">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Output" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="18" />
- </module>
- <module kind="altera_avalon_pio" version="12.0" enabled="1" name="pio_sw">
-  <parameter name="bitClearingEdgeCapReg" value="false" />
-  <parameter name="bitModifyingOutReg" value="false" />
-  <parameter name="captureEdge" value="false" />
-  <parameter name="clockRate" value="50000000" />
-  <parameter name="direction" value="Input" />
-  <parameter name="edgeType" value="RISING" />
-  <parameter name="generateIRQ" value="false" />
-  <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="0" />
-  <parameter name="simDoTestBenchWiring" value="false" />
-  <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="18" />
- </module>
  <module kind="altera_avalon_pio" version="12.0" enabled="1" name="key">
   <parameter name="bitClearingEdgeCapReg" value="false" />
   <parameter name="bitModifyingOutReg" value="false" />
@@ -538,14 +469,15 @@
    name="sram_16bit_512k_0">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
  </module>
- <module
-   kind="binary_vga_controller"
-   version="1.0.2"
-   enabled="1"
-   name="binary_vga">
+ <module kind="binary_vga_controller" version="1.0.2" enabled="1" name="vga_0">
   <parameter name="RAM_SIZE" value="307200" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
  </module>
+ <module
+   kind="altera_avalon_lcd_16207"
+   version="12.0"
+   enabled="1"
+   name="lcd_0" />
  <connection kind="clock" version="12.0" start="clk_50.clk" end="cpu.clk" />
  <connection
    kind="avalon"
@@ -553,7 +485,7 @@
    start="cpu.instruction_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00803000" />
+  <parameter name="baseAddress" value="0x00b03000" />
  </connection>
  <connection
    kind="avalon"
@@ -561,7 +493,7 @@
    start="cpu.data_master"
    end="cpu.jtag_debug_module">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00803000" />
+  <parameter name="baseAddress" value="0x00b03000" />
  </connection>
  <connection kind="clock" version="12.0" start="clk_50.clk" end="jtag_uart.clk" />
  <connection
@@ -570,7 +502,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804070" />
+  <parameter name="baseAddress" value="0x00b04050" />
  </connection>
  <connection kind="interrupt" version="12.0" start="cpu.d_irq" end="jtag_uart.irq">
   <parameter name="irqNumber" value="0" />
@@ -586,7 +518,7 @@
    start="cpu.instruction_master"
    end="onchip_memory.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00801000" />
+  <parameter name="baseAddress" value="0x00b01000" />
  </connection>
  <connection
    kind="avalon"
@@ -594,7 +526,7 @@
    start="cpu.data_master"
    end="onchip_memory.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00801000" />
+  <parameter name="baseAddress" value="0x00b01000" />
  </connection>
  <connection kind="clock" version="12.0" start="clk_50.clk" end="cfi_flash.clk" />
  <connection
@@ -637,7 +569,7 @@
    start="cpu.instruction_master"
    end="epcs_flash_controller.epcs_control_port">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00803800" />
+  <parameter name="baseAddress" value="0x00b03800" />
  </connection>
  <connection
    kind="avalon"
@@ -645,7 +577,7 @@
    start="cpu.data_master"
    end="epcs_flash_controller.epcs_control_port">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00803800" />
+  <parameter name="baseAddress" value="0x00b03800" />
  </connection>
  <connection
    kind="interrupt"
@@ -657,39 +589,20 @@
  <connection kind="clock" version="12.0" start="clk_50.clk" end="timer.clk" />
  <connection kind="avalon" version="12.0" start="cpu.data_master" end="timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804000" />
+  <parameter name="baseAddress" value="0x00b04000" />
  </connection>
  <connection kind="interrupt" version="12.0" start="cpu.d_irq" end="timer.irq">
   <parameter name="irqNumber" value="2" />
  </connection>
- <connection kind="clock" version="12.0" start="clk_50.clk" end="pio_green.clk" />
- <connection
-   kind="avalon"
-   version="12.0"
-   start="cpu.data_master"
-   end="pio_green.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804020" />
- </connection>
- <connection kind="clock" version="12.0" start="clk_50.clk" end="pio_red.clk" />
- <connection kind="avalon" version="12.0" start="cpu.data_master" end="pio_red.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804030" />
- </connection>
- <connection kind="clock" version="12.0" start="clk_50.clk" end="pio_sw.clk" />
- <connection kind="avalon" version="12.0" start="cpu.data_master" end="pio_sw.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804040" />
- </connection>
  <connection kind="clock" version="12.0" start="clk_50.clk" end="key.clk" />
  <connection kind="avalon" version="12.0" start="cpu.data_master" end="key.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804050" />
+  <parameter name="baseAddress" value="0x00b04020" />
  </connection>
  <connection kind="clock" version="12.0" start="clk_50.clk" end="gpio.clk" />
  <connection kind="avalon" version="12.0" start="cpu.data_master" end="gpio.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00804060" />
+  <parameter name="baseAddress" value="0x00b04030" />
  </connection>
  <connection kind="interrupt" version="12.0" start="cpu.d_irq" end="key.irq">
   <parameter name="irqNumber" value="3" />
@@ -708,7 +621,7 @@
    start="cpu.instruction_master"
    end="sram_16bit_512k_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00080000" />
+  <parameter name="baseAddress" value="0x00a80000" />
  </connection>
  <connection
    kind="avalon"
@@ -716,15 +629,24 @@
    start="cpu.data_master"
    end="sram_16bit_512k_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00080000" />
+  <parameter name="baseAddress" value="0x00a80000" />
  </connection>
- <connection kind="clock" version="12.0" start="clk_50.clk" end="binary_vga.clk" />
+ <connection kind="clock" version="12.0" start="clk_50.clk" end="vga_0.clk" />
  <connection
    kind="avalon"
    version="12.0"
    start="cpu.data_master"
-   end="binary_vga.avalon_slave_0">
+   end="vga_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00200000" />
+  <parameter name="baseAddress" value="0x00800000" />
+ </connection>
+ <connection kind="clock" version="12.0" start="clk_50.clk" end="lcd_0.clk" />
+ <connection
+   kind="avalon"
+   version="12.0"
+   start="cpu.data_master"
+   end="lcd_0.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00b04040" />
  </connection>
 </system>
