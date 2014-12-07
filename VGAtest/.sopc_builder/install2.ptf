@@ -1,7 +1,7 @@
 PACKAGE install2 
 {
    # This file informs the Nios II IDE of non-legacy component paths.
-   # Generated 2014.12.07.14:47:55
+   # Generated 2014.12.07.21:28:32
    COMPONENT ISP1362_IF 
    {
       VERSION 1.0 

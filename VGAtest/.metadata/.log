@@ -5042,3 +5042,1029 @@ org.eclipse.core.runtime.CoreException: failed to load the build info for the ol
 
 !ENTRY org.eclipse.cdt.core 1 0 2014-12-07 15:02:04.452
 !MESSAGE Indexed 'testVGA' (1 sources, 55 headers) in 0.24 sec: 2,021 declarations; 1,947 references; 0 unresolved inclusions; 2 syntax errors; 6 unresolved names (0.15%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 15:23:00.643
+!MESSAGE Indexed 'testVGA' (1 sources, 55 headers) in 0.23 sec: 2,021 declarations; 1,947 references; 1 unresolved inclusions; 2 syntax errors; 6 unresolved names (0.15%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:05:47.928
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x0 --id=0x0 --timestamp=1417934875]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:05:54.339
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x0 --id=0x0 --timestamp=1417934875 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:06:02.324
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x0, --id=0x0, --timestamp=1417934875, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:06:02.324
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:07:04.301
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x0 --id=0x0 --timestamp=1417934875]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:07:09.896
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x0 --id=0x0 --timestamp=1417934875 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:07:17.610
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0x0, --id=0x0, --timestamp=1417934875, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:07:17.610
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:11:36.275
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:13:09.303
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0xb03058 --id=0x0 --timestamp=1417939729 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:13:17.280
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --sidp=0xb03058, --id=0x0, --timestamp=1417939729, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:13:17.280
+!MESSAGE Downloading ELF Process failed
+!SESSION 2014-12-07 16:13:36.100 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:14:00.022
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0xb03058 --id=0x0 --timestamp=1417939729 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:14:07.649
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --sidp=0xb03058, --id=0x0, --timestamp=1417939729, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:14:07.649
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:15:14.311
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0xb03058 --id=0x0 --timestamp=1417939729 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:15:21.083
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --sidp=0xb03058, --id=0x0, --timestamp=1417939729, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:15:21.083
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:18:14.286
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb03058 --id=0x0 --timestamp=1417939729]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:18:19.701
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb03058 --id=0x0 --timestamp=1417939729 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:18:27.652
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb03058, --id=0x0, --timestamp=1417939729, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:18:27.652
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:19:21.776
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb03058 --id=0x0 --timestamp=1417939729]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 16:19:27.502
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb03058 --id=0x0 --timestamp=1417939729 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:19:34.557
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb03058, --id=0x0, --timestamp=1417939729, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:19:34.565
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 16:32:05.949
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 17:27:37.097
+!MESSAGE Indexed 'game_bsp' (87 sources, 66 headers) in 0.80 sec: 1,417 declarations; 4,489 references; 129 unresolved inclusions; 5 syntax errors; 243 unresolved names (3.95%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 17:27:40.418
+!MESSAGE Indexed 'game' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 17:29:02.381
+!MESSAGE Indexed 'game' (1 sources, 57 headers) in 0.38 sec: 2,054 declarations; 1,951 references; 1 unresolved inclusions; 2 syntax errors; 6 unresolved names (0.15%)
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:47:25.672
+!MESSAGE Cannot initialize the Nios II Console view for use. Byte stream service may still be open by another process like 'nios2-terminal'.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 17:50:21.200
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:50:26.064
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 17:50:26.118
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/FB/software/game/game.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:50:31.267
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/FB/software/game/game.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:50:31.277
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 17:52:06.015
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1777)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1518)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:100)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 17:52:06.024
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1777)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1518)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:100)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 17:52:06.028
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1777)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1518)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:100)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 17:52:06.030
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1777)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1518)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:100)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 17:52:06.037
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1777)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1518)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:100)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 17:52:06.041
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+Caused by: org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.SWT.error(SWT.java:3969)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:468)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:340)
+	at org.eclipse.swt.widgets.Control.isVisible(Control.java:1777)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.verifyName(LaunchConfigurationTabGroupViewer.java:1237)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.canLaunch(LaunchConfigurationTabGroupViewer.java:1072)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.updateButtons(LaunchConfigurationsDialog.java:1518)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.updateLaunchConfigurationDialog(AbstractLaunchConfigurationTab.java:100)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab.access$000(AbstractEmbeddedAwtLaunchConfigurationTab.java:22)
+	at com.altera.sbtgui.launch.AbstractEmbeddedAwtLaunchConfigurationTab$1$1.run(AbstractEmbeddedAwtLaunchConfigurationTab.java:77)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 17:52:09.895
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:52:14.044
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 17:52:14.109
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/FB/software/game/game.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:52:19.023
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/FB/software/game/game.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 17:52:19.028
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 19:57:08.732
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/FB/software/game/game.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 19:57:13.878
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/FB/software/game/game.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 19:57:13.881
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:08:44.002
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417953657]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:08:48.004
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417953657 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:08:53.821
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417953657, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:08:53.828
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:09:32.690
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417953657]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:09:36.723
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417953657 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:09:42.293
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417953657, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:09:42.302
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:24:51.147
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:26:10.959
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:26:14.505
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:26:19.693
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0xb04058, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:26:19.702
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:27:54.834
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:27:59.921
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --accept-bad-sysid, --sidp=0xb04058, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:27:59.925
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 20:28:36.792
+!MESSAGE Indexed 'testVGA' (2 sources, 60 headers) in 0.33 sec: 2,069 declarations; 2,077 references; 0 unresolved inclusions; 2 syntax errors; 6 unresolved names (0.14%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:28:47.347
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:28:50.680
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:28:55.850
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0xb04058, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:28:55.859
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 20:30:51.207
+!MESSAGE Indexed 'combine' (1 sources, 62 headers) in 0.36 sec: 2,740 declarations; 2,526 references; 6 unresolved inclusions; 2 syntax errors; 24 unresolved names (0.45%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-07 20:30:52.670
+!MESSAGE Indexed 'combine_bsp' (95 sources, 136 headers) in 1.46 sec: 4,656 declarations; 8,308 references; 0 unresolved inclusions; 21 syntax errors; 10 unresolved names (0.08%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:31:02.289
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0x9040b8 --id=0x0 --timestamp=1416889066]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:31:06.272
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0x9040b8 --id=0x0 --timestamp=1416889066 /cygdrive/c/Users/Jason/Documents/SoPCExperiment/Exp4/software/combine/combine.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:33:09.907
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:33:11.724
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:33:15.084
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:33:20.158
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0xb04058, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:33:20.166
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:33:48.672
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:33:51.985
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:33:57.047
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0xb04058, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:33:57.056
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:34:51.355
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:34:54.710
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:34:59.767
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0xb04058, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:34:59.776
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:38:00.695
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417954679]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:38:04.652
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417954679 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:38:10.248
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417954679, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:38:10.259
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2014-12-07 20:57:50.434
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:799)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:138)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete 'C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:138)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2014-12-07 20:57:50.435
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2014-12-07 20:57:50.435
+!MESSAGE Could not delete 'C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:138)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2014-12-07 20:57:50.435
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2014-12-07 20:57:50.435
+!MESSAGE Could not delete: C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf.
+
+!ENTRY org.eclipse.core.resources 4 273 2014-12-07 20:57:50.440
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2014-12-07 20:57:50.440
+!MESSAGE Could not delete 'C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:125)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1936)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:786)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:138)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Contains: Could not delete: C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2014-12-07 20:57:50.440
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2014-12-07 20:57:50.440
+!MESSAGE Could not delete: C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA\testVGA.elf.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:58:38.857
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417954679]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 20:58:42.878
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417954679 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:58:48.372
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417954679, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 20:58:48.381
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:00:14.058
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417954679]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:00:17.923
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417954679 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 21:00:23.718
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417954679, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 21:00:23.729
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-07 21:15:38.759
+!MESSAGE An internal error occurred during: "Cleaning files".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.core.runtime.Path.append(Path.java:261)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.addOutputs(BuildDescription.java:1032)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.calculateOutputs(BuildDescription.java:1150)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.handleMultiSteps(BuildDescription.java:841)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.initDescription(BuildDescription.java:756)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.BuildDescription.init(BuildDescription.java:818)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:44)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DefaultBuildDescriptionFactory.createBuildDescription(DefaultBuildDescriptionFactory.java:36)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.createBuildDescription(BuildDescriptionManager.java:97)
+	at org.eclipse.cdt.managedbuilder.internal.core.GeneratedMakefileBuilder.cleanFile(GeneratedMakefileBuilder.java:1639)
+	at org.eclipse.cdt.managedbuilder.internal.ui.actions.CleanFilesAction$CleanFilesJob.run(CleanFilesAction.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:17:23.206
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417954679]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:17:27.578
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417954679 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 21:17:33.591
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417954679, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 21:17:33.596
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 21:32:41.652
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:33:27.904
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:33:34.209
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --tcpport=auto --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY org.eclipse.ui 4 4 2014-12-07 21:33:42.162
+!MESSAGE Exception in org.eclipse.ui.internal.PageLayout.stackView: org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+
+!ENTRY org.eclipse.ui 4 4 2014-12-07 21:33:42.166
+!MESSAGE Exception in org.eclipse.ui.internal.PageLayout.stackView: org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+!STACK 1
+org.eclipse.ui.PartInitException: Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+	at org.eclipse.ui.internal.ViewFactory.createView(ViewFactory.java:158)
+	at org.eclipse.ui.internal.LayoutHelper.createView(LayoutHelper.java:162)
+	at org.eclipse.ui.internal.PageLayout.createView(PageLayout.java:543)
+	at org.eclipse.ui.internal.PageLayout.stackView(PageLayout.java:852)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.processView(PerspectiveExtensionReader.java:270)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.processExtension(PerspectiveExtensionReader.java:118)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.readElement(PerspectiveExtensionReader.java:355)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:144)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:155)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:176)
+	at org.eclipse.ui.internal.registry.PerspectiveExtensionReader.extendLayout(PerspectiveExtensionReader.java:82)
+	at org.eclipse.ui.internal.Perspective.loadPredefinedPersp(Perspective.java:818)
+	at org.eclipse.ui.internal.Perspective.createPresentation(Perspective.java:270)
+	at org.eclipse.ui.internal.Perspective.<init>(Perspective.java:156)
+	at org.eclipse.ui.internal.tweaklets.Workbench3xImplementation.createPerspective(Workbench3xImplementation.java:55)
+	at org.eclipse.ui.internal.WorkbenchPage.createPerspective(WorkbenchPage.java:1672)
+	at org.eclipse.ui.internal.WorkbenchPage.busySetPerspective(WorkbenchPage.java:1034)
+	at org.eclipse.ui.internal.WorkbenchPage.access$16(WorkbenchPage.java:1025)
+	at org.eclipse.ui.internal.WorkbenchPage$19.run(WorkbenchPage.java:3715)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:3713)
+	at org.eclipse.ui.internal.Workbench.showPerspective(Workbench.java:2814)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager.switchToPerspective(PerspectiveManager.java:351)
+	at org.eclipse.debug.internal.ui.launchConfigurations.PerspectiveManager$4.run(PerspectiveManager.java:439)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-12-07 21:33:42.166
+!MESSAGE Could not create view: org.eclipse.cdt.debug.ui.DisassemblyView
+
+!ENTRY org.eclipse.cdt.debug.mi.core 4 42 2014-12-07 21:33:50.957
+!MESSAGE Internal Error
+!STACK 0
+org.eclipse.cdt.debug.mi.core.cdi.MI2CDIException: Inferior terminated[]
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.getMIShareds(SharedLibraryManager.java:123)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.updateState(SharedLibraryManager.java:188)
+	at org.eclipse.cdt.debug.mi.core.cdi.SharedLibraryManager.update(SharedLibraryManager.java:136)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.processSuspendedEvent(EventManager.java:326)
+	at org.eclipse.cdt.debug.mi.core.cdi.EventManager.update(EventManager.java:100)
+	at java.util.Observable.notifyObservers(Unknown Source)
+	at org.eclipse.cdt.debug.mi.core.MISession.notifyObservers(MISession.java:791)
+	at org.eclipse.cdt.debug.mi.core.EventThread.run(EventThread.java:46)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:34:00.779
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:34:04.735
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 21:52:28.036
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 21:52:34.420
+!MESSAGE The system console model is invalid. Cannot launch.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:00:00.844
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:00:05.862
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:02:56.018
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:02:58.124
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0xb04058]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:03:02.934
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0xb04058 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY org.eclipse.ui 4 0 2014-12-07 22:04:09.663
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.altera.embeddedsw.flash.model.internal.SystemConsoleConnectionModel.setConnectionChoice(SystemConsoleConnectionModel.java:1306)
+	at com.altera.sbtgui.launch.ConfigurationUtils.syncModelToLaunchConfiguration(ConfigurationUtils.java:207)
+	at com.altera.sbtgui.launch.hardware.ui.ConnectionTab.initializeFrom(ConnectionTab.java:60)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTab.activated(AbstractLaunchConfigurationTab.java:365)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.handleTabSelected(LaunchConfigurationTabGroupViewer.java:1314)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer$6.widgetSelected(LaunchConfigurationTabGroupViewer.java:369)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2743)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1429)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1133)
+	at org.eclipse.debug.ui.DebugUITools$1.run(DebugUITools.java:398)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:406)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:340)
+	at org.eclipse.debug.ui.actions.OpenLaunchDialogAction.run(OpenLaunchDialogAction.java:81)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:619)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:574)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1407)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1383)
+!SESSION 2014-12-07 22:05:49.819 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-07 22:05:52.254
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:06:47.032
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:06:52.068
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:08:22.932
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:08:25.287
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:08:31.069
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:09:09.716
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:09:11.848
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:09:16.873
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:09:53.098
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:09:55.306
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:10:00.401
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:10:52.443
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:10:54.458
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:10:59.625
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:11:51.966
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:11:53.853
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:11:58.900
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:12:51.194
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:12:53.540
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:12:58.907
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:15:38.693
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:15:40.836
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:15:42.115
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:15:45.332
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:15:46.936
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 22:15:52.363
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --sidp=0xb04058, --id=0x0, --timestamp=1417958911, /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf] return code: 8
+
+!ENTRY com.altera.sbtgui.launch 4 0 2014-12-07 22:15:52.374
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:16:05.118
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:16:07.419
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:16:13.794
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:18:10.242
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:18:12.474
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:18:17.784
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:19:40.484
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:19:42.475
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:19:47.053
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:20:30.032
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:20:32.361
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:20:37.449
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:21:06.324
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:21:08.377
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:21:13.647
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:26:40.030
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:26:42.227
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:26:47.078
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:27:23.169
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:27:25.384
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:27:30.699
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:28:27.321
+!MESSAGE Terminated Launch with connection: 10USB-Blaster on localhost [USB-0]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:28:29.572
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --sidp=0xb04058 --id=0x0 --timestamp=1417958911]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2014-12-07 22:28:35.423
+!MESSAGE Executing: [C:\windows\system32\cmd.exe, /C, C:/altera/12.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --sidp=0xb04058 --id=0x0 --timestamp=1417958911 /cygdrive/c/Users/Jason/Documents/Github/THU-DSD/VGAtest/software/testVGA/testVGA.elf]

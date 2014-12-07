@@ -294,13 +294,13 @@ ENET_DATA[10]                : C19       : bidir  : 3.3-V LVTTL       :         
 VCCIO4                       : C20       : power  :                   : 3.3V    : 4         :                
 GND*                         : C21       :        :                   :         : 4         :                
 GND*                         : C22       :        :                   :         : 4         :                
-IRDA_TXD                     : C23       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : C23       :        :                   :         : 4         :                
 PS2_DAT                      : C24       : input  : 3.3-V LVTTL       :         : 5         : Y              
 UART_RXD                     : C25       : input  : 3.3-V LVTTL       :         : 5         : Y              
 VCCIO5                       : C26       : power  :                   : 3.3V    : 5         :                
 OTG_DATA[2]                  : D1        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 OTG_DATA[1]                  : D2        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-~nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D3        : input  : 3.3-V LVTTL       :         : 2         : N              
+~nCSO~ / RESERVED_INPUT      : D3        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : D4        : gnd    :                   :         :           :                
 TD_HS                        : D5        : input  : 3.3-V LVTTL       :         : 3         : Y              
 VGA_BLANK                    : D6        : output : 3.3-V LVTTL       :         : 3         : Y              
@@ -326,7 +326,7 @@ GPIO_0[0]                    : D25       : bidir  : 3.3-V LVTTL       :         
 PS2_CLK                      : D26       : input  : 3.3-V LVTTL       :         : 5         : Y              
 OTG_DATA[9]                  : E1        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
 OTG_DATA[8]                  : E2        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
+~ASDO~ / RESERVED_INPUT      : E3        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND_PLL3                     : E4        : gnd    :                   :         :           :                
 OTG_DREQ1                    : E5        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO3                       : E6        : power  :                   : 3.3V    : 3         :                
@@ -392,7 +392,7 @@ GND*                         : G13       :        :                   :         
 GND*                         : G14       :        :                   :         : 4         :                
 GND*                         : G15       :        :                   :         : 4         :                
 GND*                         : G16       :        :                   :         : 4         :                
-GND*                         : G17       :        :                   :         : 4         :                
+IRDA_TXD                     : G17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : G18       :        :                   :         : 4         :                
 VCCA_PLL2                    : G19       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : G20       : gnd    :                   :         :           :                
@@ -416,7 +416,7 @@ VGA_R[6]                     : H11       : output : 3.3-V LVTTL       :         
 VGA_R[7]                     : H12       : output : 3.3-V LVTTL       :         : 3         : Y              
 GND                          : H13       : gnd    :                   :         :           :                
 GND                          : H14       : gnd    :                   :         :           :                
-IRDA_RXD                     : H15       : input  : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : H15       :        :                   :         : 4         :                
 GND*                         : H16       :        :                   :         : 4         :                
 GND*                         : H17       :        :                   :         : 4         :                
 VCCIO4                       : H18       : power  :                   : 3.3V    : 4         :                
@@ -445,7 +445,7 @@ VGA_B[1]                     : J14       : output : 3.3-V LVTTL       :         
 VCCIO4                       : J15       : power  :                   : 3.3V    : 4         :                
 GND*                         : J16       :        :                   :         : 4         :                
 GND*                         : J17       :        :                   :         : 4         :                
-GND*                         : J18       :        :                   :         : 4         :                
+IRDA_RXD                     : J18       : input  : 3.3-V LVTTL       :         : 4         : N              
 VCCIO5                       : J19       : power  :                   : 3.3V    : 5         :                
 GPIO_0[7]                    : J20       : bidir  : 3.3-V LVTTL       :         : 5         : Y              
 GPIO_0[6]                    : J21       : bidir  : 3.3-V LVTTL       :         : 5         : Y              

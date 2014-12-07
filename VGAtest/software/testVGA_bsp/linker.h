@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'DE2_SoPC'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/DE2_SoPC.sopcinfo
  *
- * Generated: Sun Dec 07 00:19:48 CST 2014
+ * Generated: Sun Dec 07 21:26:28 CST 2014
  */
 
 /*
@@ -67,6 +67,12 @@
 
 #define CFI_FLASH_0_REGION_BASE 0x400020
 #define CFI_FLASH_0_REGION_SPAN 4194272
+#define EPCS_REGION_BASE 0xb03800
+#define EPCS_REGION_SPAN 2048
+#define EXCEPTION_STACK_REGION_BASE 0xaffc00
+#define EXCEPTION_STACK_REGION_SPAN 1024
+#define INTERRUPT_STACK_REGION_BASE 0xaff800
+#define INTERRUPT_STACK_REGION_SPAN 1024
 #define ONCHIP_MEMORY2_BEFORE_EXCEPTION_REGION_BASE 0xb01000
 #define ONCHIP_MEMORY2_BEFORE_EXCEPTION_REGION_SPAN 32
 #define ONCHIP_MEMORY2_REGION_BASE 0xb01020
@@ -74,7 +80,7 @@
 #define RESET_REGION_BASE 0x400000
 #define RESET_REGION_SPAN 32
 #define SRAM_REGION_BASE 0xa80000
-#define SRAM_REGION_SPAN 524288
+#define SRAM_REGION_SPAN 522240
 
 
 /*
@@ -87,5 +93,21 @@
 #define ALT_RODATA_DEVICE SRAM
 #define ALT_RWDATA_DEVICE SRAM
 #define ALT_TEXT_DEVICE SRAM
+
+
+/*
+ * Use a separate exception stack
+ *
+ */
+
+#define ALT_EXCEPTION_STACK
+
+
+/*
+ * Use a separate interrupt stack
+ *
+ */
+
+#define ALT_INTERRUPT_STACK
 
 #endif /* __LINKER_H_ */

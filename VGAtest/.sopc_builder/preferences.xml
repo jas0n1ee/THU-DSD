@@ -11,12 +11,12 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="487" />
-   <clocksource preferredWidth="486" />
-   <frequency preferredWidth="468" />
+   <clockname preferredWidth="377" />
+   <clocksource preferredWidth="377" />
+   <frequency preferredWidth="367" />
   </columns>
  </clocktable>
- <window width="1936" height="1056" x="1592" y="-8" />
+ <window width="1616" height="876" x="-8" y="-8" />
  <library
-   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Bridges,Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Project,Library,Library/DSP,Library/Bridges/Memory Mapped,Library/Legacy Components,Library/Memories and Memory Controllers,Library/DSP/Video and Image Processing,Library/Peripherals/Display,Library/Interface Protocols,Library/Peripherals,Library/Peripherals/Debug and Performance,Library/Interface Protocols/High Speed,Library/Memories and Memory Controllers/External Memory Interfaces" />
+   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Library/Bridges,Library,Library/Legacy Components,Project,Library/Bridges/Memory Mapped,Library/Peripherals/Display,Library/DSP/Video and Image Processing,Library/Interface Protocols,Library/Peripherals,Library/DSP,Library/Interface Protocols/High Speed,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Peripherals/Debug and Performance,Library/Memories and Memory Controllers" />
 </preferences>

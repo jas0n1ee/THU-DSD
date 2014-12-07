@@ -146,14 +146,14 @@ SOPC_SYSID_FLAG += --id=0
 ELF_PATCH_FLAG  += --id 0
 
 # The SOPC System ID Base Address 
-# setting SOPC_SYSID_BASE_ADDRESS is 0x0
-SOPC_SYSID_FLAG += --sidp=0x0
-ELF_PATCH_FLAG  += --sidp 0x0
+# setting SOPC_SYSID_BASE_ADDRESS is 0xb04058
+SOPC_SYSID_FLAG += --sidp=0xb04058
+ELF_PATCH_FLAG  += --sidp 0xb04058
 
 # The SOPC Timestamp 
-# setting SOPC_TIMESTAMP is 1417934875
-SOPC_SYSID_FLAG += --timestamp=1417934875
-ELF_PATCH_FLAG  += --timestamp 1417934875
+# setting SOPC_TIMESTAMP is 1417958911
+SOPC_SYSID_FLAG += --timestamp=1417958911
+ELF_PATCH_FLAG  += --timestamp 1417958911
 
 # Small-footprint (polled mode) driver none 
 # setting altera_avalon_jtag_uart_driver.enable_small_driver is false
@@ -335,8 +335,8 @@ ELF_PATCH_FLAG  += --stdin_dev jtag_uart
 
 # Slave descriptor of STDOUT character-mode device. This setting is used by the 
 # ALT_STDOUT family of defines in system.h. none 
-# setting hal.stdout is jtag_uart
-ELF_PATCH_FLAG  += --stdout_dev jtag_uart
+# setting hal.stdout is lcd
+ELF_PATCH_FLAG  += --stdout_dev lcd
 
 
 #------------------------------------------------------------------------------

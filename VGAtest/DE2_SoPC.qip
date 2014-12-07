@@ -22,8 +22,10 @@ set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) sram.v]
 # lcd
 # tri_state_bridge_flash
 # sysid_0
+# timer
+# epcs
 # null
-set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "7CE9D3F198F80000014A23812D15"
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "7CE9D3F198F80000014A24EFF335"
 set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_NAME "sopc"
 set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_VERSION "12.0"
 set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_ENV "sopc"

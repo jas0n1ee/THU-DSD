@@ -16,16 +16,16 @@
 <td width="20%" bgcolor="#77BBFF">CPU:</td><td>cpu_0</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Settings File:</td><td>settings.bsp</td>
+<td width="20%" bgcolor="#77BBFF">BSP Settings File:</td><td>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA_bsp\settings.bsp</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Version:</td><td>default</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>2014-12-7 14:59:15</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated On:</td><td>Dec 7, 2014 9:58:03 PM</td>
 </tr>
 <tr mode="wrap">
-<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1417935555279</td>
+<td width="20%" bgcolor="#77BBFF">BSP Generated Timestamp:</td><td>1417960683191</td>
 </tr>
 <tr mode="wrap">
 <td width="20%" bgcolor="#77BBFF">BSP Generated Location:</td><td>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA_bsp</td>
@@ -38,13 +38,22 @@
 <th align="left" width="20%">Slave Descriptor</th><th align="left" width="40%">Address Range</th><th align="left" width="20%">Size</th><th align="left" width="20%">Attributes</th>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>jtag_uart</td><td>0x00B03030 - 0x00B03037</td><td>8</td><td class="listing">printable</td>
+<td>sysid_0</td><td>0x00B04058 - 0x00B0405F</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>lcd</td><td>0x00B03020 - 0x00B0302F</td><td>16</td><td class="listing">printable</td>
+<td>jtag_uart</td><td>0x00B04050 - 0x00B04057</td><td>8</td><td class="listing">printable</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>uart</td><td>0x00B03000 - 0x00B0301F</td><td>32</td><td class="listing">printable</td>
+<td>lcd</td><td>0x00B04040 - 0x00B0404F</td><td>16</td><td class="listing">printable</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>timer</td><td>0x00B04020 - 0x00B0403F</td><td>32</td><td class="listing">timer</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>uart</td><td>0x00B04000 - 0x00B0401F</td><td>32</td><td class="listing">printable</td>
+</tr>
+<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
+<td>epcs</td><td>0x00B03800 - 0x00B03FFF</td><td>2048</td><td class="listing">flash, memory, non-volatile</td>
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
 <td>onchip_memory2</td><td>0x00B01000 - 0x00B01FFF</td><td>4096</td><td class="listing">memory</td>
@@ -57,9 +66,6 @@
 </tr>
 <tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
 <td>cfi_flash_0</td><td>0x00400000 - 0x007FFFFF</td><td>4194304</td><td class="listing">flash, memory, non-volatile</td>
-</tr>
-<tr mode="wrap" STYLE="display: 'block'; font-family: 'courier'; color: '#000000'; font-weight: '500'; font-size: '14'; margin-top: '10pt'; text-align: 'left'">
-<td>sysid_0</td><td>0x00000000 - 0x00000007</td><td>8</td><td class="listing">&nbsp;</td>
 </tr>
 </table>
 <br>
@@ -675,7 +681,7 @@
 <td width="20%">Default Value:</td><td>0</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>0</td>
+<td width="20%">Value:</td><td>1</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>Boolean</td>
@@ -702,7 +708,7 @@
 <td width="20%">Default Value:</td><td>0</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>0</td>
+<td width="20%">Value:</td><td>1</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>Boolean</td>
@@ -1971,7 +1977,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>jtag_uart</td>
+<td width="20%">Value:</td><td>lcd</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>
@@ -1998,7 +2004,7 @@
 <td width="20%">Default Value:</td><td>none</td>
 </tr>
 <tr>
-<td width="20%">Value:</td><td>none</td>
+<td width="20%">Value:</td><td>timer</td>
 </tr>
 <tr>
 <td width="20%">Type:</td><td>UnquotedString</td>

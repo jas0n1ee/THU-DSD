@@ -321,7 +321,7 @@ DE2_SoPC DE2_SoPC_inst
       .zs_we_n_from_the_sdram              (DRAM_WE_N),   
 	*/
     //ssram
-	 /*
+	 
       .SRAM_ADDR_from_the_sram				(SRAM_ADDR),
       .SRAM_CE_N_from_the_sram				(SRAM_CE_N),
       .SRAM_DQ_to_and_from_the_sram			(SRAM_DQ),
@@ -329,7 +329,7 @@ DE2_SoPC DE2_SoPC_inst
       .SRAM_OE_N_from_the_sram				(SRAM_OE_N),
       .SRAM_UB_N_from_the_sram				(SRAM_UB_N),
       .SRAM_WE_N_from_the_sram				(SRAM_WE_N),  
-	*/		
+			
     //flash  
       .tri_state_bridge_flash_address      (FL_ADDR),
       .tri_state_bridge_flash_readn        (FL_OE_N),

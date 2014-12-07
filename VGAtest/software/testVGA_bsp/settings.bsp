@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2014-12-7 14:59:15</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1417935555279</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 7, 2014 9:58:03 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1417960683191</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA_bsp</BspGeneratedLocation>
-        <BspSettingsFile>settings.bsp</BspSettingsFile>
+        <BspSettingsFile>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA_bsp\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\DE2_SoPC.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu_0</Cpu>
@@ -14,7 +14,7 @@
                 <SettingName>hal.sys_clk_timer</SettingName>
                 <Identifier>ALT_SYS_CLK</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>none</Value>
+                <Value>timer</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of the system clock timer device. This device provides a periodic interrupt ("tick") and is typically required for RTOS use. This setting defines the value of ALT_SYS_CLK in system.h.</Description>
@@ -122,7 +122,7 @@
                 <SettingName>hal.linker.enable_exception_stack</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>Boolean</Type>
-                <Value>0</Value>
+                <Value>1</Value>
                 <DefaultValue>0</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Enables use of a separate exception stack. If true, defines the macro ALT_EXCEPTION_STACK in linker.h, adds a memory region called exception_stack to linker.x, and provides the symbols __alt_exception_stack_pointer and __alt_exception_stack_limit in linker.x.</Description>
@@ -158,7 +158,7 @@
                 <SettingName>hal.linker.enable_interrupt_stack</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>Boolean</Type>
-                <Value>0</Value>
+                <Value>1</Value>
                 <DefaultValue>0</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Enables use of a separate interrupt stack. If true, defines the macro ALT_INTERRUPT_STACK in linker.h, adds a memory region called interrupt_stack to linker.x, and provides the symbols __alt_interrupt_stack_pointer and __alt_interrupt_stack_limit in linker.x.</Description>
@@ -206,7 +206,7 @@
                 <SettingName>hal.stdout</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart</Value>
+                <Value>lcd</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDOUT character-mode device. This setting is used by the ALT_STDOUT family of defines in system.h.</Description>
@@ -875,12 +875,6 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>sysid_0</slaveDescriptor>
-                <addressRange>0x00000000 - 0x00000007</addressRange>
-                <addressSpan>8</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>cfi_flash_0</slaveDescriptor>
                 <addressRange>0x00400000 - 0x007FFFFF</addressRange>
                 <addressSpan>4194304</addressSpan>
@@ -905,22 +899,40 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>epcs</slaveDescriptor>
+                <addressRange>0x00B03800 - 0x00B03FFF</addressRange>
+                <addressSpan>2048</addressSpan>
+                <attributes>flash, memory, non-volatile</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>uart</slaveDescriptor>
-                <addressRange>0x00B03000 - 0x00B0301F</addressRange>
+                <addressRange>0x00B04000 - 0x00B0401F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>timer</slaveDescriptor>
+                <addressRange>0x00B04020 - 0x00B0403F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes>timer</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>lcd</slaveDescriptor>
-                <addressRange>0x00B03020 - 0x00B0302F</addressRange>
+                <addressRange>0x00B04040 - 0x00B0404F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x00B03030 - 0x00B03037</addressRange>
+                <addressRange>0x00B04050 - 0x00B04057</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sysid_0</slaveDescriptor>
+                <addressRange>0x00B04058 - 0x00B0405F</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>

@@ -142,7 +142,8 @@ ACDS_VERSION := 12.0
 ELF := testVGA.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS := hello_world.c
+C_SRCS += hello_world.c
+C_SRCS += VGA.c
 CXX_SRCS :=
 ASM_SRCS :=
 

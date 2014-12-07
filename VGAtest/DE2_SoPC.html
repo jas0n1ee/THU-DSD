@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2014.12.07.14:47:55</td>
+    <td class="l">2014.12.07.21:28:32</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -160,7 +160,13 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
      </a> altera_avalon_tri_state_bridge 12.0
      <br/>&#160;&#160;
      <a href="#module_sysid_0"><b>sysid_0</b>
-     </a> altera_avalon_sysid 12.0</span>
+     </a> altera_avalon_sysid 12.0
+     <br/>&#160;&#160;
+     <a href="#module_timer"><b>timer</b>
+     </a> altera_avalon_timer 12.0
+     <br/>&#160;&#160;
+     <a href="#module_epcs"><b>epcs</b>
+     </a> altera_avalon_epcs_flash_controller 12.0</span>
    </div>
   </div>
   <div style="width:100% ;  height:10px"> </div>
@@ -187,8 +193,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    </tr>
    <tr>
     <td class="slaveb">jtag_debug_module&#160;</td>
-    <td class="addr"><span style="color:#989898">0x</span>00b02800</td>
-    <td class="addr"><span style="color:#989898">0x</span>00b02800</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b03000</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b03000</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -214,7 +220,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <tr>
     <td class="slaveb">avalon_jtag_slave&#160;</td>
     <td class="empty"></td>
-    <td class="addr"><span style="color:#989898">0x</span>00b03030</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b04050</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -227,7 +233,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <tr>
     <td class="slaveb">s1&#160;</td>
     <td class="empty"></td>
-    <td class="addr"><span style="color:#989898">0x</span>00b03000</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b04000</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -279,7 +285,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <tr>
     <td class="slaveb">control_slave&#160;</td>
     <td class="empty"></td>
-    <td class="addr"><span style="color:#989898">0x</span>00b03020</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b04040</td>
    </tr>
    <tr>
     <td class="slavemodule">&#160;
@@ -292,7 +298,33 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <tr>
     <td class="slaveb">control_slave&#160;</td>
     <td class="empty"></td>
-    <td class="addr"><span style="color:#989898">0x</span>00000000</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b04058</td>
+   </tr>
+   <tr>
+    <td class="slavemodule">&#160;
+     <a href="#module_timer"><b>timer</b>
+     </a>
+    </td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slaveb">s1&#160;</td>
+    <td class="empty"></td>
+    <td class="addr"><span style="color:#989898">0x</span>00b04020</td>
+   </tr>
+   <tr>
+    <td class="slavemodule">&#160;
+     <a href="#module_epcs"><b>epcs</b>
+     </a>
+    </td>
+    <td class="empty"></td>
+    <td class="empty"></td>
+   </tr>
+   <tr>
+    <td class="slaveb">epcs_control_port&#160;</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b03800</td>
+    <td class="addr"><span style="color:#989898">0x</span>00b03800</td>
    </tr>
   </table>
   <a name="module_clk_50"> </a>
@@ -354,7 +386,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        <a href="#module_clk_50">clk_50</a>
       </td>
       <td class="from">clk&#160;&#160;</td>
-      <td class="main" rowspan="35">cpu_0</td>
+      <td class="main" rowspan="47">cpu_0</td>
      </tr>
      <tr>
       <td class="to">&#160;&#160;clk</td>
@@ -533,6 +565,68 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <td></td>
       <td></td>
       <td class="to">&#160;&#160;control_slave</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">data_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_timer">timer</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">d_irq&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;irq</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">instruction_master&#160;&#160;</td>
+      <td class="neighbor" rowspan="6">
+       <a href="#module_epcs">epcs</a>
+      </td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;epcs_control_port</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">data_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;epcs_control_port</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="from">d_irq&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td></td>
+      <td></td>
+      <td class="to">&#160;&#160;irq</td>
      </tr>
     </table>
    </div>
@@ -813,11 +907,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">internalIrqMaskSystemInfo</td>
-        <td class="parametervalue">3</td>
+        <td class="parametervalue">15</td>
        </tr>
        <tr>
         <td class="parametername">instSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='cfi_flash_0.s1' start='0x400000' end='0x800000' /&gt;&lt;slave name='sram.avalon_slave_0' start='0xA80000' end='0xB00000' /&gt;&lt;slave name='onchip_memory2.s1' start='0xB01000' end='0xB02000' /&gt;&lt;slave name='cpu_0.jtag_debug_module' start='0xB02800' end='0xB03000' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='cfi_flash_0.s1' start='0x400000' end='0x800000' /&gt;&lt;slave name='sram.avalon_slave_0' start='0xA80000' end='0xB00000' /&gt;&lt;slave name='onchip_memory2.s1' start='0xB01000' end='0xB02000' /&gt;&lt;slave name='cpu_0.jtag_debug_module' start='0xB03000' end='0xB03800' /&gt;&lt;slave name='epcs.epcs_control_port' start='0xB03800' end='0xB04000' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">instAddrWidth</td>
@@ -913,7 +1007,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">dataSlaveMapParam</td>
-        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='sysid_0.control_slave' start='0x0' end='0x8' /&gt;&lt;slave name='cfi_flash_0.s1' start='0x400000' end='0x800000' /&gt;&lt;slave name='vga_0.avalon_slave_0' start='0x800000' end='0xA00000' /&gt;&lt;slave name='sram.avalon_slave_0' start='0xA80000' end='0xB00000' /&gt;&lt;slave name='onchip_memory2.s1' start='0xB01000' end='0xB02000' /&gt;&lt;slave name='cpu_0.jtag_debug_module' start='0xB02800' end='0xB03000' /&gt;&lt;slave name='uart.s1' start='0xB03000' end='0xB03020' /&gt;&lt;slave name='lcd.control_slave' start='0xB03020' end='0xB03030' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0xB03030' end='0xB03038' /&gt;&lt;/address-map&gt;</td>
+        <td class="parametervalue">&lt;address-map&gt;&lt;slave name='cfi_flash_0.s1' start='0x400000' end='0x800000' /&gt;&lt;slave name='vga_0.avalon_slave_0' start='0x800000' end='0xA00000' /&gt;&lt;slave name='sram.avalon_slave_0' start='0xA80000' end='0xB00000' /&gt;&lt;slave name='onchip_memory2.s1' start='0xB01000' end='0xB02000' /&gt;&lt;slave name='cpu_0.jtag_debug_module' start='0xB03000' end='0xB03800' /&gt;&lt;slave name='epcs.epcs_control_port' start='0xB03800' end='0xB04000' /&gt;&lt;slave name='uart.s1' start='0xB04000' end='0xB04020' /&gt;&lt;slave name='timer.s1' start='0xB04020' end='0xB04040' /&gt;&lt;slave name='lcd.control_slave' start='0xB04040' end='0xB04050' /&gt;&lt;slave name='jtag_uart.avalon_jtag_slave' start='0xB04050' end='0xB04058' /&gt;&lt;slave name='sysid_0.control_slave' start='0xB04058' end='0xB04060' /&gt;&lt;/address-map&gt;</td>
        </tr>
        <tr>
         <td class="parametername">dataAddrWidth</td>
@@ -1014,7 +1108,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">BREAK_ADDR</td>
-        <td class="parametervalue">0xb02820</td>
+        <td class="parametervalue">0xb03020</td>
        </tr>
        <tr>
         <td class="parametername">HAS_DEBUG_STUB</td>
@@ -2000,7 +2094,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">timestamp</td>
-        <td class="parametervalue">1417934875</td>
+        <td class="parametervalue">1417958911</td>
        </tr>
        <tr>
         <td class="parametername">deviceFamily</td>
@@ -2025,7 +2119,253 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">TIMESTAMP</td>
-        <td class="parametervalue">1417934875u</td>
+        <td class="parametervalue">1417958911u</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_timer"> </a>
+  <div>
+   <hr/>
+   <h2>timer</h2>altera_avalon_timer v12.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_50">clk_50</a>
+      </td>
+      <td class="from">clk&#160;&#160;</td>
+      <td class="main" rowspan="7">timer</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="4">
+       <a href="#module_cpu_0">cpu_0</a>
+      </td>
+      <td class="from">data_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;s1</td>
+     </tr>
+     <tr>
+      <td class="from">d_irq&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;irq</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">alwaysRun</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">counterSize</td>
+        <td class="parametervalue">32</td>
+       </tr>
+       <tr>
+        <td class="parametername">fixedPeriod</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">period</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">periodUnits</td>
+        <td class="parametervalue">MSEC</td>
+       </tr>
+       <tr>
+        <td class="parametername">resetOutput</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">snapshot</td>
+        <td class="parametervalue">true</td>
+       </tr>
+       <tr>
+        <td class="parametername">systemFrequency</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">timeoutPulseOutput</td>
+        <td class="parametervalue">false</td>
+       </tr>
+       <tr>
+        <td class="parametername">timerPreset</td>
+        <td class="parametervalue">CUSTOM</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>
+      <table>
+       <tr>
+        <td class="parametername">ALWAYS_RUN</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">FIXED_PERIOD</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">SNAPSHOT</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">PERIOD</td>
+        <td class="parametervalue">1</td>
+       </tr>
+       <tr>
+        <td class="parametername">PERIOD_UNITS</td>
+        <td class="parametervalue">"ms"</td>
+       </tr>
+       <tr>
+        <td class="parametername">RESET_OUTPUT</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">TIMEOUT_PULSE_OUTPUT</td>
+        <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">FREQ</td>
+        <td class="parametervalue">50000000u</td>
+       </tr>
+       <tr>
+        <td class="parametername">LOAD_VALUE</td>
+        <td class="parametervalue">49999ULL</td>
+       </tr>
+       <tr>
+        <td class="parametername">COUNTER_SIZE</td>
+        <td class="parametervalue">32</td>
+       </tr>
+       <tr>
+        <td class="parametername">MULT</td>
+        <td class="parametervalue">0.0010</td>
+       </tr>
+       <tr>
+        <td class="parametername">TICKS_PER_SEC</td>
+        <td class="parametervalue">1000u</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_epcs"> </a>
+  <div>
+   <hr/>
+   <h2>epcs</h2>altera_avalon_epcs_flash_controller v12.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="2">
+       <a href="#module_clk_50">clk_50</a>
+      </td>
+      <td class="from">clk&#160;&#160;</td>
+      <td class="main" rowspan="9">epcs</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clk</td>
+     </tr>
+     <tr style="height:6px">
+      <td></td>
+     </tr>
+     <tr>
+      <td class="neighbor" rowspan="6">
+       <a href="#module_cpu_0">cpu_0</a>
+      </td>
+      <td class="from">instruction_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;epcs_control_port</td>
+     </tr>
+     <tr>
+      <td class="from">data_master&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;epcs_control_port</td>
+     </tr>
+     <tr>
+      <td class="from">d_irq&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;irq</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">autoSelectASMIAtom</td>
+        <td class="parametervalue">true</td>
+       </tr>
+       <tr>
+        <td class="parametername">clockRate</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamilyString</td>
+        <td class="parametervalue">CYCLONEII</td>
+       </tr>
+       <tr>
+        <td class="parametername">useASMIAtom</td>
+        <td class="parametervalue">true</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>
+      <table>
+       <tr>
+        <td class="parametername">REGISTER_OFFSET</td>
+        <td class="parametervalue">512</td>
        </tr>
       </table>
      </td>
@@ -2034,8 +2374,8 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </div>
   <table class="blueBar">
    <tr>
-    <td class="l">generation took 0.01 seconds</td>
-    <td class="r">rendering took 0.11 seconds</td>
+    <td class="l">generation took 0.00 seconds</td>
+    <td class="r">rendering took 0.09 seconds</td>
    </tr>
   </table>
  </body>

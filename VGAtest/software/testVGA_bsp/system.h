@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'DE2_SoPC'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/DE2_SoPC.sopcinfo
  *
- * Generated: Sun Dec 07 14:54:27 CST 2014
+ * Generated: Sun Dec 07 21:31:21 CST 2014
  */
 
 /*
@@ -62,7 +62,7 @@
 
 #define ALT_CPU_ARCHITECTURE "altera_nios2"
 #define ALT_CPU_BIG_ENDIAN 0
-#define ALT_CPU_BREAK_ADDR 0xb02820
+#define ALT_CPU_BREAK_ADDR 0xb03020
 #define ALT_CPU_CPU_FREQ 50000000u
 #define ALT_CPU_CPU_ID_SIZE 1
 #define ALT_CPU_CPU_ID_VALUE 0x0
@@ -94,7 +94,7 @@
  */
 
 #define NIOS2_BIG_ENDIAN 0
-#define NIOS2_BREAK_ADDR 0xb02820
+#define NIOS2_BREAK_ADDR 0xb03020
 #define NIOS2_CPU_FREQ 50000000u
 #define NIOS2_CPU_ID_SIZE 1
 #define NIOS2_CPU_ID_VALUE 0x0
@@ -124,10 +124,12 @@
  */
 
 #define __ALTERA_AVALON_CFI_FLASH
+#define __ALTERA_AVALON_EPCS_FLASH_CONTROLLER
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_LCD_16207
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_SYSID
+#define __ALTERA_AVALON_TIMER
 #define __ALTERA_AVALON_UART
 #define __ALTERA_NIOS2
 #define __BINARY_VGA_CONTROLLER
@@ -150,23 +152,22 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0xb03030
+#define ALT_STDERR_BASE 0xb04050
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0xb03030
+#define ALT_STDIN_BASE 0xb04050
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
-#define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0xb03030
-#define ALT_STDOUT_DEV jtag_uart
-#define ALT_STDOUT_IS_JTAG_UART
+#define ALT_STDOUT "/dev/lcd"
+#define ALT_STDOUT_BASE 0xb04040
+#define ALT_STDOUT_DEV lcd
 #define ALT_STDOUT_PRESENT
-#define ALT_STDOUT_TYPE "altera_avalon_jtag_uart"
+#define ALT_STDOUT_TYPE "altera_avalon_lcd_16207"
 #define ALT_SYSTEM_NAME "DE2_SoPC"
 
 
@@ -190,12 +191,27 @@
 
 
 /*
+ * epcs configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_epcs altera_avalon_epcs_flash_controller
+#define EPCS_BASE 0xb03800
+#define EPCS_IRQ 3
+#define EPCS_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define EPCS_NAME "/dev/epcs"
+#define EPCS_REGISTER_OFFSET 512
+#define EPCS_SPAN 2048
+#define EPCS_TYPE "altera_avalon_epcs_flash_controller"
+
+
+/*
  * hal configuration
  *
  */
 
 #define ALT_MAX_FD 32
-#define ALT_SYS_CLK none
+#define ALT_SYS_CLK TIMER
 #define ALT_TIMESTAMP_CLK none
 
 
@@ -205,7 +221,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0xb03030
+#define JTAG_UART_BASE 0xb04050
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -223,7 +239,7 @@
  */
 
 #define ALT_MODULE_CLASS_lcd altera_avalon_lcd_16207
-#define LCD_BASE 0xb03020
+#define LCD_BASE 0xb04040
 #define LCD_IRQ -1
 #define LCD_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define LCD_NAME "/dev/lcd"
@@ -280,14 +296,40 @@
  */
 
 #define ALT_MODULE_CLASS_sysid_0 altera_avalon_sysid
-#define SYSID_0_BASE 0x0
+#define SYSID_0_BASE 0xb04058
 #define SYSID_0_ID 0u
 #define SYSID_0_IRQ -1
 #define SYSID_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_0_NAME "/dev/sysid_0"
 #define SYSID_0_SPAN 8
-#define SYSID_0_TIMESTAMP 1417934875u
+#define SYSID_0_TIMESTAMP 1417958911u
 #define SYSID_0_TYPE "altera_avalon_sysid"
+
+
+/*
+ * timer configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_timer altera_avalon_timer
+#define TIMER_ALWAYS_RUN 0
+#define TIMER_BASE 0xb04020
+#define TIMER_COUNTER_SIZE 32
+#define TIMER_FIXED_PERIOD 0
+#define TIMER_FREQ 50000000u
+#define TIMER_IRQ 2
+#define TIMER_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define TIMER_LOAD_VALUE 49999ull
+#define TIMER_MULT 0.0010
+#define TIMER_NAME "/dev/timer"
+#define TIMER_PERIOD 1
+#define TIMER_PERIOD_UNITS "ms"
+#define TIMER_RESET_OUTPUT 0
+#define TIMER_SNAPSHOT 1
+#define TIMER_SPAN 32
+#define TIMER_TICKS_PER_SEC 1000u
+#define TIMER_TIMEOUT_PULSE_OUTPUT 0
+#define TIMER_TYPE "altera_avalon_timer"
 
 
 /*
@@ -296,7 +338,7 @@
  */
 
 #define ALT_MODULE_CLASS_uart altera_avalon_uart
-#define UART_BASE 0xb03000
+#define UART_BASE 0xb04000
 #define UART_BAUD 115200
 #define UART_DATA_BITS 8
 #define UART_FIXED_BAUD 1

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'DE2_SoPC'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/DE2_SoPC.sopcinfo
  *
- * Generated: Sun Dec 07 00:19:48 CST 2014
+ * Generated: Sun Dec 07 21:26:28 CST 2014
  */
 
 /*
@@ -52,15 +52,19 @@ MEMORY
 {
     reset : ORIGIN = 0x400000, LENGTH = 32
     cfi_flash_0 : ORIGIN = 0x400020, LENGTH = 4194272
-    sram : ORIGIN = 0xa80000, LENGTH = 524288
+    sram : ORIGIN = 0xa80000, LENGTH = 522240
+    interrupt_stack : ORIGIN = 0xaff800, LENGTH = 1024
+    exception_stack : ORIGIN = 0xaffc00, LENGTH = 1024
     onchip_memory2_BEFORE_EXCEPTION : ORIGIN = 0xb01000, LENGTH = 32
     onchip_memory2 : ORIGIN = 0xb01020, LENGTH = 4064
+    epcs : ORIGIN = 0xb03800, LENGTH = 2048
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_cfi_flash_0 = 0x400000;
 __alt_mem_sram = 0xa80000;
 __alt_mem_onchip_memory2 = 0xb01000;
+__alt_mem_epcs = 0xb03800;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -311,6 +315,16 @@ SECTIONS
 
     PROVIDE (_alt_partition_onchip_memory2_load_addr = LOADADDR(.onchip_memory2));
 
+    .epcs :
+    {
+        PROVIDE (_alt_partition_epcs_start = ABSOLUTE(.));
+        *(.epcs. epcs.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_epcs_end = ABSOLUTE(.));
+    } > epcs
+
+    PROVIDE (_alt_partition_epcs_load_addr = LOADADDR(.epcs));
+
     /*
      * Stabs debugging sections.
      *
@@ -358,7 +372,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0xb00000;
+__alt_data_end = 0xaff800;
 
 /*
  * The next two symbols define the location of the default stack.  You can
@@ -368,10 +382,22 @@ PROVIDE( __alt_stack_pointer = __alt_data_end );
 PROVIDE( __alt_stack_limit   = __alt_stack_base );
 
 /*
+ * These symbols define the location of the separate exception stack.
+ */
+PROVIDE( __alt_exception_stack_pointer = 0xb00000 );
+PROVIDE( __alt_exception_stack_limit   = 0xaffc00 );
+
+/*
+ * These symbols define the location of the separate interrupt stack.
+ */
+PROVIDE( __alt_interrupt_stack_pointer = 0xaffc00 );
+PROVIDE( __alt_interrupt_stack_limit   = 0xaff800 );
+
+/*
  * This symbol controls where the start of the heap is.  If the stack is
  * contiguous with the heap then the stack will contract as memory is
  * allocated to the heap.
  * Override this symbol to put the heap in a different memory.
  */
 PROVIDE( __alt_heap_start    = end );
-PROVIDE( __alt_heap_limit    = 0xb00000 );
+PROVIDE( __alt_heap_limit    = 0xaff800 );

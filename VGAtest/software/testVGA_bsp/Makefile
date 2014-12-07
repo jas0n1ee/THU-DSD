@@ -218,6 +218,15 @@ altera_avalon_cfi_flash_driver_C_LIB_SRCS := \
 	$(altera_avalon_cfi_flash_driver_SRCS_ROOT)/src/altera_avalon_cfi_flash_intel.c \
 	$(altera_avalon_cfi_flash_driver_SRCS_ROOT)/src/altera_avalon_cfi_flash_table.c
 
+# altera_avalon_epcs_flash_controller_driver sources root 
+altera_avalon_epcs_flash_controller_driver_SRCS_ROOT := drivers
+
+# altera_avalon_epcs_flash_controller_driver sources 
+altera_avalon_epcs_flash_controller_driver_C_LIB_SRCS := \
+	$(altera_avalon_epcs_flash_controller_driver_SRCS_ROOT)/src/altera_avalon_epcs_flash_controller.c \
+	$(altera_avalon_epcs_flash_controller_driver_SRCS_ROOT)/src/epcs_commands.c \
+	$(altera_avalon_epcs_flash_controller_driver_SRCS_ROOT)/src/altera_avalon_spi.c
+
 # altera_avalon_jtag_uart_driver sources root 
 altera_avalon_jtag_uart_driver_SRCS_ROOT := drivers
 
@@ -243,6 +252,15 @@ altera_avalon_sysid_driver_SRCS_ROOT := drivers
 # altera_avalon_sysid_driver sources 
 altera_avalon_sysid_driver_C_LIB_SRCS := \
 	$(altera_avalon_sysid_driver_SRCS_ROOT)/src/altera_avalon_sysid.c
+
+# altera_avalon_timer_driver sources root 
+altera_avalon_timer_driver_SRCS_ROOT := drivers
+
+# altera_avalon_timer_driver sources 
+altera_avalon_timer_driver_C_LIB_SRCS := \
+	$(altera_avalon_timer_driver_SRCS_ROOT)/src/altera_avalon_timer_sc.c \
+	$(altera_avalon_timer_driver_SRCS_ROOT)/src/altera_avalon_timer_ts.c \
+	$(altera_avalon_timer_driver_SRCS_ROOT)/src/altera_avalon_timer_vars.c
 
 # altera_avalon_uart_driver sources root 
 altera_avalon_uart_driver_SRCS_ROOT := drivers
@@ -352,9 +370,11 @@ hal_C_LIB_SRCS := \
 # Assemble all component C source files 
 COMPONENT_C_LIB_SRCS += \
 	$(altera_avalon_cfi_flash_driver_C_LIB_SRCS) \
+	$(altera_avalon_epcs_flash_controller_driver_C_LIB_SRCS) \
 	$(altera_avalon_jtag_uart_driver_C_LIB_SRCS) \
 	$(altera_avalon_lcd_16207_driver_C_LIB_SRCS) \
 	$(altera_avalon_sysid_driver_C_LIB_SRCS) \
+	$(altera_avalon_timer_driver_C_LIB_SRCS) \
 	$(altera_avalon_uart_driver_C_LIB_SRCS) \
 	$(altera_nios2_hal_driver_C_LIB_SRCS) \
 	$(hal_C_LIB_SRCS)

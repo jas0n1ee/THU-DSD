@@ -1,0 +1,8 @@
+
+**** Build of configuration Nios II for project game ****
+
+make all 
+Info: Building ../game_bsp/
+make --no-print-directory -C ../game_bsp/
+[BSP build complete]
+[game build complete]

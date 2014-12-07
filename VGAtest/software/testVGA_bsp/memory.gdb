@@ -3,7 +3,7 @@
 # Machine generated for CPU 'cpu_0' in SOPC Builder design 'DE2_SoPC'
 # SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/DE2_SoPC.sopcinfo
 #
-# Generated: Sun Dec 07 00:19:48 CST 2014
+# Generated: Sun Dec 07 20:21:31 CST 2014
 
 # DO NOT MODIFY THIS FILE
 #
@@ -54,3 +54,6 @@ memory 0xa80000 0xb00000 cache
 
 # onchip_memory2
 memory 0xb01000 0xb02000 cache
+
+# epcs
+memory 0xb03800 0xb04000 cache

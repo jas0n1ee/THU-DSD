@@ -1,5 +1,5 @@
-#Sun Dec 07 00:19:44 CST 2014
-newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\Jason\\Documents\\Github\\THU-DSD\\VGAtest\\software\\testVGA
-newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\Jason\\Documents\\Github\\THU-DSD\\VGAtest\\DE2_SoPC.sopcinfo
+#Sun Dec 07 17:27:31 CST 2014
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\Jason\\Documents\\Github\\THU-DSD\\FB\\software\\game
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\Jason\\Documents\\Github\\THU-DSD\\FB\\kernel.sopcinfo
 eclipse.preferences.version=1
-newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\Jason\\Documents\\Github\\THU-DSD\\VGAtest\\software\\testVGA_bsp
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\Jason\\Documents\\Github\\THU-DSD\\FB\\software\\game_bsp

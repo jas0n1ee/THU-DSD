@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sun Dec 07 14:52:56 2014
+Sun Dec 07 21:30:25 2014
 Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -23,36 +23,40 @@ Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
  15. General Register Statistics
  16. Inverted Register Statistics
  17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2
- 19. Source assignments for DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2
- 20. Source assignments for DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram|altsyncram_0vb1:auto_generated
- 21. Source assignments for DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave
- 22. Source assignments for DE2_SoPC:DE2_SoPC_inst|uart:the_uart
- 23. Source assignments for DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer
- 24. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated
- 25. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1
- 26. Source assignments for DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch
- 27. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo
- 28. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo
- 29. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2
- 30. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram
- 31. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer
- 32. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0
- 33. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0
- 34. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component
- 35. scfifo Parameter Settings by Entity Instance
- 36. altsyncram Parameter Settings by Entity Instance
- 37. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch"
- 38. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1"
- 39. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0"
- 40. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1"
- 41. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|sysid_0:the_sysid_0"
- 42. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic"
- 43. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave"
- 44. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst"
- 45. Elapsed Time Per Partition
- 46. Analysis & Synthesis Messages
- 47. Analysis & Synthesis Suppressed Messages
+ 18. Source assignments for DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom|altsyncram_7831:auto_generated
+ 19. Source assignments for DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2
+ 20. Source assignments for DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2
+ 21. Source assignments for DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram|altsyncram_0vb1:auto_generated
+ 22. Source assignments for DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave
+ 23. Source assignments for DE2_SoPC:DE2_SoPC_inst|uart:the_uart
+ 24. Source assignments for DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer
+ 25. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated
+ 26. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1
+ 27. Source assignments for DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch
+ 28. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs
+ 29. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom
+ 30. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo
+ 31. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo
+ 32. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2
+ 33. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram
+ 34. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer
+ 35. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0
+ 36. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0
+ 37. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component
+ 38. altsyncram Parameter Settings by Entity Instance
+ 39. scfifo Parameter Settings by Entity Instance
+ 40. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch"
+ 41. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1"
+ 42. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0"
+ 43. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1"
+ 44. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|sysid_0:the_sysid_0"
+ 45. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic"
+ 46. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave"
+ 47. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|tornado_epcs_atom:the_tornado_epcs_atom"
+ 48. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port"
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+ 51. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -78,18 +82,18 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 07 14:52:56 2014     ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 07 21:30:25 2014     ;
 ; Quartus II 64-Bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; main                                      ;
 ; Top-level Entity Name              ; main                                      ;
 ; Family                             ; Cyclone II                                ;
-; Total logic elements               ; 4,192                                     ;
-;     Total combinational functions  ; 3,704                                     ;
-;     Dedicated logic registers      ; 1,904                                     ;
-; Total registers                    ; 1904                                      ;
+; Total logic elements               ; 4,698                                     ;
+;     Total combinational functions  ; 4,071                                     ;
+;     Dedicated logic registers      ; 2,158                                     ;
+; Total registers                    ; 2158                                      ;
 ; Total pins                         ; 429                                       ;
 ; Total virtual pins                 ; 0                                         ;
-; Total memory bits                  ; 386,560                                   ;
+; Total memory bits                  ; 390,656                                   ;
 ; Embedded Multiplier 9-bit elements ; 4                                         ;
 ; Total PLLs                         ; 0                                         ;
 +------------------------------------+-------------------------------------------+
@@ -246,6 +250,9 @@ applicable agreement for further details.
 ; altera_std_synchronizer.v                     ; yes             ; Megafunction                           ; c:/altera/12.0/quartus/libraries/megafunctions/altera_std_synchronizer.v                      ;         ;
 ; cpu_0_jtag_debug_module_sysclk.v              ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/cpu_0_jtag_debug_module_sysclk.v              ;         ;
 ; sld_virtual_jtag_basic.v                      ; yes             ; Megafunction                           ; c:/altera/12.0/quartus/libraries/megafunctions/sld_virtual_jtag_basic.v                       ;         ;
+; epcs.v                                        ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/epcs.v                                        ;         ;
+; db/altsyncram_7831.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/db/altsyncram_7831.tdf                        ;         ;
+; epcs_boot_rom_synth.hex                       ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/epcs_boot_rom_synth.hex                       ;         ;
 ; jtag_uart.v                                   ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/jtag_uart.v                                   ;         ;
 ; scfifo.tdf                                    ; yes             ; Megafunction                           ; c:/altera/12.0/quartus/libraries/megafunctions/scfifo.tdf                                     ;         ;
 ; a_regfifo.inc                                 ; yes             ; Megafunction                           ; c:/altera/12.0/quartus/libraries/megafunctions/a_regfifo.inc                                  ;         ;
@@ -266,6 +273,7 @@ applicable agreement for further details.
 ; db/altsyncram_0vb1.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/db/altsyncram_0vb1.tdf                        ;         ;
 ; onchip_memory2.hex                            ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/onchip_memory2.hex                            ;         ;
 ; sysid_0.v                                     ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/sysid_0.v                                     ;         ;
+; timer.v                                       ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/timer.v                                       ;         ;
 ; uart.v                                        ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/uart.v                                        ;         ;
 ; db/altsyncram_q7o1.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/db/altsyncram_q7o1.tdf                        ;         ;
 ; db/altsyncram_p132.tdf                        ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/db/altsyncram_p132.tdf                        ;         ;
@@ -290,29 +298,29 @@ applicable agreement for further details.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 4,192    ;
+; Estimated Total logic elements              ; 4,698    ;
 ;                                             ;          ;
-; Total combinational functions               ; 3704     ;
+; Total combinational functions               ; 4071     ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 2203     ;
-;     -- 3 input functions                    ; 1033     ;
-;     -- <=2 input functions                  ; 468      ;
+;     -- 4 input functions                    ; 2424     ;
+;     -- 3 input functions                    ; 1110     ;
+;     -- <=2 input functions                  ; 537      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 3318     ;
-;     -- arithmetic mode                      ; 386      ;
+;     -- normal mode                          ; 3650     ;
+;     -- arithmetic mode                      ; 421      ;
 ;                                             ;          ;
-; Total registers                             ; 1904     ;
-;     -- Dedicated logic registers            ; 1904     ;
+; Total registers                             ; 2158     ;
+;     -- Dedicated logic registers            ; 2158     ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
 ; I/O pins                                    ; 429      ;
-; Total memory bits                           ; 386560   ;
+; Total memory bits                           ; 390656   ;
 ; Embedded Multiplier 9-bit elements          ; 4        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
-; Maximum fan-out                             ; 1874     ;
-; Total fan-out                               ; 25648    ;
-; Average fan-out                             ; 4.06     ;
+; Maximum fan-out                             ; 2160     ;
+; Total fan-out                               ; 28215    ;
+; Average fan-out                             ; 4.05     ;
 +---------------------------------------------+----------+
 
 
@@ -321,10 +329,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                         ; Library Name ;
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main                                                                                           ; 3704 (1)          ; 1904 (0)     ; 386560      ; 4            ; 0       ; 2         ; 429  ; 0            ; |main                                                                                                                                                                                                                                                                       ;              ;
-;    |DE2_SoPC:DE2_SoPC_inst|                                                                     ; 3543 (1)          ; 1799 (0)     ; 386560      ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst                                                                                                                                                                                                                                                ;              ;
+; |main                                                                                           ; 4071 (1)          ; 2158 (0)     ; 390656      ; 4            ; 0       ; 2         ; 429  ; 0            ; |main                                                                                                                                                                                                                                                                       ;              ;
+;    |DE2_SoPC:DE2_SoPC_inst|                                                                     ; 3910 (1)          ; 2053 (0)     ; 390656      ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst                                                                                                                                                                                                                                                ;              ;
 ;       |DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch|            ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch                                                                                                                                                                   ;              ;
-;       |cpu_0:the_cpu_0|                                                                         ; 1524 (1208)       ; 1108 (925)   ; 45568       ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
+;       |cpu_0:the_cpu_0|                                                                         ; 1520 (1208)       ; 1116 (931)   ; 45568       ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
 ;          |cpu_0_ic_data_module:cpu_0_ic_data|                                                   ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data                                                                                                                                                                                             ;              ;
 ;             |altsyncram:the_altsyncram|                                                         ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data|altsyncram:the_altsyncram                                                                                                                                                                   ;              ;
 ;                |altsyncram_qed1:auto_generated|                                                 ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data|altsyncram:the_altsyncram|altsyncram_qed1:auto_generated                                                                                                                                    ;              ;
@@ -338,7 +346,7 @@ applicable agreement for further details.
 ;             |altmult_add:the_altmult_add_part_2|                                                ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2                                                                                                                                                         ;              ;
 ;                |mult_add_6cr2:auto_generated|                                                   ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2|mult_add_6cr2:auto_generated                                                                                                                            ;              ;
 ;                   |ded_mult_2o81:ded_mult1|                                                     ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2|mult_add_6cr2:auto_generated|ded_mult_2o81:ded_mult1                                                                                                    ;              ;
-;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 205 (10)          ; 183 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
+;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 204 (6)           ; 185 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
 ;             |cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|               ; 92 (0)            ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper                                                                                                                        ;              ;
 ;                |cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|              ; 6 (6)             ; 49 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk                                                      ;              ;
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer2|                        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2 ;              ;
@@ -347,7 +355,7 @@ applicable agreement for further details.
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer1|                        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1       ;              ;
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer|                         ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer        ;              ;
 ;                |sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy                                                                     ;              ;
-;             |cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|                                 ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg                                                                                                                                          ;              ;
+;             |cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|                                 ; 11 (11)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg                                                                                                                                          ;              ;
 ;             |cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break|                                   ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break                                                                                                                                            ;              ;
 ;             |cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug|                                   ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug                                                                                                                                            ;              ;
 ;             |cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|                                         ; 55 (55)           ; 44 (44)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem                                                                                                                                                  ;              ;
@@ -361,11 +369,17 @@ applicable agreement for further details.
 ;             |altsyncram:the_altsyncram|                                                         ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram                                                                                                                                                   ;              ;
 ;                |altsyncram_jrf1:auto_generated|                                                 ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_jrf1:auto_generated                                                                                                                    ;              ;
 ;          |cpu_0_test_bench:the_cpu_0_test_bench|                                                ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench                                                                                                                                                                                          ;              ;
-;          |lpm_add_sub:Add8|                                                                     ; 78 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8                                                                                                                                                                                                               ;              ;
-;             |add_sub_8ri:auto_generated|                                                        ; 78 (78)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8|add_sub_8ri:auto_generated                                                                                                                                                                                    ;              ;
-;       |cpu_0_data_master_arbitrator:the_cpu_0_data_master|                                      ; 211 (211)         ; 67 (67)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master                                                                                                                                                                                             ;              ;
-;       |cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|                        ; 127 (127)         ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master                                                                                                                                                                               ;              ;
-;       |cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|                          ; 47 (47)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module                                                                                                                                                                                 ;              ;
+;          |lpm_add_sub:Add8|                                                                     ; 75 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8                                                                                                                                                                                                               ;              ;
+;             |add_sub_8ri:auto_generated|                                                        ; 75 (75)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8|add_sub_8ri:auto_generated                                                                                                                                                                                    ;              ;
+;       |cpu_0_data_master_arbitrator:the_cpu_0_data_master|                                      ; 271 (271)         ; 67 (67)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master                                                                                                                                                                                             ;              ;
+;       |cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|                        ; 163 (163)         ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master                                                                                                                                                                               ;              ;
+;       |cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|                          ; 48 (48)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module                                                                                                                                                                                 ;              ;
+;       |epcs:the_epcs|                                                                           ; 110 (1)           ; 115 (0)      ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs                                                                                                                                                                                                                                  ;              ;
+;          |altsyncram:the_boot_copier_rom|                                                       ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom                                                                                                                                                                                                   ;              ;
+;             |altsyncram_7831:auto_generated|                                                    ; 0 (0)             ; 0 (0)        ; 4096        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom|altsyncram_7831:auto_generated                                                                                                                                                                    ;              ;
+;          |epcs_sub:the_epcs_sub|                                                                ; 109 (109)         ; 115 (115)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub                                                                                                                                                                                                            ;              ;
+;          |tornado_epcs_atom:the_tornado_epcs_atom|                                              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|tornado_epcs_atom:the_tornado_epcs_atom                                                                                                                                                                                          ;              ;
+;       |epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|                            ; 39 (39)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port                                                                                                                                                                                   ;              ;
 ;       |jtag_uart:the_jtag_uart|                                                                 ; 144 (40)          ; 112 (13)     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart                                                                                                                                                                                                                        ;              ;
 ;          |alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|                                        ; 53 (53)           ; 59 (59)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic                                                                                                                                                                          ;              ;
 ;          |jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|                                            ; 26 (0)            ; 20 (0)       ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r                                                                                                                                                                              ;              ;
@@ -388,37 +402,37 @@ applicable agreement for further details.
 ;                      |cntr_fjb:wr_ptr|                                                          ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|cntr_fjb:wr_ptr                                                                                                 ;              ;
 ;                      |dpram_5h21:FIFOram|                                                       ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram                                                                                              ;              ;
 ;                         |altsyncram_9tl1:altsyncram2|                                           ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2                                                                  ;              ;
-;       |jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave|                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave                                                                                                                                                                         ;              ;
+;       |jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave                                                                                                                                                                         ;              ;
 ;       |lcd:the_lcd|                                                                             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|lcd:the_lcd                                                                                                                                                                                                                                    ;              ;
-;       |lcd_control_slave_arbitrator:the_lcd_control_slave|                                      ; 21 (21)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|lcd_control_slave_arbitrator:the_lcd_control_slave                                                                                                                                                                                             ;              ;
+;       |lcd_control_slave_arbitrator:the_lcd_control_slave|                                      ; 22 (22)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|lcd_control_slave_arbitrator:the_lcd_control_slave                                                                                                                                                                                             ;              ;
 ;       |onchip_memory2:the_onchip_memory2|                                                       ; 1 (1)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2                                                                                                                                                                                                              ;              ;
 ;          |altsyncram:the_altsyncram|                                                            ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram                                                                                                                                                                                    ;              ;
 ;             |altsyncram_0vb1:auto_generated|                                                    ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram|altsyncram_0vb1:auto_generated                                                                                                                                                     ;              ;
-;       |onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|                                      ; 44 (44)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1                                                                                                                                                                                             ;              ;
-;       |sram:the_sram|                                                                           ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram:the_sram                                                                                                                                                                                                                                  ;              ;
-;          |SRAM_16Bit_512K:sram|                                                                 ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram                                                                                                                                                                                                             ;              ;
-;       |sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|                                  ; 43 (43)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0                                                                                                                                                                                         ;              ;
+;       |onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|                                      ; 43 (43)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1                                                                                                                                                                                             ;              ;
+;       |sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|                                  ; 65 (65)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0                                                                                                                                                                                         ;              ;
 ;       |sysid_0_control_slave_arbitrator:the_sysid_0_control_slave|                              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sysid_0_control_slave_arbitrator:the_sysid_0_control_slave                                                                                                                                                                                     ;              ;
-;       |tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|  ; 74 (74)           ; 61 (61)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave                                                                                                                                                         ;              ;
-;       |uart:the_uart|                                                                           ; 119 (0)           ; 92 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart                                                                                                                                                                                                                                  ;              ;
-;          |uart_regs:the_uart_regs|                                                              ; 36 (36)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_regs:the_uart_regs                                                                                                                                                                                                          ;              ;
+;       |timer:the_timer|                                                                         ; 123 (123)         ; 120 (120)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|timer:the_timer                                                                                                                                                                                                                                ;              ;
+;       |timer_s1_arbitrator:the_timer_s1|                                                        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|timer_s1_arbitrator:the_timer_s1                                                                                                                                                                                                               ;              ;
+;       |tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|  ; 72 (72)           ; 61 (61)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave                                                                                                                                                         ;              ;
+;       |uart:the_uart|                                                                           ; 121 (0)           ; 92 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart                                                                                                                                                                                                                                  ;              ;
+;          |uart_regs:the_uart_regs|                                                              ; 38 (38)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_regs:the_uart_regs                                                                                                                                                                                                          ;              ;
 ;          |uart_rx:the_uart_rx|                                                                  ; 46 (46)           ; 37 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx                                                                                                                                                                                                              ;              ;
 ;             |altera_std_synchronizer:the_altera_std_synchronizer|                               ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer                                                                                                                                                          ;              ;
 ;          |uart_tx:the_uart_tx|                                                                  ; 37 (37)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx                                                                                                                                                                                                              ;              ;
-;       |uart_s1_arbitrator:the_uart_s1|                                                          ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1                                                                                                                                                                                                                 ;              ;
-;       |vga_0:the_vga_0|                                                                         ; 1151 (0)          ; 265 (0)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0                                                                                                                                                                                                                                ;              ;
-;          |VGA_NIOS_CTRL:vga_0|                                                                  ; 1151 (109)        ; 265 (124)    ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0                                                                                                                                                                                                            ;              ;
+;       |uart_s1_arbitrator:the_uart_s1|                                                          ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1                                                                                                                                                                                                                 ;              ;
+;       |vga_0:the_vga_0|                                                                         ; 1152 (0)          ; 265 (0)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0                                                                                                                                                                                                                                ;              ;
+;          |VGA_NIOS_CTRL:vga_0|                                                                  ; 1152 (116)        ; 265 (124)    ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0                                                                                                                                                                                                            ;              ;
 ;             |VGA_Controller:u0|                                                                 ; 272 (272)         ; 91 (91)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0                                                                                                                                                                                          ;              ;
-;             |VGA_OSD_RAM:u1|                                                                    ; 770 (38)          ; 50 (36)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1                                                                                                                                                                                             ;              ;
-;                |Img_RAM:u0|                                                                     ; 732 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0                                                                                                                                                                                  ;              ;
-;                   |altsyncram:altsyncram_component|                                             ; 732 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component                                                                                                                                                  ;              ;
-;                      |altsyncram_q7o1:auto_generated|                                           ; 732 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated                                                                                                                   ;              ;
-;                         |altsyncram_p132:altsyncram1|                                           ; 732 (0)           ; 14 (14)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1                                                                                       ;              ;
-;                            |decode_1qa:decode4|                                                 ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode4                                                                    ;              ;
+;             |VGA_OSD_RAM:u1|                                                                    ; 764 (38)          ; 50 (36)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1                                                                                                                                                                                             ;              ;
+;                |Img_RAM:u0|                                                                     ; 726 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0                                                                                                                                                                                  ;              ;
+;                   |altsyncram:altsyncram_component|                                             ; 726 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component                                                                                                                                                  ;              ;
+;                      |altsyncram_q7o1:auto_generated|                                           ; 726 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated                                                                                                                   ;              ;
+;                         |altsyncram_p132:altsyncram1|                                           ; 726 (0)           ; 14 (14)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1                                                                                       ;              ;
+;                            |decode_1qa:decode4|                                                 ; 88 (88)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode4                                                                    ;              ;
 ;                            |decode_1qa:decode_a|                                                ; 85 (85)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_a                                                                   ;              ;
-;                            |decode_1qa:decode_b|                                                ; 92 (92)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_b                                                                   ;              ;
+;                            |decode_1qa:decode_b|                                                ; 88 (88)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_b                                                                   ;              ;
 ;                            |mux_hkb:mux5|                                                       ; 465 (465)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_hkb:mux5                                                                          ;              ;
-;       |vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0|                                ; 6 (6)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0                                                                                                                                                                                       ;              ;
+;       |vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0|                                ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0                                                                                                                                                                                       ;              ;
 ;    |Reset_Delay:delay1|                                                                         ; 38 (38)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Reset_Delay:delay1                                                                                                                                                                                                                                                    ;              ;
 ;    |sld_hub:auto_hub|                                                                           ; 122 (81)          ; 76 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|sld_hub:auto_hub                                                                                                                                                                                                                                                      ;              ;
 ;       |sld_rom_sr:hub_info_reg|                                                                 ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|sld_hub:auto_hub|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                              ;              ;
@@ -437,6 +451,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|cpu_0_ociram_lpm_dram_bdp_component_module:cpu_0_ociram_lpm_dram_bdp_component|altsyncram:the_altsyncram|altsyncram_c572:auto_generated|ALTSYNCRAM ; AUTO ; True Dual Port   ; 256          ; 32           ; 256          ; 32           ; 8192   ; cpu_0_ociram_default_contents.mif ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_irf1:auto_generated|ALTSYNCRAM                                                                                                           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; cpu_0_rf_ram_a.mif                ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_jrf1:auto_generated|ALTSYNCRAM                                                                                                           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; cpu_0_rf_ram_b.mif                ;
+; DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom|altsyncram_7831:auto_generated|ALTSYNCRAM                                                                                                                                                           ; AUTO ; ROM              ; 128          ; 32           ; --           ; --           ; 4096   ; epcs_boot_rom_synth.hex           ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2|ALTSYNCRAM                                                         ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                              ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2|ALTSYNCRAM                                                         ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                              ;
 ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram|altsyncram_0vb1:auto_generated|ALTSYNCRAM                                                                                                                                            ; AUTO ; Single Port      ; 1024         ; 32           ; --           ; --           ; 32768  ; onchip_memory2.hex                ;
@@ -508,27 +523,27 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3|dreg[0] ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[0]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|read_req                                                                                                                                                                         ; yes                                                              ; yes                                        ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[2]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[7]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[6]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[5]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[4]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2|din_s1  ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer3|din_s1  ; yes                                                              ; yes                                        ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[2]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[3]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[4]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[5]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[6]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[1]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|read                                                                                                                                                                             ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|write_valid                                                                                                                                                                      ; yes                                                              ; yes                                        ;
-; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer|dreg[0]                                                                                                                                                          ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[1]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|wdata[0]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
+; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer|dreg[0]                                                                                                                                                          ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[2]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|jupdate                                                                                                                                                                          ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|write                                                                                                                                                                            ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[4]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer|din_s1                                                                                                                                                           ; yes                                                              ; yes                                        ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[6]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[5]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[6]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rdata[3]                                                                                                                                                                         ; yes                                                              ; yes                                        ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
@@ -541,7 +556,7 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_itrace:the_cpu_0_nios2_oci_itrace|itm[0..35]                                                                               ; Lost fanout                                                                                                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_regs:the_uart_regs|readdata[10..15]                                                                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|d1_reasons_to_wait                                                                                                                          ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_control_reg_rddata[2..31]                                                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_control_reg_rddata[4..31]                                                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_ctrl_br_always_pred_taken                                                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|trc_im_addr[0..6]                                                                                ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|trc_wrap                                                                                         ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
@@ -554,8 +569,6 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|trc_jtag_addr[0..16]                                                                             ; Lost fanout                                                                                                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[10..15]                                                                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rst1                                                                                                                     ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|clr_break_line                                                                                                                                                                 ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[2]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[3]                                                                           ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[3]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[4]                                                                           ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[4]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[5]                                                                           ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[5]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[6]                                                                           ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[6]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[7]                                                                           ;
@@ -588,6 +601,7 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|d1_tri_state_bridge_flash_avalon_slave_end_xfer                                                         ; Merged with DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|d1_reasons_to_wait                                                                                      ;
 ; DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|d1_sram_avalon_slave_0_end_xfer                                                                                                         ; Merged with DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|d1_reasons_to_wait                                                                                                                      ;
 ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|onchip_memory2_s1_arb_addend[0]                                                                                                             ; Merged with DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|onchip_memory2_s1_arb_addend[1]                                                                                                             ;
+; DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|d1_epcs_epcs_control_port_end_xfer                                                                                                ; Merged with DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|d1_reasons_to_wait                                                                                                                ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|registered_cpu_0_data_master_readdata[11,23..30]                                                                                            ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|registered_cpu_0_data_master_readdata[31]                                                                                                   ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|d1_cpu_0_jtag_debug_module_end_xfer                                                                                             ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|d1_reasons_to_wait                                                                                                              ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_logic_op[1]                                                                                                                                                                  ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_compare_op[1]                                                                                                                                                                ;
@@ -596,14 +610,16 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_dbrk:the_cpu_0_nios2_oci_dbrk|dbrk_break                                                                                   ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break|trigbrktype                                                                                ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_arb_share_counter[2]                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
+; DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|epcs_epcs_control_port_arb_share_counter[2]                                                                                       ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|onchip_memory2_s1_arb_share_counter[2]                                                                                                      ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
+; DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|slowcount[1]                                                                                                                                               ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize~3   ; Lost fanout                                                                                                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize~4   ; Lost fanout                                                                                                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize~5   ; Lost fanout                                                                                                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize.101 ; Lost fanout                                                                                                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize.011 ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize.001 ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|DRsize.001 ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
-; Total Number of Removed Registers = 169                                                                                                                                                                               ;                                                                                                                                                                                                                                   ;
+; Total Number of Removed Registers = 168                                                                                                                                                                               ;                                                                                                                                                                                                                                   ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -627,12 +643,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1904  ;
+; Total registers                              ; 2158  ;
 ; Number of registers using Synchronous Clear  ; 41    ;
-; Number of registers using Synchronous Load   ; 268   ;
-; Number of registers using Asynchronous Clear ; 1680  ;
+; Number of registers using Synchronous Load   ; 301   ;
+; Number of registers using Asynchronous Clear ; 1934  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1189  ;
+; Number of registers using Clock Enable       ; 1384  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -642,35 +658,60 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Inverted Register                                                                                                                                                   ; Fan out ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[0]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[1]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[2]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[3]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[6]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[8]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[9]                                                                                                          ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[14]                                                                                                         ; 3       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|internal_counter[15]                                                                                                         ; 3       ;
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|txd                                                                                                        ; 1       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|write_n_to_the_cfi_flash_0                            ; 1       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_readn                          ; 1       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|select_n_to_the_cfi_flash_0                           ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|sram_avalon_slave_0_arb_addend[0]                                                     ; 6       ;
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|pre_txd                                                                                                    ; 2       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_addend[0]     ; 6       ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_waitrequest                                                             ; 9       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush                                                                                                                 ; 10      ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|hbreak_enabled                                                                                                               ; 11      ;
-; DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|sram_avalon_slave_0_arb_addend[0]                                                     ; 6       ;
-; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_reg_firsttransfer ; 1       ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_arb_addend[0]                                         ; 6       ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_wr_dst_reg                                                                                                                 ; 67      ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|av_waitrequest                                                                                                       ; 2       ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|count[9]                                                               ; 11      ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_waitrequest                                                             ; 15      ;
 ; DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|sram_avalon_slave_0_reg_firsttransfer                                                 ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_arb_addend[0]                                         ; 6       ;
+; DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|epcs_epcs_control_port_arb_addend[0]                                            ; 6       ;
+; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_reg_firsttransfer ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|av_waitrequest                                                                                                       ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_wr_dst_reg                                                                                                                 ; 67      ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_reg_firsttransfer                                     ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|epcs_epcs_control_port_reg_firsttransfer                                        ; 2       ;
 ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|onchip_memory2_s1_reg_firsttransfer                                                       ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|count[9]                                                               ; 11      ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[3]                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[2]                         ; 2       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[1]                         ; 2       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[0]                         ; 2       ;
-; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|t_dav                                                                                                                ; 2       ;
-; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|tx_ready                                                                                                   ; 6       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|ic_tag_clr_valid_bits                                                                                                        ; 1       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush_waddr[20]                                                                                                       ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|t_dav                                                                                                                ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|tx_ready                                                                                                   ; 6       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[15]                                                                                                        ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[14]                                                                                                        ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[9]                                                                                                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[8]                                                                                                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[6]                                                                                                         ; 2       ;
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|tx_shift_empty                                                                                             ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[3]                                                                                                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[2]                                                                                                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[1]                                                                                                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|epcs_slave_select_reg[0]                                                                                 ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|timer:the_timer|period_l_register[0]                                                                                                         ; 2       ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|clr_break_line                                                                                                               ; 5       ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rst2                                                                   ; 3       ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|clr_break_line                                                                                                               ; 6       ;
+; DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|epcs_slave_select_holding_reg[0]                                                                         ; 1       ;
+; DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|stateZero                                                                                                ; 1       ;
 ; sld_hub:auto_hub|tdo                                                                                                                                                ; 2       ;
-; Total number of inverted registers = 28                                                                                                                             ;         ;
+; Total number of inverted registers = 53                                                                                                                             ;         ;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -679,55 +720,70 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                                                                                                                                                                              ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|cpu_0_instruction_master_latency_counter[0]                                                                               ;                            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_mem_byte_en[0]                                                                                                                                                           ;                            ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|Cur_Color_G[3]                                                                                                                       ;                            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|cpu_0_instruction_master_latency_counter[1]                                                                               ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src1_prelim[9]                                                                                                                                                           ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|av_ld_data_aligned_or_div[7]                                                                                                                                               ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src2_prelim[26]                                                                                                                                                          ;                            ;
-; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src2_imm[30]                                                                                                                                                             ;                            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|td_shift[10]                                                                                                         ;                            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|D_iw[13]                                                                                                                                                                   ;                            ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|Cur_Color_G[8]                                                                                                                       ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src1_prelim[10]                                                                                                                                                          ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src2_prelim[0]                                                                                                                                                           ;                            ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src2_imm[20]                                                                                                                                                             ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|av_ld_data_aligned_or_div[5]                                                                                                                                               ;                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|count[5]                                                                                                             ;                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|D_iw[20]                                                                                                                                                                   ;                            ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|unxshiftxrxd_shift_regxshift_reg_start_bit_nxx6_out[4]                                                                                                   ;                            ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|ic_fill_ap_cnt[2]                                                                                                                                                          ;                            ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|ic_fill_ap_offset[2]                                                                                                                                                       ;                            ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_control_reg_rddata[2]                                                                                                                                                    ;                            ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|ic_tag_wraddress[0]                                                                                                                                                        ;                            ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|td_shift[9]                                                                                                          ;                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|unxshiftxtx_shift_register_contentsxtx_shift_reg_outxx5_out[7]                                                                                           ;                            ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|ic_tag_wraddress[5]                                                                                                                                                        ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|unxshiftxtx_shift_register_contentsxtx_shift_reg_outxx5_out[8]                                                                                           ;                            ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|F_pc[10]                                                                                                                                                                   ;                            ;
 ; 4:1                ; 20 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonDReg[1]                                                                                   ;                            ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonDReg[21]                                                                                  ;                            ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|F_pc[12]                                                                                                                                                                   ;                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonDReg[20]                                                                                  ;                            ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 10 LEs               ; 15 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|data_to_cpu[11]                                                                                                                                        ;                            ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|data_to_cpu[9]                                                                                                                                         ;                            ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|data_to_cpu[0]                                                                                                                                         ;                            ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|data_to_cpu[3]                                                                                                                                         ;                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub|shift_reg[7]                                                                                                                                           ;                            ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|cfi_flash_0_s1_wait_counter[1]                                                                      ;                            ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|lcd_control_slave_arbitrator:the_lcd_control_slave|lcd_control_slave_wait_counter[4]                                                                                                       ;                            ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|cfi_flash_0_s1_wait_counter[2]                                                                      ;                            ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_st_data[24]                                                                                                                                                              ;                            ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonDReg[2]                                                                                   ;                            ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[37] ;                            ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonDReg[11]                                                                                  ;                            ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[36] ;                            ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[34] ;                            ;
-; 6:1                ; 13 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[5]  ;                            ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[27] ;                            ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonAReg[3]                                                                                   ;                            ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_mem_byte_en[2]                                                                                                                                                           ;                            ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break|break_readreg[30]                                                                      ;                            ;
-; 7:1                ; 21 bits   ; 84 LEs        ; 84 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush_waddr[7]                                                                                                                                                      ;                            ;
+; 6:1                ; 13 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[13] ;                            ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|sr[19] ;                            ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|MonAReg[5]                                                                                   ;                            ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_mem_byte_en[3]                                                                                                                                                           ;                            ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break|break_readreg[8]                                                                       ;                            ;
+; 7:1                ; 21 bits   ; 84 LEs        ; 84 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush_waddr[12]                                                                                                                                                     ;                            ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|td_shift[3]                                                                                                          ;                            ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|td_shift[2]                                                                                                          ;                            ;
-; 13:1               ; 6 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[5]                                                                                                                                               ;                            ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[0]                                                                                                                                               ;                            ;
+; 13:1               ; 6 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[7]                                                                                                                                               ;                            ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[1]                                                                                                                                               ;                            ;
 ; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_R[1]                                                                                                                            ;                            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_G[5]                                                                                                                            ;                            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_B[4]                                                                                                                            ;                            ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_logic_result[14]                                                                                                                                                         ;                            ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_share_counter_next_value[2]                                 ;                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_G[8]                                                                                                                            ;                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_B[0]                                                                                                                            ;                            ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_logic_result[26]                                                                                                                                                         ;                            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|sram_avalon_slave_0_arb_share_counter_next_value[2]                                                                                 ;                            ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_arb_share_counter_next_value[1]                                                                     ;                            ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|onchip_memory2_s1_arb_share_counter_next_value[2]                                                                                       ;                            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|readdata[2]                                                                                                                            ;                            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_share_set_values[2]                                         ;                            ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_wr_data_unfiltered[24]                                                                                                                                                   ;                            ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|D_dst_regnum[1]                                                                                                                                                            ;                            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|readdata[0]                                                                                                                            ;                            ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|F_ic_tag_rd_addr_nxt[1]                                                                                                                                                    ;                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_share_counter_next_value[0]                                 ;                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|cpu_0_jtag_debug_module_arb_share_counter_next_value[2]                                                                     ;                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port|epcs_epcs_control_port_arb_share_counter_next_value[1]                                                                        ;                            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|onchip_memory2_s1_arb_share_counter_next_value[0]                                                                                       ;                            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_share_set_values[0]                                         ;                            ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_wr_data_unfiltered[19]                                                                                                                                                   ;                            ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|D_dst_regnum[4]                                                                                                                                                            ;                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|readdata[3]                                                                                                                            ;                            ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|F_ic_data_rd_addr_nxt[2]                                                                                                                                                   ;                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom|altsyncram_7831:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                          ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                           ;
++---------------------------------+--------------------+------+-------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -890,6 +946,77 @@ Encoding Type:  One-Hot
 ; PRESERVE_REGISTER ; ON    ; -    ; data_out~reg0                                                                           ;
 ; PRESERVE_REGISTER ; ON    ; -    ; data_in_d1                                                                              ;
 +-------------------+-------+------+-----------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs ;
++----------------+-------------------+----------------------------------------------+
+; Parameter Name ; Value             ; Type                                         ;
++----------------+-------------------+----------------------------------------------+
+; INIT_FILE      ; epcs_boot_rom.hex ; String                                       ;
++----------------+-------------------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom ;
++------------------------------------+-------------------------+---------------------------------------------------+
+; Parameter Name                     ; Value                   ; Type                                              ;
++------------------------------------+-------------------------+---------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                       ; Untyped                                           ;
+; AUTO_CARRY_CHAINS                  ; ON                      ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                     ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                ; ON                      ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                     ; IGNORE_CASCADE                                    ;
+; WIDTH_BYTEENA                      ; 1                       ; Untyped                                           ;
+; OPERATION_MODE                     ; ROM                     ; Untyped                                           ;
+; WIDTH_A                            ; 32                      ; Signed Integer                                    ;
+; WIDTHAD_A                          ; 7                       ; Signed Integer                                    ;
+; NUMWORDS_A                         ; 128                     ; Signed Integer                                    ;
+; OUTDATA_REG_A                      ; UNREGISTERED            ; Untyped                                           ;
+; ADDRESS_ACLR_A                     ; NONE                    ; Untyped                                           ;
+; OUTDATA_ACLR_A                     ; NONE                    ; Untyped                                           ;
+; WRCONTROL_ACLR_A                   ; NONE                    ; Untyped                                           ;
+; INDATA_ACLR_A                      ; NONE                    ; Untyped                                           ;
+; BYTEENA_ACLR_A                     ; NONE                    ; Untyped                                           ;
+; WIDTH_B                            ; 1                       ; Untyped                                           ;
+; WIDTHAD_B                          ; 1                       ; Untyped                                           ;
+; NUMWORDS_B                         ; 1                       ; Untyped                                           ;
+; INDATA_REG_B                       ; CLOCK1                  ; Untyped                                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                  ; Untyped                                           ;
+; RDCONTROL_REG_B                    ; CLOCK1                  ; Untyped                                           ;
+; ADDRESS_REG_B                      ; CLOCK1                  ; Untyped                                           ;
+; OUTDATA_REG_B                      ; UNREGISTERED            ; Untyped                                           ;
+; BYTEENA_REG_B                      ; CLOCK1                  ; Untyped                                           ;
+; INDATA_ACLR_B                      ; NONE                    ; Untyped                                           ;
+; WRCONTROL_ACLR_B                   ; NONE                    ; Untyped                                           ;
+; ADDRESS_ACLR_B                     ; NONE                    ; Untyped                                           ;
+; OUTDATA_ACLR_B                     ; NONE                    ; Untyped                                           ;
+; RDCONTROL_ACLR_B                   ; NONE                    ; Untyped                                           ;
+; BYTEENA_ACLR_B                     ; NONE                    ; Untyped                                           ;
+; WIDTH_BYTEENA_A                    ; 1                       ; Untyped                                           ;
+; WIDTH_BYTEENA_B                    ; 1                       ; Untyped                                           ;
+; RAM_BLOCK_TYPE                     ; AUTO                    ; Untyped                                           ;
+; BYTE_SIZE                          ; 8                       ; Signed Integer                                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE               ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ    ; Untyped                                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ    ; Untyped                                           ;
+; INIT_FILE                          ; epcs_boot_rom_synth.hex ; Untyped                                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A                  ; Untyped                                           ;
+; MAXIMUM_DEPTH                      ; 0                       ; Untyped                                           ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                  ; Untyped                                           ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                  ; Untyped                                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                  ; Untyped                                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                  ; Untyped                                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN         ; Untyped                                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN         ; Untyped                                           ;
+; ENABLE_ECC                         ; FALSE                   ; Untyped                                           ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                   ; Untyped                                           ;
+; WIDTH_ECCSTATUS                    ; 3                       ; Untyped                                           ;
+; DEVICE_FAMILY                      ; Cyclone II              ; Untyped                                           ;
+; CBXI_PARAMETER                     ; altsyncram_7831         ; Untyped                                           ;
++------------------------------------+-------------------------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1121,33 +1248,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; scfifo Parameter Settings by Entity Instance                                                                                       ;
-+----------------------------+-------------------------------------------------------------------------------------------------------+
-; Name                       ; Value                                                                                                 ;
-+----------------------------+-------------------------------------------------------------------------------------------------------+
-; Number of entity instances ; 2                                                                                                     ;
-; Entity Instance            ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo ;
-;     -- FIFO Type           ; Single Clock                                                                                          ;
-;     -- lpm_width           ; 8                                                                                                     ;
-;     -- LPM_NUMWORDS        ; 64                                                                                                    ;
-;     -- LPM_SHOWAHEAD       ; OFF                                                                                                   ;
-;     -- USE_EAB             ; ON                                                                                                    ;
-; Entity Instance            ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo ;
-;     -- FIFO Type           ; Single Clock                                                                                          ;
-;     -- lpm_width           ; 8                                                                                                     ;
-;     -- LPM_NUMWORDS        ; 64                                                                                                    ;
-;     -- LPM_SHOWAHEAD       ; OFF                                                                                                   ;
-;     -- USE_EAB             ; ON                                                                                                    ;
-+----------------------------+-------------------------------------------------------------------------------------------------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                                                                                                 ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                                                ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                                                                    ;
+; Number of entity instances                ; 3                                                                                                                    ;
+; Entity Instance                           ; DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom                                                  ;
+;     -- OPERATION_MODE                     ; ROM                                                                                                                  ;
+;     -- WIDTH_A                            ; 32                                                                                                                   ;
+;     -- NUMWORDS_A                         ; 128                                                                                                                  ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                         ;
+;     -- WIDTH_B                            ; 1                                                                                                                    ;
+;     -- NUMWORDS_B                         ; 1                                                                                                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                               ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                         ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                 ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                            ;
 ; Entity Instance                           ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram                                   ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                                                          ;
 ;     -- WIDTH_A                            ; 32                                                                                                                   ;
@@ -1171,6 +1288,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; M4K                                                                                                                  ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                            ;
 +-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; scfifo Parameter Settings by Entity Instance                                                                                       ;
++----------------------------+-------------------------------------------------------------------------------------------------------+
+; Name                       ; Value                                                                                                 ;
++----------------------------+-------------------------------------------------------------------------------------------------------+
+; Number of entity instances ; 2                                                                                                     ;
+; Entity Instance            ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo ;
+;     -- FIFO Type           ; Single Clock                                                                                          ;
+;     -- lpm_width           ; 8                                                                                                     ;
+;     -- LPM_NUMWORDS        ; 64                                                                                                    ;
+;     -- LPM_SHOWAHEAD       ; OFF                                                                                                   ;
+;     -- USE_EAB             ; ON                                                                                                    ;
+; Entity Instance            ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo ;
+;     -- FIFO Type           ; Single Clock                                                                                          ;
+;     -- lpm_width           ; 8                                                                                                     ;
+;     -- LPM_NUMWORDS        ; 64                                                                                                    ;
+;     -- LPM_SHOWAHEAD       ; OFF                                                                                                   ;
+;     -- USE_EAB             ; ON                                                                                                    ;
++----------------------------+-------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -1255,19 +1393,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst"                                                                                                          ;
-+------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port                         ; Type   ; Severity ; Details                                                                                                  ;
-+------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; SRAM_ADDR_from_the_sram      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; SRAM_CE_N_from_the_sram      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; SRAM_DQ_to_and_from_the_sram ; Bidir  ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; SRAM_LB_N_from_the_sram      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; SRAM_OE_N_from_the_sram      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; SRAM_UB_N_from_the_sram      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; SRAM_WE_N_from_the_sram      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|tornado_epcs_atom:the_tornado_epcs_atom" ;
++------+-------+----------+--------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                        ;
++------+-------+----------+--------------------------------------------------------------------------------+
+; oe   ; Input ; Info     ; Stuck at GND                                                                   ;
++------+-------+----------+--------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port"                                        ;
++----------------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                                         ; Type   ; Severity ; Details                                                                             ;
++----------------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
+; epcs_epcs_control_port_dataavailable_from_sa ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; epcs_epcs_control_port_endofpacket_from_sa   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; epcs_epcs_control_port_readyfordata_from_sa  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------------------------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -1275,7 +1418,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:27     ;
+; Top            ; 00:00:25     ;
 +----------------+--------------+
 
 
@@ -1285,7 +1428,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Sun Dec 07 14:52:29 2014
+    Info: Processing started: Sun Dec 07 21:29:58 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file main.v
@@ -1320,7 +1463,6 @@ Warning (10034): Output port "HEX7" at main.v(148) has no driver
 Warning (10034): Output port "LEDG" at main.v(150) has no driver
 Warning (10034): Output port "LEDR" at main.v(151) has no driver
 Warning (10034): Output port "DRAM_ADDR" at main.v(160) has no driver
-Warning (10034): Output port "SRAM_ADDR" at main.v(180) has no driver
 Warning (10034): Output port "OTG_ADDR" at main.v(188) has no driver
 Warning (10034): Output port "IRDA_TXD" at main.v(156) has no driver
 Warning (10034): Output port "DRAM_LDQM" at main.v(161) has no driver
@@ -1332,11 +1474,6 @@ Warning (10034): Output port "DRAM_CS_N" at main.v(166) has no driver
 Warning (10034): Output port "DRAM_BA_0" at main.v(167) has no driver
 Warning (10034): Output port "DRAM_BA_1" at main.v(168) has no driver
 Warning (10034): Output port "DRAM_CKE" at main.v(170) has no driver
-Warning (10034): Output port "SRAM_UB_N" at main.v(181) has no driver
-Warning (10034): Output port "SRAM_LB_N" at main.v(182) has no driver
-Warning (10034): Output port "SRAM_WE_N" at main.v(183) has no driver
-Warning (10034): Output port "SRAM_CE_N" at main.v(184) has no driver
-Warning (10034): Output port "SRAM_OE_N" at main.v(185) has no driver
 Warning (10034): Output port "OTG_CS_N" at main.v(189) has no driver
 Warning (10034): Output port "OTG_RD_N" at main.v(190) has no driver
 Warning (10034): Output port "OTG_WR_N" at main.v(191) has no driver
@@ -1357,23 +1494,25 @@ Warning (10034): Output port "AUD_XCK" at main.v(248) has no driver
 Warning (10665): Bidirectional port "AUD_DACLRCK" at main.v(245) has a one-way connection to bidirectional port "AUD_ADCLRCK"
 Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:delay1"
 Warning (10230): Verilog HDL assignment warning at main.v(407): truncated value with size 32 to match size of target (28)
-Warning (12125): Using design file de2_sopc.v, which is not specified as a design file for the current project, but contains definitions for 16 design units and 16 entities in project
+Warning (12125): Using design file de2_sopc.v, which is not specified as a design file for the current project, but contains definitions for 18 design units and 18 entities in project
     Info (12023): Found entity 1: cpu_0_jtag_debug_module_arbitrator
     Info (12023): Found entity 2: cpu_0_data_master_arbitrator
     Info (12023): Found entity 3: cpu_0_instruction_master_arbitrator
-    Info (12023): Found entity 4: jtag_uart_avalon_jtag_slave_arbitrator
-    Info (12023): Found entity 5: lcd_control_slave_arbitrator
-    Info (12023): Found entity 6: onchip_memory2_s1_arbitrator
-    Info (12023): Found entity 7: sram_avalon_slave_0_arbitrator
-    Info (12023): Found entity 8: sysid_0_control_slave_arbitrator
-    Info (12023): Found entity 9: tri_state_bridge_flash_avalon_slave_arbitrator
-    Info (12023): Found entity 10: tri_state_bridge_flash_bridge_arbitrator
-    Info (12023): Found entity 11: uart_s1_arbitrator
-    Info (12023): Found entity 12: vga_0_avalon_slave_0_arbitrator
-    Info (12023): Found entity 13: DE2_SoPC_reset_clk_50_domain_synch_module
-    Info (12023): Found entity 14: DE2_SoPC
-    Info (12023): Found entity 15: cfi_flash_0_lane0_module
-    Info (12023): Found entity 16: cfi_flash_0
+    Info (12023): Found entity 4: epcs_epcs_control_port_arbitrator
+    Info (12023): Found entity 5: jtag_uart_avalon_jtag_slave_arbitrator
+    Info (12023): Found entity 6: lcd_control_slave_arbitrator
+    Info (12023): Found entity 7: onchip_memory2_s1_arbitrator
+    Info (12023): Found entity 8: sram_avalon_slave_0_arbitrator
+    Info (12023): Found entity 9: sysid_0_control_slave_arbitrator
+    Info (12023): Found entity 10: timer_s1_arbitrator
+    Info (12023): Found entity 11: tri_state_bridge_flash_avalon_slave_arbitrator
+    Info (12023): Found entity 12: tri_state_bridge_flash_bridge_arbitrator
+    Info (12023): Found entity 13: uart_s1_arbitrator
+    Info (12023): Found entity 14: vga_0_avalon_slave_0_arbitrator
+    Info (12023): Found entity 15: DE2_SoPC_reset_clk_50_domain_synch_module
+    Info (12023): Found entity 16: DE2_SoPC
+    Info (12023): Found entity 17: cfi_flash_0_lane0_module
+    Info (12023): Found entity 18: cfi_flash_0
 Info (12128): Elaborating entity "DE2_SoPC" for hierarchy "DE2_SoPC:DE2_SoPC_inst"
 Info (12128): Elaborating entity "cpu_0_jtag_debug_module_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module"
 Info (12128): Elaborating entity "cpu_0_data_master_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master"
@@ -1676,6 +1815,29 @@ Info (12133): Instantiated megafunction "DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|
     Info (12134): Parameter "sld_version" = "3"
 Info (12128): Elaborating entity "sld_virtual_jtag_impl" for hierarchy "DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst"
 Info (12131): Elaborated megafunction instantiation "DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst", which is child of megafunction instantiation "DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy"
+Info (12128): Elaborating entity "epcs_epcs_control_port_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|epcs_epcs_control_port_arbitrator:the_epcs_epcs_control_port"
+Warning (12125): Using design file epcs.v, which is not specified as a design file for the current project, but contains definitions for 3 design units and 3 entities in project
+    Info (12023): Found entity 1: epcs_sub
+    Info (12023): Found entity 2: tornado_epcs_atom
+    Info (12023): Found entity 3: epcs
+Info (12128): Elaborating entity "epcs" for hierarchy "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs"
+Info (12128): Elaborating entity "epcs_sub" for hierarchy "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|epcs_sub:the_epcs_sub"
+Info (12128): Elaborating entity "tornado_epcs_atom" for hierarchy "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|tornado_epcs_atom:the_tornado_epcs_atom"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom"
+Info (12130): Elaborated megafunction instantiation "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom"
+Info (12133): Instantiated megafunction "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom" with the following parameter:
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "init_file" = "epcs_boot_rom_synth.hex"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "128"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "widthad_a" = "7"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7831.tdf
+    Info (12023): Found entity 1: altsyncram_7831
+Info (12128): Elaborating entity "altsyncram_7831" for hierarchy "DE2_SoPC:DE2_SoPC_inst|epcs:the_epcs|altsyncram:the_boot_copier_rom|altsyncram_7831:auto_generated"
 Info (12128): Elaborating entity "jtag_uart_avalon_jtag_slave_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave"
 Warning (12125): Using design file jtag_uart.v, which is not specified as a design file for the current project, but contains definitions for 7 design units and 7 entities in project
     Info (12023): Found entity 1: jtag_uart_log_module
@@ -1761,6 +1923,10 @@ Info (12128): Elaborating entity "sysid_0_control_slave_arbitrator" for hierarch
 Warning (12125): Using design file sysid_0.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: sysid_0
 Info (12128): Elaborating entity "sysid_0" for hierarchy "DE2_SoPC:DE2_SoPC_inst|sysid_0:the_sysid_0"
+Info (12128): Elaborating entity "timer_s1_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|timer_s1_arbitrator:the_timer_s1"
+Warning (12125): Using design file timer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: timer
+Info (12128): Elaborating entity "timer" for hierarchy "DE2_SoPC:DE2_SoPC_inst|timer:the_timer"
 Info (12128): Elaborating entity "tri_state_bridge_flash_avalon_slave_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave"
 Info (12128): Elaborating entity "uart_s1_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1"
 Warning (12125): Using design file uart.v, which is not specified as a design file for the current project, but contains definitions for 7 design units and 7 entities in project
@@ -1893,7 +2059,7 @@ Info (12133): Instantiated megafunction "DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|
     Info (12134): Parameter "ONE_INPUT_IS_CONSTANT" = "NO"
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8ri.tdf
     Info (12023): Found entity 1: add_sub_8ri
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "DRAM_DQ[0]" has no driver
     Warning (13040): Bidir "DRAM_DQ[1]" has no driver
@@ -1911,22 +2077,6 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "DRAM_DQ[13]" has no driver
     Warning (13040): Bidir "DRAM_DQ[14]" has no driver
     Warning (13040): Bidir "DRAM_DQ[15]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[0]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[1]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[2]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[3]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[4]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[5]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[6]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[7]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[8]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[9]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[10]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[11]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[12]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[13]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[14]" has no driver
-    Warning (13040): Bidir "SRAM_DQ[15]" has no driver
     Warning (13040): Bidir "OTG_DATA[0]" has no driver
     Warning (13040): Bidir "OTG_DATA[1]" has no driver
     Warning (13040): Bidir "OTG_DATA[2]" has no driver
@@ -1967,23 +2117,6 @@ Warning (13039): The following bidir pins have no drivers
     Warning (13040): Bidir "AUD_DACLRCK" has no driver
 Warning (13032): The following tri-state nodes are fed by constants
     Warning (13033): The pin "SD_DAT[3]" is fed by VCC
-Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[2]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[10]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[1]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[9]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[0]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[8]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[7]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[15]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[6]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[5]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[4]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[3]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[14]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[13]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[12]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
-    Warning (13047): Converted the fan-out from the tri-state buffer "DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram|SRAM_DQ[11]" to the node "DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_readdata" into an OR gate
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13009): TRI or OPNDRN buffers permanently enabled
@@ -2097,29 +2230,6 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "DRAM_CLK" is stuck at GND
     Warning (13410): Pin "DRAM_CKE" is stuck at GND
     Warning (13410): Pin "FL_RST_N" is stuck at VCC
-    Warning (13410): Pin "SRAM_ADDR[0]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[1]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[2]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[3]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[4]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[5]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[6]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[7]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[8]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[9]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[10]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[11]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[12]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[13]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[14]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[15]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[16]" is stuck at GND
-    Warning (13410): Pin "SRAM_ADDR[17]" is stuck at GND
-    Warning (13410): Pin "SRAM_UB_N" is stuck at GND
-    Warning (13410): Pin "SRAM_LB_N" is stuck at GND
-    Warning (13410): Pin "SRAM_WE_N" is stuck at GND
-    Warning (13410): Pin "SRAM_CE_N" is stuck at GND
-    Warning (13410): Pin "SRAM_OE_N" is stuck at GND
     Warning (13410): Pin "OTG_ADDR[0]" is stuck at GND
     Warning (13410): Pin "OTG_ADDR[1]" is stuck at GND
     Warning (13410): Pin "OTG_CS_N" is stuck at GND
@@ -2193,18 +2303,18 @@ Warning (21074): Design contains 46 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "TD_HS"
     Warning (15610): No output dependent on input pin "TD_VS"
     Warning (15610): No output dependent on input pin "TD_CLK"
-Info (21057): Implemented 5154 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5689 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 53 input pins
     Info (21059): Implemented 219 output pins
     Info (21060): Implemented 161 bidirectional pins
-    Info (21061): Implemented 4445 logic cells
-    Info (21064): Implemented 271 RAM segments
+    Info (21061): Implemented 4947 logic cells
+    Info (21064): Implemented 303 RAM segments
     Info (21062): Implemented 4 DSP elements
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 417 warnings
-    Info: Peak virtual memory: 550 megabytes
-    Info: Processing ended: Sun Dec 07 14:52:56 2014
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 357 warnings
+    Info: Peak virtual memory: 558 megabytes
+    Info: Processing ended: Sun Dec 07 21:30:25 2014
     Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:25
+    Info: Total CPU time (on all processors): 00:00:27
 
 
 +------------------------------------------+
