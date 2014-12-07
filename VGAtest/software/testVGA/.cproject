@@ -106,10 +106,7 @@
 									<listOptionValue builtIn="false" value="__stdcall"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.include.paths.206968975" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\ip\Binary_VGA_Controller\inc&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/testVGA_bsp/HAL/inc}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/testVGA_bsp}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/testVGA_bsp/drivers/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="../../../ip/Binary_VGA_Controller/inc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin.1673840866" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input.cygwin"/>
 							</tool>
@@ -498,6 +495,7 @@
 					</target>
 				</buildTargets>
 			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">

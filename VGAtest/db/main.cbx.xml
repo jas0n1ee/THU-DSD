@@ -4,6 +4,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_1" CBX_FILE_NAME="mult_add_4cr2.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_0vb1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q7o1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_qed1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_tag_module:cpu_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_b5g1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2" CBX_FILE_NAME="mult_add_6cr2.tdf"/>
@@ -13,6 +14,5 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_a_module:cpu_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_irf1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_8ri.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_1n21.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q7o1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

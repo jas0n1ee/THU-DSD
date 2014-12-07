@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu_0' in SOPC Builder design 'DE2_SoPC'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/DE2_SoPC.sopcinfo
  *
- * Generated: Sun Dec 07 12:23:23 CST 2014
+ * Generated: Sun Dec 07 14:54:27 CST 2014
  */
 
 /*
@@ -286,7 +286,7 @@
 #define SYSID_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_0_NAME "/dev/sysid_0"
 #define SYSID_0_SPAN 8
-#define SYSID_0_TIMESTAMP 1417883347u
+#define SYSID_0_TIMESTAMP 1417934875u
 #define SYSID_0_TYPE "altera_avalon_sysid"
 
 
@@ -316,16 +316,16 @@
 
 
 /*
- * vga configuration
+ * vga_0 configuration
  *
  */
 
-#define ALT_MODULE_CLASS_vga binary_vga_controller
-#define VGA_BASE 0x800000
-#define VGA_IRQ -1
-#define VGA_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define VGA_NAME "/dev/vga"
-#define VGA_SPAN 2097152
-#define VGA_TYPE "binary_vga_controller"
+#define ALT_MODULE_CLASS_vga_0 binary_vga_controller
+#define VGA_0_BASE 0x800000
+#define VGA_0_IRQ -1
+#define VGA_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define VGA_0_NAME "/dev/vga_0"
+#define VGA_0_SPAN 2097152
+#define VGA_0_TYPE "binary_vga_controller"
 
 #endif /* __SYSTEM_H_ */

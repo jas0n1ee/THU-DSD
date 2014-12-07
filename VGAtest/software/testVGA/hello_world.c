@@ -16,24 +16,8 @@
 
 #include <stdio.h>
 
-
 int main()
 {
   printf("Hello from Nios II!\n");
-  // VGA Device
-    vga_controller_dev* vga;
-
-    // VGA frame buffer
-    display_frame_buffer_struct* vga_frame_buffer;
-
-    printf("+-----------------------------------------+\n");
-    printf("| Nios II VGA Controller Reference Design |\n");
-    printf("+-----------------------------------------+\n");
-
-    // Open the VGA controller peripheral and allocate the frame buffers on the heap.
-    printf(" - Initializing VGA controller.\n");
-    vga = (vga_controller_dev*)alt_vga_open_dev("/dev/vga_controller");
-    vga_frame_buffer = vga_init_no_interrupt( vga, HEAP );
-
   return 0;
 }

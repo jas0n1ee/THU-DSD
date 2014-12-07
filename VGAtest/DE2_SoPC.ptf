@@ -513,7 +513,7 @@ SYSTEM DE2_SoPC
                span = "0x00000800";
                is_bridge = "0";
             }
-            Entry vga/avalon_slave_0
+            Entry vga_0/avalon_slave_0
             {
                address = "0x00800000";
                span = "0x00200000";
@@ -1386,7 +1386,7 @@ SYSTEM DE2_SoPC
          }
       }
    }
-   MODULE vga
+   MODULE vga_0
    {
       SLAVE avalon_slave_0
       {
@@ -1578,7 +1578,7 @@ SYSTEM DE2_SoPC
       }
       HDL_INFO 
       {
-         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/Img_RAM.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_Controller.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v,__PROJECT_DIRECTORY__/vga.v";
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/Img_RAM.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_Controller.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v,__PROJECT_DIRECTORY__/vga_0.v";
       }
       WIZARD_SCRIPT_ARGUMENTS 
       {
@@ -3122,7 +3122,7 @@ SYSTEM DE2_SoPC
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>54832ED3</b> (timestamp: Sun Dec 7, 2014 @0:29 AM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5483F81B</b> (timestamp: Sun Dec 7, 2014 @2:47 PM)";
             MESSAGES 
             {
             }
@@ -3131,7 +3131,7 @@ SYSTEM DE2_SoPC
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1417883347u";
+         timestamp = "1417934875u";
          regenerate_values = "0";
          MAKE 
          {
@@ -3140,7 +3140,7 @@ SYSTEM DE2_SoPC
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00000000 --id=0 --timestamp=1417883347";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00000000 --id=0 --timestamp=1417934875";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }

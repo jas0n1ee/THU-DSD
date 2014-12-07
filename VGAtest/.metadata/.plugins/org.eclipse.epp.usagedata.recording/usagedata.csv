@@ -1,75 +1,226 @@
 what,kind,bundleId,bundleVersion,description,time
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926226646
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926234696
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926236958
-opened,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926248384
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926248498
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926254123
-opened,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926254357
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926254481
-executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.save",1417926266495
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926271436
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926278023
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926280657
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926282785
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926286251
-executed,command,,,"AUTOGEN:::org.eclipse.ui.texteditor.ruler.actions/org.eclipse.cdt.internal.ui.text.correction.CSelectRulerAction",1417926289338
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926292680
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926292955
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926293961
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926305094
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926322140
-executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.properties",1417926322178
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926325777
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926333582
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926336346
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926389961
-executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.properties",1417926390003
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926396148
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926398409
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926406492
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926411237
-error,log,,,"Unhandled event loop exception",1417926417994
-error,log,,,"An internal error occurred during: ""Compute launch button tooltip"".",1417926427481
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926427535
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926429219
-executed,command,com.altera.sbtgui.project,12.0.0.178,"com.altera.sbtgui.popupmenu.removefrombuild",1417926448315
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926449254
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926453147
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926463962
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926469026
-executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.properties",1417926469060
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926472470
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926475934
-opened,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926497404
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926497512
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926509845
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926510122
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926530147
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926531922
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926533415
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417926574652
-activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417926579161
-activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417926582698
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927736239
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927737446
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927739624
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927742447
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927743785
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927752560
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417927753653
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417929865459
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417929867556
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417929868832
-deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417929868898
-activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417929870557
-started,bundle,org.eclipse.cdt.mylyn.ui,1.1.3.v20100909-0100-e3x,"org.eclipse.cdt.mylyn.ui",1417929870753
-closed,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417929870935
-stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.1.0.201009141542,"org.eclipse.cdt.debug.mi.ui",1417929871127
-stopped,bundle,com.altera.debug.cdi.gdb.plugin,12.0.0.178,"com.altera.debug.cdi.gdb.plugin",1417929871157
-stopped,bundle,com.altera.sbtgui.launch,12.0.0.178,"com.altera.sbtgui.launch",1417929871157
-stopped,bundle,org.eclipse.cdt.debug.mi.core,7.0.1.201009141542,"org.eclipse.cdt.debug.mi.core",1417929871161
-stopped,bundle,org.eclipse.cdt.debug.ui.memory.memorybrowser,1.2.0.201009141542,"org.eclipse.cdt.debug.ui.memory.memorybrowser",1417929871164
-stopped,bundle,org.eclipse.cdt.debug.ui.memory.search,1.2.0.201009141542,"org.eclipse.cdt.debug.ui.memory.search",1417929871175
-stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.1.0.201009141542,"org.eclipse.cdt.dsf.gdb.ui",1417929871175
-stopped,bundle,org.eclipse.cdt.dsf.ui,2.1.1.201009141542,"org.eclipse.cdt.dsf.ui",1417929871178
+activated,view,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.views.ProblemView",1417933656919
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933662151
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.edit.delete",1417933693789
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.edit.delete",1417933700459
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.edit.delete",1417933706021
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.buildAll",1417933711723
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933712041
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933716514
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.save",1417933717762
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.buildAll",1417933718408
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933718770
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933722039
+activated,view,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.views.ProblemView",1417933724612
+opened,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933726210
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933726305
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.edit.delete",1417933737403
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.save",1417933745587
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.buildAll",1417933747090
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933747420
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933750736
+activated,view,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.views.ProblemView",1417933763337
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933763514
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417933776880
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933795050
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933811702
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933819455
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417933820934
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933831662
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933833757
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.cleanAction",1417933833765
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933834229
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417933838468
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933842540
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933850134
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933850814
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933852635
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933852785
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933853948
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933853983
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933855003
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933855012
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933855072
+closed,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933855072
+started,bundle,org.eclipse.cdt.mylyn.ui,1.1.3.v20100909-0100-e3x,"org.eclipse.cdt.mylyn.ui",1417933855086
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417933857739
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933861725
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933881583
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.properties",1417933881615
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933882106
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.save",1417933893958
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.buildAll",1417933895077
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933895398
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933901401
+activated,view,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.views.ProblemView",1417933903810
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417933908003
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933911532
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933920981
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.properties",1417933921011
+activated,view,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.views.ProblemView",1417933926633
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417933927478
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933931290
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933933218
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.cleanAction",1417933933230
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933933577
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933939054
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933955667
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417933959107
+executed,command,org.eclipse.ui.ide,3.6.1.M20100825-0800,"org.eclipse.ui.project.buildAll",1417934085732
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934086202
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934089214
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934098792
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934127887
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934128811
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934129309
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934129677
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934130165
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934134007
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934140041
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934143181
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934159416
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.import",1417934159427
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934165885
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934189736
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.import",1417934189747
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934189792
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934196753
+error,log,,,"Error: Error loading Managed Make project information for project Nios_II_VGA_Reference_Application.  The tool definitions used to create the project are not available.",1417934196765
+error,log,,,"Error: failed to load the build info for the old-style project",1417934196772
+error,log,,,"Error: failed to load the build info for the old-style project",1417934196779
+error,log,,,"Error: failed to load the build info for the old-style project",1417934196785
+error,log,,,"Error: failed to load the build info for the old-style project",1417934196790
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934196815
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934198404
+error,log,,,"Error: Error loading Managed Make project information for project Nios_II_VGA_Reference_Application_syslib.  The tool definitions used to create the project are not available.",1417934198415
+error,log,,,"Error: failed to load the build info for the old-style project",1417934198420
+error,log,,,"Error: failed to load the build info for the old-style project",1417934198426
+error,log,,,"Error: failed to load the build info for the old-style project",1417934198431
+error,log,,,"Error: failed to load the build info for the old-style project",1417934198435
+error,log,,,"Error: failed to load the build info for the old-style project",1417934198448
+error,log,,,"Error: failed to load the build info for the old-style project",1417934198453
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417934200711
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200868
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200874
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200880
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200886
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200891
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200897
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200902
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200908
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200943
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200954
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200959
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200965
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200970
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200975
+error,log,,,"Error: failed to load the build info for the old-style project",1417934200981
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201145
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201157
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201175
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201188
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201201
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201215
+error,log,,,"Error: failed to load the build info for the old-style project",1417934201223
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202508
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202515
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202522
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202529
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202535
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202630
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202634
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202639
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202644
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202649
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202654
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202659
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202663
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202671
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202838
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202850
+error,log,,,"Error: failed to load the build info for the old-style project",1417934202863
+error,log,,,"Error: failed to load the build info for the old-style project",1417934204245
+error,log,,,"Error: failed to load the build info for the old-style project",1417934204251
+error,log,,,"Error: failed to load the build info for the old-style project",1417934204255
+error,log,,,"Error: failed to load the build info for the old-style project",1417934204261
+error,log,,,"Error: failed to load the build info for the old-style project",1417934204265
+error,log,,,"Error: failed to load the build info for the old-style project",1417934206587
+error,log,,,"Error: failed to load the build info for the old-style project",1417934206592
+error,log,,,"Error: failed to load the build info for the old-style project",1417934206596
+error,log,,,"Error: failed to load the build info for the old-style project",1417934206601
+error,log,,,"Error: failed to load the build info for the old-style project",1417934206606
+error,log,,,"Error: failed to load the build info for the old-style project",1417934218883
+error,log,,,"Error: failed to load the build info for the old-style project",1417934219734
+error,log,,,"Error: failed to load the build info for the old-style project",1417934219748
+error,log,,,"Error: failed to load the build info for the old-style project",1417934219761
+error,log,,,"Error: failed to load the build info for the old-style project",1417934219840
+error,log,,,"Error: failed to load the build info for the old-style project",1417934219850
+error,log,,,"Error: failed to load the build info for the old-style project",1417934220014
+error,log,,,"Error: failed to load the build info for the old-style project",1417934220026
+error,log,,,"Error: failed to load the build info for the old-style project",1417934221575
+error,log,,,"Error: failed to load the build info for the old-style project",1417934221737
+error,log,,,"Error: failed to load the build info for the old-style project",1417934221911
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934222084
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934371517
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934374698
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934390111
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.file.import",1417934390123
+error,log,,,"Error: failed to load the build info for the old-style project",1417934395101
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396645
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396651
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396658
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396664
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396669
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396674
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396680
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396685
+error,log,,,"Error: failed to load the build info for the old-style project",1417934396695
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934397962
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934399826
+executed,command,org.eclipse.ltk.ui.refactoring,3.5.0.v20100526-0800,"org.eclipse.ltk.ui.refactoring.commands.deleteResources",1417934399834
+executed,command,org.eclipse.ui,3.6.1.M20100826-1330,"org.eclipse.ui.edit.delete",1417934399834
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417934413889
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934414296
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934419572
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934420047
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934727849
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417934735808
+opened,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417934736234
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417934736326
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934745516
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934750322
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934758334
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934759184
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934759703
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934815107
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934822677
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934846812
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417934847298
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935042986
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935044456
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935047365
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935048177
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935249634
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935251260
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935252837
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935253446
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935255499
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417935257450
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935260759
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935262301
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935265672
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935534187
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935534630
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935535747
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935536282
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935537619
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935538417
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935540063
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417935540120
+activated,view,org.eclipse.ui.navigator.resources,3.4.201.M20100707-0800,"org.eclipse.ui.navigator.ProjectExplorer",1417935550879
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935553498
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935556423
+activated,editor,org.eclipse.cdt.ui,5.2.1.201009141542,"org.eclipse.cdt.ui.editor.CEditor",1417935557188
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935565887
+activated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935568925
+deactivated,workbench,org.eclipse.ui.workbench,3.6.1.M20100826-1330,"",1417935569342

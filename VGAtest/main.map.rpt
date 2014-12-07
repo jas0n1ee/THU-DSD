@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Sun Dec 07 00:52:33 2014
+Sun Dec 07 14:52:56 2014
 Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -29,22 +29,22 @@ Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
  21. Source assignments for DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave
  22. Source assignments for DE2_SoPC:DE2_SoPC_inst|uart:the_uart
  23. Source assignments for DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer
- 24. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated
- 25. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1
+ 24. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated
+ 25. Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1
  26. Source assignments for DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch
  27. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo
  28. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo
  29. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2
  30. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram
  31. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer
- 32. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga
- 33. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0
- 34. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component
+ 32. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0
+ 33. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0
+ 34. Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component
  35. scfifo Parameter Settings by Entity Instance
  36. altsyncram Parameter Settings by Entity Instance
  37. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch"
- 38. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1"
- 39. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0"
+ 38. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1"
+ 39. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0"
  40. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1"
  41. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|sysid_0:the_sysid_0"
  42. Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic"
@@ -78,13 +78,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +------------------------------------+-------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 07 00:52:33 2014     ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 07 14:52:56 2014     ;
 ; Quartus II 64-Bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; main                                      ;
 ; Top-level Entity Name              ; main                                      ;
 ; Family                             ; Cyclone II                                ;
-; Total logic elements               ; 4,195                                     ;
-;     Total combinational functions  ; 3,707                                     ;
+; Total logic elements               ; 4,192                                     ;
+;     Total combinational functions  ; 3,704                                     ;
 ;     Dedicated logic registers      ; 1,904                                     ;
 ; Total registers                    ; 1904                                      ;
 ; Total pins                         ; 429                                       ;
@@ -207,7 +207,7 @@ applicable agreement for further details.
 ; ip/Binary_VGA_Controller/hdl/Img_RAM.v        ; yes             ; User Wizard-Generated File             ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/ip/Binary_VGA_Controller/hdl/Img_RAM.v        ;         ;
 ; ip/Binary_VGA_Controller/hdl/VGA_Controller.v ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/ip/Binary_VGA_Controller/hdl/VGA_Controller.v ;         ;
 ; ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v    ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v    ;         ;
-; vga.v                                         ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/vga.v                                         ;         ;
+; vga_0.v                                       ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/vga_0.v                                       ;         ;
 ; ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v      ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v      ;         ;
 ; sram.v                                        ; yes             ; User Verilog HDL File                  ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/sram.v                                        ;         ;
 ; de2_sopc.v                                    ; yes             ; Auto-Found Verilog HDL File            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/de2_sopc.v                                    ;         ;
@@ -281,6 +281,7 @@ applicable agreement for further details.
 ; altshift.inc                                  ; yes             ; Megafunction                           ; c:/altera/12.0/quartus/libraries/megafunctions/altshift.inc                                   ;         ;
 ; alt_stratix_add_sub.inc                       ; yes             ; Megafunction                           ; c:/altera/12.0/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                        ;         ;
 ; db/add_sub_8ri.tdf                            ; yes             ; Auto-Generated Megafunction            ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/db/add_sub_8ri.tdf                            ;         ;
+; vga.v                                         ; yes             ; User Verilog HDL File                  ; vga.v                                                                                         ;         ;
 +-----------------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------+---------+
 
 
@@ -289,16 +290,16 @@ applicable agreement for further details.
 +---------------------------------------------+----------+
 ; Resource                                    ; Usage    ;
 +---------------------------------------------+----------+
-; Estimated Total logic elements              ; 4,195    ;
+; Estimated Total logic elements              ; 4,192    ;
 ;                                             ;          ;
-; Total combinational functions               ; 3707     ;
+; Total combinational functions               ; 3704     ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 2213     ;
-;     -- 3 input functions                    ; 1028     ;
-;     -- <=2 input functions                  ; 466      ;
+;     -- 4 input functions                    ; 2203     ;
+;     -- 3 input functions                    ; 1033     ;
+;     -- <=2 input functions                  ; 468      ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 3321     ;
+;     -- normal mode                          ; 3318     ;
 ;     -- arithmetic mode                      ; 386      ;
 ;                                             ;          ;
 ; Total registers                             ; 1904     ;
@@ -310,7 +311,7 @@ applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 4        ;
 ; Maximum fan-out node                        ; CLOCK_50 ;
 ; Maximum fan-out                             ; 1874     ;
-; Total fan-out                               ; 25669    ;
+; Total fan-out                               ; 25648    ;
 ; Average fan-out                             ; 4.06     ;
 +---------------------------------------------+----------+
 
@@ -320,10 +321,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                         ; Library Name ;
 +-------------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |main                                                                                           ; 3707 (1)          ; 1904 (0)     ; 386560      ; 4            ; 0       ; 2         ; 429  ; 0            ; |main                                                                                                                                                                                                                                                                       ;              ;
-;    |DE2_SoPC:DE2_SoPC_inst|                                                                     ; 3546 (1)          ; 1799 (0)     ; 386560      ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst                                                                                                                                                                                                                                                ;              ;
+; |main                                                                                           ; 3704 (1)          ; 1904 (0)     ; 386560      ; 4            ; 0       ; 2         ; 429  ; 0            ; |main                                                                                                                                                                                                                                                                       ;              ;
+;    |DE2_SoPC:DE2_SoPC_inst|                                                                     ; 3543 (1)          ; 1799 (0)     ; 386560      ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst                                                                                                                                                                                                                                                ;              ;
 ;       |DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch|            ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch                                                                                                                                                                   ;              ;
-;       |cpu_0:the_cpu_0|                                                                         ; 1525 (1207)       ; 1108 (925)   ; 45568       ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
+;       |cpu_0:the_cpu_0|                                                                         ; 1524 (1208)       ; 1108 (925)   ; 45568       ; 4            ; 0       ; 2         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0                                                                                                                                                                                                                                ;              ;
 ;          |cpu_0_ic_data_module:cpu_0_ic_data|                                                   ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data                                                                                                                                                                                             ;              ;
 ;             |altsyncram:the_altsyncram|                                                         ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data|altsyncram:the_altsyncram                                                                                                                                                                   ;              ;
 ;                |altsyncram_qed1:auto_generated|                                                 ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_ic_data_module:cpu_0_ic_data|altsyncram:the_altsyncram|altsyncram_qed1:auto_generated                                                                                                                                    ;              ;
@@ -337,7 +338,7 @@ applicable agreement for further details.
 ;             |altmult_add:the_altmult_add_part_2|                                                ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2                                                                                                                                                         ;              ;
 ;                |mult_add_6cr2:auto_generated|                                                   ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2|mult_add_6cr2:auto_generated                                                                                                                            ;              ;
 ;                   |ded_mult_2o81:ded_mult1|                                                     ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_mult_cell:the_cpu_0_mult_cell|altmult_add:the_altmult_add_part_2|mult_add_6cr2:auto_generated|ded_mult_2o81:ded_mult1                                                                                                    ;              ;
-;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 208 (8)           ; 183 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
+;          |cpu_0_nios2_oci:the_cpu_0_nios2_oci|                                                  ; 205 (10)          ; 183 (0)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci                                                                                                                                                                                            ;              ;
 ;             |cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|               ; 92 (0)            ; 96 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper                                                                                                                        ;              ;
 ;                |cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|              ; 6 (6)             ; 49 (45)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk                                                      ;              ;
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer2|                        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_sysclk:the_cpu_0_jtag_debug_module_sysclk|altera_std_synchronizer:the_altera_std_synchronizer2 ;              ;
@@ -346,7 +347,7 @@ applicable agreement for further details.
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer1|                        ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer1       ;              ;
 ;                   |altera_std_synchronizer:the_altera_std_synchronizer|                         ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|cpu_0_jtag_debug_module_tck:the_cpu_0_jtag_debug_module_tck|altera_std_synchronizer:the_altera_std_synchronizer        ;              ;
 ;                |sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy|                             ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_jtag_debug_module_wrapper:the_cpu_0_jtag_debug_module_wrapper|sld_virtual_jtag_basic:cpu_0_jtag_debug_module_phy                                                                     ;              ;
-;             |cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|                                 ; 13 (13)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg                                                                                                                                          ;              ;
+;             |cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|                                 ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg                                                                                                                                          ;              ;
 ;             |cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break|                                   ; 32 (32)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_break:the_cpu_0_nios2_oci_break                                                                                                                                            ;              ;
 ;             |cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug|                                   ; 8 (8)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_debug:the_cpu_0_nios2_oci_debug                                                                                                                                            ;              ;
 ;             |cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem|                                         ; 55 (55)           ; 44 (44)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_ocimem:the_cpu_0_nios2_ocimem                                                                                                                                                  ;              ;
@@ -360,9 +361,9 @@ applicable agreement for further details.
 ;             |altsyncram:the_altsyncram|                                                         ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram                                                                                                                                                   ;              ;
 ;                |altsyncram_jrf1:auto_generated|                                                 ; 0 (0)             ; 0 (0)        ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_register_bank_b_module:cpu_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_jrf1:auto_generated                                                                                                                    ;              ;
 ;          |cpu_0_test_bench:the_cpu_0_test_bench|                                                ; 33 (33)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_test_bench:the_cpu_0_test_bench                                                                                                                                                                                          ;              ;
-;          |lpm_add_sub:Add8|                                                                     ; 77 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8                                                                                                                                                                                                               ;              ;
-;             |add_sub_8ri:auto_generated|                                                        ; 77 (77)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8|add_sub_8ri:auto_generated                                                                                                                                                                                    ;              ;
-;       |cpu_0_data_master_arbitrator:the_cpu_0_data_master|                                      ; 213 (213)         ; 67 (67)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master                                                                                                                                                                                             ;              ;
+;          |lpm_add_sub:Add8|                                                                     ; 78 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8                                                                                                                                                                                                               ;              ;
+;             |add_sub_8ri:auto_generated|                                                        ; 78 (78)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|lpm_add_sub:Add8|add_sub_8ri:auto_generated                                                                                                                                                                                    ;              ;
+;       |cpu_0_data_master_arbitrator:the_cpu_0_data_master|                                      ; 211 (211)         ; 67 (67)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master                                                                                                                                                                                             ;              ;
 ;       |cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|                        ; 127 (127)         ; 47 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master                                                                                                                                                                               ;              ;
 ;       |cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module|                          ; 47 (47)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_jtag_debug_module_arbitrator:the_cpu_0_jtag_debug_module                                                                                                                                                                                 ;              ;
 ;       |jtag_uart:the_jtag_uart|                                                                 ; 144 (40)          ; 112 (13)     ; 1024        ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart                                                                                                                                                                                                                        ;              ;
@@ -387,37 +388,37 @@ applicable agreement for further details.
 ;                      |cntr_fjb:wr_ptr|                                                          ; 6 (6)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|cntr_fjb:wr_ptr                                                                                                 ;              ;
 ;                      |dpram_5h21:FIFOram|                                                       ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram                                                                                              ;              ;
 ;                         |altsyncram_9tl1:altsyncram2|                                           ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2                                                                  ;              ;
-;       |jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave|                  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave                                                                                                                                                                         ;              ;
+;       |jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave|                  ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart_avalon_jtag_slave_arbitrator:the_jtag_uart_avalon_jtag_slave                                                                                                                                                                         ;              ;
 ;       |lcd:the_lcd|                                                                             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|lcd:the_lcd                                                                                                                                                                                                                                    ;              ;
 ;       |lcd_control_slave_arbitrator:the_lcd_control_slave|                                      ; 21 (21)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|lcd_control_slave_arbitrator:the_lcd_control_slave                                                                                                                                                                                             ;              ;
 ;       |onchip_memory2:the_onchip_memory2|                                                       ; 1 (1)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2                                                                                                                                                                                                              ;              ;
 ;          |altsyncram:the_altsyncram|                                                            ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram                                                                                                                                                                                    ;              ;
 ;             |altsyncram_0vb1:auto_generated|                                                    ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram|altsyncram_0vb1:auto_generated                                                                                                                                                     ;              ;
 ;       |onchip_memory2_s1_arbitrator:the_onchip_memory2_s1|                                      ; 44 (44)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|onchip_memory2_s1_arbitrator:the_onchip_memory2_s1                                                                                                                                                                                             ;              ;
-;       |sram:the_sram|                                                                           ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram:the_sram                                                                                                                                                                                                                                  ;              ;
-;          |SRAM_16Bit_512K:sram|                                                                 ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram                                                                                                                                                                                                             ;              ;
-;       |sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|                                  ; 41 (41)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0                                                                                                                                                                                         ;              ;
+;       |sram:the_sram|                                                                           ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram:the_sram                                                                                                                                                                                                                                  ;              ;
+;          |SRAM_16Bit_512K:sram|                                                                 ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram:the_sram|SRAM_16Bit_512K:sram                                                                                                                                                                                                             ;              ;
+;       |sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|                                  ; 43 (43)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0                                                                                                                                                                                         ;              ;
 ;       |sysid_0_control_slave_arbitrator:the_sysid_0_control_slave|                              ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|sysid_0_control_slave_arbitrator:the_sysid_0_control_slave                                                                                                                                                                                     ;              ;
-;       |tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|  ; 73 (73)           ; 61 (61)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave                                                                                                                                                         ;              ;
+;       |tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|  ; 74 (74)           ; 61 (61)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave                                                                                                                                                         ;              ;
 ;       |uart:the_uart|                                                                           ; 119 (0)           ; 92 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart                                                                                                                                                                                                                                  ;              ;
 ;          |uart_regs:the_uart_regs|                                                              ; 36 (36)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_regs:the_uart_regs                                                                                                                                                                                                          ;              ;
 ;          |uart_rx:the_uart_rx|                                                                  ; 46 (46)           ; 37 (35)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx                                                                                                                                                                                                              ;              ;
 ;             |altera_std_synchronizer:the_altera_std_synchronizer|                               ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|altera_std_synchronizer:the_altera_std_synchronizer                                                                                                                                                          ;              ;
 ;          |uart_tx:the_uart_tx|                                                                  ; 37 (37)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx                                                                                                                                                                                                              ;              ;
-;       |uart_s1_arbitrator:the_uart_s1|                                                          ; 4 (4)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1                                                                                                                                                                                                                 ;              ;
-;       |vga:the_vga|                                                                             ; 1152 (0)          ; 265 (0)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga                                                                                                                                                                                                                                    ;              ;
-;          |VGA_NIOS_CTRL:vga|                                                                    ; 1152 (109)        ; 265 (124)    ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga                                                                                                                                                                                                                  ;              ;
-;             |VGA_Controller:u0|                                                                 ; 272 (272)         ; 91 (91)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0                                                                                                                                                                                                ;              ;
-;             |VGA_OSD_RAM:u1|                                                                    ; 771 (38)          ; 50 (36)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1                                                                                                                                                                                                   ;              ;
-;                |Img_RAM:u0|                                                                     ; 733 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0                                                                                                                                                                                        ;              ;
-;                   |altsyncram:altsyncram_component|                                             ; 733 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component                                                                                                                                                        ;              ;
-;                      |altsyncram_q7o1:auto_generated|                                           ; 733 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated                                                                                                                         ;              ;
-;                         |altsyncram_p132:altsyncram1|                                           ; 733 (0)           ; 14 (14)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1                                                                                             ;              ;
-;                            |decode_1qa:decode4|                                                 ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode4                                                                          ;              ;
-;                            |decode_1qa:decode_a|                                                ; 85 (85)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_a                                                                         ;              ;
-;                            |decode_1qa:decode_b|                                                ; 93 (93)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_b                                                                         ;              ;
-;                            |mux_hkb:mux5|                                                       ; 465 (465)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_hkb:mux5                                                                                ;              ;
-;       |vga_avalon_slave_0_arbitrator:the_vga_avalon_slave_0|                                    ; 6 (6)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_avalon_slave_0_arbitrator:the_vga_avalon_slave_0                                                                                                                                                                                           ;              ;
+;       |uart_s1_arbitrator:the_uart_s1|                                                          ; 3 (3)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|uart_s1_arbitrator:the_uart_s1                                                                                                                                                                                                                 ;              ;
+;       |vga_0:the_vga_0|                                                                         ; 1151 (0)          ; 265 (0)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0                                                                                                                                                                                                                                ;              ;
+;          |VGA_NIOS_CTRL:vga_0|                                                                  ; 1151 (109)        ; 265 (124)    ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0                                                                                                                                                                                                            ;              ;
+;             |VGA_Controller:u0|                                                                 ; 272 (272)         ; 91 (91)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0                                                                                                                                                                                          ;              ;
+;             |VGA_OSD_RAM:u1|                                                                    ; 770 (38)          ; 50 (36)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1                                                                                                                                                                                             ;              ;
+;                |Img_RAM:u0|                                                                     ; 732 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0                                                                                                                                                                                  ;              ;
+;                   |altsyncram:altsyncram_component|                                             ; 732 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component                                                                                                                                                  ;              ;
+;                      |altsyncram_q7o1:auto_generated|                                           ; 732 (0)           ; 14 (0)       ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated                                                                                                                   ;              ;
+;                         |altsyncram_p132:altsyncram1|                                           ; 732 (0)           ; 14 (14)      ; 307200      ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1                                                                                       ;              ;
+;                            |decode_1qa:decode4|                                                 ; 90 (90)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode4                                                                    ;              ;
+;                            |decode_1qa:decode_a|                                                ; 85 (85)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_a                                                                   ;              ;
+;                            |decode_1qa:decode_b|                                                ; 92 (92)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_b                                                                   ;              ;
+;                            |mux_hkb:mux5|                                                       ; 465 (465)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_hkb:mux5                                                                          ;              ;
+;       |vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0|                                ; 6 (6)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0                                                                                                                                                                                       ;              ;
 ;    |Reset_Delay:delay1|                                                                         ; 38 (38)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|Reset_Delay:delay1                                                                                                                                                                                                                                                    ;              ;
 ;    |sld_hub:auto_hub|                                                                           ; 122 (81)          ; 76 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|sld_hub:auto_hub                                                                                                                                                                                                                                                      ;              ;
 ;       |sld_rom_sr:hub_info_reg|                                                                 ; 24 (24)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|sld_hub:auto_hub|sld_rom_sr:hub_info_reg                                                                                                                                                                                                                              ;              ;
@@ -439,7 +440,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_r:the_jtag_uart_scfifo_r|scfifo:rfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2|ALTSYNCRAM                                                         ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                              ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|jtag_uart_scfifo_w:the_jtag_uart_scfifo_w|scfifo:wfifo|scfifo_1n21:auto_generated|a_dpfifo_8t21:dpfifo|dpram_5h21:FIFOram|altsyncram_9tl1:altsyncram2|ALTSYNCRAM                                                         ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                              ;
 ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram|altsyncram_0vb1:auto_generated|ALTSYNCRAM                                                                                                                                            ; AUTO ; Single Port      ; 1024         ; 32           ; --           ; --           ; 32768  ; onchip_memory2.hex                ;
-; DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|ALTSYNCRAM                                                                                    ; M4K  ; True Dual Port   ; 38400        ; 8            ; 307200       ; 1            ; 307200 ; Img_DATA.hex                      ;
+; DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|ALTSYNCRAM                                                                              ; M4K  ; True Dual Port   ; 38400        ; 8            ; 307200       ; 1            ; 307200 ; Img_DATA.hex                      ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------+
 
 
@@ -461,15 +462,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                          ;
-+--------+-------------------------------+---------+--------------+--------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-; Vendor ; IP Core Name                  ; Version ; Release Date ; License Type ; Entity Instance                                                                      ; IP Include File                                                                        ;
-+--------+-------------------------------+---------+--------------+--------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
-; Altera ; sopc                          ; 12.0    ; N/A          ; N/A          ; |main|DE2_SoPC:DE2_SoPC_inst                                                         ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/de2_sopc.v                             ;
-; Altera ; Nios II Processor (6AF7_00A2) ; N/A     ; Apr 2004     ; Licensed     ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0                                         ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/cpu_0.v                                ;
-; Altera ; RAM: 2-PORT                   ; N/A     ; N/A          ; N/A          ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0 ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/ip/Binary_VGA_Controller/hdl/Img_RAM.v ;
-+--------+-------------------------------+---------+--------------+--------------+--------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                                                                                ;
++--------+-------------------------------+---------+--------------+--------------+--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+; Vendor ; IP Core Name                  ; Version ; Release Date ; License Type ; Entity Instance                                                                            ; IP Include File                                                                        ;
++--------+-------------------------------+---------+--------------+--------------+--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
+; Altera ; sopc                          ; 12.0    ; N/A          ; N/A          ; |main|DE2_SoPC:DE2_SoPC_inst                                                               ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/de2_sopc.v                             ;
+; Altera ; Nios II Processor (6AF7_00A2) ; N/A     ; Apr 2004     ; Licensed     ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0                                               ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/cpu_0.v                                ;
+; Altera ; RAM: 2-PORT                   ; N/A     ; N/A          ; N/A          ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0 ; C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/ip/Binary_VGA_Controller/hdl/Img_RAM.v ;
++--------+-------------------------------+---------+--------------+--------------+--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -551,7 +552,7 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk|E_xbrk_goto0                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_xbrk:the_cpu_0_nios2_oci_xbrk|E_xbrk_goto1                                                                                 ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_oci_im:the_cpu_0_nios2_oci_im|trc_jtag_addr[0..16]                                                                             ; Lost fanout                                                                                                                                                                                                                       ;
-; DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|oDATA[10..15]                                                                                                                                                    ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
+; DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[10..15]                                                                                                                                              ; Stuck at GND due to stuck port data_in                                                                                                                                                                                            ;
 ; DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|rst1                                                                                                                     ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|clr_break_line                                                                                                                                                                 ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[2]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[3]                                                                           ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[3]                                                                           ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[4]                                                                           ;
@@ -582,7 +583,7 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[28]                                                                          ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[29]                                                                          ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[29]                                                                          ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[30]                                                                          ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[30]                                                                          ; Merged with DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|cpu_0_nios2_oci:the_cpu_0_nios2_oci|cpu_0_nios2_avalon_reg:the_cpu_0_nios2_avalon_reg|oci_ienable[31]                                                                          ;
-; DE2_SoPC:DE2_SoPC_inst|vga_avalon_slave_0_arbitrator:the_vga_avalon_slave_0|d1_vga_avalon_slave_0_end_xfer                                                                                                            ; Merged with DE2_SoPC:DE2_SoPC_inst|vga_avalon_slave_0_arbitrator:the_vga_avalon_slave_0|d1_reasons_to_wait                                                                                                                        ;
+; DE2_SoPC:DE2_SoPC_inst|vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0|d1_vga_0_avalon_slave_0_end_xfer                                                                                                      ; Merged with DE2_SoPC:DE2_SoPC_inst|vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0|d1_reasons_to_wait                                                                                                                    ;
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|delayed_unxsync_rxdxx2                                                                                                                                       ; Merged with DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|delayed_unxsync_rxdxx1                                                                                                                                       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|d1_tri_state_bridge_flash_avalon_slave_end_xfer                                                         ; Merged with DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|d1_reasons_to_wait                                                                                      ;
 ; DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|d1_sram_avalon_slave_0_end_xfer                                                                                                         ; Merged with DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|d1_reasons_to_wait                                                                                                                      ;
@@ -648,7 +649,7 @@ Encoding Type:  One-Hot
 ; DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_tx:the_uart_tx|pre_txd                                                                                                    ; 2       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_addend[0]     ; 6       ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0_data_master_arbitrator:the_cpu_0_data_master|cpu_0_data_master_waitrequest                                                             ; 9       ;
-; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush                                                                                                                 ; 11      ;
+; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush                                                                                                                 ; 10      ;
 ; DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|hbreak_enabled                                                                                                               ; 11      ;
 ; DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|sram_avalon_slave_0_arb_addend[0]                                                     ; 6       ;
 ; DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_reg_firsttransfer ; 1       ;
@@ -679,7 +680,7 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered                                                                                                                                                                                                              ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------+
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_mem_byte_en[0]                                                                                                                                                           ;                            ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0|Cur_Color_G[3]                                                                                                                             ;                            ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|Cur_Color_G[3]                                                                                                                       ;                            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0_instruction_master_arbitrator:the_cpu_0_instruction_master|cpu_0_instruction_master_latency_counter[1]                                                                               ;                            ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_src1_prelim[9]                                                                                                                                                           ;                            ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|av_ld_data_aligned_or_div[7]                                                                                                                                               ;                            ;
@@ -710,11 +711,11 @@ Encoding Type:  One-Hot
 ; 7:1                ; 21 bits   ; 84 LEs        ; 84 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|M_pipe_flush_waddr[7]                                                                                                                                                      ;                            ;
 ; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|td_shift[3]                                                                                                          ;                            ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|jtag_uart:the_jtag_uart|alt_jtag_atlantic:jtag_uart_alt_jtag_atlantic|td_shift[2]                                                                                                          ;                            ;
-; 13:1               ; 6 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|oDATA[5]                                                                                                                                                     ;                            ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|oDATA[0]                                                                                                                                                     ;                            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0|oVGA_R[1]                                                                                                                                  ;                            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0|oVGA_G[5]                                                                                                                                  ;                            ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0|oVGA_B[4]                                                                                                                                  ;                            ;
+; 13:1               ; 6 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[5]                                                                                                                                               ;                            ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|oDATA[0]                                                                                                                                               ;                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_R[1]                                                                                                                            ;                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_G[5]                                                                                                                            ;                            ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; |main|DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0|oVGA_B[4]                                                                                                                            ;                            ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|cpu_0:the_cpu_0|E_logic_result[14]                                                                                                                                                         ;                            ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|tri_state_bridge_flash_avalon_slave_arbitrator:the_tri_state_bridge_flash_avalon_slave|tri_state_bridge_flash_avalon_slave_arb_share_counter_next_value[2]                                 ;                            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; |main|DE2_SoPC:DE2_SoPC_inst|sram_avalon_slave_0_arbitrator:the_sram_avalon_slave_0|sram_avalon_slave_0_arb_share_counter_next_value[2]                                                                                 ;                            ;
@@ -862,22 +863,22 @@ Encoding Type:  One-Hot
 +-----------------------------+------------------------+------+-----------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                                     ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                      ;
-+---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                           ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                            ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1 ;
-+---------------------------------+--------------------+------+------------------------------------------------------------------------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                                                                                 ;
-+---------------------------------+--------------------+------+------------------------------------------------------------------------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                                  ;
-+---------------------------------+--------------------+------+------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1 ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                                                       ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                                        ;
++---------------------------------+--------------------+------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -1028,95 +1029,95 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga ;
-+----------------+--------+-------------------------------------------------------------------------+
-; Parameter Name ; Value  ; Type                                                                    ;
-+----------------+--------+-------------------------------------------------------------------------+
-; RAM_SIZE       ; 307200 ; Signed Integer                                                          ;
-+----------------+--------+-------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0 ;
++----------------+--------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value  ; Type                                                                          ;
++----------------+--------+-------------------------------------------------------------------------------+
+; RAM_SIZE       ; 307200 ; Signed Integer                                                                ;
++----------------+--------+-------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0 ;
-+----------------+-------+--------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------------+
-; H_SYNC_CYC     ; 96    ; Signed Integer                                                                             ;
-; H_SYNC_BACK    ; 48    ; Signed Integer                                                                             ;
-; H_SYNC_ACT     ; 640   ; Signed Integer                                                                             ;
-; H_SYNC_FRONT   ; 16    ; Signed Integer                                                                             ;
-; H_SYNC_TOTAL   ; 800   ; Signed Integer                                                                             ;
-; V_SYNC_CYC     ; 2     ; Signed Integer                                                                             ;
-; V_SYNC_BACK    ; 32    ; Signed Integer                                                                             ;
-; V_SYNC_ACT     ; 480   ; Signed Integer                                                                             ;
-; V_SYNC_FRONT   ; 11    ; Signed Integer                                                                             ;
-; V_SYNC_TOTAL   ; 525   ; Signed Integer                                                                             ;
-; X_START        ; 148   ; Signed Integer                                                                             ;
-; Y_START        ; 34    ; Signed Integer                                                                             ;
-+----------------+-------+--------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0 ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; H_SYNC_CYC     ; 96    ; Signed Integer                                                                                   ;
+; H_SYNC_BACK    ; 48    ; Signed Integer                                                                                   ;
+; H_SYNC_ACT     ; 640   ; Signed Integer                                                                                   ;
+; H_SYNC_FRONT   ; 16    ; Signed Integer                                                                                   ;
+; H_SYNC_TOTAL   ; 800   ; Signed Integer                                                                                   ;
+; V_SYNC_CYC     ; 2     ; Signed Integer                                                                                   ;
+; V_SYNC_BACK    ; 32    ; Signed Integer                                                                                   ;
+; V_SYNC_ACT     ; 480   ; Signed Integer                                                                                   ;
+; V_SYNC_FRONT   ; 11    ; Signed Integer                                                                                   ;
+; V_SYNC_TOTAL   ; 525   ; Signed Integer                                                                                   ;
+; X_START        ; 148   ; Signed Integer                                                                                   ;
+; Y_START        ; 34    ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-------------------------------------------------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                                                            ;
-+------------------------------------+----------------------+-------------------------------------------------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                                         ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                                      ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                                                    ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                                                    ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                                  ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                                         ;
-; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                                         ;
-; WIDTH_A                            ; 1                    ; Signed Integer                                                                                  ;
-; WIDTHAD_A                          ; 19                   ; Signed Integer                                                                                  ;
-; NUMWORDS_A                         ; 307200               ; Signed Integer                                                                                  ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                                         ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                                         ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                                         ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                                         ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                                         ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                                         ;
-; WIDTH_B                            ; 8                    ; Signed Integer                                                                                  ;
-; WIDTHAD_B                          ; 16                   ; Signed Integer                                                                                  ;
-; NUMWORDS_B                         ; 38400                ; Signed Integer                                                                                  ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                                         ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                                         ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                                         ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                                                         ;
-; OUTDATA_REG_B                      ; CLOCK1               ; Untyped                                                                                         ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                                         ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                                         ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                                         ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                                         ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                                         ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                                         ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                                         ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                                                  ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                                         ;
-; RAM_BLOCK_TYPE                     ; M4K                  ; Untyped                                                                                         ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                                                                         ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                                         ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                                         ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                                         ;
-; INIT_FILE                          ; Img_DATA.hex         ; Untyped                                                                                         ;
-; INIT_FILE_LAYOUT                   ; PORT_B               ; Untyped                                                                                         ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                                         ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                                         ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                                                         ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                                                         ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                                                         ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                                         ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                                         ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                                                                         ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                                         ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                                         ;
-; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                                                                         ;
-; CBXI_PARAMETER                     ; altsyncram_q7o1      ; Untyped                                                                                         ;
-+------------------------------------+----------------------+-------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                                                  ;
++------------------------------------+----------------------+-------------------------------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                                               ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                                            ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                                                          ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                                                          ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                                        ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                                               ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                                               ;
+; WIDTH_A                            ; 1                    ; Signed Integer                                                                                        ;
+; WIDTHAD_A                          ; 19                   ; Signed Integer                                                                                        ;
+; NUMWORDS_A                         ; 307200               ; Signed Integer                                                                                        ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                                               ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                                               ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                                               ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                                               ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                                               ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                                               ;
+; WIDTH_B                            ; 8                    ; Signed Integer                                                                                        ;
+; WIDTHAD_B                          ; 16                   ; Signed Integer                                                                                        ;
+; NUMWORDS_B                         ; 38400                ; Signed Integer                                                                                        ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                                               ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                                               ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                                               ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                                                               ;
+; OUTDATA_REG_B                      ; CLOCK1               ; Untyped                                                                                               ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                                               ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                                               ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                                               ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                                               ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                                               ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                                               ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                                               ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                                                        ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                                               ;
+; RAM_BLOCK_TYPE                     ; M4K                  ; Untyped                                                                                               ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                                               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                                               ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                                               ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                                               ;
+; INIT_FILE                          ; Img_DATA.hex         ; Untyped                                                                                               ;
+; INIT_FILE_LAYOUT                   ; PORT_B               ; Untyped                                                                                               ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                                               ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                                               ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                                                               ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                                                               ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                                                               ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                                               ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                                               ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                                               ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                                               ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                                               ;
+; DEVICE_FAMILY                      ; Cyclone II           ; Untyped                                                                                               ;
+; CBXI_PARAMETER                     ; altsyncram_q7o1      ; Untyped                                                                                               ;
++------------------------------------+----------------------+-------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1141,35 +1142,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+-------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                                                           ;
-+-------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-; Name                                      ; Value                                                                                                          ;
-+-------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                                                              ;
-; Entity Instance                           ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram                             ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                                                    ;
-;     -- WIDTH_A                            ; 32                                                                                                             ;
-;     -- NUMWORDS_A                         ; 1024                                                                                                           ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                   ;
-;     -- WIDTH_B                            ; 1                                                                                                              ;
-;     -- NUMWORDS_B                         ; 1                                                                                                              ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                         ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                   ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                           ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                      ;
-; Entity Instance                           ; DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                                                                                                      ;
-;     -- WIDTH_A                            ; 1                                                                                                              ;
-;     -- NUMWORDS_A                         ; 307200                                                                                                         ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                   ;
-;     -- WIDTH_B                            ; 8                                                                                                              ;
-;     -- NUMWORDS_B                         ; 38400                                                                                                          ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                         ;
-;     -- OUTDATA_REG_B                      ; CLOCK1                                                                                                         ;
-;     -- RAM_BLOCK_TYPE                     ; M4K                                                                                                            ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                      ;
-+-------------------------------------------+----------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                                                                 ;
++-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                                                                ;
++-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                                                                    ;
+; Entity Instance                           ; DE2_SoPC:DE2_SoPC_inst|onchip_memory2:the_onchip_memory2|altsyncram:the_altsyncram                                   ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                                                          ;
+;     -- WIDTH_A                            ; 32                                                                                                                   ;
+;     -- NUMWORDS_A                         ; 1024                                                                                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                         ;
+;     -- WIDTH_B                            ; 1                                                                                                                    ;
+;     -- NUMWORDS_B                         ; 1                                                                                                                    ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                               ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                         ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                 ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                            ;
+; Entity Instance                           ; DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                                                            ;
+;     -- WIDTH_A                            ; 1                                                                                                                    ;
+;     -- NUMWORDS_A                         ; 307200                                                                                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                         ;
+;     -- WIDTH_B                            ; 8                                                                                                                    ;
+;     -- NUMWORDS_B                         ; 38400                                                                                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                               ;
+;     -- OUTDATA_REG_B                      ; CLOCK1                                                                                                               ;
+;     -- RAM_BLOCK_TYPE                     ; M4K                                                                                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                            ;
++-------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -1182,7 +1183,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1"                                                                                                                  ;
+; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1"                                                                                                            ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type  ; Severity ; Details                                                                                                                                                                            ;
 +----------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1191,7 +1192,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0"                                                             ;
+; Port Connectivity Checks: "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0"                                                       ;
 +----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
 ; Port     ; Type   ; Severity ; Details                                                                                                                         ;
 +----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -1274,7 +1275,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:29     ;
+; Top            ; 00:00:27     ;
 +----------------+--------------+
 
 
@@ -1284,7 +1285,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Sun Dec 07 00:52:01 2014
+    Info: Processing started: Sun Dec 07 14:52:29 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 2 entities, in source file main.v
@@ -1298,8 +1299,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file ip/bina
     Info (12023): Found entity 1: VGA_Controller
 Info (12021): Found 1 design units, including 1 entities, in source file ip/binary_vga_controller/hdl/vga_osd_ram.v
     Info (12023): Found entity 1: VGA_OSD_RAM
-Info (12021): Found 1 design units, including 1 entities, in source file vga.v
-    Info (12023): Found entity 1: vga
+Info (12021): Found 1 design units, including 1 entities, in source file vga_0.v
+    Info (12023): Found entity 1: vga_0
 Info (12021): Found 1 design units, including 1 entities, in source file ip/sram_16bit_512k/hdl/sram_16bit_512k.v
     Info (12023): Found entity 1: SRAM_16Bit_512K
 Info (12021): Found 1 design units, including 1 entities, in source file sram.v
@@ -1368,7 +1369,7 @@ Warning (12125): Using design file de2_sopc.v, which is not specified as a desig
     Info (12023): Found entity 9: tri_state_bridge_flash_avalon_slave_arbitrator
     Info (12023): Found entity 10: tri_state_bridge_flash_bridge_arbitrator
     Info (12023): Found entity 11: uart_s1_arbitrator
-    Info (12023): Found entity 12: vga_avalon_slave_0_arbitrator
+    Info (12023): Found entity 12: vga_0_avalon_slave_0_arbitrator
     Info (12023): Found entity 13: DE2_SoPC_reset_clk_50_domain_synch_module
     Info (12023): Found entity 14: DE2_SoPC
     Info (12023): Found entity 15: cfi_flash_0_lane0_module
@@ -1775,9 +1776,9 @@ Info (12128): Elaborating entity "uart_tx" for hierarchy "DE2_SoPC:DE2_SoPC_inst
 Info (12128): Elaborating entity "uart_rx" for hierarchy "DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx"
 Info (12128): Elaborating entity "uart_rx_stimulus_source" for hierarchy "DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_rx:the_uart_rx|uart_rx_stimulus_source:the_uart_rx_stimulus_source"
 Info (12128): Elaborating entity "uart_regs" for hierarchy "DE2_SoPC:DE2_SoPC_inst|uart:the_uart|uart_regs:the_uart_regs"
-Info (12128): Elaborating entity "vga_avalon_slave_0_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_avalon_slave_0_arbitrator:the_vga_avalon_slave_0"
-Info (12128): Elaborating entity "vga" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga"
-Info (12128): Elaborating entity "VGA_NIOS_CTRL" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga"
+Info (12128): Elaborating entity "vga_0_avalon_slave_0_arbitrator" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0_avalon_slave_0_arbitrator:the_vga_0_avalon_slave_0"
+Info (12128): Elaborating entity "vga_0" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0"
+Info (12128): Elaborating entity "VGA_NIOS_CTRL" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0"
 Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(83): truncated value with size 16 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(84): truncated value with size 16 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(85): truncated value with size 16 to match size of target (10)
@@ -1790,7 +1791,7 @@ Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(91): truncate
 Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(92): truncated value with size 16 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(93): truncated value with size 16 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_NIOS_CTRL.v(94): truncated value with size 16 to match size of target (10)
-Info (12128): Elaborating entity "VGA_Controller" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_Controller:u0"
+Info (12128): Elaborating entity "VGA_Controller" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_Controller:u0"
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(76): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(79): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(82): truncated value with size 32 to match size of target (10)
@@ -1799,11 +1800,11 @@ Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(101): trunca
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(102): truncated value with size 32 to match size of target (20)
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(161): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at VGA_Controller.v(187): truncated value with size 32 to match size of target (10)
-Info (12128): Elaborating entity "VGA_OSD_RAM" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1"
-Info (12128): Elaborating entity "Img_RAM" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component"
-Info (12130): Elaborated megafunction instantiation "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component"
-Info (12133): Instantiated megafunction "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" with the following parameter:
+Info (12128): Elaborating entity "VGA_OSD_RAM" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1"
+Info (12128): Elaborating entity "Img_RAM" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "ram_block_type" = "M4K"
     Info (12134): Parameter "operation_mode" = "DUAL_PORT"
@@ -1826,21 +1827,21 @@ Info (12133): Instantiated megafunction "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_
     Info (12134): Parameter "init_file_layout" = "PORT_B"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_q7o1.tdf
     Info (12023): Found entity 1: altsyncram_q7o1
-Info (12128): Elaborating entity "altsyncram_q7o1" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated"
+Info (12128): Elaborating entity "altsyncram_q7o1" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_p132.tdf
     Info (12023): Found entity 1: altsyncram_p132
-Info (12128): Elaborating entity "altsyncram_p132" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1"
+Info (12128): Elaborating entity "altsyncram_p132" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1"
 Warning (287013): Variable or input pin "clocken1" is defined but never used.
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_1qa.tdf
     Info (12023): Found entity 1: decode_1qa
-Info (12128): Elaborating entity "decode_1qa" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode3"
-Info (12128): Elaborating entity "decode_1qa" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_a"
+Info (12128): Elaborating entity "decode_1qa" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode3"
+Info (12128): Elaborating entity "decode_1qa" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|decode_1qa:decode_a"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_hkb.tdf
     Info (12023): Found entity 1: mux_hkb
-Info (12128): Elaborating entity "mux_hkb" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_hkb:mux5"
+Info (12128): Elaborating entity "mux_hkb" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_hkb:mux5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_akb.tdf
     Info (12023): Found entity 1: mux_akb
-Info (12128): Elaborating entity "mux_akb" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga:the_vga|VGA_NIOS_CTRL:vga|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_akb:mux6"
+Info (12128): Elaborating entity "mux_akb" for hierarchy "DE2_SoPC:DE2_SoPC_inst|vga_0:the_vga_0|VGA_NIOS_CTRL:vga_0|VGA_OSD_RAM:u1|Img_RAM:u0|altsyncram:altsyncram_component|altsyncram_q7o1:auto_generated|altsyncram_p132:altsyncram1|mux_akb:mux6"
 Info (12128): Elaborating entity "DE2_SoPC_reset_clk_50_domain_synch_module" for hierarchy "DE2_SoPC:DE2_SoPC_inst|DE2_SoPC_reset_clk_50_domain_synch_module:DE2_SoPC_reset_clk_50_domain_synch"
 Warning (12020): Port "address_b" on the entity instantiation of "cpu_0_traceram_lpm_dram_bdp_component" is connected to a signal of width 17. The formal width of the signal in the module is 7.  The extra bits will be ignored.
 Warning (12020): Port "jdo" on the entity instantiation of "the_cpu_0_nios2_oci_itrace" is connected to a signal of width 38. The formal width of the signal in the module is 16.  The extra bits will be ignored.
@@ -2192,18 +2193,18 @@ Warning (21074): Design contains 46 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "TD_HS"
     Warning (15610): No output dependent on input pin "TD_VS"
     Warning (15610): No output dependent on input pin "TD_CLK"
-Info (21057): Implemented 5157 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5154 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 53 input pins
     Info (21059): Implemented 219 output pins
     Info (21060): Implemented 161 bidirectional pins
-    Info (21061): Implemented 4448 logic cells
+    Info (21061): Implemented 4445 logic cells
     Info (21064): Implemented 271 RAM segments
     Info (21062): Implemented 4 DSP elements
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 417 warnings
-    Info: Peak virtual memory: 564 megabytes
-    Info: Processing ended: Sun Dec 07 00:52:33 2014
-    Info: Elapsed time: 00:00:32
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 550 megabytes
+    Info: Processing ended: Sun Dec 07 14:52:56 2014
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:25
 
 
 +------------------------------------------+

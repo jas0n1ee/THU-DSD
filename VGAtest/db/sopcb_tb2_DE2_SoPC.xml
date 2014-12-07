@@ -585,7 +585,7 @@
    <SOPCModuleParameter>
     <C>117</C>
     <Name>dataSlaveMapParam</Name>
-    <Value><![CDATA[<address-map><slave name='sysid_0.control_slave' start='0x0' end='0x8' /><slave name='cfi_flash_0.s1' start='0x400000' end='0x800000' /><slave name='vga.avalon_slave_0' start='0x800000' end='0xA00000' /><slave name='sram.avalon_slave_0' start='0xA80000' end='0xB00000' /><slave name='onchip_memory2.s1' start='0xB01000' end='0xB02000' /><slave name='cpu_0.jtag_debug_module' start='0xB02800' end='0xB03000' /><slave name='uart.s1' start='0xB03000' end='0xB03020' /><slave name='lcd.control_slave' start='0xB03020' end='0xB03030' /><slave name='jtag_uart.avalon_jtag_slave' start='0xB03030' end='0xB03038' /></address-map>]]></Value>
+    <Value><![CDATA[<address-map><slave name='sysid_0.control_slave' start='0x0' end='0x8' /><slave name='cfi_flash_0.s1' start='0x400000' end='0x800000' /><slave name='vga_0.avalon_slave_0' start='0x800000' end='0xA00000' /><slave name='sram.avalon_slave_0' start='0xA80000' end='0xB00000' /><slave name='onchip_memory2.s1' start='0xB01000' end='0xB02000' /><slave name='cpu_0.jtag_debug_module' start='0xB02800' end='0xB03000' /><slave name='uart.s1' start='0xB03000' end='0xB03020' /><slave name='lcd.control_slave' start='0xB03020' end='0xB03030' /><slave name='jtag_uart.avalon_jtag_slave' start='0xB03030' end='0xB03038' /></address-map>]]></Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>118</C>
@@ -1616,10 +1616,10 @@
    <SOPCModuleParameter>
     <C>320</C>
     <Name>timestamp</Name>
-    <Value>1417883347</Value>
+    <Value>1417934875</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>544197725</SystemID>
+  <SystemID>595712747</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2011-12-20</SchemaVersion>
 </ProgramExecution>

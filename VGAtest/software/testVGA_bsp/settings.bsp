@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2014-12-7 12:23:23</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1417926203142</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2014-12-7 14:59:15</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1417935555279</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\software\testVGA_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Jason\Documents\Github\THU-DSD\VGAtest\DE2_SoPC.sopcinfo</SopcDesignFile>
@@ -887,7 +887,7 @@
                 <attributes>flash, memory, non-volatile</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>vga</slaveDescriptor>
+                <slaveDescriptor>vga_0</slaveDescriptor>
                 <addressRange>0x00800000 - 0x009FFFFF</addressRange>
                 <addressSpan>2097152</addressSpan>
                 <attributes/>

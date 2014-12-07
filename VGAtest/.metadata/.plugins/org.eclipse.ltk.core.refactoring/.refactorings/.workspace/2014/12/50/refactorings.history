@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 2 resources" deleteContents="false" description="Delete 2 resources" element1="/Nios_II_VGA_Reference_Application" element2="/Nios_II_VGA_Reference_Application_syslib" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="2" stamp="1417934399727"/>
+</session>

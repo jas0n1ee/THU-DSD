@@ -373,15 +373,15 @@ DE2_SoPC DE2_SoPC_inst
       .rxd_to_the_uart					   (UART_RXD),
       .txd_from_the_uart				   (UART_TXD),
      //vga  
-      .VGA_BLANK_from_the_vga				(VGA_BLANK),
-      .VGA_B_from_the_vga					(VGA_B),
-      .VGA_CLK_from_the_vga					(VGA_CLK),
-      .VGA_G_from_the_vga					(VGA_G),
-      .VGA_HS_from_the_vga					(VGA_HS),
-      .VGA_R_from_the_vga					(VGA_R),
-      .VGA_SYNC_from_the_vga				(VGA_SYNC),
-      .VGA_VS_from_the_vga					(VGA_VS),
-      .iCLK_25_to_the_vga					(CLOCK_27)
+      .VGA_BLANK_from_the_vga_0				(VGA_BLANK),
+      .VGA_B_from_the_vga_0					(VGA_B),
+      .VGA_CLK_from_the_vga_0					(VGA_CLK),
+      .VGA_G_from_the_vga_0					(VGA_G),
+      .VGA_HS_from_the_vga_0					(VGA_HS),
+      .VGA_R_from_the_vga_0					(VGA_R),
+      .VGA_SYNC_from_the_vga_0				(VGA_SYNC),
+      .VGA_VS_from_the_vga_0					(VGA_VS),
+      .iCLK_25_to_the_vga_0					(CLOCK_27)
 		);
 ///////////////////////////////////////////////////////////////////////////////////
 

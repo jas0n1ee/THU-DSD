@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for main
-Sun Dec 07 00:53:05 2014
+Sun Dec 07 14:53:27 2014
 Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; cpu_0.sdc     ; OK     ; Sun Dec 07 00:53:04 2014 ;
+; cpu_0.sdc     ; OK     ; Sun Dec 07 14:53:26 2014 ;
 +---------------+--------+--------------------------+
 
 
@@ -160,8 +160,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 8.809  ;       ;       ; 8.809  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.156 ; 5.156 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.029 ;       ;       ; 10.029 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.157 ; 5.157 ;        ;
+; KEY[0]      ; TD_RESET    ; 10.020 ;       ;       ; 10.020 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -171,8 +171,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 8.809  ;       ;       ; 8.809  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.156 ; 5.156 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.029 ;       ;       ; 10.029 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.157 ; 5.157 ;        ;
+; KEY[0]      ; TD_RESET    ; 10.020 ;       ;       ; 10.020 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -225,7 +225,7 @@ No paths to report.
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
 ; CLOCK_27    ; VGA_CLK     ;       ; 2.793 ; 2.793 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.733 ;       ;       ; 5.733 ;
+; KEY[0]      ; TD_RESET    ; 5.731 ;       ;       ; 5.731 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -236,7 +236,7 @@ No paths to report.
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
 ; CLOCK_27    ; VGA_CLK     ;       ; 2.793 ; 2.793 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.733 ;       ;       ; 5.733 ;
+; KEY[0]      ; TD_RESET    ; 5.731 ;       ;       ; 5.731 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -258,8 +258,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 8.809  ;       ;       ; 8.809  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.156 ; 5.156 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.029 ;       ;       ; 10.029 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.157 ; 5.157 ;        ;
+; KEY[0]      ; TD_RESET    ; 10.020 ;       ;       ; 10.020 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -270,7 +270,7 @@ No paths to report.
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
 ; CLOCK_27    ; VGA_CLK     ;       ; 2.793 ; 2.793 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.733 ;       ;       ; 5.733 ;
+; KEY[0]      ; TD_RESET    ; 5.731 ;       ;       ; 5.731 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -312,7 +312,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Sun Dec 07 00:53:02 2014
+    Info: Processing started: Sun Dec 07 14:53:24 2014
 Info: Command: quartus_sta main -c main
 Info: qsta_default_script.tcl version: #4
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -381,8 +381,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 457 megabytes
-    Info: Processing ended: Sun Dec 07 00:53:05 2014
+    Info: Peak virtual memory: 467 megabytes
+    Info: Processing ended: Sun Dec 07 14:53:27 2014
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
