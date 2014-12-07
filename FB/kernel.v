@@ -23,6 +23,300 @@
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
+module binary_vga_avalon_slave_0_arbitrator (
+                                              // inputs:
+                                               binary_vga_avalon_slave_0_readdata,
+                                               clk,
+                                               cpu_data_master_address_to_slave,
+                                               cpu_data_master_read,
+                                               cpu_data_master_write,
+                                               cpu_data_master_writedata,
+                                               reset_n,
+
+                                              // outputs:
+                                               binary_vga_avalon_slave_0_address,
+                                               binary_vga_avalon_slave_0_chipselect,
+                                               binary_vga_avalon_slave_0_read,
+                                               binary_vga_avalon_slave_0_readdata_from_sa,
+                                               binary_vga_avalon_slave_0_reset_n,
+                                               binary_vga_avalon_slave_0_wait_counter_eq_0,
+                                               binary_vga_avalon_slave_0_write,
+                                               binary_vga_avalon_slave_0_writedata,
+                                               cpu_data_master_granted_binary_vga_avalon_slave_0,
+                                               cpu_data_master_qualified_request_binary_vga_avalon_slave_0,
+                                               cpu_data_master_read_data_valid_binary_vga_avalon_slave_0,
+                                               cpu_data_master_requests_binary_vga_avalon_slave_0,
+                                               d1_binary_vga_avalon_slave_0_end_xfer
+                                            )
+;
+
+  output  [ 18: 0] binary_vga_avalon_slave_0_address;
+  output           binary_vga_avalon_slave_0_chipselect;
+  output           binary_vga_avalon_slave_0_read;
+  output  [ 15: 0] binary_vga_avalon_slave_0_readdata_from_sa;
+  output           binary_vga_avalon_slave_0_reset_n;
+  output           binary_vga_avalon_slave_0_wait_counter_eq_0;
+  output           binary_vga_avalon_slave_0_write;
+  output  [ 15: 0] binary_vga_avalon_slave_0_writedata;
+  output           cpu_data_master_granted_binary_vga_avalon_slave_0;
+  output           cpu_data_master_qualified_request_binary_vga_avalon_slave_0;
+  output           cpu_data_master_read_data_valid_binary_vga_avalon_slave_0;
+  output           cpu_data_master_requests_binary_vga_avalon_slave_0;
+  output           d1_binary_vga_avalon_slave_0_end_xfer;
+  input   [ 15: 0] binary_vga_avalon_slave_0_readdata;
+  input            clk;
+  input   [ 23: 0] cpu_data_master_address_to_slave;
+  input            cpu_data_master_read;
+  input            cpu_data_master_write;
+  input   [ 31: 0] cpu_data_master_writedata;
+  input            reset_n;
+
+  wire    [ 18: 0] binary_vga_avalon_slave_0_address;
+  wire             binary_vga_avalon_slave_0_allgrants;
+  wire             binary_vga_avalon_slave_0_allow_new_arb_cycle;
+  wire             binary_vga_avalon_slave_0_any_bursting_master_saved_grant;
+  wire             binary_vga_avalon_slave_0_any_continuerequest;
+  wire             binary_vga_avalon_slave_0_arb_counter_enable;
+  reg     [  2: 0] binary_vga_avalon_slave_0_arb_share_counter;
+  wire    [  2: 0] binary_vga_avalon_slave_0_arb_share_counter_next_value;
+  wire    [  2: 0] binary_vga_avalon_slave_0_arb_share_set_values;
+  wire             binary_vga_avalon_slave_0_beginbursttransfer_internal;
+  wire             binary_vga_avalon_slave_0_begins_xfer;
+  wire             binary_vga_avalon_slave_0_chipselect;
+  wire             binary_vga_avalon_slave_0_counter_load_value;
+  wire             binary_vga_avalon_slave_0_end_xfer;
+  wire             binary_vga_avalon_slave_0_firsttransfer;
+  wire             binary_vga_avalon_slave_0_grant_vector;
+  wire             binary_vga_avalon_slave_0_in_a_read_cycle;
+  wire             binary_vga_avalon_slave_0_in_a_write_cycle;
+  wire             binary_vga_avalon_slave_0_master_qreq_vector;
+  wire             binary_vga_avalon_slave_0_non_bursting_master_requests;
+  wire             binary_vga_avalon_slave_0_read;
+  wire    [ 15: 0] binary_vga_avalon_slave_0_readdata_from_sa;
+  reg              binary_vga_avalon_slave_0_reg_firsttransfer;
+  wire             binary_vga_avalon_slave_0_reset_n;
+  reg              binary_vga_avalon_slave_0_slavearbiterlockenable;
+  wire             binary_vga_avalon_slave_0_slavearbiterlockenable2;
+  wire             binary_vga_avalon_slave_0_unreg_firsttransfer;
+  reg              binary_vga_avalon_slave_0_wait_counter;
+  wire             binary_vga_avalon_slave_0_wait_counter_eq_0;
+  wire             binary_vga_avalon_slave_0_waits_for_read;
+  wire             binary_vga_avalon_slave_0_waits_for_write;
+  wire             binary_vga_avalon_slave_0_write;
+  wire    [ 15: 0] binary_vga_avalon_slave_0_writedata;
+  wire             cpu_data_master_arbiterlock;
+  wire             cpu_data_master_arbiterlock2;
+  wire             cpu_data_master_continuerequest;
+  wire             cpu_data_master_granted_binary_vga_avalon_slave_0;
+  wire             cpu_data_master_qualified_request_binary_vga_avalon_slave_0;
+  wire             cpu_data_master_read_data_valid_binary_vga_avalon_slave_0;
+  wire             cpu_data_master_requests_binary_vga_avalon_slave_0;
+  wire             cpu_data_master_saved_grant_binary_vga_avalon_slave_0;
+  reg              d1_binary_vga_avalon_slave_0_end_xfer;
+  reg              d1_reasons_to_wait;
+  reg              enable_nonzero_assertions;
+  wire             end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0;
+  wire             in_a_read_cycle;
+  wire             in_a_write_cycle;
+  wire    [ 23: 0] shifted_address_to_binary_vga_avalon_slave_0_from_cpu_data_master;
+  wire             wait_for_binary_vga_avalon_slave_0_counter;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_reasons_to_wait <= 0;
+      else 
+        d1_reasons_to_wait <= ~binary_vga_avalon_slave_0_end_xfer;
+    end
+
+
+  assign binary_vga_avalon_slave_0_begins_xfer = ~d1_reasons_to_wait & ((cpu_data_master_qualified_request_binary_vga_avalon_slave_0));
+  //assign binary_vga_avalon_slave_0_readdata_from_sa = binary_vga_avalon_slave_0_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign binary_vga_avalon_slave_0_readdata_from_sa = binary_vga_avalon_slave_0_readdata;
+
+  assign cpu_data_master_requests_binary_vga_avalon_slave_0 = ({cpu_data_master_address_to_slave[23 : 21] , 21'b0} == 24'h200000) & (cpu_data_master_read | cpu_data_master_write);
+  //binary_vga_avalon_slave_0_arb_share_counter set values, which is an e_mux
+  assign binary_vga_avalon_slave_0_arb_share_set_values = 1;
+
+  //binary_vga_avalon_slave_0_non_bursting_master_requests mux, which is an e_mux
+  assign binary_vga_avalon_slave_0_non_bursting_master_requests = cpu_data_master_requests_binary_vga_avalon_slave_0;
+
+  //binary_vga_avalon_slave_0_any_bursting_master_saved_grant mux, which is an e_mux
+  assign binary_vga_avalon_slave_0_any_bursting_master_saved_grant = 0;
+
+  //binary_vga_avalon_slave_0_arb_share_counter_next_value assignment, which is an e_assign
+  assign binary_vga_avalon_slave_0_arb_share_counter_next_value = binary_vga_avalon_slave_0_firsttransfer ? (binary_vga_avalon_slave_0_arb_share_set_values - 1) : |binary_vga_avalon_slave_0_arb_share_counter ? (binary_vga_avalon_slave_0_arb_share_counter - 1) : 0;
+
+  //binary_vga_avalon_slave_0_allgrants all slave grants, which is an e_mux
+  assign binary_vga_avalon_slave_0_allgrants = |binary_vga_avalon_slave_0_grant_vector;
+
+  //binary_vga_avalon_slave_0_end_xfer assignment, which is an e_assign
+  assign binary_vga_avalon_slave_0_end_xfer = ~(binary_vga_avalon_slave_0_waits_for_read | binary_vga_avalon_slave_0_waits_for_write);
+
+  //end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0 arb share counter enable term, which is an e_assign
+  assign end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0 = binary_vga_avalon_slave_0_end_xfer & (~binary_vga_avalon_slave_0_any_bursting_master_saved_grant | in_a_read_cycle | in_a_write_cycle);
+
+  //binary_vga_avalon_slave_0_arb_share_counter arbitration counter enable, which is an e_assign
+  assign binary_vga_avalon_slave_0_arb_counter_enable = (end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0 & binary_vga_avalon_slave_0_allgrants) | (end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0 & ~binary_vga_avalon_slave_0_non_bursting_master_requests);
+
+  //binary_vga_avalon_slave_0_arb_share_counter counter, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          binary_vga_avalon_slave_0_arb_share_counter <= 0;
+      else if (binary_vga_avalon_slave_0_arb_counter_enable)
+          binary_vga_avalon_slave_0_arb_share_counter <= binary_vga_avalon_slave_0_arb_share_counter_next_value;
+    end
+
+
+  //binary_vga_avalon_slave_0_slavearbiterlockenable slave enables arbiterlock, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          binary_vga_avalon_slave_0_slavearbiterlockenable <= 0;
+      else if ((|binary_vga_avalon_slave_0_master_qreq_vector & end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0) | (end_xfer_arb_share_counter_term_binary_vga_avalon_slave_0 & ~binary_vga_avalon_slave_0_non_bursting_master_requests))
+          binary_vga_avalon_slave_0_slavearbiterlockenable <= |binary_vga_avalon_slave_0_arb_share_counter_next_value;
+    end
+
+
+  //cpu/data_master binary_vga/avalon_slave_0 arbiterlock, which is an e_assign
+  assign cpu_data_master_arbiterlock = binary_vga_avalon_slave_0_slavearbiterlockenable & cpu_data_master_continuerequest;
+
+  //binary_vga_avalon_slave_0_slavearbiterlockenable2 slave enables arbiterlock2, which is an e_assign
+  assign binary_vga_avalon_slave_0_slavearbiterlockenable2 = |binary_vga_avalon_slave_0_arb_share_counter_next_value;
+
+  //cpu/data_master binary_vga/avalon_slave_0 arbiterlock2, which is an e_assign
+  assign cpu_data_master_arbiterlock2 = binary_vga_avalon_slave_0_slavearbiterlockenable2 & cpu_data_master_continuerequest;
+
+  //binary_vga_avalon_slave_0_any_continuerequest at least one master continues requesting, which is an e_assign
+  assign binary_vga_avalon_slave_0_any_continuerequest = 1;
+
+  //cpu_data_master_continuerequest continued request, which is an e_assign
+  assign cpu_data_master_continuerequest = 1;
+
+  assign cpu_data_master_qualified_request_binary_vga_avalon_slave_0 = cpu_data_master_requests_binary_vga_avalon_slave_0;
+  //binary_vga_avalon_slave_0_writedata mux, which is an e_mux
+  assign binary_vga_avalon_slave_0_writedata = cpu_data_master_writedata;
+
+  //master is always granted when requested
+  assign cpu_data_master_granted_binary_vga_avalon_slave_0 = cpu_data_master_qualified_request_binary_vga_avalon_slave_0;
+
+  //cpu/data_master saved-grant binary_vga/avalon_slave_0, which is an e_assign
+  assign cpu_data_master_saved_grant_binary_vga_avalon_slave_0 = cpu_data_master_requests_binary_vga_avalon_slave_0;
+
+  //allow new arb cycle for binary_vga/avalon_slave_0, which is an e_assign
+  assign binary_vga_avalon_slave_0_allow_new_arb_cycle = 1;
+
+  //placeholder chosen master
+  assign binary_vga_avalon_slave_0_grant_vector = 1;
+
+  //placeholder vector of master qualified-requests
+  assign binary_vga_avalon_slave_0_master_qreq_vector = 1;
+
+  //binary_vga_avalon_slave_0_reset_n assignment, which is an e_assign
+  assign binary_vga_avalon_slave_0_reset_n = reset_n;
+
+  assign binary_vga_avalon_slave_0_chipselect = cpu_data_master_granted_binary_vga_avalon_slave_0;
+  //binary_vga_avalon_slave_0_firsttransfer first transaction, which is an e_assign
+  assign binary_vga_avalon_slave_0_firsttransfer = binary_vga_avalon_slave_0_begins_xfer ? binary_vga_avalon_slave_0_unreg_firsttransfer : binary_vga_avalon_slave_0_reg_firsttransfer;
+
+  //binary_vga_avalon_slave_0_unreg_firsttransfer first transaction, which is an e_assign
+  assign binary_vga_avalon_slave_0_unreg_firsttransfer = ~(binary_vga_avalon_slave_0_slavearbiterlockenable & binary_vga_avalon_slave_0_any_continuerequest);
+
+  //binary_vga_avalon_slave_0_reg_firsttransfer first transaction, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          binary_vga_avalon_slave_0_reg_firsttransfer <= 1'b1;
+      else if (binary_vga_avalon_slave_0_begins_xfer)
+          binary_vga_avalon_slave_0_reg_firsttransfer <= binary_vga_avalon_slave_0_unreg_firsttransfer;
+    end
+
+
+  //binary_vga_avalon_slave_0_beginbursttransfer_internal begin burst transfer, which is an e_assign
+  assign binary_vga_avalon_slave_0_beginbursttransfer_internal = binary_vga_avalon_slave_0_begins_xfer;
+
+  //binary_vga_avalon_slave_0_read assignment, which is an e_mux
+  assign binary_vga_avalon_slave_0_read = ((cpu_data_master_granted_binary_vga_avalon_slave_0 & cpu_data_master_read))& ~binary_vga_avalon_slave_0_begins_xfer;
+
+  //binary_vga_avalon_slave_0_write assignment, which is an e_mux
+  assign binary_vga_avalon_slave_0_write = ((cpu_data_master_granted_binary_vga_avalon_slave_0 & cpu_data_master_write)) & ~binary_vga_avalon_slave_0_begins_xfer & (binary_vga_avalon_slave_0_wait_counter >= 1);
+
+  assign shifted_address_to_binary_vga_avalon_slave_0_from_cpu_data_master = cpu_data_master_address_to_slave;
+  //binary_vga_avalon_slave_0_address mux, which is an e_mux
+  assign binary_vga_avalon_slave_0_address = shifted_address_to_binary_vga_avalon_slave_0_from_cpu_data_master >> 2;
+
+  //d1_binary_vga_avalon_slave_0_end_xfer register, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_binary_vga_avalon_slave_0_end_xfer <= 1;
+      else 
+        d1_binary_vga_avalon_slave_0_end_xfer <= binary_vga_avalon_slave_0_end_xfer;
+    end
+
+
+  //binary_vga_avalon_slave_0_waits_for_read in a cycle, which is an e_mux
+  assign binary_vga_avalon_slave_0_waits_for_read = binary_vga_avalon_slave_0_in_a_read_cycle & binary_vga_avalon_slave_0_begins_xfer;
+
+  //binary_vga_avalon_slave_0_in_a_read_cycle assignment, which is an e_assign
+  assign binary_vga_avalon_slave_0_in_a_read_cycle = cpu_data_master_granted_binary_vga_avalon_slave_0 & cpu_data_master_read;
+
+  //in_a_read_cycle assignment, which is an e_mux
+  assign in_a_read_cycle = binary_vga_avalon_slave_0_in_a_read_cycle;
+
+  //binary_vga_avalon_slave_0_waits_for_write in a cycle, which is an e_mux
+  assign binary_vga_avalon_slave_0_waits_for_write = binary_vga_avalon_slave_0_in_a_write_cycle & wait_for_binary_vga_avalon_slave_0_counter;
+
+  //binary_vga_avalon_slave_0_in_a_write_cycle assignment, which is an e_assign
+  assign binary_vga_avalon_slave_0_in_a_write_cycle = cpu_data_master_granted_binary_vga_avalon_slave_0 & cpu_data_master_write;
+
+  //in_a_write_cycle assignment, which is an e_mux
+  assign in_a_write_cycle = binary_vga_avalon_slave_0_in_a_write_cycle;
+
+  assign binary_vga_avalon_slave_0_wait_counter_eq_0 = binary_vga_avalon_slave_0_wait_counter == 0;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          binary_vga_avalon_slave_0_wait_counter <= 0;
+      else 
+        binary_vga_avalon_slave_0_wait_counter <= binary_vga_avalon_slave_0_counter_load_value;
+    end
+
+
+  assign binary_vga_avalon_slave_0_counter_load_value = ((binary_vga_avalon_slave_0_in_a_write_cycle & binary_vga_avalon_slave_0_begins_xfer))? 1 :
+    (~binary_vga_avalon_slave_0_wait_counter_eq_0)? binary_vga_avalon_slave_0_wait_counter - 1 :
+    0;
+
+  assign wait_for_binary_vga_avalon_slave_0_counter = binary_vga_avalon_slave_0_begins_xfer | ~binary_vga_avalon_slave_0_wait_counter_eq_0;
+
+//synthesis translate_off
+//////////////// SIMULATION-ONLY CONTENTS
+  //binary_vga/avalon_slave_0 enable non-zero assertions, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          enable_nonzero_assertions <= 0;
+      else 
+        enable_nonzero_assertions <= 1'b1;
+    end
+
+
+
+//////////////// END SIMULATION-ONLY CONTENTS
+
+//synthesis translate_on
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
 module cpu_jtag_debug_module_arbitrator (
                                           // inputs:
                                            clk,
@@ -464,12 +758,15 @@ endmodule
 
 module cpu_data_master_arbitrator (
                                     // inputs:
+                                     binary_vga_avalon_slave_0_readdata_from_sa,
+                                     binary_vga_avalon_slave_0_wait_counter_eq_0,
                                      cfi_flash_s1_wait_counter_eq_0,
                                      cfi_flash_s1_wait_counter_eq_1,
                                      clk,
                                      cpu_data_master_address,
                                      cpu_data_master_byteenable_cfi_flash_s1,
                                      cpu_data_master_byteenable_sram_16bit_512k_0_avalon_slave_0,
+                                     cpu_data_master_granted_binary_vga_avalon_slave_0,
                                      cpu_data_master_granted_cfi_flash_s1,
                                      cpu_data_master_granted_cpu_jtag_debug_module,
                                      cpu_data_master_granted_epcs_flash_controller_epcs_control_port,
@@ -482,6 +779,7 @@ module cpu_data_master_arbitrator (
                                      cpu_data_master_granted_pio_sw_s1,
                                      cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_granted_timer_s1,
+                                     cpu_data_master_qualified_request_binary_vga_avalon_slave_0,
                                      cpu_data_master_qualified_request_cfi_flash_s1,
                                      cpu_data_master_qualified_request_cpu_jtag_debug_module,
                                      cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port,
@@ -495,6 +793,7 @@ module cpu_data_master_arbitrator (
                                      cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_qualified_request_timer_s1,
                                      cpu_data_master_read,
+                                     cpu_data_master_read_data_valid_binary_vga_avalon_slave_0,
                                      cpu_data_master_read_data_valid_cfi_flash_s1,
                                      cpu_data_master_read_data_valid_cpu_jtag_debug_module,
                                      cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port,
@@ -507,6 +806,7 @@ module cpu_data_master_arbitrator (
                                      cpu_data_master_read_data_valid_pio_sw_s1,
                                      cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_read_data_valid_timer_s1,
+                                     cpu_data_master_requests_binary_vga_avalon_slave_0,
                                      cpu_data_master_requests_cfi_flash_s1,
                                      cpu_data_master_requests_cpu_jtag_debug_module,
                                      cpu_data_master_requests_epcs_flash_controller_epcs_control_port,
@@ -522,6 +822,7 @@ module cpu_data_master_arbitrator (
                                      cpu_data_master_write,
                                      cpu_data_master_writedata,
                                      cpu_jtag_debug_module_readdata_from_sa,
+                                     d1_binary_vga_avalon_slave_0_end_xfer,
                                      d1_cpu_jtag_debug_module_end_xfer,
                                      d1_epcs_flash_controller_epcs_control_port_end_xfer,
                                      d1_gpio_s1_end_xfer,
@@ -576,12 +877,15 @@ module cpu_data_master_arbitrator (
   output           cpu_data_master_no_byte_enables_and_last_term;
   output  [ 31: 0] cpu_data_master_readdata;
   output           cpu_data_master_waitrequest;
+  input   [ 15: 0] binary_vga_avalon_slave_0_readdata_from_sa;
+  input            binary_vga_avalon_slave_0_wait_counter_eq_0;
   input            cfi_flash_s1_wait_counter_eq_0;
   input            cfi_flash_s1_wait_counter_eq_1;
   input            clk;
   input   [ 23: 0] cpu_data_master_address;
   input            cpu_data_master_byteenable_cfi_flash_s1;
   input   [  1: 0] cpu_data_master_byteenable_sram_16bit_512k_0_avalon_slave_0;
+  input            cpu_data_master_granted_binary_vga_avalon_slave_0;
   input            cpu_data_master_granted_cfi_flash_s1;
   input            cpu_data_master_granted_cpu_jtag_debug_module;
   input            cpu_data_master_granted_epcs_flash_controller_epcs_control_port;
@@ -594,6 +898,7 @@ module cpu_data_master_arbitrator (
   input            cpu_data_master_granted_pio_sw_s1;
   input            cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_granted_timer_s1;
+  input            cpu_data_master_qualified_request_binary_vga_avalon_slave_0;
   input            cpu_data_master_qualified_request_cfi_flash_s1;
   input            cpu_data_master_qualified_request_cpu_jtag_debug_module;
   input            cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port;
@@ -607,6 +912,7 @@ module cpu_data_master_arbitrator (
   input            cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_qualified_request_timer_s1;
   input            cpu_data_master_read;
+  input            cpu_data_master_read_data_valid_binary_vga_avalon_slave_0;
   input            cpu_data_master_read_data_valid_cfi_flash_s1;
   input            cpu_data_master_read_data_valid_cpu_jtag_debug_module;
   input            cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port;
@@ -619,6 +925,7 @@ module cpu_data_master_arbitrator (
   input            cpu_data_master_read_data_valid_pio_sw_s1;
   input            cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_read_data_valid_timer_s1;
+  input            cpu_data_master_requests_binary_vga_avalon_slave_0;
   input            cpu_data_master_requests_cfi_flash_s1;
   input            cpu_data_master_requests_cpu_jtag_debug_module;
   input            cpu_data_master_requests_epcs_flash_controller_epcs_control_port;
@@ -634,6 +941,7 @@ module cpu_data_master_arbitrator (
   input            cpu_data_master_write;
   input   [ 31: 0] cpu_data_master_writedata;
   input   [ 31: 0] cpu_jtag_debug_module_readdata_from_sa;
+  input            d1_binary_vga_avalon_slave_0_end_xfer;
   input            d1_cpu_jtag_debug_module_end_xfer;
   input            d1_epcs_flash_controller_epcs_control_port_end_xfer;
   input            d1_gpio_s1_end_xfer;
@@ -697,22 +1005,23 @@ module cpu_data_master_arbitrator (
   wire             r_2;
   reg     [ 31: 0] registered_cpu_data_master_readdata;
   //r_0 master_run cascaded wait assignment, which is an e_assign
-  assign r_0 = 1 & (cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_requests_cpu_jtag_debug_module) & (cpu_data_master_granted_cpu_jtag_debug_module | ~cpu_data_master_qualified_request_cpu_jtag_debug_module) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~cpu_data_master_requests_epcs_flash_controller_epcs_control_port) & (cpu_data_master_granted_epcs_flash_controller_epcs_control_port | ~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_requests_gpio_s1) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~cpu_data_master_requests_jtag_uart_avalon_jtag_slave) & ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_requests_key_s1);
+  assign r_0 = 1 & ((~cpu_data_master_qualified_request_binary_vga_avalon_slave_0 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_binary_vga_avalon_slave_0 | ~cpu_data_master_write | (1 & ~d1_binary_vga_avalon_slave_0_end_xfer & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_requests_cpu_jtag_debug_module) & (cpu_data_master_granted_cpu_jtag_debug_module | ~cpu_data_master_qualified_request_cpu_jtag_debug_module) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~cpu_data_master_requests_epcs_flash_controller_epcs_control_port) & (cpu_data_master_granted_epcs_flash_controller_epcs_control_port | ~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_requests_gpio_s1) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~cpu_data_master_requests_jtag_uart_avalon_jtag_slave) & ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write))));
 
   //cascaded wait assignment, which is an e_assign
   assign cpu_data_master_run = r_0 & r_1 & r_2;
 
   //r_1 master_run cascaded wait assignment, which is an e_assign
-  assign r_1 = ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_onchip_memory_s1 | registered_cpu_data_master_read_data_valid_onchip_memory_s1 | ~cpu_data_master_requests_onchip_memory_s1) & (cpu_data_master_granted_onchip_memory_s1 | ~cpu_data_master_qualified_request_onchip_memory_s1) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_onchip_memory_s1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~(cpu_data_master_read | cpu_data_master_write) | (1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_pio_green_s1 | ~cpu_data_master_requests_pio_green_s1) & ((~cpu_data_master_qualified_request_pio_green_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_pio_green_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_pio_red_s1 | ~cpu_data_master_requests_pio_red_s1) & ((~cpu_data_master_qualified_request_pio_red_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_pio_red_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((~cpu_data_master_qualified_request_pio_sw_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_pio_sw_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | (cpu_data_master_write & !cpu_data_master_byteenable_sram_16bit_512k_0_avalon_slave_0 & cpu_data_master_dbs_address[1]) | ~cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0);
+  assign r_1 = ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_requests_key_s1) & ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_onchip_memory_s1 | registered_cpu_data_master_read_data_valid_onchip_memory_s1 | ~cpu_data_master_requests_onchip_memory_s1) & (cpu_data_master_granted_onchip_memory_s1 | ~cpu_data_master_qualified_request_onchip_memory_s1) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_onchip_memory_s1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~(cpu_data_master_read | cpu_data_master_write) | (1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_pio_green_s1 | ~cpu_data_master_requests_pio_green_s1) & ((~cpu_data_master_qualified_request_pio_green_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_pio_green_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_pio_red_s1 | ~cpu_data_master_requests_pio_red_s1) & ((~cpu_data_master_qualified_request_pio_red_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_pio_red_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((~cpu_data_master_qualified_request_pio_sw_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read)));
 
   //r_2 master_run cascaded wait assignment, which is an e_assign
-  assign r_2 = (cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_read | (1 & 1 & (cpu_data_master_dbs_address[1]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_write | (1 & ~d1_sram_16bit_512k_0_avalon_slave_0_end_xfer & (cpu_data_master_dbs_address[1]) & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_requests_timer_s1) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((cpu_data_master_qualified_request_cfi_flash_s1 | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) | ((cpu_data_master_write & !cpu_data_master_byteenable_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0])) | ~cpu_data_master_requests_cfi_flash_s1)) & (cpu_data_master_granted_cfi_flash_s1 | ~cpu_data_master_qualified_request_cfi_flash_s1) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_write | (1 & cfi_flash_s1_wait_counter_eq_1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_write)));
+  assign r_2 = ((~cpu_data_master_qualified_request_pio_sw_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | (cpu_data_master_write & !cpu_data_master_byteenable_sram_16bit_512k_0_avalon_slave_0 & cpu_data_master_dbs_address[1]) | ~cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0) & (cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_read | (1 & 1 & (cpu_data_master_dbs_address[1]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_write | (1 & ~d1_sram_16bit_512k_0_avalon_slave_0_end_xfer & (cpu_data_master_dbs_address[1]) & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_requests_timer_s1) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((cpu_data_master_qualified_request_cfi_flash_s1 | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) | ((cpu_data_master_write & !cpu_data_master_byteenable_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0])) | ~cpu_data_master_requests_cfi_flash_s1)) & (cpu_data_master_granted_cfi_flash_s1 | ~cpu_data_master_qualified_request_cfi_flash_s1) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_write | (1 & cfi_flash_s1_wait_counter_eq_1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_write)));
 
   //optimize select-logic by passing only those address bits which matter.
   assign cpu_data_master_address_to_slave = cpu_data_master_address[23 : 0];
 
   //cpu/data_master readdata mux, which is an e_mux
-  assign cpu_data_master_readdata = ({32 {~cpu_data_master_requests_cpu_jtag_debug_module}} | cpu_jtag_debug_module_readdata_from_sa) &
+  assign cpu_data_master_readdata = ({32 {~cpu_data_master_requests_binary_vga_avalon_slave_0}} | binary_vga_avalon_slave_0_readdata_from_sa) &
+    ({32 {~cpu_data_master_requests_cpu_jtag_debug_module}} | cpu_jtag_debug_module_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_epcs_flash_controller_epcs_control_port}} | epcs_flash_controller_epcs_control_port_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_gpio_s1}} | gpio_s1_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_jtag_uart_avalon_jtag_slave}} | registered_cpu_data_master_readdata) &
@@ -5349,6 +5658,17 @@ module kernel (
                  clk_50,
                  reset_n,
 
+                // the_binary_vga
+                 VGA_BLANK_from_the_binary_vga,
+                 VGA_B_from_the_binary_vga,
+                 VGA_CLK_from_the_binary_vga,
+                 VGA_G_from_the_binary_vga,
+                 VGA_HS_from_the_binary_vga,
+                 VGA_R_from_the_binary_vga,
+                 VGA_SYNC_from_the_binary_vga,
+                 VGA_VS_from_the_binary_vga,
+                 iCLK_25_to_the_binary_vga,
+
                 // the_gpio
                  in_port_to_the_gpio,
 
@@ -5389,6 +5709,14 @@ module kernel (
   output           SRAM_OE_N_from_the_sram_16bit_512k_0;
   output           SRAM_UB_N_from_the_sram_16bit_512k_0;
   output           SRAM_WE_N_from_the_sram_16bit_512k_0;
+  output           VGA_BLANK_from_the_binary_vga;
+  output  [  9: 0] VGA_B_from_the_binary_vga;
+  output           VGA_CLK_from_the_binary_vga;
+  output  [  9: 0] VGA_G_from_the_binary_vga;
+  output           VGA_HS_from_the_binary_vga;
+  output  [  9: 0] VGA_R_from_the_binary_vga;
+  output           VGA_SYNC_from_the_binary_vga;
+  output           VGA_VS_from_the_binary_vga;
   output  [  8: 0] out_port_from_the_pio_green;
   output  [ 17: 0] out_port_from_the_pio_red;
   output           select_n_to_the_cfi_flash;
@@ -5397,6 +5725,7 @@ module kernel (
   output           tri_state_bridge_readn;
   output           write_n_to_the_cfi_flash;
   input            clk_50;
+  input            iCLK_25_to_the_binary_vga;
   input            in_port_to_the_gpio;
   input            in_port_to_the_key;
   input   [ 17: 0] in_port_to_the_pio_sw;
@@ -5409,6 +5738,23 @@ module kernel (
   wire             SRAM_OE_N_from_the_sram_16bit_512k_0;
   wire             SRAM_UB_N_from_the_sram_16bit_512k_0;
   wire             SRAM_WE_N_from_the_sram_16bit_512k_0;
+  wire             VGA_BLANK_from_the_binary_vga;
+  wire    [  9: 0] VGA_B_from_the_binary_vga;
+  wire             VGA_CLK_from_the_binary_vga;
+  wire    [  9: 0] VGA_G_from_the_binary_vga;
+  wire             VGA_HS_from_the_binary_vga;
+  wire    [  9: 0] VGA_R_from_the_binary_vga;
+  wire             VGA_SYNC_from_the_binary_vga;
+  wire             VGA_VS_from_the_binary_vga;
+  wire    [ 18: 0] binary_vga_avalon_slave_0_address;
+  wire             binary_vga_avalon_slave_0_chipselect;
+  wire             binary_vga_avalon_slave_0_read;
+  wire    [ 15: 0] binary_vga_avalon_slave_0_readdata;
+  wire    [ 15: 0] binary_vga_avalon_slave_0_readdata_from_sa;
+  wire             binary_vga_avalon_slave_0_reset_n;
+  wire             binary_vga_avalon_slave_0_wait_counter_eq_0;
+  wire             binary_vga_avalon_slave_0_write;
+  wire    [ 15: 0] binary_vga_avalon_slave_0_writedata;
   wire             cfi_flash_s1_wait_counter_eq_0;
   wire             cfi_flash_s1_wait_counter_eq_1;
   wire             clk_50_reset_n;
@@ -5421,6 +5767,7 @@ module kernel (
   wire    [ 15: 0] cpu_data_master_dbs_write_16;
   wire    [  7: 0] cpu_data_master_dbs_write_8;
   wire             cpu_data_master_debugaccess;
+  wire             cpu_data_master_granted_binary_vga_avalon_slave_0;
   wire             cpu_data_master_granted_cfi_flash_s1;
   wire             cpu_data_master_granted_cpu_jtag_debug_module;
   wire             cpu_data_master_granted_epcs_flash_controller_epcs_control_port;
@@ -5435,6 +5782,7 @@ module kernel (
   wire             cpu_data_master_granted_timer_s1;
   wire    [ 31: 0] cpu_data_master_irq;
   wire             cpu_data_master_no_byte_enables_and_last_term;
+  wire             cpu_data_master_qualified_request_binary_vga_avalon_slave_0;
   wire             cpu_data_master_qualified_request_cfi_flash_s1;
   wire             cpu_data_master_qualified_request_cpu_jtag_debug_module;
   wire             cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port;
@@ -5448,6 +5796,7 @@ module kernel (
   wire             cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0;
   wire             cpu_data_master_qualified_request_timer_s1;
   wire             cpu_data_master_read;
+  wire             cpu_data_master_read_data_valid_binary_vga_avalon_slave_0;
   wire             cpu_data_master_read_data_valid_cfi_flash_s1;
   wire             cpu_data_master_read_data_valid_cpu_jtag_debug_module;
   wire             cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port;
@@ -5461,6 +5810,7 @@ module kernel (
   wire             cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0;
   wire             cpu_data_master_read_data_valid_timer_s1;
   wire    [ 31: 0] cpu_data_master_readdata;
+  wire             cpu_data_master_requests_binary_vga_avalon_slave_0;
   wire             cpu_data_master_requests_cfi_flash_s1;
   wire             cpu_data_master_requests_cpu_jtag_debug_module;
   wire             cpu_data_master_requests_epcs_flash_controller_epcs_control_port;
@@ -5516,6 +5866,7 @@ module kernel (
   wire             cpu_jtag_debug_module_resetrequest_from_sa;
   wire             cpu_jtag_debug_module_write;
   wire    [ 31: 0] cpu_jtag_debug_module_writedata;
+  wire             d1_binary_vga_avalon_slave_0_end_xfer;
   wire             d1_cpu_jtag_debug_module_end_xfer;
   wire             d1_epcs_flash_controller_epcs_control_port_end_xfer;
   wire             d1_gpio_s1_end_xfer;
@@ -5636,6 +5987,51 @@ module kernel (
   wire    [  7: 0] tri_state_bridge_data;
   wire             tri_state_bridge_readn;
   wire             write_n_to_the_cfi_flash;
+  binary_vga_avalon_slave_0_arbitrator the_binary_vga_avalon_slave_0
+    (
+      .binary_vga_avalon_slave_0_address                           (binary_vga_avalon_slave_0_address),
+      .binary_vga_avalon_slave_0_chipselect                        (binary_vga_avalon_slave_0_chipselect),
+      .binary_vga_avalon_slave_0_read                              (binary_vga_avalon_slave_0_read),
+      .binary_vga_avalon_slave_0_readdata                          (binary_vga_avalon_slave_0_readdata),
+      .binary_vga_avalon_slave_0_readdata_from_sa                  (binary_vga_avalon_slave_0_readdata_from_sa),
+      .binary_vga_avalon_slave_0_reset_n                           (binary_vga_avalon_slave_0_reset_n),
+      .binary_vga_avalon_slave_0_wait_counter_eq_0                 (binary_vga_avalon_slave_0_wait_counter_eq_0),
+      .binary_vga_avalon_slave_0_write                             (binary_vga_avalon_slave_0_write),
+      .binary_vga_avalon_slave_0_writedata                         (binary_vga_avalon_slave_0_writedata),
+      .clk                                                         (clk_50),
+      .cpu_data_master_address_to_slave                            (cpu_data_master_address_to_slave),
+      .cpu_data_master_granted_binary_vga_avalon_slave_0           (cpu_data_master_granted_binary_vga_avalon_slave_0),
+      .cpu_data_master_qualified_request_binary_vga_avalon_slave_0 (cpu_data_master_qualified_request_binary_vga_avalon_slave_0),
+      .cpu_data_master_read                                        (cpu_data_master_read),
+      .cpu_data_master_read_data_valid_binary_vga_avalon_slave_0   (cpu_data_master_read_data_valid_binary_vga_avalon_slave_0),
+      .cpu_data_master_requests_binary_vga_avalon_slave_0          (cpu_data_master_requests_binary_vga_avalon_slave_0),
+      .cpu_data_master_write                                       (cpu_data_master_write),
+      .cpu_data_master_writedata                                   (cpu_data_master_writedata),
+      .d1_binary_vga_avalon_slave_0_end_xfer                       (d1_binary_vga_avalon_slave_0_end_xfer),
+      .reset_n                                                     (clk_50_reset_n)
+    );
+
+  binary_vga the_binary_vga
+    (
+      .VGA_B     (VGA_B_from_the_binary_vga),
+      .VGA_BLANK (VGA_BLANK_from_the_binary_vga),
+      .VGA_CLK   (VGA_CLK_from_the_binary_vga),
+      .VGA_G     (VGA_G_from_the_binary_vga),
+      .VGA_HS    (VGA_HS_from_the_binary_vga),
+      .VGA_R     (VGA_R_from_the_binary_vga),
+      .VGA_SYNC  (VGA_SYNC_from_the_binary_vga),
+      .VGA_VS    (VGA_VS_from_the_binary_vga),
+      .iADDR     (binary_vga_avalon_slave_0_address),
+      .iCLK      (clk_50),
+      .iCLK_25   (iCLK_25_to_the_binary_vga),
+      .iCS       (binary_vga_avalon_slave_0_chipselect),
+      .iDATA     (binary_vga_avalon_slave_0_writedata),
+      .iRD       (binary_vga_avalon_slave_0_read),
+      .iRST_N    (binary_vga_avalon_slave_0_reset_n),
+      .iWR       (binary_vga_avalon_slave_0_write),
+      .oDATA     (binary_vga_avalon_slave_0_readdata)
+    );
+
   cpu_jtag_debug_module_arbitrator the_cpu_jtag_debug_module
     (
       .clk                                                            (clk_50),
@@ -5675,6 +6071,8 @@ module kernel (
 
   cpu_data_master_arbitrator the_cpu_data_master
     (
+      .binary_vga_avalon_slave_0_readdata_from_sa                                (binary_vga_avalon_slave_0_readdata_from_sa),
+      .binary_vga_avalon_slave_0_wait_counter_eq_0                               (binary_vga_avalon_slave_0_wait_counter_eq_0),
       .cfi_flash_s1_wait_counter_eq_0                                            (cfi_flash_s1_wait_counter_eq_0),
       .cfi_flash_s1_wait_counter_eq_1                                            (cfi_flash_s1_wait_counter_eq_1),
       .clk                                                                       (clk_50),
@@ -5685,6 +6083,7 @@ module kernel (
       .cpu_data_master_dbs_address                                               (cpu_data_master_dbs_address),
       .cpu_data_master_dbs_write_16                                              (cpu_data_master_dbs_write_16),
       .cpu_data_master_dbs_write_8                                               (cpu_data_master_dbs_write_8),
+      .cpu_data_master_granted_binary_vga_avalon_slave_0                         (cpu_data_master_granted_binary_vga_avalon_slave_0),
       .cpu_data_master_granted_cfi_flash_s1                                      (cpu_data_master_granted_cfi_flash_s1),
       .cpu_data_master_granted_cpu_jtag_debug_module                             (cpu_data_master_granted_cpu_jtag_debug_module),
       .cpu_data_master_granted_epcs_flash_controller_epcs_control_port           (cpu_data_master_granted_epcs_flash_controller_epcs_control_port),
@@ -5699,6 +6098,7 @@ module kernel (
       .cpu_data_master_granted_timer_s1                                          (cpu_data_master_granted_timer_s1),
       .cpu_data_master_irq                                                       (cpu_data_master_irq),
       .cpu_data_master_no_byte_enables_and_last_term                             (cpu_data_master_no_byte_enables_and_last_term),
+      .cpu_data_master_qualified_request_binary_vga_avalon_slave_0               (cpu_data_master_qualified_request_binary_vga_avalon_slave_0),
       .cpu_data_master_qualified_request_cfi_flash_s1                            (cpu_data_master_qualified_request_cfi_flash_s1),
       .cpu_data_master_qualified_request_cpu_jtag_debug_module                   (cpu_data_master_qualified_request_cpu_jtag_debug_module),
       .cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port (cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port),
@@ -5712,6 +6112,7 @@ module kernel (
       .cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0        (cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0),
       .cpu_data_master_qualified_request_timer_s1                                (cpu_data_master_qualified_request_timer_s1),
       .cpu_data_master_read                                                      (cpu_data_master_read),
+      .cpu_data_master_read_data_valid_binary_vga_avalon_slave_0                 (cpu_data_master_read_data_valid_binary_vga_avalon_slave_0),
       .cpu_data_master_read_data_valid_cfi_flash_s1                              (cpu_data_master_read_data_valid_cfi_flash_s1),
       .cpu_data_master_read_data_valid_cpu_jtag_debug_module                     (cpu_data_master_read_data_valid_cpu_jtag_debug_module),
       .cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port   (cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port),
@@ -5725,6 +6126,7 @@ module kernel (
       .cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0          (cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0),
       .cpu_data_master_read_data_valid_timer_s1                                  (cpu_data_master_read_data_valid_timer_s1),
       .cpu_data_master_readdata                                                  (cpu_data_master_readdata),
+      .cpu_data_master_requests_binary_vga_avalon_slave_0                        (cpu_data_master_requests_binary_vga_avalon_slave_0),
       .cpu_data_master_requests_cfi_flash_s1                                     (cpu_data_master_requests_cfi_flash_s1),
       .cpu_data_master_requests_cpu_jtag_debug_module                            (cpu_data_master_requests_cpu_jtag_debug_module),
       .cpu_data_master_requests_epcs_flash_controller_epcs_control_port          (cpu_data_master_requests_epcs_flash_controller_epcs_control_port),
@@ -5741,6 +6143,7 @@ module kernel (
       .cpu_data_master_write                                                     (cpu_data_master_write),
       .cpu_data_master_writedata                                                 (cpu_data_master_writedata),
       .cpu_jtag_debug_module_readdata_from_sa                                    (cpu_jtag_debug_module_readdata_from_sa),
+      .d1_binary_vga_avalon_slave_0_end_xfer                                     (d1_binary_vga_avalon_slave_0_end_xfer),
       .d1_cpu_jtag_debug_module_end_xfer                                         (d1_cpu_jtag_debug_module_end_xfer),
       .d1_epcs_flash_controller_epcs_control_port_end_xfer                       (d1_epcs_flash_controller_epcs_control_port_end_xfer),
       .d1_gpio_s1_end_xfer                                                       (d1_gpio_s1_end_xfer),
@@ -6495,6 +6898,11 @@ endmodule
 `include "d:/altera/12.0/quartus/eda/sim_lib/sgate.v"
 `include "ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v"
 `include "sram_16bit_512k_0.v"
+`include "ip/Binary_VGA_Controller/hdl/Img_RAM.v"
+`include "ip/Binary_VGA_Controller/hdl/VGA_Controller.v"
+`include "ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v"
+`include "ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v"
+`include "binary_vga.v"
 `include "pio_green.v"
 `include "epcs_flash_controller.v"
 `include "onchip_memory.v"
@@ -6525,11 +6933,20 @@ module test_bench
   wire             SRAM_OE_N_from_the_sram_16bit_512k_0;
   wire             SRAM_UB_N_from_the_sram_16bit_512k_0;
   wire             SRAM_WE_N_from_the_sram_16bit_512k_0;
+  wire             VGA_BLANK_from_the_binary_vga;
+  wire    [  9: 0] VGA_B_from_the_binary_vga;
+  wire             VGA_CLK_from_the_binary_vga;
+  wire    [  9: 0] VGA_G_from_the_binary_vga;
+  wire             VGA_HS_from_the_binary_vga;
+  wire    [  9: 0] VGA_R_from_the_binary_vga;
+  wire             VGA_SYNC_from_the_binary_vga;
+  wire             VGA_VS_from_the_binary_vga;
   wire             clk;
   reg              clk_50;
   wire             epcs_flash_controller_epcs_control_port_dataavailable_from_sa;
   wire             epcs_flash_controller_epcs_control_port_endofpacket_from_sa;
   wire             epcs_flash_controller_epcs_control_port_readyfordata_from_sa;
+  wire             iCLK_25_to_the_binary_vga;
   wire             in_port_to_the_gpio;
   wire             in_port_to_the_key;
   wire    [ 17: 0] in_port_to_the_pio_sw;
@@ -6559,7 +6976,16 @@ module test_bench
       .SRAM_OE_N_from_the_sram_16bit_512k_0      (SRAM_OE_N_from_the_sram_16bit_512k_0),
       .SRAM_UB_N_from_the_sram_16bit_512k_0      (SRAM_UB_N_from_the_sram_16bit_512k_0),
       .SRAM_WE_N_from_the_sram_16bit_512k_0      (SRAM_WE_N_from_the_sram_16bit_512k_0),
+      .VGA_BLANK_from_the_binary_vga             (VGA_BLANK_from_the_binary_vga),
+      .VGA_B_from_the_binary_vga                 (VGA_B_from_the_binary_vga),
+      .VGA_CLK_from_the_binary_vga               (VGA_CLK_from_the_binary_vga),
+      .VGA_G_from_the_binary_vga                 (VGA_G_from_the_binary_vga),
+      .VGA_HS_from_the_binary_vga                (VGA_HS_from_the_binary_vga),
+      .VGA_R_from_the_binary_vga                 (VGA_R_from_the_binary_vga),
+      .VGA_SYNC_from_the_binary_vga              (VGA_SYNC_from_the_binary_vga),
+      .VGA_VS_from_the_binary_vga                (VGA_VS_from_the_binary_vga),
       .clk_50                                    (clk_50),
+      .iCLK_25_to_the_binary_vga                 (iCLK_25_to_the_binary_vga),
       .in_port_to_the_gpio                       (in_port_to_the_gpio),
       .in_port_to_the_key                        (in_port_to_the_key),
       .in_port_to_the_pio_sw                     (in_port_to_the_pio_sw),

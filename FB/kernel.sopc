@@ -10,12 +10,28 @@
          type = "long";
       }
    }
+   element binary_vga.avalon_slave_0
+   {
+      datum baseAddress
+      {
+         value = "2097152";
+         type = "long";
+      }
+   }
    element sram_16bit_512k_0.avalon_slave_0
    {
       datum baseAddress
       {
          value = "524288";
          type = "long";
+      }
+   }
+   element binary_vga
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
       }
    }
    element cfi_flash
@@ -140,6 +156,14 @@
          type = "int";
       }
    }
+   element pio_red.s1
+   {
+      datum baseAddress
+      {
+         value = "8405040";
+         type = "long";
+      }
+   }
    element key.s1
    {
       datum baseAddress
@@ -148,19 +172,35 @@
          type = "long";
       }
    }
-   element onchip_memory.s1
-   {
-      datum baseAddress
-      {
-         value = "8392704";
-         type = "long";
-      }
-   }
    element pio_sw.s1
    {
       datum baseAddress
       {
          value = "8405056";
+         type = "long";
+      }
+   }
+   element timer.s1
+   {
+      datum baseAddress
+      {
+         value = "8404992";
+         type = "long";
+      }
+   }
+   element cfi_flash.s1
+   {
+      datum baseAddress
+      {
+         value = "4194304";
+         type = "long";
+      }
+   }
+   element onchip_memory.s1
+   {
+      datum baseAddress
+      {
+         value = "8392704";
          type = "long";
       }
    }
@@ -177,30 +217,6 @@
       datum baseAddress
       {
          value = "8405088";
-         type = "long";
-      }
-   }
-   element cfi_flash.s1
-   {
-      datum baseAddress
-      {
-         value = "4194304";
-         type = "long";
-      }
-   }
-   element pio_red.s1
-   {
-      datum baseAddress
-      {
-         value = "8405040";
-         type = "long";
-      }
-   }
-   element timer.s1
-   {
-      datum baseAddress
-      {
-         value = "8404992";
          type = "long";
       }
    }
@@ -247,8 +263,8 @@
  <parameter name="maxAdditionalLatency" value="0" />
  <parameter name="projectName" value="flappy_bird.qpf" />
  <parameter name="sopcBorderPoints" value="true" />
- <parameter name="systemHash" value="33964246566" />
- <parameter name="timeStamp" value="1417923936696" />
+ <parameter name="systemHash" value="30913763468" />
+ <parameter name="timeStamp" value="1417931173114" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <module kind="clock_source" version="12.0" enabled="1" name="clk_50">
   <parameter name="clockFrequency" value="50000000" />
@@ -349,7 +365,7 @@
   <parameter name="dcache_numTCDM" value="_0" />
   <parameter name="dcache_lineSize" value="_32" />
   <parameter name="dcache_bursts" value="false" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sram_16bit_512k_0.avalon_slave_0' start='0x80000' end='0x100000' /><slave name='cfi_flash.s1' start='0x400000' end='0x800000' /><slave name='onchip_memory.s1' start='0x801000' end='0x802000' /><slave name='cpu.jtag_debug_module' start='0x803000' end='0x803800' /><slave name='epcs_flash_controller.epcs_control_port' start='0x803800' end='0x804000' /><slave name='timer.s1' start='0x804000' end='0x804020' /><slave name='pio_green.s1' start='0x804020' end='0x804030' /><slave name='pio_red.s1' start='0x804030' end='0x804040' /><slave name='pio_sw.s1' start='0x804040' end='0x804050' /><slave name='key.s1' start='0x804050' end='0x804060' /><slave name='gpio.s1' start='0x804060' end='0x804070' /><slave name='jtag_uart.avalon_jtag_slave' start='0x804070' end='0x804078' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sram_16bit_512k_0.avalon_slave_0' start='0x80000' end='0x100000' /><slave name='binary_vga.avalon_slave_0' start='0x200000' end='0x400000' /><slave name='cfi_flash.s1' start='0x400000' end='0x800000' /><slave name='onchip_memory.s1' start='0x801000' end='0x802000' /><slave name='cpu.jtag_debug_module' start='0x803000' end='0x803800' /><slave name='epcs_flash_controller.epcs_control_port' start='0x803800' end='0x804000' /><slave name='timer.s1' start='0x804000' end='0x804020' /><slave name='pio_green.s1' start='0x804020' end='0x804030' /><slave name='pio_red.s1' start='0x804030' end='0x804040' /><slave name='pio_sw.s1' start='0x804040' end='0x804050' /><slave name='key.s1' start='0x804050' end='0x804060' /><slave name='gpio.s1' start='0x804060' end='0x804070' /><slave name='jtag_uart.avalon_jtag_slave' start='0x804070' end='0x804078' /></address-map>]]></parameter>
   <parameter name="dataAddrWidth" value="24" />
   <parameter name="customInstSlavesSystemInfo" value="&lt;info/&gt;" />
   <parameter name="cpuReset" value="false" />
@@ -520,6 +536,14 @@
    version="1.0.2"
    enabled="1"
    name="sram_16bit_512k_0">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
+ </module>
+ <module
+   kind="binary_vga_controller"
+   version="1.0.2"
+   enabled="1"
+   name="binary_vga">
+  <parameter name="RAM_SIZE" value="307200" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
  </module>
  <connection kind="clock" version="12.0" start="clk_50.clk" end="cpu.clk" />
@@ -693,5 +717,14 @@
    end="sram_16bit_512k_0.avalon_slave_0">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x00080000" />
+ </connection>
+ <connection kind="clock" version="12.0" start="clk_50.clk" end="binary_vga.clk" />
+ <connection
+   kind="avalon"
+   version="12.0"
+   start="cpu.data_master"
+   end="binary_vga.avalon_slave_0">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00200000" />
  </connection>
 </system>

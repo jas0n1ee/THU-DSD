@@ -17,6 +17,5 @@
   </columns>
  </clocktable>
  <window width="900" height="600" x="137" y="59" />
- <library
-   expandedCategories="Project,Library,Library/Peripherals/Microcontroller Peripherals,Library/Peripherals,Project/Terasic Technologies Inc" />
+ <library expandedCategories="Project,Project/Terasic Technologies Inc" />
 </preferences>

@@ -589,6 +589,12 @@ SYSTEM kernel
                span = "0x00080000";
                is_bridge = "0";
             }
+            Entry binary_vga/avalon_slave_0
+            {
+               address = "0x00200000";
+               span = "0x00200000";
+               is_bridge = "0";
+            }
          }
       }
       WIZARD_SCRIPT_ARGUMENTS 
@@ -1840,7 +1846,7 @@ SYSTEM kernel
                }
             }
          }
-         contents_info = "QUARTUS_PROJECT_DIR/onchip_memory.hex 1417924029 ";
+         contents_info = "";
       }
       SIMULATION 
       {
@@ -3671,6 +3677,204 @@ SYSTEM kernel
       HDL_INFO 
       {
          Simulation_HDL_Files = "__PROJECT_DIRECTORY__/ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v,__PROJECT_DIRECTORY__/sram_16bit_512k_0.v";
+      }
+      WIZARD_SCRIPT_ARGUMENTS 
+      {
+      }
+   }
+   MODULE binary_vga
+   {
+      SLAVE avalon_slave_0
+      {
+         PORT_WIRING 
+         {
+            PORT iCLK
+            {
+               type = "clk";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT iRST_N
+            {
+               type = "reset_n";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT oDATA
+            {
+               type = "readdata";
+               width = "16";
+               direction = "output";
+               Is_Enabled = "1";
+            }
+            PORT iDATA
+            {
+               type = "writedata";
+               width = "16";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT iADDR
+            {
+               type = "address";
+               width = "19";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT iWR
+            {
+               type = "write";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT iRD
+            {
+               type = "read";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT iCS
+            {
+               type = "chipselect";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+         }
+         SYSTEM_BUILDER_INFO 
+         {
+            Bus_Type = "avalon";
+            Write_Wait_States = "0cycles";
+            Read_Wait_States = "0cycles";
+            Hold_Time = "1cycles";
+            Setup_Time = "1cycles";
+            Is_Printable_Device = "0";
+            Address_Alignment = "native";
+            Well_Behaved_Waitrequest = "0";
+            Is_Nonvolatile_Storage = "0";
+            Read_Latency = "0";
+            Is_Memory_Device = "0";
+            Maximum_Pending_Read_Transactions = "0";
+            Minimum_Uninterrupted_Run_Length = "1";
+            Accepts_Internal_Connections = "1";
+            Write_Latency = "0";
+            Is_Flash = "0";
+            Data_Width = "16";
+            Address_Width = "19";
+            Maximum_Burst_Size = "1";
+            Register_Incoming_Signals = "0";
+            Register_Outgoing_Signals = "0";
+            Interleave_Bursts = "0";
+            Linewrap_Bursts = "0";
+            Burst_On_Burst_Boundaries_Only = "0";
+            Always_Burst_Max_Burst = "0";
+            Is_Big_Endian = "0";
+            Is_Enabled = "1";
+            MASTERED_BY cpu/data_master
+            {
+               priority = "1";
+               Offset_Address = "0x00200000";
+            }
+            Base_Address = "0x00200000";
+            Address_Group = "0";
+            IRQ_MASTER cpu/data_master
+            {
+               IRQ_Number = "NC";
+            }
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT VGA_R
+         {
+            type = "export";
+            width = "10";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_G
+         {
+            type = "export";
+            width = "10";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_B
+         {
+            type = "export";
+            width = "10";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_HS
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_VS
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_SYNC
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_BLANK
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT VGA_CLK
+         {
+            type = "export";
+            width = "1";
+            direction = "output";
+            Is_Enabled = "1";
+         }
+         PORT iCLK_25
+         {
+            type = "export";
+            width = "1";
+            direction = "input";
+            Is_Enabled = "1";
+         }
+      }
+      class = "no_legacy_module";
+      class_version = "7.08120";
+      gtf_class_name = "binary_vga_controller";
+      gtf_class_version = "1.0.2";
+      SYSTEM_BUILDER_INFO 
+      {
+         Do_Not_Generate = "1";
+         Instantiate_In_System_Module = "1";
+         Is_Bridge = "0";
+         Is_Enabled = "1";
+         Clock_Source = "clk_50";
+         Has_Clock = "1";
+         View 
+         {
+            MESSAGES 
+            {
+            }
+         }
+      }
+      HDL_INFO 
+      {
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/Img_RAM.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_Controller.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v,__PROJECT_DIRECTORY__/ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v,__PROJECT_DIRECTORY__/binary_vga.v";
       }
       WIZARD_SCRIPT_ARGUMENTS 
       {
