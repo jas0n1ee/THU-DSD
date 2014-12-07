@@ -1,0 +1,29 @@
+# clk_50
+# cpu_0
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu_0.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu_0.ocp]
+# vga
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/VGA_NIOS_CTRL_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/Img_DATA.hex]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_Param.h]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/Img_RAM.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_Controller.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/Binary_VGA_Controller/hdl/VGA_OSD_RAM.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) vga.v]
+# jtag_uart
+# uart
+# sram
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/SRAM_16Bit_512K/SRAM_16Bit_512K_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) sram.v]
+# onchip_memory2
+# cfi_flash_0
+# lcd
+# tri_state_bridge_flash
+# sysid_0
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "7CE9D3F198F80000014A206F32B7"
+set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_ENV "sopc"

@@ -1,0 +1,41 @@
+
+**** Build of configuration Nios II for project testVGA ****
+
+make all 
+Info: Building ../testVGA_bsp/
+make --no-print-directory -C ../testVGA_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../testVGA_bsp//HAL/inc -I../testVGA_bsp/ -I../testVGA_bsp//drivers/inc  -DSYSTEM_BUS_WIDTH=32 -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -EL -mno-hw-div -mhw-mul -mno-hw-mulx  -o obj/default/hello_world.o hello_world.c
+hello_world.c:18:17: error: VGA.h: No such file or directory
+hello_world.c:19:23: error: alt_cache.h: No such file or directory
+In file included from hello_world.c:20:
+graphics_lib/simple_graphics.h:4:17: error: VGA.h: No such file or directory
+In file included from hello_world.c:20:
+graphics_lib/simple_graphics.h:61: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:63: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:65: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:71: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:73: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:75: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:77: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:79: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:81: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:82: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:84: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:86: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:88: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:101: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:103: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+graphics_lib/simple_graphics.h:111: error: expected declaration specifiers or '...' before 'display_frame_buffer_struct'
+hello_world.c: In function 'main':
+hello_world.c:29: error: 'vga_controller_dev' undeclared (first use in this function)
+hello_world.c:29: error: (Each undeclared identifier is reported only once
+hello_world.c:29: error: for each function it appears in.)
+hello_world.c:29: error: 'vga' undeclared (first use in this function)
+hello_world.c:32: error: 'display_frame_buffer_struct' undeclared (first use in this function)
+hello_world.c:32: error: 'vga_frame_buffer' undeclared (first use in this function)
+hello_world.c:40: error: expected expression before ')' token
+hello_world.c:41: warning: implicit declaration of function 'vga_init_no_interrupt'
+hello_world.c:41: error: 'HEAP' undeclared (first use in this function)
+make: *** [obj/default/hello_world.o] Error 1

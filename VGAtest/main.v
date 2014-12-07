@@ -1,0 +1,498 @@
+module main
+	(
+		////////////////////	Clock Input	 	////////////////////	 
+		CLOCK_27,						//	On Board 27 MHz
+		CLOCK_50,						//	On Board 50 MHz
+		EXT_CLOCK,						//	External Clock
+		////////////////////	Push Button		////////////////////
+		KEY,							//	Pushbutton[3:0]
+		////////////////////	DPDT Switch		////////////////////
+		SW,								//	Toggle Switch[17:0]
+		////////////////////	7-SEG Dispaly	////////////////////
+		HEX0,							//	Seven Segment Digit 0
+		HEX1,							//	Seven Segment Digit 1
+		HEX2,							//	Seven Segment Digit 2
+		HEX3,							//	Seven Segment Digit 3
+		HEX4,							//	Seven Segment Digit 4
+		HEX5,							//	Seven Segment Digit 5
+		HEX6,							//	Seven Segment Digit 6
+		HEX7,							//	Seven Segment Digit 7
+		////////////////////////	LED		////////////////////////
+		LEDG,							//	LED Green[8:0]
+		LEDR,							//	LED Red[17:0]
+		////////////////////////	UART	////////////////////////
+		UART_TXD,						//	UART Transmitter
+		UART_RXD,						//	UART Receiver
+		////////////////////////	IRDA	////////////////////////
+		IRDA_TXD,						//	IRDA Transmitter
+		IRDA_RXD,						//	IRDA Receiver
+		/////////////////////	SDRAM Interface		////////////////
+		DRAM_DQ,						//	SDRAM Data bus 16 Bits
+		DRAM_ADDR,						//	SDRAM Address bus 12 Bits
+		DRAM_LDQM,						//	SDRAM Low-byte Data Mask 
+		DRAM_UDQM,						//	SDRAM High-byte Data Mask
+		DRAM_WE_N,						//	SDRAM Write Enable
+		DRAM_CAS_N,						//	SDRAM Column Address Strobe
+		DRAM_RAS_N,						//	SDRAM Row Address Strobe
+		DRAM_CS_N,						//	SDRAM Chip Select
+		DRAM_BA_0,						//	SDRAM Bank Address 0
+		DRAM_BA_1,						//	SDRAM Bank Address 1
+		DRAM_CLK,						//	SDRAM Clock
+		DRAM_CKE,						//	SDRAM Clock Enable
+		////////////////////	Flash Interface		////////////////
+		FL_DQ,							//	FLASH Data bus 8 Bits
+		FL_ADDR,						//	FLASH Address bus 20 Bits
+		FL_WE_N,						//	FLASH Write Enable
+		FL_RST_N,						//	FLASH Reset
+		FL_OE_N,						//	FLASH Output Enable
+		FL_CE_N,						//	FLASH Chip Enable
+		////////////////////	SRAM Interface		////////////////
+		SRAM_DQ,						//	SRAM Data bus 16 Bits
+		SRAM_ADDR,						//	SRAM Address bus 18 Bits
+		SRAM_UB_N,						//	SRAM High-byte Data Mask
+		SRAM_LB_N,						//	SRAM Low-byte Data Mask  
+		SRAM_WE_N,						//	SRAM Write Enable
+		SRAM_CE_N,						//	SRAM Chip Enable
+		SRAM_OE_N,						//	SRAM Output Enable
+		////////////////////	ISP1362 Interface	////////////////
+		OTG_DATA,						//	ISP1362 Data bus 16 Bits
+		OTG_ADDR,						//	ISP1362 Address 2 Bits
+		OTG_CS_N,						//	ISP1362 Chip Select
+		OTG_RD_N,						//	ISP1362 Write
+		OTG_WR_N,						//	ISP1362 Read
+		OTG_RST_N,						//	ISP1362 Reset
+		OTG_FSPEED,						//	USB Full Speed,	0 = Enable, Z = Disable
+		OTG_LSPEED,						//	USB Low Speed, 	0 = Enable, Z = Disable
+		OTG_INT0,						//	ISP1362 Interrupt 0
+		OTG_INT1,						//	ISP1362 Interrupt 1
+		OTG_DREQ0,						//	ISP1362 DMA Request 0
+		OTG_DREQ1,						//	ISP1362 DMA Request 1
+		OTG_DACK0_N,					//	ISP1362 DMA Acknowledge 0
+		OTG_DACK1_N,					//	ISP1362 DMA Acknowledge 1
+		////////////////////	LCD Module 16X2		////////////////
+		LCD_ON,							//	LCD Power ON/OFF
+		LCD_BLON,						//	LCD Back Light ON/OFF
+		LCD_RW,							//	LCD Read/Write Select, 0 = Write, 1 = Read
+		LCD_EN,							//	LCD Enable
+		LCD_RS,							//	LCD Command/Data Select, 0 = Command, 1 = Data
+		LCD_DATA,						//	LCD Data bus 8 bits
+		////////////////////	SD_Card Interface	////////////////
+		SD_DAT,							//	SD Card Data
+		SD_WP_N,						   //	SD Write protect 
+		SD_CMD,							//	SD Card Command Signal
+		SD_CLK,							//	SD Card Clock
+		////////////////////	USB JTAG link	////////////////////
+		TDI,  							//	CPLD -> FPGA (Data in)
+		TCK,  							//	CPLD -> FPGA (Clock)
+		TCS,  							//	CPLD -> FPGA (CS)
+	    TDO,  							//	FPGA -> CPLD (Data out)
+		////////////////////	I2C		////////////////////////////
+		I2C_SDAT,						//	I2C Data
+		I2C_SCLK,						//	I2C Clock
+		////////////////////	PS2		////////////////////////////
+		PS2_DAT,						//	PS2 Data
+		PS2_CLK,						//	PS2 Clock
+		////////////////////	VGA		////////////////////////////
+		VGA_CLK,   						//	VGA Clock
+		VGA_HS,							//	VGA H_SYNC
+		VGA_VS,							//	VGA V_SYNC
+		VGA_BLANK,						//	VGA BLANK
+		VGA_SYNC,						//	VGA SYNC
+		VGA_R,   						//	VGA Red[9:0]
+		VGA_G,	 						//	VGA Green[9:0]
+		VGA_B,  						//	VGA Blue[9:0]
+		////////////	Ethernet Interface	////////////////////////
+		ENET_DATA,						//	DM9000A DATA bus 16Bits
+		ENET_CMD,						//	DM9000A Command/Data Select, 0 = Command, 1 = Data
+		ENET_CS_N,						//	DM9000A Chip Select
+		ENET_WR_N,						//	DM9000A Write
+		ENET_RD_N,						//	DM9000A Read
+		ENET_RST_N,						//	DM9000A Reset
+		ENET_INT,						//	DM9000A Interrupt
+		ENET_CLK,						//	DM9000A Clock 25 MHz
+		////////////////	Audio CODEC		////////////////////////
+		AUD_ADCLRCK,					//	Audio CODEC ADC LR Clock
+		AUD_ADCDAT,						//	Audio CODEC ADC Data
+		AUD_DACLRCK,					//	Audio CODEC DAC LR Clock
+		AUD_DACDAT,						//	Audio CODEC DAC Data
+		AUD_BCLK,						//	Audio CODEC Bit-Stream Clock
+		AUD_XCK,						//	Audio CODEC Chip Clock
+		////////////////	TV Decoder		////////////////////////
+		TD_DATA,    					//	TV Decoder Data bus 8 bits
+		TD_HS,							//	TV Decoder H_SYNC
+		TD_VS,							//	TV Decoder V_SYNC
+		TD_RESET,						//	TV Decoder Reset
+		TD_CLK,							//	TV Decoder Line Locked Clock
+		//iTD_CLK,							//	TV Decoder Line Locked Clock
+		////////////////////	GPIO	////////////////////////////
+		GPIO_0,							//	GPIO Connection 0
+		GPIO_1							//	GPIO Connection 1
+	);
+
+////////////////////////	Clock Input	 	////////////////////////
+input			   CLOCK_27;				//	On Board 27 MHz
+input			   CLOCK_50;				//	On Board 50 MHz
+input			   EXT_CLOCK;				//	External Clock
+////////////////////////	Push Button		////////////////////////
+input	[3:0]	KEY;					//	Pushbutton[3:0]
+////////////////////////	DPDT Switch		////////////////////////
+input	[17:0]	SW;						//	Toggle Switch[17:0]
+////////////////////////	7-SEG Display	////////////////////////
+output	[6:0]	HEX0;					//	Seven Segment Digit 0
+output	[6:0]	HEX1;					//	Seven Segment Digit 1
+output	[6:0]	HEX2;					//	Seven Segment Digit 2
+output	[6:0]	HEX3;					//	Seven Segment Digit 3
+output	[6:0]	HEX4;					//	Seven Segment Digit 4
+output	[6:0]	HEX5;					//	Seven Segment Digit 5
+output	[6:0]	HEX6;					//	Seven Segment Digit 6
+output	[6:0]	HEX7;					//	Seven Segment Digit 7
+////////////////////////////	LED		////////////////////////////
+output	[8:0]	LEDG;					//	LED Green[8:0]
+output  [17:0]	LEDR;					//	LED Red[17:0]
+////////////////////////////	UART	////////////////////////////
+output			UART_TXD;				//	UART Transmitter
+input			UART_RXD;				//	UART Receiver
+////////////////////////////	IRDA	////////////////////////////
+output			IRDA_TXD;				//	IRDA Transmitter
+input			IRDA_RXD;				//	IRDA Receiver
+///////////////////////		SDRAM Interface	////////////////////////
+inout	[15:0]	DRAM_DQ;				//	SDRAM Data bus 16 Bits
+output  [11:0]	DRAM_ADDR;				//	SDRAM Address bus 12 Bits
+output			DRAM_LDQM;				//	SDRAM Low-byte Data Mask 
+output			DRAM_UDQM;				//	SDRAM High-byte Data Mask
+output			DRAM_WE_N;				//	SDRAM Write Enable
+output			DRAM_CAS_N;				//	SDRAM Column Address Strobe
+output			DRAM_RAS_N;				//	SDRAM Row Address Strobe
+output			DRAM_CS_N;				//	SDRAM Chip Select
+output			DRAM_BA_0;				//	SDRAM Bank Address 0
+output			DRAM_BA_1;				//	SDRAM Bank Address 0
+output			DRAM_CLK;				//	SDRAM Clock
+output			DRAM_CKE;				//	SDRAM Clock Enable
+////////////////////////	Flash Interface	////////////////////////
+inout	 [7:0]	FL_DQ;					//	FLASH Data bus 8 Bits
+output  [21:0]	FL_ADDR;				//	FLASH Address bus 22 Bits
+output			FL_WE_N;				//	FLASH Write Enable
+output			FL_RST_N;				//	FLASH Reset
+output			FL_OE_N;				//	FLASH Output Enable
+output			FL_CE_N;				//	FLASH Chip Enable
+////////////////////////	SRAM Interface	////////////////////////
+inout	[15:0]	SRAM_DQ;				//	SRAM Data bus 16 Bits
+output  [17:0]	SRAM_ADDR;				//	SRAM Address bus 18 Bits
+output			SRAM_UB_N;				//	SRAM Low-byte Data Mask 
+output			SRAM_LB_N;				//	SRAM High-byte Data Mask 
+output			SRAM_WE_N;				//	SRAM Write Enable
+output			SRAM_CE_N;				//	SRAM Chip Enable
+output			SRAM_OE_N;				//	SRAM Output Enable
+////////////////////	ISP1362 Interface	////////////////////////
+inout	[15:0]	OTG_DATA;				//	ISP1362 Data bus 16 Bits
+output	[1:0]	OTG_ADDR;				//	ISP1362 Address 2 Bits
+output			OTG_CS_N;				//	ISP1362 Chip Select
+output			OTG_RD_N;				//	ISP1362 Write
+output			OTG_WR_N;				//	ISP1362 Read
+output			OTG_RST_N;				//	ISP1362 Reset
+output			OTG_FSPEED;				//	USB Full Speed,	0 = Enable, Z = Disable
+output			OTG_LSPEED;				//	USB Low Speed, 	0 = Enable, Z = Disable
+input			OTG_INT0;				//	ISP1362 Interrupt 0
+input			OTG_INT1;				//	ISP1362 Interrupt 1
+input			OTG_DREQ0;				//	ISP1362 DMA Request 0
+input			OTG_DREQ1;				//	ISP1362 DMA Request 1
+output			OTG_DACK0_N;			//	ISP1362 DMA Acknowledge 0
+output			OTG_DACK1_N;			//	ISP1362 DMA Acknowledge 1
+////////////////////	LCD Module 16X2	////////////////////////////
+inout	  [7:0]	LCD_DATA;				//	LCD Data bus 8 bits
+output			LCD_ON;					//	LCD Power ON/OFF
+output			LCD_BLON;				//	LCD Back Light ON/OFF
+output			LCD_RW;					//	LCD Read/Write Select, 0 = Write, 1 = Read
+output			LCD_EN;					//	LCD Enable
+output			LCD_RS;					//	LCD Command/Data Select, 0 = Command, 1 = Data
+////////////////////	SD Card Interface	////////////////////////
+inout	 [3:0]	SD_DAT;					//	SD Card Data
+input			SD_WP_N;				//	SD write protect
+inout			SD_CMD;					//	SD Card Command Signal
+output			SD_CLK;					//	SD Card Clock
+////////////////////////	I2C		////////////////////////////////
+inout			I2C_SDAT;				//	I2C Data
+output			I2C_SCLK;				//	I2C Clock
+////////////////////////	PS2		////////////////////////////////
+input		 	PS2_DAT;				//	PS2 Data
+input			PS2_CLK;				//	PS2 Clock
+////////////////////	USB JTAG link	////////////////////////////
+input  			TDI;					// CPLD -> FPGA (data in)
+input  			TCK;					// CPLD -> FPGA (clk)
+input  			TCS;					// CPLD -> FPGA (CS)
+output 			TDO;					// FPGA -> CPLD (data out)
+////////////////////////	VGA			////////////////////////////
+output			VGA_CLK;   				//	VGA Clock
+output			VGA_HS;					//	VGA H_SYNC
+output			VGA_VS;					//	VGA V_SYNC
+output			VGA_BLANK;				//	VGA BLANK
+output			VGA_SYNC;				//	VGA SYNC
+output	[9:0]	VGA_R;   				//	VGA Red[9:0]
+output	[9:0]	VGA_G;	 				//	VGA Green[9:0]
+output	[9:0]	VGA_B;   				//	VGA Blue[9:0]
+////////////////	Ethernet Interface	////////////////////////////
+inout	[15:0]  ENET_DATA;				//	DM9000A DATA bus 16Bits
+output			ENET_CMD;				//	DM9000A Command/Data Select, 0 = Command, 1 = Data
+output			ENET_CS_N;				//	DM9000A Chip Select
+output			ENET_WR_N;				//	DM9000A Write
+output			ENET_RD_N;				//	DM9000A Read
+output			ENET_RST_N;				//	DM9000A Reset
+input			ENET_INT;				//	DM9000A Interrupt
+output			ENET_CLK;				//	DM9000A Clock 25 MHz
+////////////////////	Audio CODEC		////////////////////////////
+inout			AUD_ADCLRCK;			//	Audio CODEC ADC LR Clock
+input			AUD_ADCDAT;				//	Audio CODEC ADC Data
+inout			AUD_DACLRCK;			//	Audio CODEC DAC LR Clock
+output			AUD_DACDAT;				//	Audio CODEC DAC Data
+inout			AUD_BCLK;				//	Audio CODEC Bit-Stream Clock
+output			AUD_XCK;				//	Audio CODEC Chip Clock
+////////////////////	TV Devoder		////////////////////////////
+input	 [7:0]	TD_DATA;    			//	TV Decoder Data bus 8 bits
+input		   	TD_HS;					//	TV Decoder H_SYNC
+input		   	TD_VS;					//	TV Decoder V_SYNC
+output			TD_RESET;				//	TV Decoder Reset
+input			TD_CLK;					//	TV Decoder Line Locked Clock
+//input			iTD_CLK;					//	TV Decoder Line Locked Clock
+////////////////////////	GPIO	////////////////////////////////
+inout	[35:0]	GPIO_0;					//	GPIO Connection 0
+inout	[35:0]	GPIO_1;					//	GPIO Connection 1
+
+
+//	Flash
+assign	FL_RST_N	=	1'b1;
+wire FL_16BIT_IP_A0;
+
+//	16*2 LCD Module
+assign	LCD_ON		=	1'b1;	//	LCD ON
+assign	LCD_BLON	=	1'b1;	//	LCD Back Light	
+
+//	All inout port turn to tri-state
+assign	SD_DAT[0]		=	1'bz;
+assign	AUD_ADCLRCK	=	AUD_DACLRCK;
+assign	GPIO_0		=	36'hzzzzzzzzz;
+assign	GPIO_1		=	36'hzzzzzzzzz;
+
+//	Disable USB speed select
+assign	OTG_FSPEED	=	1'bz;
+assign	OTG_LSPEED	=	1'bz;
+
+//	Turn On TV Decoder
+assign	TD_RESET	=	KEY[0];
+
+//	Set SD Card to SD Mode
+wire [3:1] SD_DAT_dummy;
+assign SD_DAT_dummy = 3'bzzz;
+assign	SD_DAT[3]	=	1'b1;
+
+//========== SSRAM
+wire [1:0] SRAM_DUMMY_ADDR;                    //   used to ignore the A0/A1 pin from Cypress SSRAM IP core
+wire [15:0] SRAM_DUMMY_DQ;
+
+//========== SDRAM
+assign	DRAM_CLK = pll_c1_memory;
+
+wire 	CPU_RESET_N;
+wire	pll_c0_system, pll_c1_memory, pll_c2_audio;
+
+//  Reset
+
+Reset_Delay	delay1	(.iRST(KEY[0]),.iCLK(CLOCK_50),.oRESET(CPU_RESET_N));
+
+/////////////////////////  adding your SoPC here   ////////////////////////////////
+DE2_SoPC DE2_SoPC_inst
+    (
+    // globe signals
+      .clk_50                              (CLOCK_50),
+      .reset_n                             (CPU_RESET_N),  
+      //.pll_c0_system                       (pll_c0_system),
+      //.pll_c1_memory                       (pll_c1_memory),
+      //.pll_c2_audio                        (pll_c2_audio),  
+
+    //sdram
+	 /*
+      .zs_addr_from_the_sdram              (DRAM_ADDR),
+      .zs_ba_from_the_sdram                ({DRAM_BA_1,DRAM_BA_0}),
+      .zs_cas_n_from_the_sdram             (DRAM_CAS_N),
+      .zs_cke_from_the_sdram               (DRAM_CKE),
+      .zs_cs_n_from_the_sdram              (DRAM_CS_N),
+      .zs_dq_to_and_from_the_sdram         (DRAM_DQ),
+      .zs_dqm_from_the_sdram               ({DRAM_UDQM,DRAM_LDQM}),
+      .zs_ras_n_from_the_sdram             (DRAM_RAS_N),
+      .zs_we_n_from_the_sdram              (DRAM_WE_N),   
+	*/
+    //ssram
+	 /*
+      .SRAM_ADDR_from_the_sram				(SRAM_ADDR),
+      .SRAM_CE_N_from_the_sram				(SRAM_CE_N),
+      .SRAM_DQ_to_and_from_the_sram			(SRAM_DQ),
+      .SRAM_LB_N_from_the_sram				(SRAM_LB_N),
+      .SRAM_OE_N_from_the_sram				(SRAM_OE_N),
+      .SRAM_UB_N_from_the_sram				(SRAM_UB_N),
+      .SRAM_WE_N_from_the_sram				(SRAM_WE_N),  
+	*/		
+    //flash  
+      .tri_state_bridge_flash_address      (FL_ADDR),
+      .tri_state_bridge_flash_readn        (FL_OE_N),
+      .write_n_to_the_cfi_flash_0            (FL_WE_N),
+      .select_n_to_the_cfi_flash_0           (FL_CE_N),
+      .tri_state_bridge_flash_data         (FL_DQ),
+    //lcd         
+      .LCD_E_from_the_lcd                  (LCD_EN),
+      .LCD_RS_from_the_lcd                 (LCD_RS),
+      .LCD_RW_from_the_lcd                 (LCD_RW),
+      .LCD_data_to_and_from_the_lcd        (LCD_DATA),
+    //i2c  
+	 /*
+      .out_port_from_the_i2c_sclk          (),//(I2C_SCLK),                  
+      .bidir_port_to_and_from_the_i2c_sdat (),//(I2C_SDAT),
+    
+	 //sd card  
+      .out_port_from_the_SD_CLK            (SD_CLK),
+      .bidir_port_to_and_from_the_SD_CMD   (SD_CMD),      
+      .bidir_port_to_and_from_the_SD_DAT   ({SD_DAT_dummy,SD_DAT[0]}),
+      //.bidir_port_to_and_from_the_sd_dat3  (SD_DAT[3]),
+    //swtich        
+      .in_port_to_the_pio_button           (KEY[3:1]),
+      .in_port_to_the_pio_switch           (SW[17:0]),
+    //hex 
+     
+      .oSEG0_from_the_seg7                 (HEX0),
+      .oSEG1_from_the_seg7                 (HEX1),
+      .oSEG2_from_the_seg7                 (HEX2),
+      .oSEG3_from_the_seg7                 (HEX3),
+      .oSEG4_from_the_seg7                 (HEX4),
+      .oSEG5_from_the_seg7                 (HEX5),
+      .oSEG6_from_the_seg7                 (HEX6),
+      .oSEG7_from_the_seg7                 (HEX7),
+      
+    //led 
+      .out_port_from_the_pio_green_led     (LEDG),
+      .out_port_from_the_pio_red_led       (LEDR),
+		*/
+     //the_uart
+      .rxd_to_the_uart					   (UART_RXD),
+      .txd_from_the_uart				   (UART_TXD),
+     //vga  
+      .VGA_BLANK_from_the_vga				(VGA_BLANK),
+      .VGA_B_from_the_vga					(VGA_B),
+      .VGA_CLK_from_the_vga					(VGA_CLK),
+      .VGA_G_from_the_vga					(VGA_G),
+      .VGA_HS_from_the_vga					(VGA_HS),
+      .VGA_R_from_the_vga					(VGA_R),
+      .VGA_SYNC_from_the_vga				(VGA_SYNC),
+      .VGA_VS_from_the_vga					(VGA_VS),
+      .iCLK_25_to_the_vga					(CLOCK_27)
+		);
+///////////////////////////////////////////////////////////////////////////////////
+
+endmodule
+
+module	Reset_Delay(iRST,iCLK,oRESET);
+input		iCLK;
+input		iRST;
+output reg	oRESET;
+reg	[27:0]	Cont;
+
+always@(posedge iCLK or negedge iRST)
+begin
+	if(!iRST)
+	begin
+		oRESET	<=	1'b0;
+		Cont	<=	28'h0000000;
+	end
+	else
+	begin
+		if(Cont!=28'h4FFFFFF)   // about 300ms at 50MHz
+		begin
+			Cont	<=	Cont+1;
+			oRESET	<=	1'b0;
+		end
+		else
+			oRESET	<=	1'b1;
+	end
+end
+endmodule
+
+
+///////////////////    sopc binding referance   ////////////////////////
+/*
+
+DE2_SoPC DE2_SoPC_inst
+    (
+    // globe signals
+      .clk_50                              (CLOCK_50),
+      .reset_n                             (CPU_RESET_N),  
+      .pll_c0_system                       (pll_c0_system),
+      .pll_c1_memory                       (pll_c1_memory),
+      .pll_c2_audio                        (pll_c2_audio),  
+
+    //sdram
+      .zs_addr_from_the_sdram              (DRAM_ADDR),
+      .zs_ba_from_the_sdram                ({DRAM_BA_1,DRAM_BA_0}),
+      .zs_cas_n_from_the_sdram             (DRAM_CAS_N),
+      .zs_cke_from_the_sdram               (DRAM_CKE),
+      .zs_cs_n_from_the_sdram              (DRAM_CS_N),
+      .zs_dq_to_and_from_the_sdram         (DRAM_DQ),
+      .zs_dqm_from_the_sdram               ({DRAM_UDQM,DRAM_LDQM}),
+      .zs_ras_n_from_the_sdram             (DRAM_RAS_N),
+      .zs_we_n_from_the_sdram              (DRAM_WE_N),   
+
+    //ssram
+      .SRAM_ADDR_from_the_sram				(SRAM_ADDR),
+      .SRAM_CE_N_from_the_sram				(SRAM_CE_N),
+      .SRAM_DQ_to_and_from_the_sram			(SRAM_DQ),
+      .SRAM_LB_N_from_the_sram				(SRAM_LB_N),
+      .SRAM_OE_N_from_the_sram				(SRAM_OE_N),
+      .SRAM_UB_N_from_the_sram				(SRAM_UB_N),
+      .SRAM_WE_N_from_the_sram				(SRAM_WE_N),          
+    //flash  
+      .tri_state_bridge_flash_address      (FL_ADDR),
+      .tri_state_bridge_flash_readn        (FL_OE_N),
+      .write_n_to_the_cfi_flash            (FL_WE_N),
+      .select_n_to_the_cfi_flash           (FL_CE_N),
+      .tri_state_bridge_flash_data         (FL_DQ),
+    //lcd         
+      .LCD_E_from_the_lcd                  (LCD_EN),
+      .LCD_RS_from_the_lcd                 (LCD_RS),
+      .LCD_RW_from_the_lcd                 (LCD_RW),
+      .LCD_data_to_and_from_the_lcd        (LCD_DATA),
+    //i2c  
+      .out_port_from_the_i2c_sclk          (),//(I2C_SCLK),                  
+      .bidir_port_to_and_from_the_i2c_sdat (),//(I2C_SDAT),
+    //sd card  
+      .out_port_from_the_SD_CLK            (SD_CLK),
+      .bidir_port_to_and_from_the_SD_CMD   (SD_CMD),      
+      .bidir_port_to_and_from_the_SD_DAT   ({SD_DAT_dummy,SD_DAT[0]}),
+      //.bidir_port_to_and_from_the_sd_dat3  (SD_DAT[3]),
+    //swtich        
+      .in_port_to_the_pio_button           (KEY[3:1]),
+      .in_port_to_the_pio_switch           (SW[17:0]),
+    //hex 
+     
+      .oSEG0_from_the_seg7                 (HEX0),
+      .oSEG1_from_the_seg7                 (HEX1),
+      .oSEG2_from_the_seg7                 (HEX2),
+      .oSEG3_from_the_seg7                 (HEX3),
+      .oSEG4_from_the_seg7                 (HEX4),
+      .oSEG5_from_the_seg7                 (HEX5),
+      .oSEG6_from_the_seg7                 (HEX6),
+      .oSEG7_from_the_seg7                 (HEX7),
+      
+    //led 
+      .out_port_from_the_pio_green_led     (LEDG),
+      .out_port_from_the_pio_red_led       (LEDR),
+     //the_uart
+      .rxd_to_the_uart					   (UART_RXD),
+      .txd_from_the_uart				   (UART_TXD),
+     //vga  
+      .VGA_BLANK_from_the_vga				(VGA_BLANK),
+      .VGA_B_from_the_vga					(VGA_B),
+      .VGA_CLK_from_the_vga					(VGA_CLK),
+      .VGA_G_from_the_vga					(VGA_G),
+      .VGA_HS_from_the_vga					(VGA_HS),
+      .VGA_R_from_the_vga					(VGA_R),
+      .VGA_SYNC_from_the_vga				(VGA_SYNC),
+      .VGA_VS_from_the_vga					(VGA_VS),
+      .iCLK_25_to_the_vga					(CLOCK_27)
+    );
+*/
