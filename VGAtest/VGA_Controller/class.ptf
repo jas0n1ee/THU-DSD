@@ -1,0 +1,469 @@
+CLASS vga_controller
+{
+  ASSOCIATED_FILES 
+  {
+    Add_Program     = "default";
+    Edit_Program    = "default";
+    Generator_Program = "vga_controller.pl";
+  }
+  MODULE_DEFAULTS 
+  {
+    class = "vga_controller";
+    class_version = "1.0";
+    SYSTEM_BUILDER_INFO 
+    {
+      Top_Level_Ports_Are_Enumerated = "1";
+      Instantiate_In_System_Module = "1";
+      Is_Enabled = "1";
+      Date_Modified = "--unknown--";
+    }
+    WIZARD_SCRIPT_ARGUMENTS 
+    {
+      reset_value = "0x0";
+      color_depth = "16";
+      dma_bursting = "0";
+      fifo_depth = "4096";
+      screen_resolution = "640x480";
+      screen_width = "640";
+      screen_height = "480";
+      sync_polarity = "0";
+      frame_buffers = "1";
+    }
+    PORT_WIRING 
+    {
+      PORT R
+      {
+        width = "8";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT G
+      {
+        width = "8";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT B
+      {
+        width = "8";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT M1
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT M2
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT blank_n
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT hsync
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT sync_n
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT sync_t
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT vsync
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT vga_clk
+      {
+        width = "1";
+        direction = "input";
+        Is_Enabled = "1";
+        type = "export";
+      }
+      PORT irq
+      {
+        width = "1";
+        direction = "output";
+        Is_Enabled = "1";
+        type = "irq";
+      }
+    }
+    SLAVE s1
+    {
+      SYSTEM_BUILDER_INFO 
+      {
+        Bus_Type = "avalon";
+        Address_Width = "2";
+        Address_Alignment = "native";
+        Data_Width = "32";
+        Has_Base_Address = "1";
+        Has_IRQ = "0";
+        Setup_Time = "0cycles";
+        Hold_Time = "0cycles";
+        Read_Wait_States = "1cycles";
+        Write_Wait_States = "0cycles";
+        Read_Latency = "0";
+        Maximum_Pending_Read_Transactions = "0";
+        Is_Printable_Device = "0";
+        Is_Memory_Device = "0";
+        Is_Readable = "1";
+        Is_Writable = "1";
+        Minimum_Uninterrupted_Run_Length = "1";
+      }
+      PORT_WIRING 
+      {
+        PORT slave_address
+        {
+          width = "2";
+          direction = "input";
+          type = "address";
+        }
+        PORT clk
+        {
+          width = "1";
+          direction = "input";
+          type = "clk";
+        }
+        PORT reset_n
+        {
+          width = "1";
+          direction = "input";
+          type = "reset_n";
+        }
+        PORT slave_write
+        {
+          width = "1";
+          direction = "input";
+          type = "write";
+        }
+        PORT slave_writedata
+        {
+          width = "32";
+          direction = "input";
+          type = "writedata";
+        }
+        PORT slave_readdata
+        {
+          width = "32";
+          direction = "output";
+          type = "readdata";
+        }
+
+        PORT slave_chipselect
+        {
+          width = "1";
+          direction = "input";
+          type = "chipselect";
+        }
+      }
+    }
+    MASTER m1
+    {
+      SYSTEM_BUILDER_INFO 
+      {
+        Bus_Type = "avalon";
+        Max_Address_Width = "32";
+        Data_Width = "32";
+        Do_Stream_Reads   = "1";
+        Is_Readable       = "1";
+        Is_Writable       = "0";
+        Maximum_Burst_Size   = "1";
+      }
+      PORT_WIRING 
+      {
+        PORT master_address
+        {
+          width = "32";
+          direction = "output";
+          type = "address";
+        }
+        PORT master_write
+        {
+          width = "1";
+          direction = "output";
+          type = "write";
+        }
+        PORT master_read
+        {
+          width = "1";
+          direction = "output";
+          type = "read";
+        }
+        PORT master_readdata
+        {
+          width = "32";
+          direction = "input";
+          type = "readdata";
+        }
+        PORT master_waitrequest
+        {
+          width = "1";
+          direction = "input";
+          type = "waitrequest";
+        }
+        PORT master_data_valid
+        {
+          width = "1";
+          direction = "input";
+          type = "readdatavalid";
+        }
+
+      }
+    }
+    SIMULATION
+    {  
+      DISPLAY 
+      {
+         SIGNAL x101
+         {
+            name = "streaming_master_0";
+            format = "Divider";
+         }
+         SIGNAL x103
+         {
+            name = "slave_chipselect";
+         }
+         SIGNAL x104
+         {
+            name = "slave_write";
+         }
+         SIGNAL x105
+         {
+            name = "slave_writedata";
+            radix = "hexadecimal";
+         }
+         SIGNAL x107
+         {
+            name = "slave_address";
+            radix = "hexadecimal";
+         }
+         SIGNAL x109
+         {
+            name = "slave_readdata";
+            radix = "hexadecimal";
+         }
+         SIGNAL x119
+         {
+            name = "clk";
+         }
+         SIGNAL x121
+         {
+            name = "master_waitrequest";
+         }
+         SIGNAL x122
+         {
+            name = "master_readdata";
+            radix = "hexadecimal";
+         }
+         SIGNAL x124
+         {
+            name = "master_address";
+            radix = "hexadecimal";
+         }
+         SIGNAL x125
+         {
+            name = "master_read";
+         }
+      }
+    }
+  }
+  USER_INTERFACE 
+  {
+    USER_LABELS 
+    {
+      name = "VGA Controller";
+      description="VGA Controller that uses a DMA to display video data from a frame buffer";
+      technology = "Display";
+    }
+    WIZARD_UI default
+    {
+      title="{{ $MOD }}";
+      CONTEXT 
+      {
+      	WSA = "WIZARD_SCRIPT_ARGUMENTS";
+        SBI_slave = "SLAVE s1/SYSTEM_BUILDER_INFO";
+        SBI_master = "MASTER m1/SYSTEM_BUILDER_INFO";
+      }
+      PAGES main
+      {
+        select=1;
+        PAGE 1
+        {
+          title = "Parameters";
+          GROUP interactive
+          {
+             enable = 1;
+             title = "Color Depth";
+             align = "left";
+             RADIO 16
+             {
+                id = "16b_color";
+                title = "16-bit Color";
+                tooltip = "This setting configures the VGA controller to use 16-bit color";
+                DATA
+                {
+                   $WSA/color_depth = "16";
+                }
+             }
+             RADIO 24
+             {
+                id = "24b_color";
+                title = "24-bit Color (packed)";
+                tooltip = "This setting configures the VGA controller to use 24-bit color";
+                DATA 
+                {
+                   $WSA/color_depth = "24";
+                }
+             }
+          }
+          GROUP interactive
+          {
+             enable = 1;
+             title = "DMA Transaction Types";
+             align = "left";
+             RADIO pipelined_reads
+             {
+                id = "pipelined";
+                title = "Use Pipelined Reads";
+                tooltip = "This setting causes the DMA to use pipelined reads from the frame buffer";
+                DATA
+                {
+                   $WSA/dma_bursting = "0";
+                }
+             }
+             RADIO burst_reads
+             {
+                id = "burst";
+                title = "Use Bursting Reads (not currently supported)";
+                tooltip = "This setting causes the DMA to use burst reads from the frame buffer";
+                DATA 
+                {
+                   $WSA/dma_bursting = "1";
+                }
+             }
+          }
+          GROUP
+          {
+            title = "FIFO Depth";
+            tooltip = "This setting controls how deep to make DMA FIFO. 128 words will consume 1 M4K memory block";
+            spacing = "5";
+            align = "left";
+            COMBO depth
+            {
+              title = "FIFO Depth (32-bit words): ";
+              id = "fifo_depth";
+              values="128,256,512,1024,2048,4096,8192,16384,32768,65536";
+              editable = "1";
+              DATA 
+              {
+                $WSA/fifo_depth = "$";
+              }
+            }
+          }
+          GROUP interactive
+          {
+             title = "Resolution (pixels): ";
+             tooltip = "This setting controls the screen resolution of the VGA output";
+             align = "left";
+             
+             RADIO res_640x480
+             {
+                id="r640x480";
+                title="640x480 (25MHz VGA clock)";
+                tooltip = "Sets resolution to 640x480 pixels";
+                DATA 
+                {
+                	$WSA/screen_resolution = "640x480";
+                	$WSA/screen_width = "640";
+                	$WSA/screen_height = "480";
+                	$WSA/sync_polarity = "0";
+                }
+             }
+             RADIO res_800x600
+             {
+                id="r800x600";
+                title="800x600 (40MHz VGA clock)";
+                tooltip = "Sets resolution to 800x600 pixels";
+                DATA 
+                {
+                	$WSA/screen_resolution = "800x600";
+                	$WSA/screen_width = "800";
+                	$WSA/screen_height = "600";
+                	$WSA/sync_polarity = "1";
+                }
+             }
+             RADIO res_1024x768
+             {
+                id="r1024x768";
+                title="1024x768 (65MHz VGA clock)";
+                tooltip = "Sets resolution to 1024x768 pixels";
+                DATA 
+                {
+                	$WSA/screen_resolution = "1024x768";
+                	$WSA/screen_width = "1024";
+                	$WSA/screen_height = "768";
+                	$WSA/sync_polarity = "0";
+                }
+             }
+          }
+          GROUP interactive
+          {
+             title = "Frame Buffer: ";
+             tooltip = "This setting controls whether or not the driver supports double frame buffering";
+             align = "left";
+             
+             RADIO single_buffered
+             {
+                id="single_buffered";
+                title="Single Frame Buffer";
+                tooltip = "Driver writes to same buffer as is being displayed";
+                DATA 
+                {
+                	$WSA/frame_buffers = "1";
+                }
+             }
+             RADIO double_buffered
+             {
+                id="double_buffered";
+                title="Double Frame Buffer";
+                tooltip = "Driver writes to different buffer than is being displayed, then they are flipped";
+                DATA 
+                {
+                	$WSA/frame_buffers = "2";
+                }
+             }
+          }
+        }
+      }
+    }
+  }
+}
+double_frame_buffer

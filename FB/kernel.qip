@@ -1,0 +1,24 @@
+# clk_50
+# cpu
+set_global_assignment -name SDC_FILE [file join $::quartus(qip_path) cpu.sdc]
+set_global_assignment -name SOURCE_FILE [file join $::quartus(qip_path) cpu.ocp]
+# jtag_uart
+# onchip_memory
+# cfi_flash
+# tri_state_bridge
+# epcs_flash_controller
+# timer
+# pio_green
+# pio_red
+# pio_sw
+# key
+# gpio
+# sram_16bit_512k_0
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/SRAM_16Bit_512K/SRAM_16Bit_512K_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) sram_16bit_512k_0.v]
+# null
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "50B7C33CED1B0000014A22DA52B3"
+set_global_assignment -entity "kernel" -name IP_TOOL_NAME "sopc"
+set_global_assignment -entity "kernel" -name IP_TOOL_VERSION "12.0"
+set_global_assignment -entity "kernel" -name IP_TOOL_ENV "sopc"

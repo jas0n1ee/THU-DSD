@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+	{{"Slow Model"} {flappy_bird.vo flappy_bird_v.sdo}}
+	{{"Fast Model"} {flappy_bird_fast.vo flappy_bird_v_fast.sdo}}
+}
