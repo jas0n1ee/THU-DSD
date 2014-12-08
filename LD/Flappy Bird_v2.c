@@ -137,6 +137,20 @@ int main()
 ////////////////////////////// Flappy Bird ///////////////////////////////////
     while(1){
         press_button = IORD(KEY_BASE,0);
+        if (press_button)
+        {
+            press_cnt++;
+            if(press_cnt == 5000000)
+            {
+                press_cnt = 0;
+                printf("Game Started!\n");
+                break;
+            }
+        }
+    }
+
+    while(1){
+        press_button = IORD(KEY_BASE,0);
         //Jump judgement
         if (press_button && jump == FALSE)
         {
