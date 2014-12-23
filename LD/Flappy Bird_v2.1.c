@@ -46,7 +46,7 @@ void Erase_Bird(int VGA_BASE, int bird_h)
     int x,y;
 	for (y = bird_h - bird_size; y <= bird_h + bird_size; y++)
         for (x = (W_B/2 - bird_size); x <= (W_B/2 + bird_size); x++)
-            Vga_Clr_Pixel(VGA_BASE,x,y);
+            Vga_Clr_Pixel(VGA_BASE,x,H_B-1-y);
 }
 
 void Print_Bird(int VGA_BASE, int bird_h)
@@ -54,7 +54,7 @@ void Print_Bird(int VGA_BASE, int bird_h)
 	int x,y;
 	for (y = bird_h - bird_size; y <= bird_h + bird_size; y++)
         for (x = (W_B/2 - bird_size); x <= (W_B/2 + bird_size); x++)
-            Vga_Set_Pixel(VGA_BASE,x,y);
+            Vga_Set_Pixel(VGA_BASE,x,H_B-1-y);
 }
 
 int Shift_Pl(int VGA_BASE, Pillar *p)
@@ -72,34 +72,34 @@ int Shift_Pl(int VGA_BASE, Pillar *p)
             for (x = max(0, p->x + W_P - Sh_step); x < (p->x + W_P); x++)
             {
                 for (y = H_G; y < p->y; y++)
-                    Vga_Clr_Pixel(VGA_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,H_B-1-y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Clr_Pixel(VGA_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,H_B-1-y);
             }
         else if (p->x < (W_B - W_P + Sh_step))
         {
             for (x = max(0, p->x - Sh_step); x < p->x; x++)
             {
                 for (y = H_G; y < p->y; y++)
-                    Vga_Set_Pixel(VGA_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,H_B-1-y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Set_Pixel(VGA_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,H_B-1-y);
             }
             for (x = p->x + W_P - Sh_step; x < min(p->x + W_P, W_B); x++)
             {
                 for (y = H_G; y < p->y; y++)
-                    Vga_Clr_Pixel(VGA_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,H_B-1-y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Clr_Pixel(VGA_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,H_B-1-y);
             }
         }
         else if (p->x < (W_B + Sh_step))
             for (x = p->x - Sh_step; x < min(p->x, W_B); x++)
             {
                 for (y = H_G; y < p->y; y++)
-                    Vga_Set_Pixel(VGA_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,H_B-1-y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Set_Pixel(VGA_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,H_B-1-y);
             }
         p->x = p->x - Sh_step;
         return 0;
@@ -142,9 +142,9 @@ int main()
     for (x = 0; x < W_B; x++)
     {
         for (y = 0; y < H_G; y++)
-            Vga_Set_Pixel(VGA_0_BASE, x, y);
+            Vga_Set_Pixel(VGA_0_BASE, x, H_B-1-y);
         for (y = H_G; y < H_B; y++)
-            Vga_Clr_Pixel(VGA_0_BASE, x, y);
+            Vga_Clr_Pixel(VGA_0_BASE, x, H_B-1-y);
     }
 
     // Pillar Init
