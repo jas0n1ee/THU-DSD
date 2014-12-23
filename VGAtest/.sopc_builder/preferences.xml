@@ -11,12 +11,12 @@
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="377" />
-   <clocksource preferredWidth="377" />
-   <frequency preferredWidth="367" />
+   <clockname preferredWidth="317" />
+   <clocksource preferredWidth="315" />
+   <frequency preferredWidth="313" />
   </columns>
  </clocktable>
- <window width="1616" height="876" x="-8" y="-8" />
+ <window width="1440" height="860" x="-176" y="70" />
  <library
-   expandedCategories="Library/Memories and Memory Controllers/External Memory Interfaces/Flash Interfaces,Library/Bridges,Library,Library/Legacy Components,Project,Library/Bridges/Memory Mapped,Library/Peripherals/Display,Library/DSP/Video and Image Processing,Library/Interface Protocols,Library/Peripherals,Library/DSP,Library/Interface Protocols/High Speed,Library/Memories and Memory Controllers/External Memory Interfaces/Memory Models,Library/Memories and Memory Controllers/External Memory Interfaces,Library/Peripherals/Debug and Performance,Library/Memories and Memory Controllers" />
+   expandedCategories="Library,Library/Peripherals/Display,Library/Peripherals,Library/DSP,Library/DSP/Video and Image Processing,Project" />
 </preferences>

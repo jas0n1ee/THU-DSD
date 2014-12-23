@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for main
-Sun Dec 07 21:31:04 2014
+Mon Dec 22 21:18:27 2014
 Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; cpu_0.sdc     ; OK     ; Sun Dec 07 21:31:03 2014 ;
+; cpu_0.sdc     ; OK     ; Mon Dec 22 21:18:26 2014 ;
 +---------------+--------+--------------------------+
 
 
@@ -160,8 +160,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 8.809  ;       ;       ; 8.809  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.155 ; 5.155 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.020 ;       ;       ; 10.020 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.160 ; 5.160 ;        ;
+; KEY[0]      ; TD_RESET    ; 10.029 ;       ;       ; 10.029 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -171,8 +171,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 8.809  ;       ;       ; 8.809  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.155 ; 5.155 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.020 ;       ;       ; 10.020 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.160 ; 5.160 ;        ;
+; KEY[0]      ; TD_RESET    ; 10.029 ;       ;       ; 10.029 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -224,8 +224,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
-; CLOCK_27    ; VGA_CLK     ;       ; 2.792 ; 2.792 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.731 ;       ;       ; 5.731 ;
+; CLOCK_27    ; VGA_CLK     ;       ; 2.795 ; 2.795 ;       ;
+; KEY[0]      ; TD_RESET    ; 5.737 ;       ;       ; 5.737 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -235,8 +235,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
-; CLOCK_27    ; VGA_CLK     ;       ; 2.792 ; 2.792 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.731 ;       ;       ; 5.731 ;
+; CLOCK_27    ; VGA_CLK     ;       ; 2.795 ; 2.795 ;       ;
+; KEY[0]      ; TD_RESET    ; 5.737 ;       ;       ; 5.737 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -258,8 +258,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 8.809  ;       ;       ; 8.809  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.155 ; 5.155 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.020 ;       ;       ; 10.020 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.160 ; 5.160 ;        ;
+; KEY[0]      ; TD_RESET    ; 10.029 ;       ;       ; 10.029 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -269,8 +269,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
-; CLOCK_27    ; VGA_CLK     ;       ; 2.792 ; 2.792 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.731 ;       ;       ; 5.731 ;
+; CLOCK_27    ; VGA_CLK     ;       ; 2.795 ; 2.795 ;       ;
+; KEY[0]      ; TD_RESET    ; 5.737 ;       ;       ; 5.737 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -299,10 +299,10 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 2     ; 2    ;
-; Unconstrained Input Ports       ; 35    ; 35   ;
-; Unconstrained Input Port Paths  ; 112   ; 112  ;
-; Unconstrained Output Ports      ; 120   ; 120  ;
-; Unconstrained Output Port Paths ; 1843  ; 1843 ;
+; Unconstrained Input Ports       ; 36    ; 36   ;
+; Unconstrained Input Port Paths  ; 113   ; 113  ;
+; Unconstrained Output Ports      ; 122   ; 122  ;
+; Unconstrained Output Port Paths ; 1845  ; 1845 ;
 +---------------------------------+-------+------+
 
 
@@ -312,7 +312,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Sun Dec 07 21:31:01 2014
+    Info: Processing started: Mon Dec 22 21:18:23 2014
 Info: Command: quartus_sta main -c main
 Info: qsta_default_script.tcl version: #4
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -382,8 +382,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 474 megabytes
-    Info: Processing ended: Sun Dec 07 21:31:04 2014
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Mon Dec 22 21:18:27 2014
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

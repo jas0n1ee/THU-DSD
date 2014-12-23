@@ -24,6 +24,8 @@
       .iCLK_25_to_the_vga_0           (iCLK_25_to_the_vga_0),
       .reset_n                        (reset_n),
       .rxd_to_the_uart                (rxd_to_the_uart),
+      .scl_pad_io_to_and_from_the_i2c (scl_pad_io_to_and_from_the_i2c),
+      .sda_pad_io_to_and_from_the_i2c (sda_pad_io_to_and_from_the_i2c),
       .select_n_to_the_cfi_flash_0    (select_n_to_the_cfi_flash_0),
       .tri_state_bridge_flash_address (tri_state_bridge_flash_address),
       .tri_state_bridge_flash_data    (tri_state_bridge_flash_data),

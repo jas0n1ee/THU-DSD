@@ -24,8 +24,17 @@ set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) sram.v]
 # sysid_0
 # timer
 # epcs
+# i2c
+set_global_assignment -name TCL_FILE [file join $::quartus(qip_path) ip/opencores_i2c/opencores_i2c_hw.tcl]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/opencores_i2c/opencores_i2c.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/opencores_i2c/i2c_master_bit_ctrl.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/opencores_i2c/i2c_master_byte_ctrl.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/opencores_i2c/i2c_master_defines.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/opencores_i2c/i2c_master_top.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) ip/opencores_i2c/timescale.v]
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) i2c.v]
 # null
-set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "7CE9D3F198F80000014A24EFF335"
+set_global_assignment -name SOPC_BUILDER_SIGNATURE_ID "7CE9D3F198F80000014A721FADFD"
 set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_NAME "sopc"
 set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_VERSION "12.0"
 set_global_assignment -entity "DE2_SoPC" -name IP_TOOL_ENV "sopc"

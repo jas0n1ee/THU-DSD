@@ -473,6 +473,7 @@ module cpu_0_data_master_arbitrator (
                                        cpu_0_data_master_granted_cfi_flash_0_s1,
                                        cpu_0_data_master_granted_cpu_0_jtag_debug_module,
                                        cpu_0_data_master_granted_epcs_epcs_control_port,
+                                       cpu_0_data_master_granted_i2c_avalon_slave_0,
                                        cpu_0_data_master_granted_jtag_uart_avalon_jtag_slave,
                                        cpu_0_data_master_granted_lcd_control_slave,
                                        cpu_0_data_master_granted_onchip_memory2_s1,
@@ -484,6 +485,7 @@ module cpu_0_data_master_arbitrator (
                                        cpu_0_data_master_qualified_request_cfi_flash_0_s1,
                                        cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module,
                                        cpu_0_data_master_qualified_request_epcs_epcs_control_port,
+                                       cpu_0_data_master_qualified_request_i2c_avalon_slave_0,
                                        cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave,
                                        cpu_0_data_master_qualified_request_lcd_control_slave,
                                        cpu_0_data_master_qualified_request_onchip_memory2_s1,
@@ -496,6 +498,7 @@ module cpu_0_data_master_arbitrator (
                                        cpu_0_data_master_read_data_valid_cfi_flash_0_s1,
                                        cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module,
                                        cpu_0_data_master_read_data_valid_epcs_epcs_control_port,
+                                       cpu_0_data_master_read_data_valid_i2c_avalon_slave_0,
                                        cpu_0_data_master_read_data_valid_jtag_uart_avalon_jtag_slave,
                                        cpu_0_data_master_read_data_valid_lcd_control_slave,
                                        cpu_0_data_master_read_data_valid_onchip_memory2_s1,
@@ -507,6 +510,7 @@ module cpu_0_data_master_arbitrator (
                                        cpu_0_data_master_requests_cfi_flash_0_s1,
                                        cpu_0_data_master_requests_cpu_0_jtag_debug_module,
                                        cpu_0_data_master_requests_epcs_epcs_control_port,
+                                       cpu_0_data_master_requests_i2c_avalon_slave_0,
                                        cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave,
                                        cpu_0_data_master_requests_lcd_control_slave,
                                        cpu_0_data_master_requests_onchip_memory2_s1,
@@ -520,6 +524,7 @@ module cpu_0_data_master_arbitrator (
                                        cpu_0_jtag_debug_module_readdata_from_sa,
                                        d1_cpu_0_jtag_debug_module_end_xfer,
                                        d1_epcs_epcs_control_port_end_xfer,
+                                       d1_i2c_avalon_slave_0_end_xfer,
                                        d1_jtag_uart_avalon_jtag_slave_end_xfer,
                                        d1_lcd_control_slave_end_xfer,
                                        d1_onchip_memory2_s1_end_xfer,
@@ -531,6 +536,9 @@ module cpu_0_data_master_arbitrator (
                                        d1_vga_0_avalon_slave_0_end_xfer,
                                        epcs_epcs_control_port_irq_from_sa,
                                        epcs_epcs_control_port_readdata_from_sa,
+                                       i2c_avalon_slave_0_irq_from_sa,
+                                       i2c_avalon_slave_0_readdata_from_sa,
+                                       i2c_avalon_slave_0_waitrequest_n_from_sa,
                                        incoming_tri_state_bridge_flash_data_with_Xs_converted_to_0,
                                        jtag_uart_avalon_jtag_slave_irq_from_sa,
                                        jtag_uart_avalon_jtag_slave_readdata_from_sa,
@@ -581,6 +589,7 @@ module cpu_0_data_master_arbitrator (
   input            cpu_0_data_master_granted_cfi_flash_0_s1;
   input            cpu_0_data_master_granted_cpu_0_jtag_debug_module;
   input            cpu_0_data_master_granted_epcs_epcs_control_port;
+  input            cpu_0_data_master_granted_i2c_avalon_slave_0;
   input            cpu_0_data_master_granted_jtag_uart_avalon_jtag_slave;
   input            cpu_0_data_master_granted_lcd_control_slave;
   input            cpu_0_data_master_granted_onchip_memory2_s1;
@@ -592,6 +601,7 @@ module cpu_0_data_master_arbitrator (
   input            cpu_0_data_master_qualified_request_cfi_flash_0_s1;
   input            cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module;
   input            cpu_0_data_master_qualified_request_epcs_epcs_control_port;
+  input            cpu_0_data_master_qualified_request_i2c_avalon_slave_0;
   input            cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave;
   input            cpu_0_data_master_qualified_request_lcd_control_slave;
   input            cpu_0_data_master_qualified_request_onchip_memory2_s1;
@@ -604,6 +614,7 @@ module cpu_0_data_master_arbitrator (
   input            cpu_0_data_master_read_data_valid_cfi_flash_0_s1;
   input            cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module;
   input            cpu_0_data_master_read_data_valid_epcs_epcs_control_port;
+  input            cpu_0_data_master_read_data_valid_i2c_avalon_slave_0;
   input            cpu_0_data_master_read_data_valid_jtag_uart_avalon_jtag_slave;
   input            cpu_0_data_master_read_data_valid_lcd_control_slave;
   input            cpu_0_data_master_read_data_valid_onchip_memory2_s1;
@@ -615,6 +626,7 @@ module cpu_0_data_master_arbitrator (
   input            cpu_0_data_master_requests_cfi_flash_0_s1;
   input            cpu_0_data_master_requests_cpu_0_jtag_debug_module;
   input            cpu_0_data_master_requests_epcs_epcs_control_port;
+  input            cpu_0_data_master_requests_i2c_avalon_slave_0;
   input            cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave;
   input            cpu_0_data_master_requests_lcd_control_slave;
   input            cpu_0_data_master_requests_onchip_memory2_s1;
@@ -628,6 +640,7 @@ module cpu_0_data_master_arbitrator (
   input   [ 31: 0] cpu_0_jtag_debug_module_readdata_from_sa;
   input            d1_cpu_0_jtag_debug_module_end_xfer;
   input            d1_epcs_epcs_control_port_end_xfer;
+  input            d1_i2c_avalon_slave_0_end_xfer;
   input            d1_jtag_uart_avalon_jtag_slave_end_xfer;
   input            d1_lcd_control_slave_end_xfer;
   input            d1_onchip_memory2_s1_end_xfer;
@@ -639,6 +652,9 @@ module cpu_0_data_master_arbitrator (
   input            d1_vga_0_avalon_slave_0_end_xfer;
   input            epcs_epcs_control_port_irq_from_sa;
   input   [ 31: 0] epcs_epcs_control_port_readdata_from_sa;
+  input            i2c_avalon_slave_0_irq_from_sa;
+  input   [  7: 0] i2c_avalon_slave_0_readdata_from_sa;
+  input            i2c_avalon_slave_0_waitrequest_n_from_sa;
   input   [  7: 0] incoming_tri_state_bridge_flash_data_with_Xs_converted_to_0;
   input            jtag_uart_avalon_jtag_slave_irq_from_sa;
   input   [ 31: 0] jtag_uart_avalon_jtag_slave_readdata_from_sa;
@@ -689,16 +705,16 @@ module cpu_0_data_master_arbitrator (
   wire             r_2;
   reg     [ 31: 0] registered_cpu_0_data_master_readdata;
   //r_0 master_run cascaded wait assignment, which is an e_assign
-  assign r_0 = 1 & (cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_data_master_requests_cpu_0_jtag_debug_module) & (cpu_0_data_master_granted_cpu_0_jtag_debug_module | ~cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module) & ((~cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_data_master_write | (1 & cpu_0_data_master_write))) & 1 & (cpu_0_data_master_qualified_request_epcs_epcs_control_port | ~cpu_0_data_master_requests_epcs_epcs_control_port) & (cpu_0_data_master_granted_epcs_epcs_control_port | ~cpu_0_data_master_qualified_request_epcs_epcs_control_port) & ((~cpu_0_data_master_qualified_request_epcs_epcs_control_port | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_epcs_epcs_control_port | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & (cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave) & ((~cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & ((~cpu_0_data_master_qualified_request_lcd_control_slave | ~cpu_0_data_master_read | (1 & lcd_control_slave_wait_counter_eq_1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_lcd_control_slave | ~cpu_0_data_master_write | (1 & lcd_control_slave_wait_counter_eq_1 & cpu_0_data_master_write))) & 1 & (cpu_0_data_master_qualified_request_onchip_memory2_s1 | registered_cpu_0_data_master_read_data_valid_onchip_memory2_s1 | ~cpu_0_data_master_requests_onchip_memory2_s1) & (cpu_0_data_master_granted_onchip_memory2_s1 | ~cpu_0_data_master_qualified_request_onchip_memory2_s1);
+  assign r_0 = 1 & (cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_data_master_requests_cpu_0_jtag_debug_module) & (cpu_0_data_master_granted_cpu_0_jtag_debug_module | ~cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module) & ((~cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_data_master_write | (1 & cpu_0_data_master_write))) & 1 & (cpu_0_data_master_qualified_request_epcs_epcs_control_port | ~cpu_0_data_master_requests_epcs_epcs_control_port) & (cpu_0_data_master_granted_epcs_epcs_control_port | ~cpu_0_data_master_qualified_request_epcs_epcs_control_port) & ((~cpu_0_data_master_qualified_request_epcs_epcs_control_port | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_epcs_epcs_control_port | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & (cpu_0_data_master_qualified_request_i2c_avalon_slave_0 | ~cpu_0_data_master_requests_i2c_avalon_slave_0) & ((~cpu_0_data_master_qualified_request_i2c_avalon_slave_0 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & i2c_avalon_slave_0_waitrequest_n_from_sa & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_i2c_avalon_slave_0 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & i2c_avalon_slave_0_waitrequest_n_from_sa & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & (cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave) & ((~cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & ((~cpu_0_data_master_qualified_request_lcd_control_slave | ~cpu_0_data_master_read | (1 & lcd_control_slave_wait_counter_eq_1 & cpu_0_data_master_read)));
 
   //cascaded wait assignment, which is an e_assign
   assign cpu_0_data_master_run = r_0 & r_1 & r_2;
 
   //r_1 master_run cascaded wait assignment, which is an e_assign
-  assign r_1 = ((~cpu_0_data_master_qualified_request_onchip_memory2_s1 | ~cpu_0_data_master_read | (registered_cpu_0_data_master_read_data_valid_onchip_memory2_s1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_onchip_memory2_s1 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & (cpu_0_data_master_qualified_request_sram_avalon_slave_0 | (cpu_0_data_master_write & !cpu_0_data_master_byteenable_sram_avalon_slave_0 & cpu_0_data_master_dbs_address[1]) | ~cpu_0_data_master_requests_sram_avalon_slave_0) & (cpu_0_data_master_granted_sram_avalon_slave_0 | ~cpu_0_data_master_qualified_request_sram_avalon_slave_0) & ((~cpu_0_data_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_data_master_read | (1 & 1 & (cpu_0_data_master_dbs_address[1]) & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_data_master_write | (1 & ~d1_sram_avalon_slave_0_end_xfer & (cpu_0_data_master_dbs_address[1]) & cpu_0_data_master_write))) & 1 & ((~cpu_0_data_master_qualified_request_sysid_0_control_slave | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_sysid_0_control_slave | ~cpu_0_data_master_write | (1 & cpu_0_data_master_write))) & 1 & (cpu_0_data_master_qualified_request_timer_s1 | ~cpu_0_data_master_requests_timer_s1) & ((~cpu_0_data_master_qualified_request_timer_s1 | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_timer_s1 | ~cpu_0_data_master_write | (1 & cpu_0_data_master_write))) & 1 & ((cpu_0_data_master_qualified_request_cfi_flash_0_s1 | (registered_cpu_0_data_master_read_data_valid_cfi_flash_0_s1 & cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0]) | ((cpu_0_data_master_write & !cpu_0_data_master_byteenable_cfi_flash_0_s1 & cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0])) | ~cpu_0_data_master_requests_cfi_flash_0_s1)) & (cpu_0_data_master_granted_cfi_flash_0_s1 | ~cpu_0_data_master_qualified_request_cfi_flash_0_s1) & ((~cpu_0_data_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_data_master_read | (registered_cpu_0_data_master_read_data_valid_cfi_flash_0_s1 & (cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0]) & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_data_master_write | (1 & cfi_flash_0_s1_wait_counter_eq_1 & (cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0]) & cpu_0_data_master_write))) & 1;
+  assign r_1 = ((~cpu_0_data_master_qualified_request_lcd_control_slave | ~cpu_0_data_master_write | (1 & lcd_control_slave_wait_counter_eq_1 & cpu_0_data_master_write))) & 1 & (cpu_0_data_master_qualified_request_onchip_memory2_s1 | registered_cpu_0_data_master_read_data_valid_onchip_memory2_s1 | ~cpu_0_data_master_requests_onchip_memory2_s1) & (cpu_0_data_master_granted_onchip_memory2_s1 | ~cpu_0_data_master_qualified_request_onchip_memory2_s1) & ((~cpu_0_data_master_qualified_request_onchip_memory2_s1 | ~cpu_0_data_master_read | (registered_cpu_0_data_master_read_data_valid_onchip_memory2_s1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_onchip_memory2_s1 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & (cpu_0_data_master_qualified_request_sram_avalon_slave_0 | (cpu_0_data_master_write & !cpu_0_data_master_byteenable_sram_avalon_slave_0 & cpu_0_data_master_dbs_address[1]) | ~cpu_0_data_master_requests_sram_avalon_slave_0) & (cpu_0_data_master_granted_sram_avalon_slave_0 | ~cpu_0_data_master_qualified_request_sram_avalon_slave_0) & ((~cpu_0_data_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_data_master_read | (1 & 1 & (cpu_0_data_master_dbs_address[1]) & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_data_master_write | (1 & ~d1_sram_avalon_slave_0_end_xfer & (cpu_0_data_master_dbs_address[1]) & cpu_0_data_master_write))) & 1 & ((~cpu_0_data_master_qualified_request_sysid_0_control_slave | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_sysid_0_control_slave | ~cpu_0_data_master_write | (1 & cpu_0_data_master_write))) & 1 & (cpu_0_data_master_qualified_request_timer_s1 | ~cpu_0_data_master_requests_timer_s1) & ((~cpu_0_data_master_qualified_request_timer_s1 | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_timer_s1 | ~cpu_0_data_master_write | (1 & cpu_0_data_master_write))) & 1 & ((cpu_0_data_master_qualified_request_cfi_flash_0_s1 | (registered_cpu_0_data_master_read_data_valid_cfi_flash_0_s1 & cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0]) | ((cpu_0_data_master_write & !cpu_0_data_master_byteenable_cfi_flash_0_s1 & cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0])) | ~cpu_0_data_master_requests_cfi_flash_0_s1));
 
   //r_2 master_run cascaded wait assignment, which is an e_assign
-  assign r_2 = ((~cpu_0_data_master_qualified_request_uart_s1 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_uart_s1 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & ((~cpu_0_data_master_qualified_request_vga_0_avalon_slave_0 | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_vga_0_avalon_slave_0 | ~cpu_0_data_master_write | (1 & ~d1_vga_0_avalon_slave_0_end_xfer & cpu_0_data_master_write)));
+  assign r_2 = (cpu_0_data_master_granted_cfi_flash_0_s1 | ~cpu_0_data_master_qualified_request_cfi_flash_0_s1) & ((~cpu_0_data_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_data_master_read | (registered_cpu_0_data_master_read_data_valid_cfi_flash_0_s1 & (cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0]) & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_data_master_write | (1 & cfi_flash_0_s1_wait_counter_eq_1 & (cpu_0_data_master_dbs_address[1] & cpu_0_data_master_dbs_address[0]) & cpu_0_data_master_write))) & 1 & ((~cpu_0_data_master_qualified_request_uart_s1 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & ((~cpu_0_data_master_qualified_request_uart_s1 | ~(cpu_0_data_master_read | cpu_0_data_master_write) | (1 & 1 & (cpu_0_data_master_read | cpu_0_data_master_write)))) & 1 & ((~cpu_0_data_master_qualified_request_vga_0_avalon_slave_0 | ~cpu_0_data_master_read | (1 & 1 & cpu_0_data_master_read))) & ((~cpu_0_data_master_qualified_request_vga_0_avalon_slave_0 | ~cpu_0_data_master_write | (1 & ~d1_vga_0_avalon_slave_0_end_xfer & cpu_0_data_master_write)));
 
   //optimize select-logic by passing only those address bits which matter.
   assign cpu_0_data_master_address_to_slave = cpu_0_data_master_address[23 : 0];
@@ -706,6 +722,7 @@ module cpu_0_data_master_arbitrator (
   //cpu_0/data_master readdata mux, which is an e_mux
   assign cpu_0_data_master_readdata = ({32 {~cpu_0_data_master_requests_cpu_0_jtag_debug_module}} | cpu_0_jtag_debug_module_readdata_from_sa) &
     ({32 {~cpu_0_data_master_requests_epcs_epcs_control_port}} | epcs_epcs_control_port_readdata_from_sa) &
+    ({32 {~cpu_0_data_master_requests_i2c_avalon_slave_0}} | registered_cpu_0_data_master_readdata) &
     ({32 {~cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave}} | registered_cpu_0_data_master_readdata) &
     ({32 {~cpu_0_data_master_requests_lcd_control_slave}} | lcd_control_slave_readdata_from_sa) &
     ({32 {~cpu_0_data_master_requests_onchip_memory2_s1}} | onchip_memory2_s1_readdata_from_sa) &
@@ -758,7 +775,7 @@ module cpu_0_data_master_arbitrator (
     1'b0,
     1'b0,
     1'b0,
-    1'b0,
+    i2c_avalon_slave_0_irq_from_sa,
     epcs_epcs_control_port_irq_from_sa,
     timer_s1_irq_from_sa,
     uart_s1_irq_from_sa,
@@ -775,7 +792,8 @@ module cpu_0_data_master_arbitrator (
 
 
   //registered readdata mux, which is an e_mux
-  assign p1_registered_cpu_0_data_master_readdata = {32 {~cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave}} | jtag_uart_avalon_jtag_slave_readdata_from_sa;
+  assign p1_registered_cpu_0_data_master_readdata = ({32 {~cpu_0_data_master_requests_i2c_avalon_slave_0}} | i2c_avalon_slave_0_readdata_from_sa) &
+    ({32 {~cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave}} | jtag_uart_avalon_jtag_slave_readdata_from_sa);
 
   //no_byte_enables_and_last_term, which is an e_register
   always @(posedge clk or negedge reset_n)
@@ -1026,14 +1044,18 @@ module cpu_0_instruction_master_arbitrator (
   wire             pre_flush_cpu_0_instruction_master_readdatavalid;
   wire             r_0;
   wire             r_1;
+  wire             r_2;
   //r_0 master_run cascaded wait assignment, which is an e_assign
-  assign r_0 = 1 & (cpu_0_instruction_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_instruction_master_requests_cpu_0_jtag_debug_module) & (cpu_0_instruction_master_granted_cpu_0_jtag_debug_module | ~cpu_0_instruction_master_qualified_request_cpu_0_jtag_debug_module) & ((~cpu_0_instruction_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_instruction_master_read | (1 & ~d1_cpu_0_jtag_debug_module_end_xfer & cpu_0_instruction_master_read))) & 1 & (cpu_0_instruction_master_qualified_request_epcs_epcs_control_port | ~cpu_0_instruction_master_requests_epcs_epcs_control_port) & (cpu_0_instruction_master_granted_epcs_epcs_control_port | ~cpu_0_instruction_master_qualified_request_epcs_epcs_control_port) & ((~cpu_0_instruction_master_qualified_request_epcs_epcs_control_port | ~(cpu_0_instruction_master_read) | (1 & ~d1_epcs_epcs_control_port_end_xfer & (cpu_0_instruction_master_read)))) & 1 & (cpu_0_instruction_master_qualified_request_onchip_memory2_s1 | ~cpu_0_instruction_master_requests_onchip_memory2_s1);
+  assign r_0 = 1 & (cpu_0_instruction_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_instruction_master_requests_cpu_0_jtag_debug_module) & (cpu_0_instruction_master_granted_cpu_0_jtag_debug_module | ~cpu_0_instruction_master_qualified_request_cpu_0_jtag_debug_module) & ((~cpu_0_instruction_master_qualified_request_cpu_0_jtag_debug_module | ~cpu_0_instruction_master_read | (1 & ~d1_cpu_0_jtag_debug_module_end_xfer & cpu_0_instruction_master_read))) & 1 & (cpu_0_instruction_master_qualified_request_epcs_epcs_control_port | ~cpu_0_instruction_master_requests_epcs_epcs_control_port) & (cpu_0_instruction_master_granted_epcs_epcs_control_port | ~cpu_0_instruction_master_qualified_request_epcs_epcs_control_port) & ((~cpu_0_instruction_master_qualified_request_epcs_epcs_control_port | ~(cpu_0_instruction_master_read) | (1 & ~d1_epcs_epcs_control_port_end_xfer & (cpu_0_instruction_master_read))));
 
   //cascaded wait assignment, which is an e_assign
-  assign cpu_0_instruction_master_run = r_0 & r_1;
+  assign cpu_0_instruction_master_run = r_0 & r_1 & r_2;
 
   //r_1 master_run cascaded wait assignment, which is an e_assign
-  assign r_1 = (cpu_0_instruction_master_granted_onchip_memory2_s1 | ~cpu_0_instruction_master_qualified_request_onchip_memory2_s1) & ((~cpu_0_instruction_master_qualified_request_onchip_memory2_s1 | ~cpu_0_instruction_master_read | (1 & cpu_0_instruction_master_read))) & 1 & (cpu_0_instruction_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_instruction_master_requests_sram_avalon_slave_0) & (cpu_0_instruction_master_granted_sram_avalon_slave_0 | ~cpu_0_instruction_master_qualified_request_sram_avalon_slave_0) & ((~cpu_0_instruction_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_instruction_master_read | (1 & ~d1_sram_avalon_slave_0_end_xfer & (cpu_0_instruction_master_dbs_address[1]) & cpu_0_instruction_master_read))) & 1 & (cpu_0_instruction_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_instruction_master_requests_cfi_flash_0_s1) & (cpu_0_instruction_master_granted_cfi_flash_0_s1 | ~cpu_0_instruction_master_qualified_request_cfi_flash_0_s1) & ((~cpu_0_instruction_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_instruction_master_read | (1 & ((cfi_flash_0_s1_wait_counter_eq_0 & ~d1_tri_state_bridge_flash_avalon_slave_end_xfer)) & (cpu_0_instruction_master_dbs_address[1] & cpu_0_instruction_master_dbs_address[0]) & cpu_0_instruction_master_read)));
+  assign r_1 = 1 & (cpu_0_instruction_master_qualified_request_onchip_memory2_s1 | ~cpu_0_instruction_master_requests_onchip_memory2_s1) & (cpu_0_instruction_master_granted_onchip_memory2_s1 | ~cpu_0_instruction_master_qualified_request_onchip_memory2_s1) & ((~cpu_0_instruction_master_qualified_request_onchip_memory2_s1 | ~cpu_0_instruction_master_read | (1 & cpu_0_instruction_master_read))) & 1 & (cpu_0_instruction_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_instruction_master_requests_sram_avalon_slave_0) & (cpu_0_instruction_master_granted_sram_avalon_slave_0 | ~cpu_0_instruction_master_qualified_request_sram_avalon_slave_0) & ((~cpu_0_instruction_master_qualified_request_sram_avalon_slave_0 | ~cpu_0_instruction_master_read | (1 & ~d1_sram_avalon_slave_0_end_xfer & (cpu_0_instruction_master_dbs_address[1]) & cpu_0_instruction_master_read)));
+
+  //r_2 master_run cascaded wait assignment, which is an e_assign
+  assign r_2 = 1 & (cpu_0_instruction_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_instruction_master_requests_cfi_flash_0_s1) & (cpu_0_instruction_master_granted_cfi_flash_0_s1 | ~cpu_0_instruction_master_qualified_request_cfi_flash_0_s1) & ((~cpu_0_instruction_master_qualified_request_cfi_flash_0_s1 | ~cpu_0_instruction_master_read | (1 & ((cfi_flash_0_s1_wait_counter_eq_0 & ~d1_tri_state_bridge_flash_avalon_slave_end_xfer)) & (cpu_0_instruction_master_dbs_address[1] & cpu_0_instruction_master_dbs_address[0]) & cpu_0_instruction_master_read)));
 
   //optimize select-logic by passing only those address bits which matter.
   assign cpu_0_instruction_master_address_to_slave = cpu_0_instruction_master_address[23 : 0];
@@ -1725,6 +1747,300 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
+module i2c_avalon_slave_0_arbitrator (
+                                       // inputs:
+                                        clk,
+                                        cpu_0_data_master_address_to_slave,
+                                        cpu_0_data_master_byteenable,
+                                        cpu_0_data_master_read,
+                                        cpu_0_data_master_waitrequest,
+                                        cpu_0_data_master_write,
+                                        cpu_0_data_master_writedata,
+                                        i2c_avalon_slave_0_irq,
+                                        i2c_avalon_slave_0_readdata,
+                                        i2c_avalon_slave_0_waitrequest_n,
+                                        reset_n,
+
+                                       // outputs:
+                                        cpu_0_data_master_granted_i2c_avalon_slave_0,
+                                        cpu_0_data_master_qualified_request_i2c_avalon_slave_0,
+                                        cpu_0_data_master_read_data_valid_i2c_avalon_slave_0,
+                                        cpu_0_data_master_requests_i2c_avalon_slave_0,
+                                        d1_i2c_avalon_slave_0_end_xfer,
+                                        i2c_avalon_slave_0_address,
+                                        i2c_avalon_slave_0_chipselect,
+                                        i2c_avalon_slave_0_irq_from_sa,
+                                        i2c_avalon_slave_0_readdata_from_sa,
+                                        i2c_avalon_slave_0_reset,
+                                        i2c_avalon_slave_0_waitrequest_n_from_sa,
+                                        i2c_avalon_slave_0_write,
+                                        i2c_avalon_slave_0_writedata
+                                     )
+;
+
+  output           cpu_0_data_master_granted_i2c_avalon_slave_0;
+  output           cpu_0_data_master_qualified_request_i2c_avalon_slave_0;
+  output           cpu_0_data_master_read_data_valid_i2c_avalon_slave_0;
+  output           cpu_0_data_master_requests_i2c_avalon_slave_0;
+  output           d1_i2c_avalon_slave_0_end_xfer;
+  output  [  2: 0] i2c_avalon_slave_0_address;
+  output           i2c_avalon_slave_0_chipselect;
+  output           i2c_avalon_slave_0_irq_from_sa;
+  output  [  7: 0] i2c_avalon_slave_0_readdata_from_sa;
+  output           i2c_avalon_slave_0_reset;
+  output           i2c_avalon_slave_0_waitrequest_n_from_sa;
+  output           i2c_avalon_slave_0_write;
+  output  [  7: 0] i2c_avalon_slave_0_writedata;
+  input            clk;
+  input   [ 23: 0] cpu_0_data_master_address_to_slave;
+  input   [  3: 0] cpu_0_data_master_byteenable;
+  input            cpu_0_data_master_read;
+  input            cpu_0_data_master_waitrequest;
+  input            cpu_0_data_master_write;
+  input   [ 31: 0] cpu_0_data_master_writedata;
+  input            i2c_avalon_slave_0_irq;
+  input   [  7: 0] i2c_avalon_slave_0_readdata;
+  input            i2c_avalon_slave_0_waitrequest_n;
+  input            reset_n;
+
+  wire             cpu_0_data_master_arbiterlock;
+  wire             cpu_0_data_master_arbiterlock2;
+  wire             cpu_0_data_master_continuerequest;
+  wire             cpu_0_data_master_granted_i2c_avalon_slave_0;
+  wire             cpu_0_data_master_qualified_request_i2c_avalon_slave_0;
+  wire             cpu_0_data_master_read_data_valid_i2c_avalon_slave_0;
+  wire             cpu_0_data_master_requests_i2c_avalon_slave_0;
+  wire             cpu_0_data_master_saved_grant_i2c_avalon_slave_0;
+  reg              d1_i2c_avalon_slave_0_end_xfer;
+  reg              d1_reasons_to_wait;
+  reg              enable_nonzero_assertions;
+  wire             end_xfer_arb_share_counter_term_i2c_avalon_slave_0;
+  wire    [  2: 0] i2c_avalon_slave_0_address;
+  wire             i2c_avalon_slave_0_allgrants;
+  wire             i2c_avalon_slave_0_allow_new_arb_cycle;
+  wire             i2c_avalon_slave_0_any_bursting_master_saved_grant;
+  wire             i2c_avalon_slave_0_any_continuerequest;
+  wire             i2c_avalon_slave_0_arb_counter_enable;
+  reg     [  2: 0] i2c_avalon_slave_0_arb_share_counter;
+  wire    [  2: 0] i2c_avalon_slave_0_arb_share_counter_next_value;
+  wire    [  2: 0] i2c_avalon_slave_0_arb_share_set_values;
+  wire             i2c_avalon_slave_0_beginbursttransfer_internal;
+  wire             i2c_avalon_slave_0_begins_xfer;
+  wire             i2c_avalon_slave_0_chipselect;
+  wire             i2c_avalon_slave_0_end_xfer;
+  wire             i2c_avalon_slave_0_firsttransfer;
+  wire             i2c_avalon_slave_0_grant_vector;
+  wire             i2c_avalon_slave_0_in_a_read_cycle;
+  wire             i2c_avalon_slave_0_in_a_write_cycle;
+  wire             i2c_avalon_slave_0_irq_from_sa;
+  wire             i2c_avalon_slave_0_master_qreq_vector;
+  wire             i2c_avalon_slave_0_non_bursting_master_requests;
+  wire             i2c_avalon_slave_0_pretend_byte_enable;
+  wire    [  7: 0] i2c_avalon_slave_0_readdata_from_sa;
+  reg              i2c_avalon_slave_0_reg_firsttransfer;
+  wire             i2c_avalon_slave_0_reset;
+  reg              i2c_avalon_slave_0_slavearbiterlockenable;
+  wire             i2c_avalon_slave_0_slavearbiterlockenable2;
+  wire             i2c_avalon_slave_0_unreg_firsttransfer;
+  wire             i2c_avalon_slave_0_waitrequest_n_from_sa;
+  wire             i2c_avalon_slave_0_waits_for_read;
+  wire             i2c_avalon_slave_0_waits_for_write;
+  wire             i2c_avalon_slave_0_write;
+  wire    [  7: 0] i2c_avalon_slave_0_writedata;
+  wire             in_a_read_cycle;
+  wire             in_a_write_cycle;
+  wire    [ 23: 0] shifted_address_to_i2c_avalon_slave_0_from_cpu_0_data_master;
+  wire             wait_for_i2c_avalon_slave_0_counter;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_reasons_to_wait <= 0;
+      else 
+        d1_reasons_to_wait <= ~i2c_avalon_slave_0_end_xfer;
+    end
+
+
+  assign i2c_avalon_slave_0_begins_xfer = ~d1_reasons_to_wait & ((cpu_0_data_master_qualified_request_i2c_avalon_slave_0));
+  //assign i2c_avalon_slave_0_readdata_from_sa = i2c_avalon_slave_0_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign i2c_avalon_slave_0_readdata_from_sa = i2c_avalon_slave_0_readdata;
+
+  assign cpu_0_data_master_requests_i2c_avalon_slave_0 = ({cpu_0_data_master_address_to_slave[23 : 5] , 5'b0} == 24'hb04040) & (cpu_0_data_master_read | cpu_0_data_master_write);
+  //assign i2c_avalon_slave_0_waitrequest_n_from_sa = i2c_avalon_slave_0_waitrequest_n so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign i2c_avalon_slave_0_waitrequest_n_from_sa = i2c_avalon_slave_0_waitrequest_n;
+
+  //i2c_avalon_slave_0_arb_share_counter set values, which is an e_mux
+  assign i2c_avalon_slave_0_arb_share_set_values = 1;
+
+  //i2c_avalon_slave_0_non_bursting_master_requests mux, which is an e_mux
+  assign i2c_avalon_slave_0_non_bursting_master_requests = cpu_0_data_master_requests_i2c_avalon_slave_0;
+
+  //i2c_avalon_slave_0_any_bursting_master_saved_grant mux, which is an e_mux
+  assign i2c_avalon_slave_0_any_bursting_master_saved_grant = 0;
+
+  //i2c_avalon_slave_0_arb_share_counter_next_value assignment, which is an e_assign
+  assign i2c_avalon_slave_0_arb_share_counter_next_value = i2c_avalon_slave_0_firsttransfer ? (i2c_avalon_slave_0_arb_share_set_values - 1) : |i2c_avalon_slave_0_arb_share_counter ? (i2c_avalon_slave_0_arb_share_counter - 1) : 0;
+
+  //i2c_avalon_slave_0_allgrants all slave grants, which is an e_mux
+  assign i2c_avalon_slave_0_allgrants = |i2c_avalon_slave_0_grant_vector;
+
+  //i2c_avalon_slave_0_end_xfer assignment, which is an e_assign
+  assign i2c_avalon_slave_0_end_xfer = ~(i2c_avalon_slave_0_waits_for_read | i2c_avalon_slave_0_waits_for_write);
+
+  //end_xfer_arb_share_counter_term_i2c_avalon_slave_0 arb share counter enable term, which is an e_assign
+  assign end_xfer_arb_share_counter_term_i2c_avalon_slave_0 = i2c_avalon_slave_0_end_xfer & (~i2c_avalon_slave_0_any_bursting_master_saved_grant | in_a_read_cycle | in_a_write_cycle);
+
+  //i2c_avalon_slave_0_arb_share_counter arbitration counter enable, which is an e_assign
+  assign i2c_avalon_slave_0_arb_counter_enable = (end_xfer_arb_share_counter_term_i2c_avalon_slave_0 & i2c_avalon_slave_0_allgrants) | (end_xfer_arb_share_counter_term_i2c_avalon_slave_0 & ~i2c_avalon_slave_0_non_bursting_master_requests);
+
+  //i2c_avalon_slave_0_arb_share_counter counter, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          i2c_avalon_slave_0_arb_share_counter <= 0;
+      else if (i2c_avalon_slave_0_arb_counter_enable)
+          i2c_avalon_slave_0_arb_share_counter <= i2c_avalon_slave_0_arb_share_counter_next_value;
+    end
+
+
+  //i2c_avalon_slave_0_slavearbiterlockenable slave enables arbiterlock, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          i2c_avalon_slave_0_slavearbiterlockenable <= 0;
+      else if ((|i2c_avalon_slave_0_master_qreq_vector & end_xfer_arb_share_counter_term_i2c_avalon_slave_0) | (end_xfer_arb_share_counter_term_i2c_avalon_slave_0 & ~i2c_avalon_slave_0_non_bursting_master_requests))
+          i2c_avalon_slave_0_slavearbiterlockenable <= |i2c_avalon_slave_0_arb_share_counter_next_value;
+    end
+
+
+  //cpu_0/data_master i2c/avalon_slave_0 arbiterlock, which is an e_assign
+  assign cpu_0_data_master_arbiterlock = i2c_avalon_slave_0_slavearbiterlockenable & cpu_0_data_master_continuerequest;
+
+  //i2c_avalon_slave_0_slavearbiterlockenable2 slave enables arbiterlock2, which is an e_assign
+  assign i2c_avalon_slave_0_slavearbiterlockenable2 = |i2c_avalon_slave_0_arb_share_counter_next_value;
+
+  //cpu_0/data_master i2c/avalon_slave_0 arbiterlock2, which is an e_assign
+  assign cpu_0_data_master_arbiterlock2 = i2c_avalon_slave_0_slavearbiterlockenable2 & cpu_0_data_master_continuerequest;
+
+  //i2c_avalon_slave_0_any_continuerequest at least one master continues requesting, which is an e_assign
+  assign i2c_avalon_slave_0_any_continuerequest = 1;
+
+  //cpu_0_data_master_continuerequest continued request, which is an e_assign
+  assign cpu_0_data_master_continuerequest = 1;
+
+  assign cpu_0_data_master_qualified_request_i2c_avalon_slave_0 = cpu_0_data_master_requests_i2c_avalon_slave_0 & ~((cpu_0_data_master_read & (~cpu_0_data_master_waitrequest)) | ((~cpu_0_data_master_waitrequest) & cpu_0_data_master_write));
+  //i2c_avalon_slave_0_writedata mux, which is an e_mux
+  assign i2c_avalon_slave_0_writedata = cpu_0_data_master_writedata;
+
+  //master is always granted when requested
+  assign cpu_0_data_master_granted_i2c_avalon_slave_0 = cpu_0_data_master_qualified_request_i2c_avalon_slave_0;
+
+  //cpu_0/data_master saved-grant i2c/avalon_slave_0, which is an e_assign
+  assign cpu_0_data_master_saved_grant_i2c_avalon_slave_0 = cpu_0_data_master_requests_i2c_avalon_slave_0;
+
+  //allow new arb cycle for i2c/avalon_slave_0, which is an e_assign
+  assign i2c_avalon_slave_0_allow_new_arb_cycle = 1;
+
+  //placeholder chosen master
+  assign i2c_avalon_slave_0_grant_vector = 1;
+
+  //placeholder vector of master qualified-requests
+  assign i2c_avalon_slave_0_master_qreq_vector = 1;
+
+  //~i2c_avalon_slave_0_reset assignment, which is an e_assign
+  assign i2c_avalon_slave_0_reset = ~reset_n;
+
+  assign i2c_avalon_slave_0_chipselect = cpu_0_data_master_granted_i2c_avalon_slave_0;
+  //i2c_avalon_slave_0_firsttransfer first transaction, which is an e_assign
+  assign i2c_avalon_slave_0_firsttransfer = i2c_avalon_slave_0_begins_xfer ? i2c_avalon_slave_0_unreg_firsttransfer : i2c_avalon_slave_0_reg_firsttransfer;
+
+  //i2c_avalon_slave_0_unreg_firsttransfer first transaction, which is an e_assign
+  assign i2c_avalon_slave_0_unreg_firsttransfer = ~(i2c_avalon_slave_0_slavearbiterlockenable & i2c_avalon_slave_0_any_continuerequest);
+
+  //i2c_avalon_slave_0_reg_firsttransfer first transaction, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          i2c_avalon_slave_0_reg_firsttransfer <= 1'b1;
+      else if (i2c_avalon_slave_0_begins_xfer)
+          i2c_avalon_slave_0_reg_firsttransfer <= i2c_avalon_slave_0_unreg_firsttransfer;
+    end
+
+
+  //i2c_avalon_slave_0_beginbursttransfer_internal begin burst transfer, which is an e_assign
+  assign i2c_avalon_slave_0_beginbursttransfer_internal = i2c_avalon_slave_0_begins_xfer;
+
+  //i2c_avalon_slave_0_write assignment, which is an e_mux
+  assign i2c_avalon_slave_0_write = ((cpu_0_data_master_granted_i2c_avalon_slave_0 & cpu_0_data_master_write)) & i2c_avalon_slave_0_pretend_byte_enable;
+
+  assign shifted_address_to_i2c_avalon_slave_0_from_cpu_0_data_master = cpu_0_data_master_address_to_slave;
+  //i2c_avalon_slave_0_address mux, which is an e_mux
+  assign i2c_avalon_slave_0_address = shifted_address_to_i2c_avalon_slave_0_from_cpu_0_data_master >> 2;
+
+  //d1_i2c_avalon_slave_0_end_xfer register, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_i2c_avalon_slave_0_end_xfer <= 1;
+      else 
+        d1_i2c_avalon_slave_0_end_xfer <= i2c_avalon_slave_0_end_xfer;
+    end
+
+
+  //i2c_avalon_slave_0_waits_for_read in a cycle, which is an e_mux
+  assign i2c_avalon_slave_0_waits_for_read = i2c_avalon_slave_0_in_a_read_cycle & ~i2c_avalon_slave_0_waitrequest_n_from_sa;
+
+  //i2c_avalon_slave_0_in_a_read_cycle assignment, which is an e_assign
+  assign i2c_avalon_slave_0_in_a_read_cycle = cpu_0_data_master_granted_i2c_avalon_slave_0 & cpu_0_data_master_read;
+
+  //in_a_read_cycle assignment, which is an e_mux
+  assign in_a_read_cycle = i2c_avalon_slave_0_in_a_read_cycle;
+
+  //i2c_avalon_slave_0_waits_for_write in a cycle, which is an e_mux
+  assign i2c_avalon_slave_0_waits_for_write = i2c_avalon_slave_0_in_a_write_cycle & ~i2c_avalon_slave_0_waitrequest_n_from_sa;
+
+  //i2c_avalon_slave_0_in_a_write_cycle assignment, which is an e_assign
+  assign i2c_avalon_slave_0_in_a_write_cycle = cpu_0_data_master_granted_i2c_avalon_slave_0 & cpu_0_data_master_write;
+
+  //in_a_write_cycle assignment, which is an e_mux
+  assign in_a_write_cycle = i2c_avalon_slave_0_in_a_write_cycle;
+
+  assign wait_for_i2c_avalon_slave_0_counter = 0;
+  //i2c_avalon_slave_0_pretend_byte_enable byte enable port mux, which is an e_mux
+  assign i2c_avalon_slave_0_pretend_byte_enable = (cpu_0_data_master_granted_i2c_avalon_slave_0)? cpu_0_data_master_byteenable :
+    -1;
+
+  //assign i2c_avalon_slave_0_irq_from_sa = i2c_avalon_slave_0_irq so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign i2c_avalon_slave_0_irq_from_sa = i2c_avalon_slave_0_irq;
+
+
+//synthesis translate_off
+//////////////// SIMULATION-ONLY CONTENTS
+  //i2c/avalon_slave_0 enable non-zero assertions, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          enable_nonzero_assertions <= 0;
+      else 
+        enable_nonzero_assertions <= 1'b1;
+    end
+
+
+
+//////////////// END SIMULATION-ONLY CONTENTS
+
+//synthesis translate_on
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
 module jtag_uart_avalon_jtag_slave_arbitrator (
                                                 // inputs:
                                                  clk,
@@ -1852,7 +2168,7 @@ module jtag_uart_avalon_jtag_slave_arbitrator (
   //assign jtag_uart_avalon_jtag_slave_readdata_from_sa = jtag_uart_avalon_jtag_slave_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign jtag_uart_avalon_jtag_slave_readdata_from_sa = jtag_uart_avalon_jtag_slave_readdata;
 
-  assign cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave = ({cpu_0_data_master_address_to_slave[23 : 3] , 3'b0} == 24'hb04050) & (cpu_0_data_master_read | cpu_0_data_master_write);
+  assign cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave = ({cpu_0_data_master_address_to_slave[23 : 3] , 3'b0} == 24'hb04070) & (cpu_0_data_master_read | cpu_0_data_master_write);
   //assign jtag_uart_avalon_jtag_slave_dataavailable_from_sa = jtag_uart_avalon_jtag_slave_dataavailable so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign jtag_uart_avalon_jtag_slave_dataavailable_from_sa = jtag_uart_avalon_jtag_slave_dataavailable;
 
@@ -2150,7 +2466,7 @@ module lcd_control_slave_arbitrator (
   //assign lcd_control_slave_readdata_from_sa = lcd_control_slave_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign lcd_control_slave_readdata_from_sa = lcd_control_slave_readdata;
 
-  assign cpu_0_data_master_requests_lcd_control_slave = ({cpu_0_data_master_address_to_slave[23 : 4] , 4'b0} == 24'hb04040) & (cpu_0_data_master_read | cpu_0_data_master_write);
+  assign cpu_0_data_master_requests_lcd_control_slave = ({cpu_0_data_master_address_to_slave[23 : 4] , 4'b0} == 24'hb04060) & (cpu_0_data_master_read | cpu_0_data_master_write);
   //lcd_control_slave_arb_share_counter set values, which is an e_mux
   assign lcd_control_slave_arb_share_set_values = 1;
 
@@ -3371,7 +3687,7 @@ module sysid_0_control_slave_arbitrator (
   //assign sysid_0_control_slave_readdata_from_sa = sysid_0_control_slave_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign sysid_0_control_slave_readdata_from_sa = sysid_0_control_slave_readdata;
 
-  assign cpu_0_data_master_requests_sysid_0_control_slave = (({cpu_0_data_master_address_to_slave[23 : 3] , 3'b0} == 24'hb04058) & (cpu_0_data_master_read | cpu_0_data_master_write)) & cpu_0_data_master_read;
+  assign cpu_0_data_master_requests_sysid_0_control_slave = (({cpu_0_data_master_address_to_slave[23 : 3] , 3'b0} == 24'hb04078) & (cpu_0_data_master_read | cpu_0_data_master_write)) & cpu_0_data_master_read;
   //sysid_0_control_slave_arb_share_counter set values, which is an e_mux
   assign sysid_0_control_slave_arb_share_set_values = 1;
 
@@ -5141,6 +5457,10 @@ module DE2_SoPC (
                    clk_50,
                    reset_n,
 
+                  // the_i2c
+                   scl_pad_io_to_and_from_the_i2c,
+                   sda_pad_io_to_and_from_the_i2c,
+
                   // the_lcd
                    LCD_E_from_the_lcd,
                    LCD_RS_from_the_lcd,
@@ -5199,6 +5519,8 @@ module DE2_SoPC (
   output  [  9: 0] VGA_R_from_the_vga_0;
   output           VGA_SYNC_from_the_vga_0;
   output           VGA_VS_from_the_vga_0;
+  inout            scl_pad_io_to_and_from_the_i2c;
+  inout            sda_pad_io_to_and_from_the_i2c;
   output           select_n_to_the_cfi_flash_0;
   output  [ 21: 0] tri_state_bridge_flash_address;
   inout   [  7: 0] tri_state_bridge_flash_data;
@@ -5244,6 +5566,7 @@ module DE2_SoPC (
   wire             cpu_0_data_master_granted_cfi_flash_0_s1;
   wire             cpu_0_data_master_granted_cpu_0_jtag_debug_module;
   wire             cpu_0_data_master_granted_epcs_epcs_control_port;
+  wire             cpu_0_data_master_granted_i2c_avalon_slave_0;
   wire             cpu_0_data_master_granted_jtag_uart_avalon_jtag_slave;
   wire             cpu_0_data_master_granted_lcd_control_slave;
   wire             cpu_0_data_master_granted_onchip_memory2_s1;
@@ -5257,6 +5580,7 @@ module DE2_SoPC (
   wire             cpu_0_data_master_qualified_request_cfi_flash_0_s1;
   wire             cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module;
   wire             cpu_0_data_master_qualified_request_epcs_epcs_control_port;
+  wire             cpu_0_data_master_qualified_request_i2c_avalon_slave_0;
   wire             cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave;
   wire             cpu_0_data_master_qualified_request_lcd_control_slave;
   wire             cpu_0_data_master_qualified_request_onchip_memory2_s1;
@@ -5269,6 +5593,7 @@ module DE2_SoPC (
   wire             cpu_0_data_master_read_data_valid_cfi_flash_0_s1;
   wire             cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module;
   wire             cpu_0_data_master_read_data_valid_epcs_epcs_control_port;
+  wire             cpu_0_data_master_read_data_valid_i2c_avalon_slave_0;
   wire             cpu_0_data_master_read_data_valid_jtag_uart_avalon_jtag_slave;
   wire             cpu_0_data_master_read_data_valid_lcd_control_slave;
   wire             cpu_0_data_master_read_data_valid_onchip_memory2_s1;
@@ -5281,6 +5606,7 @@ module DE2_SoPC (
   wire             cpu_0_data_master_requests_cfi_flash_0_s1;
   wire             cpu_0_data_master_requests_cpu_0_jtag_debug_module;
   wire             cpu_0_data_master_requests_epcs_epcs_control_port;
+  wire             cpu_0_data_master_requests_i2c_avalon_slave_0;
   wire             cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave;
   wire             cpu_0_data_master_requests_lcd_control_slave;
   wire             cpu_0_data_master_requests_onchip_memory2_s1;
@@ -5334,6 +5660,7 @@ module DE2_SoPC (
   wire    [ 31: 0] cpu_0_jtag_debug_module_writedata;
   wire             d1_cpu_0_jtag_debug_module_end_xfer;
   wire             d1_epcs_epcs_control_port_end_xfer;
+  wire             d1_i2c_avalon_slave_0_end_xfer;
   wire             d1_jtag_uart_avalon_jtag_slave_end_xfer;
   wire             d1_lcd_control_slave_end_xfer;
   wire             d1_onchip_memory2_s1_end_xfer;
@@ -5359,6 +5686,17 @@ module DE2_SoPC (
   wire             epcs_epcs_control_port_reset_n;
   wire             epcs_epcs_control_port_write_n;
   wire    [ 31: 0] epcs_epcs_control_port_writedata;
+  wire    [  2: 0] i2c_avalon_slave_0_address;
+  wire             i2c_avalon_slave_0_chipselect;
+  wire             i2c_avalon_slave_0_irq;
+  wire             i2c_avalon_slave_0_irq_from_sa;
+  wire    [  7: 0] i2c_avalon_slave_0_readdata;
+  wire    [  7: 0] i2c_avalon_slave_0_readdata_from_sa;
+  wire             i2c_avalon_slave_0_reset;
+  wire             i2c_avalon_slave_0_waitrequest_n;
+  wire             i2c_avalon_slave_0_waitrequest_n_from_sa;
+  wire             i2c_avalon_slave_0_write;
+  wire    [  7: 0] i2c_avalon_slave_0_writedata;
   wire    [  7: 0] incoming_tri_state_bridge_flash_data;
   wire    [  7: 0] incoming_tri_state_bridge_flash_data_with_Xs_converted_to_0;
   wire             jtag_uart_avalon_jtag_slave_address;
@@ -5399,6 +5737,8 @@ module DE2_SoPC (
   wire             registered_cpu_0_data_master_read_data_valid_cfi_flash_0_s1;
   wire             registered_cpu_0_data_master_read_data_valid_onchip_memory2_s1;
   wire             reset_n_sources;
+  wire             scl_pad_io_to_and_from_the_i2c;
+  wire             sda_pad_io_to_and_from_the_i2c;
   wire             select_n_to_the_cfi_flash_0;
   wire    [ 17: 0] sram_avalon_slave_0_address;
   wire    [  1: 0] sram_avalon_slave_0_byteenable_n;
@@ -5505,6 +5845,7 @@ module DE2_SoPC (
       .cpu_0_data_master_granted_cfi_flash_0_s1                        (cpu_0_data_master_granted_cfi_flash_0_s1),
       .cpu_0_data_master_granted_cpu_0_jtag_debug_module               (cpu_0_data_master_granted_cpu_0_jtag_debug_module),
       .cpu_0_data_master_granted_epcs_epcs_control_port                (cpu_0_data_master_granted_epcs_epcs_control_port),
+      .cpu_0_data_master_granted_i2c_avalon_slave_0                    (cpu_0_data_master_granted_i2c_avalon_slave_0),
       .cpu_0_data_master_granted_jtag_uart_avalon_jtag_slave           (cpu_0_data_master_granted_jtag_uart_avalon_jtag_slave),
       .cpu_0_data_master_granted_lcd_control_slave                     (cpu_0_data_master_granted_lcd_control_slave),
       .cpu_0_data_master_granted_onchip_memory2_s1                     (cpu_0_data_master_granted_onchip_memory2_s1),
@@ -5518,6 +5859,7 @@ module DE2_SoPC (
       .cpu_0_data_master_qualified_request_cfi_flash_0_s1              (cpu_0_data_master_qualified_request_cfi_flash_0_s1),
       .cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module     (cpu_0_data_master_qualified_request_cpu_0_jtag_debug_module),
       .cpu_0_data_master_qualified_request_epcs_epcs_control_port      (cpu_0_data_master_qualified_request_epcs_epcs_control_port),
+      .cpu_0_data_master_qualified_request_i2c_avalon_slave_0          (cpu_0_data_master_qualified_request_i2c_avalon_slave_0),
       .cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave (cpu_0_data_master_qualified_request_jtag_uart_avalon_jtag_slave),
       .cpu_0_data_master_qualified_request_lcd_control_slave           (cpu_0_data_master_qualified_request_lcd_control_slave),
       .cpu_0_data_master_qualified_request_onchip_memory2_s1           (cpu_0_data_master_qualified_request_onchip_memory2_s1),
@@ -5530,6 +5872,7 @@ module DE2_SoPC (
       .cpu_0_data_master_read_data_valid_cfi_flash_0_s1                (cpu_0_data_master_read_data_valid_cfi_flash_0_s1),
       .cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module       (cpu_0_data_master_read_data_valid_cpu_0_jtag_debug_module),
       .cpu_0_data_master_read_data_valid_epcs_epcs_control_port        (cpu_0_data_master_read_data_valid_epcs_epcs_control_port),
+      .cpu_0_data_master_read_data_valid_i2c_avalon_slave_0            (cpu_0_data_master_read_data_valid_i2c_avalon_slave_0),
       .cpu_0_data_master_read_data_valid_jtag_uart_avalon_jtag_slave   (cpu_0_data_master_read_data_valid_jtag_uart_avalon_jtag_slave),
       .cpu_0_data_master_read_data_valid_lcd_control_slave             (cpu_0_data_master_read_data_valid_lcd_control_slave),
       .cpu_0_data_master_read_data_valid_onchip_memory2_s1             (cpu_0_data_master_read_data_valid_onchip_memory2_s1),
@@ -5542,6 +5885,7 @@ module DE2_SoPC (
       .cpu_0_data_master_requests_cfi_flash_0_s1                       (cpu_0_data_master_requests_cfi_flash_0_s1),
       .cpu_0_data_master_requests_cpu_0_jtag_debug_module              (cpu_0_data_master_requests_cpu_0_jtag_debug_module),
       .cpu_0_data_master_requests_epcs_epcs_control_port               (cpu_0_data_master_requests_epcs_epcs_control_port),
+      .cpu_0_data_master_requests_i2c_avalon_slave_0                   (cpu_0_data_master_requests_i2c_avalon_slave_0),
       .cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave          (cpu_0_data_master_requests_jtag_uart_avalon_jtag_slave),
       .cpu_0_data_master_requests_lcd_control_slave                    (cpu_0_data_master_requests_lcd_control_slave),
       .cpu_0_data_master_requests_onchip_memory2_s1                    (cpu_0_data_master_requests_onchip_memory2_s1),
@@ -5556,6 +5900,7 @@ module DE2_SoPC (
       .cpu_0_jtag_debug_module_readdata_from_sa                        (cpu_0_jtag_debug_module_readdata_from_sa),
       .d1_cpu_0_jtag_debug_module_end_xfer                             (d1_cpu_0_jtag_debug_module_end_xfer),
       .d1_epcs_epcs_control_port_end_xfer                              (d1_epcs_epcs_control_port_end_xfer),
+      .d1_i2c_avalon_slave_0_end_xfer                                  (d1_i2c_avalon_slave_0_end_xfer),
       .d1_jtag_uart_avalon_jtag_slave_end_xfer                         (d1_jtag_uart_avalon_jtag_slave_end_xfer),
       .d1_lcd_control_slave_end_xfer                                   (d1_lcd_control_slave_end_xfer),
       .d1_onchip_memory2_s1_end_xfer                                   (d1_onchip_memory2_s1_end_xfer),
@@ -5567,6 +5912,9 @@ module DE2_SoPC (
       .d1_vga_0_avalon_slave_0_end_xfer                                (d1_vga_0_avalon_slave_0_end_xfer),
       .epcs_epcs_control_port_irq_from_sa                              (epcs_epcs_control_port_irq_from_sa),
       .epcs_epcs_control_port_readdata_from_sa                         (epcs_epcs_control_port_readdata_from_sa),
+      .i2c_avalon_slave_0_irq_from_sa                                  (i2c_avalon_slave_0_irq_from_sa),
+      .i2c_avalon_slave_0_readdata_from_sa                             (i2c_avalon_slave_0_readdata_from_sa),
+      .i2c_avalon_slave_0_waitrequest_n_from_sa                        (i2c_avalon_slave_0_waitrequest_n_from_sa),
       .incoming_tri_state_bridge_flash_data_with_Xs_converted_to_0     (incoming_tri_state_bridge_flash_data_with_Xs_converted_to_0),
       .jtag_uart_avalon_jtag_slave_irq_from_sa                         (jtag_uart_avalon_jtag_slave_irq_from_sa),
       .jtag_uart_avalon_jtag_slave_readdata_from_sa                    (jtag_uart_avalon_jtag_slave_readdata_from_sa),
@@ -5717,6 +6065,49 @@ module DE2_SoPC (
       .reset_n       (epcs_epcs_control_port_reset_n),
       .write_n       (epcs_epcs_control_port_write_n),
       .writedata     (epcs_epcs_control_port_writedata)
+    );
+
+  i2c_avalon_slave_0_arbitrator the_i2c_avalon_slave_0
+    (
+      .clk                                                    (clk_50),
+      .cpu_0_data_master_address_to_slave                     (cpu_0_data_master_address_to_slave),
+      .cpu_0_data_master_byteenable                           (cpu_0_data_master_byteenable),
+      .cpu_0_data_master_granted_i2c_avalon_slave_0           (cpu_0_data_master_granted_i2c_avalon_slave_0),
+      .cpu_0_data_master_qualified_request_i2c_avalon_slave_0 (cpu_0_data_master_qualified_request_i2c_avalon_slave_0),
+      .cpu_0_data_master_read                                 (cpu_0_data_master_read),
+      .cpu_0_data_master_read_data_valid_i2c_avalon_slave_0   (cpu_0_data_master_read_data_valid_i2c_avalon_slave_0),
+      .cpu_0_data_master_requests_i2c_avalon_slave_0          (cpu_0_data_master_requests_i2c_avalon_slave_0),
+      .cpu_0_data_master_waitrequest                          (cpu_0_data_master_waitrequest),
+      .cpu_0_data_master_write                                (cpu_0_data_master_write),
+      .cpu_0_data_master_writedata                            (cpu_0_data_master_writedata),
+      .d1_i2c_avalon_slave_0_end_xfer                         (d1_i2c_avalon_slave_0_end_xfer),
+      .i2c_avalon_slave_0_address                             (i2c_avalon_slave_0_address),
+      .i2c_avalon_slave_0_chipselect                          (i2c_avalon_slave_0_chipselect),
+      .i2c_avalon_slave_0_irq                                 (i2c_avalon_slave_0_irq),
+      .i2c_avalon_slave_0_irq_from_sa                         (i2c_avalon_slave_0_irq_from_sa),
+      .i2c_avalon_slave_0_readdata                            (i2c_avalon_slave_0_readdata),
+      .i2c_avalon_slave_0_readdata_from_sa                    (i2c_avalon_slave_0_readdata_from_sa),
+      .i2c_avalon_slave_0_reset                               (i2c_avalon_slave_0_reset),
+      .i2c_avalon_slave_0_waitrequest_n                       (i2c_avalon_slave_0_waitrequest_n),
+      .i2c_avalon_slave_0_waitrequest_n_from_sa               (i2c_avalon_slave_0_waitrequest_n_from_sa),
+      .i2c_avalon_slave_0_write                               (i2c_avalon_slave_0_write),
+      .i2c_avalon_slave_0_writedata                           (i2c_avalon_slave_0_writedata),
+      .reset_n                                                (clk_50_reset_n)
+    );
+
+  i2c the_i2c
+    (
+      .scl_pad_io (scl_pad_io_to_and_from_the_i2c),
+      .sda_pad_io (sda_pad_io_to_and_from_the_i2c),
+      .wb_ack_o   (i2c_avalon_slave_0_waitrequest_n),
+      .wb_adr_i   (i2c_avalon_slave_0_address),
+      .wb_clk_i   (clk_50),
+      .wb_dat_i   (i2c_avalon_slave_0_writedata),
+      .wb_dat_o   (i2c_avalon_slave_0_readdata),
+      .wb_inta_o  (i2c_avalon_slave_0_irq),
+      .wb_rst_i   (i2c_avalon_slave_0_reset),
+      .wb_stb_i   (i2c_avalon_slave_0_chipselect),
+      .wb_we_i    (i2c_avalon_slave_0_write)
     );
 
   jtag_uart_avalon_jtag_slave_arbitrator the_jtag_uart_avalon_jtag_slave
@@ -6299,6 +6690,13 @@ endmodule
 `include "c:/altera/12.0/quartus/eda/sim_lib/sgate.v"
 `include "ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v"
 `include "sram.v"
+`include "ip/opencores_i2c/opencores_i2c.v"
+`include "ip/opencores_i2c/i2c_master_bit_ctrl.v"
+`include "ip/opencores_i2c/i2c_master_byte_ctrl.v"
+`include "ip/opencores_i2c/i2c_master_defines.v"
+`include "ip/opencores_i2c/i2c_master_top.v"
+`include "ip/opencores_i2c/timescale.v"
+`include "i2c.v"
 `include "ip/Binary_VGA_Controller/hdl/Img_RAM.v"
 `include "ip/Binary_VGA_Controller/hdl/VGA_Controller.v"
 `include "ip/Binary_VGA_Controller/hdl/VGA_NIOS_CTRL.v"
@@ -6354,6 +6752,8 @@ module test_bench
   wire             jtag_uart_avalon_jtag_slave_readyfordata_from_sa;
   reg              reset_n;
   wire             rxd_to_the_uart;
+  wire             scl_pad_io_to_and_from_the_i2c;
+  wire             sda_pad_io_to_and_from_the_i2c;
   wire             select_n_to_the_cfi_flash_0;
   wire             sysid_0_control_slave_clock;
   wire    [ 21: 0] tri_state_bridge_flash_address;
@@ -6395,6 +6795,8 @@ module test_bench
       .iCLK_25_to_the_vga_0           (iCLK_25_to_the_vga_0),
       .reset_n                        (reset_n),
       .rxd_to_the_uart                (rxd_to_the_uart),
+      .scl_pad_io_to_and_from_the_i2c (scl_pad_io_to_and_from_the_i2c),
+      .sda_pad_io_to_and_from_the_i2c (sda_pad_io_to_and_from_the_i2c),
       .select_n_to_the_cfi_flash_0    (select_n_to_the_cfi_flash_0),
       .tri_state_bridge_flash_address (tri_state_bridge_flash_address),
       .tri_state_bridge_flash_data    (tri_state_bridge_flash_data),

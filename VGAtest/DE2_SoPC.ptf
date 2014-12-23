@@ -531,7 +531,7 @@ SYSTEM DE2_SoPC
             }
             Entry jtag_uart/avalon_jtag_slave
             {
-               address = "0x00b04050";
+               address = "0x00b04070";
                span = "0x00000008";
                is_bridge = "0";
             }
@@ -549,7 +549,7 @@ SYSTEM DE2_SoPC
             }
             Entry lcd/control_slave
             {
-               address = "0x00b04040";
+               address = "0x00b04060";
                span = "0x00000010";
                is_bridge = "0";
             }
@@ -561,7 +561,7 @@ SYSTEM DE2_SoPC
             }
             Entry sysid_0/control_slave
             {
-               address = "0x00b04058";
+               address = "0x00b04078";
                span = "0x00000008";
                is_bridge = "0";
             }
@@ -581,6 +581,12 @@ SYSTEM DE2_SoPC
             {
                address = "0x00b01000";
                span = "0x00001000";
+               is_bridge = "0";
+            }
+            Entry i2c/avalon_slave_0
+            {
+               address = "0x00b04040";
+               span = "0x00000020";
                is_bridge = "0";
             }
          }
@@ -1733,13 +1739,13 @@ SYSTEM DE2_SoPC
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00b04050";
+               Offset_Address = "0x00b04070";
             }
             IRQ_MASTER cpu_0/data_master
             {
                IRQ_Number = "0";
             }
-            Base_Address = "0x00b04050";
+            Base_Address = "0x00b04070";
             Address_Group = "0";
          }
       }
@@ -2872,9 +2878,9 @@ SYSTEM DE2_SoPC
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00b04040";
+               Offset_Address = "0x00b04060";
             }
-            Base_Address = "0x00b04040";
+            Base_Address = "0x00b04060";
             Has_IRQ = "0";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
@@ -3120,9 +3126,9 @@ SYSTEM DE2_SoPC
             MASTERED_BY cpu_0/data_master
             {
                priority = "1";
-               Offset_Address = "0x00b04058";
+               Offset_Address = "0x00b04078";
             }
-            Base_Address = "0x00b04058";
+            Base_Address = "0x00b04078";
             Has_IRQ = "0";
             Address_Group = "0";
             IRQ_MASTER cpu_0/data_master
@@ -3144,7 +3150,7 @@ SYSTEM DE2_SoPC
          Has_Clock = "1";
          View 
          {
-            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>548455FF</b> (timestamp: Sun Dec 7, 2014 @9:28 PM)";
+            Settings_Summary = "System ID (at last Generate):<br> <b>00000000</b>    (unique ID tag) <br> <b>5498187A</b> (timestamp: Mon Dec 22, 2014 @9:11 PM)";
             MESSAGES 
             {
             }
@@ -3153,7 +3159,7 @@ SYSTEM DE2_SoPC
       WIZARD_SCRIPT_ARGUMENTS 
       {
          id = "0u";
-         timestamp = "1417958911u";
+         timestamp = "1419253882u";
          regenerate_values = "0";
          MAKE 
          {
@@ -3162,7 +3168,7 @@ SYSTEM DE2_SoPC
                verifysysid 
                {
                   All_Depends_On = "0";
-                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00b04058 --id=0 --timestamp=1417958911";
+                  Command = "nios2-download $(JTAG_CABLE)                                --sidp=0x00b04078 --id=0 --timestamp=1419253882";
                   Is_Phony = "1";
                   Target_File = "dummy_verifysysid_file";
                }
@@ -3601,6 +3607,163 @@ SYSTEM DE2_SoPC
          Synthesis_Only_Files = "";
       }
       PORT_WIRING 
+      {
+      }
+   }
+   MODULE i2c
+   {
+      SLAVE avalon_slave_0
+      {
+         PORT_WIRING 
+         {
+            PORT wb_clk_i
+            {
+               type = "clk";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT wb_rst_i
+            {
+               type = "reset";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT wb_inta_o
+            {
+               type = "irq";
+               width = "1";
+               direction = "output";
+               Is_Enabled = "1";
+            }
+            PORT wb_adr_i
+            {
+               type = "address";
+               width = "3";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT wb_dat_i
+            {
+               type = "writedata";
+               width = "8";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT wb_dat_o
+            {
+               type = "readdata";
+               width = "8";
+               direction = "output";
+               Is_Enabled = "1";
+            }
+            PORT wb_we_i
+            {
+               type = "write";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT wb_stb_i
+            {
+               type = "chipselect";
+               width = "1";
+               direction = "input";
+               Is_Enabled = "1";
+            }
+            PORT wb_ack_o
+            {
+               type = "waitrequest_n";
+               width = "1";
+               direction = "output";
+               Is_Enabled = "1";
+            }
+         }
+         SYSTEM_BUILDER_INFO 
+         {
+            Has_IRQ = "1";
+            Bus_Type = "avalon";
+            Read_Wait_States = "peripheral_controlled";
+            Write_Wait_States = "peripheral_controlled";
+            Hold_Time = "0cycles";
+            Setup_Time = "0cycles";
+            Is_Printable_Device = "0";
+            Address_Alignment = "native";
+            Well_Behaved_Waitrequest = "0";
+            Is_Nonvolatile_Storage = "0";
+            Read_Latency = "0";
+            Is_Memory_Device = "0";
+            Maximum_Pending_Read_Transactions = "0";
+            Minimum_Uninterrupted_Run_Length = "1";
+            Accepts_Internal_Connections = "1";
+            Write_Latency = "0";
+            Is_Flash = "0";
+            Data_Width = "8";
+            Address_Width = "3";
+            Maximum_Burst_Size = "1";
+            Register_Incoming_Signals = "0";
+            Register_Outgoing_Signals = "0";
+            Interleave_Bursts = "0";
+            Linewrap_Bursts = "0";
+            Burst_On_Burst_Boundaries_Only = "0";
+            Always_Burst_Max_Burst = "0";
+            Is_Big_Endian = "0";
+            Is_Enabled = "1";
+            MASTERED_BY cpu_0/data_master
+            {
+               priority = "1";
+               Offset_Address = "0x00b04040";
+            }
+            IRQ_MASTER cpu_0/data_master
+            {
+               IRQ_Number = "4";
+            }
+            Base_Address = "0x00b04040";
+            Address_Group = "0";
+         }
+      }
+      PORT_WIRING 
+      {
+         PORT scl_pad_io
+         {
+            type = "export";
+            width = "1";
+            direction = "inout";
+            Is_Enabled = "1";
+         }
+         PORT sda_pad_io
+         {
+            type = "export";
+            width = "1";
+            direction = "inout";
+            Is_Enabled = "1";
+         }
+      }
+      class = "no_legacy_module";
+      class_version = "7.08120";
+      gtf_class_name = "opencores_i2c";
+      gtf_class_version = "9.1";
+      SYSTEM_BUILDER_INFO 
+      {
+         Do_Not_Generate = "1";
+         Instantiate_In_System_Module = "1";
+         Is_Bridge = "0";
+         Is_Enabled = "1";
+         Clock_Source = "clk_50";
+         Has_Clock = "1";
+         View 
+         {
+            MESSAGES 
+            {
+            }
+         }
+      }
+      HDL_INFO 
+      {
+         Simulation_HDL_Files = "__PROJECT_DIRECTORY__/ip/opencores_i2c/opencores_i2c.v,__PROJECT_DIRECTORY__/ip/opencores_i2c/i2c_master_bit_ctrl.v,__PROJECT_DIRECTORY__/ip/opencores_i2c/i2c_master_byte_ctrl.v,__PROJECT_DIRECTORY__/ip/opencores_i2c/i2c_master_defines.v,__PROJECT_DIRECTORY__/ip/opencores_i2c/i2c_master_top.v,__PROJECT_DIRECTORY__/ip/opencores_i2c/timescale.v,__PROJECT_DIRECTORY__/i2c.v";
+      }
+      WIZARD_SCRIPT_ARGUMENTS 
       {
       }
    }

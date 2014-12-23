@@ -484,4 +484,11 @@ PACKAGE install
          local = "C:/altera/12.0/ip/altera/pci_compiler/lib/sopc_builder/altera_avalon_pci_compiler_adapter";
       }
    }
+   COMPONENT vga_controller
+   {
+      VERSION 1.0
+      {
+         local = "C:/Users/Jason/Documents/Github/THU-DSD/VGAtest/VGA_Controller";
+      }
+   }
 }

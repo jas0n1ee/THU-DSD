@@ -342,10 +342,10 @@ DE2_SoPC DE2_SoPC_inst
       .LCD_RW_from_the_lcd                 (LCD_RW),
       .LCD_data_to_and_from_the_lcd        (LCD_DATA),
     //i2c  
-	 /*
-      .out_port_from_the_i2c_sclk          (),//(I2C_SCLK),                  
-      .bidir_port_to_and_from_the_i2c_sdat (),//(I2C_SDAT),
-    
+	 
+      .scl_pad_io_to_and_from_the_i2c          (I2C_SCLK),//(I2C_SCLK),                  
+      .sda_pad_io_to_and_from_the_i2c (I2C_SDAT),//(I2C_SDAT),
+    /*
 	 //sd card  
       .out_port_from_the_SD_CLK            (SD_CLK),
       .bidir_port_to_and_from_the_SD_CMD   (SD_CMD),      
