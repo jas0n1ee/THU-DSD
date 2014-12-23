@@ -15,29 +15,49 @@
 #define H_P_low 130                     //Pillar Height lower limit
 #define bird_size 10                    //Bird size
 #define NO_3 ((NO_1 + 2) % 5)
+#define TRUE 1
+#define FALSE 0
 
-struct Pillar
+typedef struct Pillar
 {
     /* data */
     int x;
     int y;
-};
+}Pillar;
 
-void Erase_Bird(int VGA_0_BASE, int bird_h)
+int max(int x, int y)
 {
-    for (int y = bird_h - bird_size; y <= bird_h + bird_size; y++)
-        for (int x = W_B/2 - bird_size; x = W_B/2 + bird_size; x++)
-            Vga_Clr_Pixel(VGA_0_BASE,x,y);
+    if (x>=y)
+        return x;
+    else
+        return y;
 }
 
-void Print_Bird(int VGA_0_BASE, int bird_h)
+int min(int x, int y)
 {
-    for (int y = bird_h - bird_size; y <= bird_h + bird_size; y++)
-        for (int x = W_B/2 - bird_size; x = W_B/2 + bird_size; x++)
-            Vga_Set_Pixel(VGA_0_BASE,x,y);
+    if (x<=y)
+        return x;
+    else
+        return y;
 }
 
-int Shift_Pl(int VGA_0_BASE, Pillar *p)
+void Erase_Bird(int VGA_BASE, int bird_h)
+{
+    int x,y;
+    for (y = bird_h - bird_size; y <= bird_h + bird_size; y++)
+        for (x = (W_B/2 - bird_size); x = (W_B/2 + bird_size); x++)
+            Vga_Clr_Pixel(VGA_BASE,x,y);
+}
+
+void Print_Bird(int VGA_BASE, int bird_h)
+{
+    int x,y;
+    for (y = bird_h - bird_size; y <= bird_h + bird_size; y++)
+        for (x = (W_B/2 - bird_size); x = (W_B/2 + bird_size); x++)
+            Vga_Set_Pixel(VGA_BASE,x,y);
+}
+
+int Shift_Pl(int VGA_BASE, Pillar *p)
 {
     int x,y;
     if (p->x <= -W_P)
@@ -49,36 +69,38 @@ int Shift_Pl(int VGA_0_BASE, Pillar *p)
     else
     {
         if (p->x <= 0)
+        {
             for (x = max(0, p->x + W_P - Sh_step); x < (p->x + W_P); x++)
                 for (y = H_G; y < p->y; y++)
-                    Vga_Clr_Pixel(VGA_0_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Clr_Pixel(VGA_0_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
+        }
         else if (p->x < (W_B - W_P + Sh_step))
         {
             for (x = max(0, p->x - Sh_step); x < p->x; x++)
                 for (y = H_G; y < p->y; y++)
-                    Vga_Set_Pixel(VGA_0_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Set_Pixel(VGA_0_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,y);
             for (x = p->x + W_P - Sh_step; x < min(p->x + W_P, W_B); x++)
                 for (y = H_G; y < p->y; y++)
-                    Vga_Clr_Pixel(VGA_0_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Clr_Pixel(VGA_0_BASE,x,y);
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
         }
         else if (p->x < (W_B + Sh_step))
             for (x = p->x - Sh_step; x < min(p->x, W_B); x++)
                 for (y = H_G; y < p->y; y++)
-                    Vga_Set_Pixel(VGA_0_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
-                    Vga_Set_Pixel(VGA_0_BASE,x,y);
+                    Vga_Set_Pixel(VGA_BASE,x,y);
         p->x = p->x - Sh_step;
         return 0;
     }
 }
 
-bool Collide(Pillar *pl, int bird_h)
+int Collide(Pillar *pl, int bird_h)
 {
     if (pl->x >= (W_B/2 + bird_size) || pl->x <= (W_B/2 - bird_size - W_P))
         return FALSE;
@@ -88,7 +110,7 @@ bool Collide(Pillar *pl, int bird_h)
         return TRUE;
 }
 
-bool HitGround(int bird_h)
+int HitGround(int bird_h)
 {
     if ((bird_h - bird_size) < H_G)
         return TRUE;
@@ -110,9 +132,10 @@ int main()
     Set_Pixel_On_Color(0,0,0);
 
     // Background Init
-    for (int x = 0; x < W_B; x++)
+    int x = 0; int y = 0;
+    for (x = 0; x < W_B; x++)
     {
-        for (int y = 0; y < H_G; y++)
+        for (y = 0; y < H_G; y++)
             Vga_Set_Pixel(VGA_0_BASE, x, y);
         for (y = H_G; y < H_B; y++)
             Vga_Clr_Pixel(VGA_0_BASE, x, y);
@@ -120,7 +143,8 @@ int main()
 
     // Pillar Init
     struct Pillar pl[5];
-    for (int i = 0; i < 5; i++)
+    int i; int k;
+    for (i = 0; i < 5; i++)
     {
         pl[i].x = W_B + (W_P + I_P) * i;
         pl[i].y = rand()%(H_P_up - H_P_low + 1) + H_P_low;
@@ -129,8 +153,9 @@ int main()
     int bird_h = 280;
     int NO_1 = 0;
     int temp = 0;
-    bool jump = FALSE;
+    int jump = 0;
     int v = 0;
+    int press_button = 0;
     unsigned int time_cnt = 0;
     unsigned int press_cnt = 0;
 
@@ -152,24 +177,24 @@ int main()
     while(1){
         press_button = IORD(KEY_BASE,0);
         //Jump judgement
-        if (press_button && jump == FALSE)
+        if (press_button && jump == 0)
         {
             press_cnt++;
             if (press_cnt == 5000000)       //Need to be tested
             {
-                jump = TRUE;
+                jump = 1;
                 press_cnt = 0;
             }
         }
         if (time_cnt == 1000000)            //Need to be tested
         {
             temp = 0;
-            for (int k = 0; k < 5; k++)
-                temp = temp + Shift_Pl(pl+k);
+            for (k = 0; k < 5; k++)
+                temp = temp + Shift_Pl(VGA_0_BASE, pl+k);
             if (temp == 1)
                 NO_1 = (NO_1 + 1) % 5;
             if (jump)
-                {v = -30; jump = FALSE;}
+                {v = -30; jump = 0;}
             v = v + 1;
             Erase_Bird(VGA_0_BASE, bird_h);
             bird_h = bird_h - v;
