@@ -69,32 +69,38 @@ int Shift_Pl(int VGA_BASE, Pillar *p)
     else
     {
         if (p->x <= 0)
-        {
             for (x = max(0, p->x + W_P - Sh_step); x < (p->x + W_P); x++)
+            {
                 for (y = H_G; y < p->y; y++)
                     Vga_Clr_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
                     Vga_Clr_Pixel(VGA_BASE,x,y);
-        }
+            }
         else if (p->x < (W_B - W_P + Sh_step))
         {
             for (x = max(0, p->x - Sh_step); x < p->x; x++)
+            {
                 for (y = H_G; y < p->y; y++)
                     Vga_Set_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
                     Vga_Set_Pixel(VGA_BASE,x,y);
+            }
             for (x = p->x + W_P - Sh_step; x < min(p->x + W_P, W_B); x++)
+            {
                 for (y = H_G; y < p->y; y++)
                     Vga_Clr_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
                     Vga_Clr_Pixel(VGA_BASE,x,y);
+            }
         }
         else if (p->x < (W_B + Sh_step))
             for (x = p->x - Sh_step; x < min(p->x, W_B); x++)
+            {
                 for (y = H_G; y < p->y; y++)
                     Vga_Set_Pixel(VGA_BASE,x,y);
                 for (y = p->y + H_H; y < H_B; y++)
                     Vga_Set_Pixel(VGA_BASE,x,y);
+            }
         p->x = p->x - Sh_step;
         return 0;
     }
@@ -200,7 +206,6 @@ int main()
             Erase_Bird(VGA_0_BASE, bird_h);
             bird_h = bird_h - v;
             Print_Bird(VGA_0_BASE, bird_h);
-            printf("Breakpoint\n");
             if (Collide(pl + NO_3, bird_h) || HitGround(bird_h))
                 break;
             printf("One frame passed.\n");
