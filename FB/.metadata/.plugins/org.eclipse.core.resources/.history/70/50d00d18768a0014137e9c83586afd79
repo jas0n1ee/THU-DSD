@@ -128,8 +128,8 @@ int main()
     VCR.VGA_Ctrl_Flags.BLUE_ON=1;
     VCR.VGA_Ctrl_Flags.CURSOR_ON=0;
     Vga_Write_Ctrl(VGA_0_BASE,VCR.Value);
-    Set_Pixel_Off_Color(0,0,0);
-    Set_Pixel_On_Color(1023,1023,1023);
+    Set_Pixel_Off_Color(1023,1023,1023);
+    Set_Pixel_On_Color(0,0,0);
 
     // Background Init
     int x = 0; int y = 0;
@@ -165,7 +165,7 @@ int main()
         if (press_button)
         {
             press_cnt++;
-            if(press_cnt == 500)
+            if(press_cnt == 5000000)
             {
                 press_cnt = 0;
                 printf("Game Started!\n");
@@ -173,25 +173,20 @@ int main()
             }
         }
     }
-    printf("initial finished\n");
-    press_cnt=0;
-    jump=0;
-    time_cnt=0;
+
     while(1){
-    	printf("%d\n",time_cnt);
         press_button = IORD(KEY_BASE,0);
         //Jump judgement
         if (press_button && jump == 0)
         {
             press_cnt++;
-            if (press_cnt == 500)       //Need to be tested
+            if (press_cnt == 5000000)       //Need to be tested
             {
                 jump = 1;
                 press_cnt = 0;
-                printf("jump\n");
             }
         }
-        if (time_cnt == 100)            //Need to be tested
+        if (time_cnt == 1000000)            //Need to be tested
         {
             temp = 0;
             for (k = 0; k < 5; k++)

@@ -176,7 +176,6 @@ int main()
     printf("initial finished\n");
     press_cnt=0;
     jump=0;
-    time_cnt=0;
     while(1){
     	printf("%d\n",time_cnt);
         press_button = IORD(KEY_BASE,0);

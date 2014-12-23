@@ -174,11 +174,7 @@ int main()
         }
     }
     printf("initial finished\n");
-    press_cnt=0;
-    jump=0;
-    time_cnt=0;
     while(1){
-    	printf("%d\n",time_cnt);
         press_button = IORD(KEY_BASE,0);
         //Jump judgement
         if (press_button && jump == 0)
@@ -188,7 +184,6 @@ int main()
             {
                 jump = 1;
                 press_cnt = 0;
-                printf("jump\n");
             }
         }
         if (time_cnt == 100)            //Need to be tested
