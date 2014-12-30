@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Dec 7, 2014 11:53:40 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1417967620176</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2014-12-30 9:36:30</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1419903390974</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Jason\Documents\Github\THU-DSD\FB\software\game_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Jason\Documents\Github\THU-DSD\FB\kernel.sopcinfo</SopcDesignFile>
@@ -850,6 +850,12 @@
                 <Enabled>false</Enabled>
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
+        <MemoryMap>
+                <slaveDescriptor>pll</slaveDescriptor>
+                <addressRange>0x00000000 - 0x0000000F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>cfi_flash</slaveDescriptor>
                 <addressRange>0x00400000 - 0x007FFFFF</addressRange>

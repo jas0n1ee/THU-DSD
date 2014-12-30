@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'kernel'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/FB/kernel.sopcinfo
  *
- * Generated: Sun Dec 07 23:53:40 CST 2014
+ * Generated: Tue Dec 23 16:15:23 CST 2014
  */
 
 /*
@@ -131,6 +131,7 @@
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2
+#define __ALTPLL
 #define __BINARY_VGA_CONTROLLER
 #define __SRAM_16BIT_512K
 
@@ -328,6 +329,20 @@
 #define ONCHIP_MEMORY_SPAN 4096
 #define ONCHIP_MEMORY_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEMORY_WRITABLE 1
+
+
+/*
+ * pll configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_pll altpll
+#define PLL_BASE 0x0
+#define PLL_IRQ -1
+#define PLL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define PLL_NAME "/dev/pll"
+#define PLL_SPAN 16
+#define PLL_TYPE "altpll"
 
 
 /*
