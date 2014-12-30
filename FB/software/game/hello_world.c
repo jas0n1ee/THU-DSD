@@ -8,7 +8,7 @@
 #define W_B 640                         //Background Width
 #define H_G 80                          //Ground Height
 #define W_P 50                          //Pillar Width
-#define H_H 100                         //Hole Height
+//#define H_H 100                         //Hole Height
 #define I_P 100                         //Pillar Interval
 #define Sh_step 5                       //Background Shift Step
 #define H_P_up 330                      //Pillar Height upper limit
@@ -16,7 +16,7 @@
 #define bird_size 10                    //Bird size
 #define TRUE 1
 #define FALSE 0
-
+int H_H=100;
 typedef struct Pillar
 {
     /* data */
@@ -172,8 +172,9 @@ while (1){
     unsigned int time_cnt = 0;
     unsigned int press_cnt = 0;
     hardchoice=IORD(HARDMODLE_BASE,0);
-    int hard=hardchoice/8+2;
+    int hard=hardchoice/8;
     int time=hardchoice%8+1;
+    H_H=100-hard*50;
     time_th=100000/time;
     printf("%d\n%d\n%d\n",hardchoice,hard,time);
 ////////////////////////////// Flappy Bird ///////////////////////////////////
