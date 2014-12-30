@@ -138,7 +138,7 @@ while (1){
     Vga_Write_Ctrl(VGA_0_BASE,VCR.Value);
     Set_Pixel_Off_Color(1023,1023,1023);
     Set_Pixel_On_Color(0,0,0);
-    printf("%d\n",VCR.Value);
+    //printf("%d\n",VCR.Value);
     // Background Init
     int x = 0; int y = 0;
     for (x=0;x<640;x++)
@@ -160,17 +160,22 @@ while (1){
     {
         pl[i].x = W_B + (W_P + I_P) * i;
         pl[i].y = rand()%(H_P_up - H_P_low + 1) + H_P_low;
-        printf("%d\n",pl[i].y);
+       // printf("%d\n",pl[i].y);
     }
-
+    int hardchoice=0;
     int bird_h = 280;
     int temp = 0;
     int jump = 0;
     int v = 0;
     int press_button = 0;
+    int time_th=10000;
     unsigned int time_cnt = 0;
     unsigned int press_cnt = 0;
-
+    hardchoice=IORD(HARDMODLE_BASE,0);
+    int hard=hardchoice/8+2;
+    int time=hardchoice%8+1;
+    time_th=100000/time;
+    printf("%d\n%d\n%d\n",hardchoice,hard,time);
 ////////////////////////////// Flappy Bird ///////////////////////////////////
 
     while(1){
@@ -193,15 +198,15 @@ while (1){
         if (press_button && jump == 0)
         {
             press_cnt++;
-            if (press_cnt == 50000)       //Need to be tested 50k
+            if (press_cnt == 5000)       //Need to be tested 50k
             {
                 jump = 1;
                 press_cnt = 0;
             }
         }
-        if (time_cnt == 100000)            //Need to be tested 100k
+        if (time_cnt == time_th)            //Need to be tested 100k
         {
-        	printf("One frame started.\n");
+        	//printf("One frame started.\n");
         	if (jump)
         		{v = -10; jump = 0;}
         	v = v + 2;
@@ -219,7 +224,7 @@ while (1){
             Print_Bird(VGA_0_BASE, bird_h);
             if (Collide(pl + temp, bird_h) || HitGround(bird_h))
                 break;
-            printf("One frame passed.\n");
+            //printf("One frame passed.\n");
             time_cnt = 0;
         }
         time_cnt++;

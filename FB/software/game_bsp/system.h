@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'kernel'
  * SOPC Builder design path: C:/Users/Jason/Documents/Github/THU-DSD/FB/kernel.sopcinfo
  *
- * Generated: Tue Dec 23 16:15:23 CST 2014
+ * Generated: Tue Dec 30 12:07:12 CST 2014
  */
 
 /*
@@ -152,19 +152,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0xb04050
+#define ALT_STDERR_BASE 0xb04070
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0xb04050
+#define ALT_STDIN_BASE 0xb04070
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0xb04050
+#define ALT_STDOUT_BASE 0xb04070
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -244,12 +244,39 @@
 
 
 /*
+ * hardmodle configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_hardmodle altera_avalon_pio
+#define HARDMODLE_BASE 0xb04060
+#define HARDMODLE_BIT_CLEARING_EDGE_REGISTER 0
+#define HARDMODLE_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define HARDMODLE_CAPTURE 0
+#define HARDMODLE_DATA_WIDTH 4
+#define HARDMODLE_DO_TEST_BENCH_WIRING 0
+#define HARDMODLE_DRIVEN_SIM_VALUE 0x0
+#define HARDMODLE_EDGE_TYPE "NONE"
+#define HARDMODLE_FREQ 50000000u
+#define HARDMODLE_HAS_IN 1
+#define HARDMODLE_HAS_OUT 0
+#define HARDMODLE_HAS_TRI 0
+#define HARDMODLE_IRQ -1
+#define HARDMODLE_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define HARDMODLE_IRQ_TYPE "NONE"
+#define HARDMODLE_NAME "/dev/hardmodle"
+#define HARDMODLE_RESET_VALUE 0x0
+#define HARDMODLE_SPAN 16
+#define HARDMODLE_TYPE "altera_avalon_pio"
+
+
+/*
  * jtag_uart configuration
  *
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0xb04050
+#define JTAG_UART_BASE 0xb04070
 #define JTAG_UART_IRQ 0
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -337,7 +364,7 @@
  */
 
 #define ALT_MODULE_CLASS_pll altpll
-#define PLL_BASE 0x0
+#define PLL_BASE 0xb04050
 #define PLL_IRQ -1
 #define PLL_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define PLL_NAME "/dev/pll"

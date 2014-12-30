@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2014-12-30 9:36:30</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1419903390974</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2014-12-30 12:19:50</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1419913190416</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Jason\Documents\Github\THU-DSD\FB\software\game_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Jason\Documents\Github\THU-DSD\FB\kernel.sopcinfo</SopcDesignFile>
@@ -851,12 +851,6 @@
                 <Group xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
         </Setting>
         <MemoryMap>
-                <slaveDescriptor>pll</slaveDescriptor>
-                <addressRange>0x00000000 - 0x0000000F</addressRange>
-                <addressSpan>16</addressSpan>
-                <attributes/>
-        </MemoryMap>
-        <MemoryMap>
                 <slaveDescriptor>cfi_flash</slaveDescriptor>
                 <addressRange>0x00400000 - 0x007FFFFF</addressRange>
                 <addressSpan>4194304</addressSpan>
@@ -911,8 +905,20 @@
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>pll</slaveDescriptor>
+                <addressRange>0x00B04050 - 0x00B0405F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>hardmodle</slaveDescriptor>
+                <addressRange>0x00B04060 - 0x00B0406F</addressRange>
+                <addressSpan>16</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x00B04050 - 0x00B04057</addressRange>
+                <addressRange>0x00B04070 - 0x00B04077</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
