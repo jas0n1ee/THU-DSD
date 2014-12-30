@@ -1,5 +1,5 @@
 Flow report for flappy_bird
-Sun Dec 07 23:12:02 2014
+Tue Dec 30 12:17:06 2014
 Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -38,22 +38,22 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Flow Summary                                                                   ;
 +------------------------------------+-------------------------------------------+
-; Flow Status                        ; Successful - Sun Dec 07 23:12:02 2014     ;
+; Flow Status                        ; Successful - Tue Dec 30 12:17:06 2014     ;
 ; Quartus II 64-Bit Version          ; 12.0 Build 178 05/31/2012 SJ Full Version ;
 ; Revision Name                      ; flappy_bird                               ;
 ; Top-level Entity Name              ; flappy_bird                               ;
 ; Family                             ; Cyclone II                                ;
 ; Device                             ; EP2C35F672C7                              ;
 ; Timing Models                      ; Final                                     ;
-; Total logic elements               ; 4,183 / 33,216 ( 13 % )                   ;
-;     Total combinational functions  ; 3,931 / 33,216 ( 12 % )                   ;
-;     Dedicated logic registers      ; 1,963 / 33,216 ( 6 % )                    ;
-; Total registers                    ; 2012                                      ;
+; Total logic elements               ; 4,315 / 33,216 ( 13 % )                   ;
+;     Total combinational functions  ; 3,994 / 33,216 ( 12 % )                   ;
+;     Dedicated logic registers      ; 2,076 / 33,216 ( 6 % )                    ;
+; Total registers                    ; 2125                                      ;
 ; Total pins                         ; 429 / 475 ( 90 % )                        ;
 ; Total virtual pins                 ; 0                                         ;
 ; Total memory bits                  ; 390,656 / 483,840 ( 81 % )                ;
 ; Embedded Multiplier 9-bit elements ; 4 / 70 ( 6 % )                            ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                            ;
 +------------------------------------+-------------------------------------------+
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/07/2014 23:10:45 ;
+; Start date & time ; 12/30/2014 12:16:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; flappy_bird         ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 211211557466676.141796504506436 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 211211557466676.141991296602016 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; IP_TOOL_ENV                         ; sopc                            ; --            ; kernel      ; --             ;
@@ -84,7 +84,7 @@ applicable agreement for further details.
 ; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; SOPC_BUILDER_SIGNATURE_ID           ; 7CE9D3F198F80000014A253259BC    ; --            ; --          ; --             ;
+; SOPC_BUILDER_SIGNATURE_ID           ; 7CE9D3F198F80000014A995DDC74    ; --            ; --          ; --             ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:31     ; 1.0                     ; 563 MB              ; 00:00:31                           ;
-; Fitter                    ; 00:00:31     ; 1.9                     ; 668 MB              ; 00:00:37                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 462 MB              ; 00:00:03                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 432 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 441 MB              ; 00:00:04                           ;
-; Total                     ; 00:01:13     ; --                      ; --                  ; 00:01:18                           ;
+; Analysis & Synthesis      ; 00:00:23     ; 1.0                     ; 574 MB              ; 00:00:23                           ;
+; Fitter                    ; 00:00:25     ; 1.8                     ; 661 MB              ; 00:00:32                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 466 MB              ; 00:00:03                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 420 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 443 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:56     ; --                      ; --                  ; 00:01:04                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

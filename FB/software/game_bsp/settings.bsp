@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2014-12-30 12:19:50</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1419913190416</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Dec 30, 2014 12:51:53 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1419915113197</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Jason\Documents\Github\THU-DSD\FB\software\game_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\Jason\Documents\Github\THU-DSD\FB\kernel.sopcinfo</SopcDesignFile>
@@ -206,7 +206,7 @@
                 <SettingName>hal.stdout</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>jtag_uart</Value>
+                <Value>lcd_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of STDOUT character-mode device. This setting is used by the ALT_STDOUT family of defines in system.h.</Description>

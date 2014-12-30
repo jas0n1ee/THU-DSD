@@ -474,75 +474,89 @@ module cpu_data_master_arbitrator (
                                      cpu_data_master_granted_cpu_jtag_debug_module,
                                      cpu_data_master_granted_epcs_flash_controller_epcs_control_port,
                                      cpu_data_master_granted_gpio_s1,
+                                     cpu_data_master_granted_hardmodle_s1,
                                      cpu_data_master_granted_jtag_uart_avalon_jtag_slave,
+                                     cpu_data_master_granted_kernel_clock_0_in,
                                      cpu_data_master_granted_key_s1,
                                      cpu_data_master_granted_lcd_0_control_slave,
                                      cpu_data_master_granted_onchip_memory_s1,
+                                     cpu_data_master_granted_pll_pll_slave,
                                      cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_granted_timer_s1,
-                                     cpu_data_master_granted_vga_0_avalon_slave_0,
                                      cpu_data_master_qualified_request_cfi_flash_s1,
                                      cpu_data_master_qualified_request_cpu_jtag_debug_module,
                                      cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port,
                                      cpu_data_master_qualified_request_gpio_s1,
+                                     cpu_data_master_qualified_request_hardmodle_s1,
                                      cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave,
+                                     cpu_data_master_qualified_request_kernel_clock_0_in,
                                      cpu_data_master_qualified_request_key_s1,
                                      cpu_data_master_qualified_request_lcd_0_control_slave,
                                      cpu_data_master_qualified_request_onchip_memory_s1,
+                                     cpu_data_master_qualified_request_pll_pll_slave,
                                      cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_qualified_request_timer_s1,
-                                     cpu_data_master_qualified_request_vga_0_avalon_slave_0,
                                      cpu_data_master_read,
                                      cpu_data_master_read_data_valid_cfi_flash_s1,
                                      cpu_data_master_read_data_valid_cpu_jtag_debug_module,
                                      cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port,
                                      cpu_data_master_read_data_valid_gpio_s1,
+                                     cpu_data_master_read_data_valid_hardmodle_s1,
                                      cpu_data_master_read_data_valid_jtag_uart_avalon_jtag_slave,
+                                     cpu_data_master_read_data_valid_kernel_clock_0_in,
                                      cpu_data_master_read_data_valid_key_s1,
                                      cpu_data_master_read_data_valid_lcd_0_control_slave,
                                      cpu_data_master_read_data_valid_onchip_memory_s1,
+                                     cpu_data_master_read_data_valid_pll_pll_slave,
                                      cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_read_data_valid_timer_s1,
-                                     cpu_data_master_read_data_valid_vga_0_avalon_slave_0,
                                      cpu_data_master_requests_cfi_flash_s1,
                                      cpu_data_master_requests_cpu_jtag_debug_module,
                                      cpu_data_master_requests_epcs_flash_controller_epcs_control_port,
                                      cpu_data_master_requests_gpio_s1,
+                                     cpu_data_master_requests_hardmodle_s1,
                                      cpu_data_master_requests_jtag_uart_avalon_jtag_slave,
+                                     cpu_data_master_requests_kernel_clock_0_in,
                                      cpu_data_master_requests_key_s1,
                                      cpu_data_master_requests_lcd_0_control_slave,
                                      cpu_data_master_requests_onchip_memory_s1,
+                                     cpu_data_master_requests_pll_pll_slave,
                                      cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0,
                                      cpu_data_master_requests_timer_s1,
-                                     cpu_data_master_requests_vga_0_avalon_slave_0,
                                      cpu_data_master_write,
                                      cpu_data_master_writedata,
                                      cpu_jtag_debug_module_readdata_from_sa,
                                      d1_cpu_jtag_debug_module_end_xfer,
                                      d1_epcs_flash_controller_epcs_control_port_end_xfer,
                                      d1_gpio_s1_end_xfer,
+                                     d1_hardmodle_s1_end_xfer,
                                      d1_jtag_uart_avalon_jtag_slave_end_xfer,
+                                     d1_kernel_clock_0_in_end_xfer,
                                      d1_key_s1_end_xfer,
                                      d1_lcd_0_control_slave_end_xfer,
                                      d1_onchip_memory_s1_end_xfer,
+                                     d1_pll_pll_slave_end_xfer,
                                      d1_sram_16bit_512k_0_avalon_slave_0_end_xfer,
                                      d1_timer_s1_end_xfer,
                                      d1_tri_state_bridge_avalon_slave_end_xfer,
-                                     d1_vga_0_avalon_slave_0_end_xfer,
                                      epcs_flash_controller_epcs_control_port_irq_from_sa,
                                      epcs_flash_controller_epcs_control_port_readdata_from_sa,
                                      gpio_s1_irq_from_sa,
                                      gpio_s1_readdata_from_sa,
+                                     hardmodle_s1_readdata_from_sa,
                                      incoming_tri_state_bridge_data_with_Xs_converted_to_0,
                                      jtag_uart_avalon_jtag_slave_irq_from_sa,
                                      jtag_uart_avalon_jtag_slave_readdata_from_sa,
                                      jtag_uart_avalon_jtag_slave_waitrequest_from_sa,
+                                     kernel_clock_0_in_readdata_from_sa,
+                                     kernel_clock_0_in_waitrequest_from_sa,
                                      key_s1_irq_from_sa,
                                      key_s1_readdata_from_sa,
                                      lcd_0_control_slave_readdata_from_sa,
                                      lcd_0_control_slave_wait_counter_eq_0,
                                      lcd_0_control_slave_wait_counter_eq_1,
                                      onchip_memory_s1_readdata_from_sa,
+                                     pll_pll_slave_readdata_from_sa,
                                      registered_cpu_data_master_read_data_valid_cfi_flash_s1,
                                      registered_cpu_data_master_read_data_valid_onchip_memory_s1,
                                      reset_n,
@@ -550,8 +564,6 @@ module cpu_data_master_arbitrator (
                                      sram_16bit_512k_0_avalon_slave_0_wait_counter_eq_0,
                                      timer_s1_irq_from_sa,
                                      timer_s1_readdata_from_sa,
-                                     vga_0_avalon_slave_0_readdata_from_sa,
-                                     vga_0_avalon_slave_0_wait_counter_eq_0,
 
                                     // outputs:
                                      cpu_data_master_address_to_slave,
@@ -583,75 +595,89 @@ module cpu_data_master_arbitrator (
   input            cpu_data_master_granted_cpu_jtag_debug_module;
   input            cpu_data_master_granted_epcs_flash_controller_epcs_control_port;
   input            cpu_data_master_granted_gpio_s1;
+  input            cpu_data_master_granted_hardmodle_s1;
   input            cpu_data_master_granted_jtag_uart_avalon_jtag_slave;
+  input            cpu_data_master_granted_kernel_clock_0_in;
   input            cpu_data_master_granted_key_s1;
   input            cpu_data_master_granted_lcd_0_control_slave;
   input            cpu_data_master_granted_onchip_memory_s1;
+  input            cpu_data_master_granted_pll_pll_slave;
   input            cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_granted_timer_s1;
-  input            cpu_data_master_granted_vga_0_avalon_slave_0;
   input            cpu_data_master_qualified_request_cfi_flash_s1;
   input            cpu_data_master_qualified_request_cpu_jtag_debug_module;
   input            cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port;
   input            cpu_data_master_qualified_request_gpio_s1;
+  input            cpu_data_master_qualified_request_hardmodle_s1;
   input            cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave;
+  input            cpu_data_master_qualified_request_kernel_clock_0_in;
   input            cpu_data_master_qualified_request_key_s1;
   input            cpu_data_master_qualified_request_lcd_0_control_slave;
   input            cpu_data_master_qualified_request_onchip_memory_s1;
+  input            cpu_data_master_qualified_request_pll_pll_slave;
   input            cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_qualified_request_timer_s1;
-  input            cpu_data_master_qualified_request_vga_0_avalon_slave_0;
   input            cpu_data_master_read;
   input            cpu_data_master_read_data_valid_cfi_flash_s1;
   input            cpu_data_master_read_data_valid_cpu_jtag_debug_module;
   input            cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port;
   input            cpu_data_master_read_data_valid_gpio_s1;
+  input            cpu_data_master_read_data_valid_hardmodle_s1;
   input            cpu_data_master_read_data_valid_jtag_uart_avalon_jtag_slave;
+  input            cpu_data_master_read_data_valid_kernel_clock_0_in;
   input            cpu_data_master_read_data_valid_key_s1;
   input            cpu_data_master_read_data_valid_lcd_0_control_slave;
   input            cpu_data_master_read_data_valid_onchip_memory_s1;
+  input            cpu_data_master_read_data_valid_pll_pll_slave;
   input            cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_read_data_valid_timer_s1;
-  input            cpu_data_master_read_data_valid_vga_0_avalon_slave_0;
   input            cpu_data_master_requests_cfi_flash_s1;
   input            cpu_data_master_requests_cpu_jtag_debug_module;
   input            cpu_data_master_requests_epcs_flash_controller_epcs_control_port;
   input            cpu_data_master_requests_gpio_s1;
+  input            cpu_data_master_requests_hardmodle_s1;
   input            cpu_data_master_requests_jtag_uart_avalon_jtag_slave;
+  input            cpu_data_master_requests_kernel_clock_0_in;
   input            cpu_data_master_requests_key_s1;
   input            cpu_data_master_requests_lcd_0_control_slave;
   input            cpu_data_master_requests_onchip_memory_s1;
+  input            cpu_data_master_requests_pll_pll_slave;
   input            cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0;
   input            cpu_data_master_requests_timer_s1;
-  input            cpu_data_master_requests_vga_0_avalon_slave_0;
   input            cpu_data_master_write;
   input   [ 31: 0] cpu_data_master_writedata;
   input   [ 31: 0] cpu_jtag_debug_module_readdata_from_sa;
   input            d1_cpu_jtag_debug_module_end_xfer;
   input            d1_epcs_flash_controller_epcs_control_port_end_xfer;
   input            d1_gpio_s1_end_xfer;
+  input            d1_hardmodle_s1_end_xfer;
   input            d1_jtag_uart_avalon_jtag_slave_end_xfer;
+  input            d1_kernel_clock_0_in_end_xfer;
   input            d1_key_s1_end_xfer;
   input            d1_lcd_0_control_slave_end_xfer;
   input            d1_onchip_memory_s1_end_xfer;
+  input            d1_pll_pll_slave_end_xfer;
   input            d1_sram_16bit_512k_0_avalon_slave_0_end_xfer;
   input            d1_timer_s1_end_xfer;
   input            d1_tri_state_bridge_avalon_slave_end_xfer;
-  input            d1_vga_0_avalon_slave_0_end_xfer;
   input            epcs_flash_controller_epcs_control_port_irq_from_sa;
   input   [ 31: 0] epcs_flash_controller_epcs_control_port_readdata_from_sa;
   input            gpio_s1_irq_from_sa;
   input   [ 31: 0] gpio_s1_readdata_from_sa;
+  input   [ 31: 0] hardmodle_s1_readdata_from_sa;
   input   [  7: 0] incoming_tri_state_bridge_data_with_Xs_converted_to_0;
   input            jtag_uart_avalon_jtag_slave_irq_from_sa;
   input   [ 31: 0] jtag_uart_avalon_jtag_slave_readdata_from_sa;
   input            jtag_uart_avalon_jtag_slave_waitrequest_from_sa;
+  input   [ 15: 0] kernel_clock_0_in_readdata_from_sa;
+  input            kernel_clock_0_in_waitrequest_from_sa;
   input            key_s1_irq_from_sa;
   input   [ 31: 0] key_s1_readdata_from_sa;
   input   [  7: 0] lcd_0_control_slave_readdata_from_sa;
   input            lcd_0_control_slave_wait_counter_eq_0;
   input            lcd_0_control_slave_wait_counter_eq_1;
   input   [ 31: 0] onchip_memory_s1_readdata_from_sa;
+  input   [ 31: 0] pll_pll_slave_readdata_from_sa;
   input            registered_cpu_data_master_read_data_valid_cfi_flash_s1;
   input            registered_cpu_data_master_read_data_valid_onchip_memory_s1;
   input            reset_n;
@@ -659,8 +685,6 @@ module cpu_data_master_arbitrator (
   input            sram_16bit_512k_0_avalon_slave_0_wait_counter_eq_0;
   input            timer_s1_irq_from_sa;
   input   [ 15: 0] timer_s1_readdata_from_sa;
-  input   [ 15: 0] vga_0_avalon_slave_0_readdata_from_sa;
-  input            vga_0_avalon_slave_0_wait_counter_eq_0;
 
   wire    [ 23: 0] cpu_data_master_address_to_slave;
   reg     [  1: 0] cpu_data_master_dbs_address;
@@ -691,16 +715,16 @@ module cpu_data_master_arbitrator (
   wire             r_2;
   reg     [ 31: 0] registered_cpu_data_master_readdata;
   //r_0 master_run cascaded wait assignment, which is an e_assign
-  assign r_0 = 1 & (cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_requests_cpu_jtag_debug_module) & (cpu_data_master_granted_cpu_jtag_debug_module | ~cpu_data_master_qualified_request_cpu_jtag_debug_module) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~cpu_data_master_requests_epcs_flash_controller_epcs_control_port) & (cpu_data_master_granted_epcs_flash_controller_epcs_control_port | ~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_requests_gpio_s1) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~cpu_data_master_requests_jtag_uart_avalon_jtag_slave) & ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_requests_key_s1);
+  assign r_0 = 1 & (cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_requests_cpu_jtag_debug_module) & (cpu_data_master_granted_cpu_jtag_debug_module | ~cpu_data_master_qualified_request_cpu_jtag_debug_module) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cpu_jtag_debug_module | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~cpu_data_master_requests_epcs_flash_controller_epcs_control_port) & (cpu_data_master_granted_epcs_flash_controller_epcs_control_port | ~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port | ~(cpu_data_master_read | cpu_data_master_write) | (1 & 1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_requests_gpio_s1) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_gpio_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((~cpu_data_master_qualified_request_hardmodle_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_hardmodle_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~cpu_data_master_requests_jtag_uart_avalon_jtag_slave) & ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write))));
 
   //cascaded wait assignment, which is an e_assign
   assign cpu_data_master_run = r_0 & r_1 & r_2;
 
   //r_1 master_run cascaded wait assignment, which is an e_assign
-  assign r_1 = ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((~cpu_data_master_qualified_request_lcd_0_control_slave | ~cpu_data_master_read | (1 & lcd_0_control_slave_wait_counter_eq_1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_lcd_0_control_slave | ~cpu_data_master_write | (1 & lcd_0_control_slave_wait_counter_eq_1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_onchip_memory_s1 | registered_cpu_data_master_read_data_valid_onchip_memory_s1 | ~cpu_data_master_requests_onchip_memory_s1) & (cpu_data_master_granted_onchip_memory_s1 | ~cpu_data_master_qualified_request_onchip_memory_s1) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_onchip_memory_s1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~(cpu_data_master_read | cpu_data_master_write) | (1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | (cpu_data_master_write & !cpu_data_master_byteenable_sram_16bit_512k_0_avalon_slave_0 & cpu_data_master_dbs_address[1]) | ~cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0) & (cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_read | (1 & 1 & (cpu_data_master_dbs_address[1]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_write | (1 & ~d1_sram_16bit_512k_0_avalon_slave_0_end_xfer & (cpu_data_master_dbs_address[1]) & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_requests_timer_s1) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1;
+  assign r_1 = ((~cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~jtag_uart_avalon_jtag_slave_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_kernel_clock_0_in | ~cpu_data_master_requests_kernel_clock_0_in) & ((~cpu_data_master_qualified_request_kernel_clock_0_in | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~kernel_clock_0_in_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & ((~cpu_data_master_qualified_request_kernel_clock_0_in | ~(cpu_data_master_read | cpu_data_master_write) | (1 & ~kernel_clock_0_in_waitrequest_from_sa & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_requests_key_s1) & ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_key_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((~cpu_data_master_qualified_request_lcd_0_control_slave | ~cpu_data_master_read | (1 & lcd_0_control_slave_wait_counter_eq_1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_lcd_0_control_slave | ~cpu_data_master_write | (1 & lcd_0_control_slave_wait_counter_eq_1 & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_onchip_memory_s1 | registered_cpu_data_master_read_data_valid_onchip_memory_s1 | ~cpu_data_master_requests_onchip_memory_s1) & (cpu_data_master_granted_onchip_memory_s1 | ~cpu_data_master_qualified_request_onchip_memory_s1) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_onchip_memory_s1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_onchip_memory_s1 | ~(cpu_data_master_read | cpu_data_master_write) | (1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_pll_pll_slave | ~cpu_data_master_requests_pll_pll_slave) & ((~cpu_data_master_qualified_request_pll_pll_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & (cpu_data_master_read | cpu_data_master_write))));
 
   //r_2 master_run cascaded wait assignment, which is an e_assign
-  assign r_2 = ((cpu_data_master_qualified_request_cfi_flash_s1 | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) | ((cpu_data_master_write & !cpu_data_master_byteenable_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0])) | ~cpu_data_master_requests_cfi_flash_s1)) & (cpu_data_master_granted_cfi_flash_s1 | ~cpu_data_master_qualified_request_cfi_flash_s1) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_write | (1 & cfi_flash_s1_wait_counter_eq_1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_write))) & 1 & ((~cpu_data_master_qualified_request_vga_0_avalon_slave_0 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_vga_0_avalon_slave_0 | ~cpu_data_master_write | (1 & ~d1_vga_0_avalon_slave_0_end_xfer & cpu_data_master_write)));
+  assign r_2 = ((~cpu_data_master_qualified_request_pll_pll_slave | ~(cpu_data_master_read | cpu_data_master_write) | (1 & (cpu_data_master_read | cpu_data_master_write)))) & 1 & (cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | (cpu_data_master_write & !cpu_data_master_byteenable_sram_16bit_512k_0_avalon_slave_0 & cpu_data_master_dbs_address[1]) | ~cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0) & (cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_read | (1 & 1 & (cpu_data_master_dbs_address[1]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_data_master_write | (1 & ~d1_sram_16bit_512k_0_avalon_slave_0_end_xfer & (cpu_data_master_dbs_address[1]) & cpu_data_master_write))) & 1 & (cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_requests_timer_s1) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_read | (1 & 1 & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_timer_s1 | ~cpu_data_master_write | (1 & cpu_data_master_write))) & 1 & ((cpu_data_master_qualified_request_cfi_flash_s1 | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) | ((cpu_data_master_write & !cpu_data_master_byteenable_cfi_flash_s1 & cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0])) | ~cpu_data_master_requests_cfi_flash_s1)) & (cpu_data_master_granted_cfi_flash_s1 | ~cpu_data_master_qualified_request_cfi_flash_s1) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_read | (registered_cpu_data_master_read_data_valid_cfi_flash_s1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_read))) & ((~cpu_data_master_qualified_request_cfi_flash_s1 | ~cpu_data_master_write | (1 & cfi_flash_s1_wait_counter_eq_1 & (cpu_data_master_dbs_address[1] & cpu_data_master_dbs_address[0]) & cpu_data_master_write)));
 
   //optimize select-logic by passing only those address bits which matter.
   assign cpu_data_master_address_to_slave = cpu_data_master_address[23 : 0];
@@ -709,18 +733,20 @@ module cpu_data_master_arbitrator (
   assign cpu_data_master_readdata = ({32 {~cpu_data_master_requests_cpu_jtag_debug_module}} | cpu_jtag_debug_module_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_epcs_flash_controller_epcs_control_port}} | epcs_flash_controller_epcs_control_port_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_gpio_s1}} | gpio_s1_readdata_from_sa) &
+    ({32 {~cpu_data_master_requests_hardmodle_s1}} | hardmodle_s1_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_jtag_uart_avalon_jtag_slave}} | registered_cpu_data_master_readdata) &
+    ({32 {~cpu_data_master_requests_kernel_clock_0_in}} | registered_cpu_data_master_readdata) &
     ({32 {~cpu_data_master_requests_key_s1}} | key_s1_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_lcd_0_control_slave}} | lcd_0_control_slave_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_onchip_memory_s1}} | onchip_memory_s1_readdata_from_sa) &
+    ({32 {~cpu_data_master_requests_pll_pll_slave}} | registered_cpu_data_master_readdata) &
     ({32 {~cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0}} | {sram_16bit_512k_0_avalon_slave_0_readdata_from_sa[15 : 0],
     dbs_16_reg_segment_0}) &
     ({32 {~cpu_data_master_requests_timer_s1}} | timer_s1_readdata_from_sa) &
     ({32 {~cpu_data_master_requests_cfi_flash_s1}} | {incoming_tri_state_bridge_data_with_Xs_converted_to_0[7 : 0],
     dbs_8_reg_segment_2,
     dbs_8_reg_segment_1,
-    dbs_8_reg_segment_0}) &
-    ({32 {~cpu_data_master_requests_vga_0_avalon_slave_0}} | vga_0_avalon_slave_0_readdata_from_sa);
+    dbs_8_reg_segment_0});
 
   //actual waitrequest port, which is an e_register
   always @(posedge clk or negedge reset_n)
@@ -777,7 +803,9 @@ module cpu_data_master_arbitrator (
 
 
   //registered readdata mux, which is an e_mux
-  assign p1_registered_cpu_data_master_readdata = {32 {~cpu_data_master_requests_jtag_uart_avalon_jtag_slave}} | jtag_uart_avalon_jtag_slave_readdata_from_sa;
+  assign p1_registered_cpu_data_master_readdata = ({32 {~cpu_data_master_requests_jtag_uart_avalon_jtag_slave}} | jtag_uart_avalon_jtag_slave_readdata_from_sa) &
+    ({32 {~cpu_data_master_requests_kernel_clock_0_in}} | kernel_clock_0_in_readdata_from_sa) &
+    ({32 {~cpu_data_master_requests_pll_pll_slave}} | pll_pll_slave_readdata_from_sa);
 
   //no_byte_enables_and_last_term, which is an e_register
   always @(posedge clk or negedge reset_n)
@@ -1036,10 +1064,10 @@ module cpu_instruction_master_arbitrator (
   assign cpu_instruction_master_run = r_0 & r_1 & r_2;
 
   //r_1 master_run cascaded wait assignment, which is an e_assign
-  assign r_1 = 1 & (cpu_instruction_master_qualified_request_onchip_memory_s1 | ~cpu_instruction_master_requests_onchip_memory_s1) & (cpu_instruction_master_granted_onchip_memory_s1 | ~cpu_instruction_master_qualified_request_onchip_memory_s1) & ((~cpu_instruction_master_qualified_request_onchip_memory_s1 | ~cpu_instruction_master_read | (1 & cpu_instruction_master_read))) & 1 & (cpu_instruction_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_instruction_master_requests_sram_16bit_512k_0_avalon_slave_0) & (cpu_instruction_master_granted_sram_16bit_512k_0_avalon_slave_0 | ~cpu_instruction_master_qualified_request_sram_16bit_512k_0_avalon_slave_0) & ((~cpu_instruction_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_instruction_master_read | (1 & ~d1_sram_16bit_512k_0_avalon_slave_0_end_xfer & (cpu_instruction_master_dbs_address[1]) & cpu_instruction_master_read)));
+  assign r_1 = 1 & (cpu_instruction_master_qualified_request_onchip_memory_s1 | ~cpu_instruction_master_requests_onchip_memory_s1) & (cpu_instruction_master_granted_onchip_memory_s1 | ~cpu_instruction_master_qualified_request_onchip_memory_s1) & ((~cpu_instruction_master_qualified_request_onchip_memory_s1 | ~cpu_instruction_master_read | (1 & cpu_instruction_master_read)));
 
   //r_2 master_run cascaded wait assignment, which is an e_assign
-  assign r_2 = 1 & (cpu_instruction_master_qualified_request_cfi_flash_s1 | ~cpu_instruction_master_requests_cfi_flash_s1) & (cpu_instruction_master_granted_cfi_flash_s1 | ~cpu_instruction_master_qualified_request_cfi_flash_s1) & ((~cpu_instruction_master_qualified_request_cfi_flash_s1 | ~cpu_instruction_master_read | (1 & ((cfi_flash_s1_wait_counter_eq_0 & ~d1_tri_state_bridge_avalon_slave_end_xfer)) & (cpu_instruction_master_dbs_address[1] & cpu_instruction_master_dbs_address[0]) & cpu_instruction_master_read)));
+  assign r_2 = 1 & (cpu_instruction_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_instruction_master_requests_sram_16bit_512k_0_avalon_slave_0) & (cpu_instruction_master_granted_sram_16bit_512k_0_avalon_slave_0 | ~cpu_instruction_master_qualified_request_sram_16bit_512k_0_avalon_slave_0) & ((~cpu_instruction_master_qualified_request_sram_16bit_512k_0_avalon_slave_0 | ~cpu_instruction_master_read | (1 & ~d1_sram_16bit_512k_0_avalon_slave_0_end_xfer & (cpu_instruction_master_dbs_address[1]) & cpu_instruction_master_read))) & 1 & (cpu_instruction_master_qualified_request_cfi_flash_s1 | ~cpu_instruction_master_requests_cfi_flash_s1) & (cpu_instruction_master_granted_cfi_flash_s1 | ~cpu_instruction_master_qualified_request_cfi_flash_s1) & ((~cpu_instruction_master_qualified_request_cfi_flash_s1 | ~cpu_instruction_master_read | (1 & ((cfi_flash_s1_wait_counter_eq_0 & ~d1_tri_state_bridge_avalon_slave_end_xfer)) & (cpu_instruction_master_dbs_address[1] & cpu_instruction_master_dbs_address[0]) & cpu_instruction_master_read)));
 
   //optimize select-logic by passing only those address bits which matter.
   assign cpu_instruction_master_address_to_slave = cpu_instruction_master_address[23 : 0];
@@ -2010,6 +2038,257 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
+module hardmodle_s1_arbitrator (
+                                 // inputs:
+                                  clk,
+                                  cpu_data_master_address_to_slave,
+                                  cpu_data_master_read,
+                                  cpu_data_master_write,
+                                  hardmodle_s1_readdata,
+                                  reset_n,
+
+                                 // outputs:
+                                  cpu_data_master_granted_hardmodle_s1,
+                                  cpu_data_master_qualified_request_hardmodle_s1,
+                                  cpu_data_master_read_data_valid_hardmodle_s1,
+                                  cpu_data_master_requests_hardmodle_s1,
+                                  d1_hardmodle_s1_end_xfer,
+                                  hardmodle_s1_address,
+                                  hardmodle_s1_readdata_from_sa,
+                                  hardmodle_s1_reset_n
+                               )
+;
+
+  output           cpu_data_master_granted_hardmodle_s1;
+  output           cpu_data_master_qualified_request_hardmodle_s1;
+  output           cpu_data_master_read_data_valid_hardmodle_s1;
+  output           cpu_data_master_requests_hardmodle_s1;
+  output           d1_hardmodle_s1_end_xfer;
+  output  [  1: 0] hardmodle_s1_address;
+  output  [ 31: 0] hardmodle_s1_readdata_from_sa;
+  output           hardmodle_s1_reset_n;
+  input            clk;
+  input   [ 23: 0] cpu_data_master_address_to_slave;
+  input            cpu_data_master_read;
+  input            cpu_data_master_write;
+  input   [ 31: 0] hardmodle_s1_readdata;
+  input            reset_n;
+
+  wire             cpu_data_master_arbiterlock;
+  wire             cpu_data_master_arbiterlock2;
+  wire             cpu_data_master_continuerequest;
+  wire             cpu_data_master_granted_hardmodle_s1;
+  wire             cpu_data_master_qualified_request_hardmodle_s1;
+  wire             cpu_data_master_read_data_valid_hardmodle_s1;
+  wire             cpu_data_master_requests_hardmodle_s1;
+  wire             cpu_data_master_saved_grant_hardmodle_s1;
+  reg              d1_hardmodle_s1_end_xfer;
+  reg              d1_reasons_to_wait;
+  reg              enable_nonzero_assertions;
+  wire             end_xfer_arb_share_counter_term_hardmodle_s1;
+  wire    [  1: 0] hardmodle_s1_address;
+  wire             hardmodle_s1_allgrants;
+  wire             hardmodle_s1_allow_new_arb_cycle;
+  wire             hardmodle_s1_any_bursting_master_saved_grant;
+  wire             hardmodle_s1_any_continuerequest;
+  wire             hardmodle_s1_arb_counter_enable;
+  reg     [  2: 0] hardmodle_s1_arb_share_counter;
+  wire    [  2: 0] hardmodle_s1_arb_share_counter_next_value;
+  wire    [  2: 0] hardmodle_s1_arb_share_set_values;
+  wire             hardmodle_s1_beginbursttransfer_internal;
+  wire             hardmodle_s1_begins_xfer;
+  wire             hardmodle_s1_end_xfer;
+  wire             hardmodle_s1_firsttransfer;
+  wire             hardmodle_s1_grant_vector;
+  wire             hardmodle_s1_in_a_read_cycle;
+  wire             hardmodle_s1_in_a_write_cycle;
+  wire             hardmodle_s1_master_qreq_vector;
+  wire             hardmodle_s1_non_bursting_master_requests;
+  wire    [ 31: 0] hardmodle_s1_readdata_from_sa;
+  reg              hardmodle_s1_reg_firsttransfer;
+  wire             hardmodle_s1_reset_n;
+  reg              hardmodle_s1_slavearbiterlockenable;
+  wire             hardmodle_s1_slavearbiterlockenable2;
+  wire             hardmodle_s1_unreg_firsttransfer;
+  wire             hardmodle_s1_waits_for_read;
+  wire             hardmodle_s1_waits_for_write;
+  wire             in_a_read_cycle;
+  wire             in_a_write_cycle;
+  wire    [ 23: 0] shifted_address_to_hardmodle_s1_from_cpu_data_master;
+  wire             wait_for_hardmodle_s1_counter;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_reasons_to_wait <= 0;
+      else 
+        d1_reasons_to_wait <= ~hardmodle_s1_end_xfer;
+    end
+
+
+  assign hardmodle_s1_begins_xfer = ~d1_reasons_to_wait & ((cpu_data_master_qualified_request_hardmodle_s1));
+  //assign hardmodle_s1_readdata_from_sa = hardmodle_s1_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign hardmodle_s1_readdata_from_sa = hardmodle_s1_readdata;
+
+  assign cpu_data_master_requests_hardmodle_s1 = (({cpu_data_master_address_to_slave[23 : 4] , 4'b0} == 24'hb04060) & (cpu_data_master_read | cpu_data_master_write)) & cpu_data_master_read;
+  //hardmodle_s1_arb_share_counter set values, which is an e_mux
+  assign hardmodle_s1_arb_share_set_values = 1;
+
+  //hardmodle_s1_non_bursting_master_requests mux, which is an e_mux
+  assign hardmodle_s1_non_bursting_master_requests = cpu_data_master_requests_hardmodle_s1;
+
+  //hardmodle_s1_any_bursting_master_saved_grant mux, which is an e_mux
+  assign hardmodle_s1_any_bursting_master_saved_grant = 0;
+
+  //hardmodle_s1_arb_share_counter_next_value assignment, which is an e_assign
+  assign hardmodle_s1_arb_share_counter_next_value = hardmodle_s1_firsttransfer ? (hardmodle_s1_arb_share_set_values - 1) : |hardmodle_s1_arb_share_counter ? (hardmodle_s1_arb_share_counter - 1) : 0;
+
+  //hardmodle_s1_allgrants all slave grants, which is an e_mux
+  assign hardmodle_s1_allgrants = |hardmodle_s1_grant_vector;
+
+  //hardmodle_s1_end_xfer assignment, which is an e_assign
+  assign hardmodle_s1_end_xfer = ~(hardmodle_s1_waits_for_read | hardmodle_s1_waits_for_write);
+
+  //end_xfer_arb_share_counter_term_hardmodle_s1 arb share counter enable term, which is an e_assign
+  assign end_xfer_arb_share_counter_term_hardmodle_s1 = hardmodle_s1_end_xfer & (~hardmodle_s1_any_bursting_master_saved_grant | in_a_read_cycle | in_a_write_cycle);
+
+  //hardmodle_s1_arb_share_counter arbitration counter enable, which is an e_assign
+  assign hardmodle_s1_arb_counter_enable = (end_xfer_arb_share_counter_term_hardmodle_s1 & hardmodle_s1_allgrants) | (end_xfer_arb_share_counter_term_hardmodle_s1 & ~hardmodle_s1_non_bursting_master_requests);
+
+  //hardmodle_s1_arb_share_counter counter, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          hardmodle_s1_arb_share_counter <= 0;
+      else if (hardmodle_s1_arb_counter_enable)
+          hardmodle_s1_arb_share_counter <= hardmodle_s1_arb_share_counter_next_value;
+    end
+
+
+  //hardmodle_s1_slavearbiterlockenable slave enables arbiterlock, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          hardmodle_s1_slavearbiterlockenable <= 0;
+      else if ((|hardmodle_s1_master_qreq_vector & end_xfer_arb_share_counter_term_hardmodle_s1) | (end_xfer_arb_share_counter_term_hardmodle_s1 & ~hardmodle_s1_non_bursting_master_requests))
+          hardmodle_s1_slavearbiterlockenable <= |hardmodle_s1_arb_share_counter_next_value;
+    end
+
+
+  //cpu/data_master hardmodle/s1 arbiterlock, which is an e_assign
+  assign cpu_data_master_arbiterlock = hardmodle_s1_slavearbiterlockenable & cpu_data_master_continuerequest;
+
+  //hardmodle_s1_slavearbiterlockenable2 slave enables arbiterlock2, which is an e_assign
+  assign hardmodle_s1_slavearbiterlockenable2 = |hardmodle_s1_arb_share_counter_next_value;
+
+  //cpu/data_master hardmodle/s1 arbiterlock2, which is an e_assign
+  assign cpu_data_master_arbiterlock2 = hardmodle_s1_slavearbiterlockenable2 & cpu_data_master_continuerequest;
+
+  //hardmodle_s1_any_continuerequest at least one master continues requesting, which is an e_assign
+  assign hardmodle_s1_any_continuerequest = 1;
+
+  //cpu_data_master_continuerequest continued request, which is an e_assign
+  assign cpu_data_master_continuerequest = 1;
+
+  assign cpu_data_master_qualified_request_hardmodle_s1 = cpu_data_master_requests_hardmodle_s1;
+  //master is always granted when requested
+  assign cpu_data_master_granted_hardmodle_s1 = cpu_data_master_qualified_request_hardmodle_s1;
+
+  //cpu/data_master saved-grant hardmodle/s1, which is an e_assign
+  assign cpu_data_master_saved_grant_hardmodle_s1 = cpu_data_master_requests_hardmodle_s1;
+
+  //allow new arb cycle for hardmodle/s1, which is an e_assign
+  assign hardmodle_s1_allow_new_arb_cycle = 1;
+
+  //placeholder chosen master
+  assign hardmodle_s1_grant_vector = 1;
+
+  //placeholder vector of master qualified-requests
+  assign hardmodle_s1_master_qreq_vector = 1;
+
+  //hardmodle_s1_reset_n assignment, which is an e_assign
+  assign hardmodle_s1_reset_n = reset_n;
+
+  //hardmodle_s1_firsttransfer first transaction, which is an e_assign
+  assign hardmodle_s1_firsttransfer = hardmodle_s1_begins_xfer ? hardmodle_s1_unreg_firsttransfer : hardmodle_s1_reg_firsttransfer;
+
+  //hardmodle_s1_unreg_firsttransfer first transaction, which is an e_assign
+  assign hardmodle_s1_unreg_firsttransfer = ~(hardmodle_s1_slavearbiterlockenable & hardmodle_s1_any_continuerequest);
+
+  //hardmodle_s1_reg_firsttransfer first transaction, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          hardmodle_s1_reg_firsttransfer <= 1'b1;
+      else if (hardmodle_s1_begins_xfer)
+          hardmodle_s1_reg_firsttransfer <= hardmodle_s1_unreg_firsttransfer;
+    end
+
+
+  //hardmodle_s1_beginbursttransfer_internal begin burst transfer, which is an e_assign
+  assign hardmodle_s1_beginbursttransfer_internal = hardmodle_s1_begins_xfer;
+
+  assign shifted_address_to_hardmodle_s1_from_cpu_data_master = cpu_data_master_address_to_slave;
+  //hardmodle_s1_address mux, which is an e_mux
+  assign hardmodle_s1_address = shifted_address_to_hardmodle_s1_from_cpu_data_master >> 2;
+
+  //d1_hardmodle_s1_end_xfer register, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_hardmodle_s1_end_xfer <= 1;
+      else 
+        d1_hardmodle_s1_end_xfer <= hardmodle_s1_end_xfer;
+    end
+
+
+  //hardmodle_s1_waits_for_read in a cycle, which is an e_mux
+  assign hardmodle_s1_waits_for_read = hardmodle_s1_in_a_read_cycle & hardmodle_s1_begins_xfer;
+
+  //hardmodle_s1_in_a_read_cycle assignment, which is an e_assign
+  assign hardmodle_s1_in_a_read_cycle = cpu_data_master_granted_hardmodle_s1 & cpu_data_master_read;
+
+  //in_a_read_cycle assignment, which is an e_mux
+  assign in_a_read_cycle = hardmodle_s1_in_a_read_cycle;
+
+  //hardmodle_s1_waits_for_write in a cycle, which is an e_mux
+  assign hardmodle_s1_waits_for_write = hardmodle_s1_in_a_write_cycle & 0;
+
+  //hardmodle_s1_in_a_write_cycle assignment, which is an e_assign
+  assign hardmodle_s1_in_a_write_cycle = cpu_data_master_granted_hardmodle_s1 & cpu_data_master_write;
+
+  //in_a_write_cycle assignment, which is an e_mux
+  assign in_a_write_cycle = hardmodle_s1_in_a_write_cycle;
+
+  assign wait_for_hardmodle_s1_counter = 0;
+
+//synthesis translate_off
+//////////////// SIMULATION-ONLY CONTENTS
+  //hardmodle/s1 enable non-zero assertions, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          enable_nonzero_assertions <= 0;
+      else 
+        enable_nonzero_assertions <= 1'b1;
+    end
+
+
+
+//////////////// END SIMULATION-ONLY CONTENTS
+
+//synthesis translate_on
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
 module jtag_uart_avalon_jtag_slave_arbitrator (
                                                 // inputs:
                                                  clk,
@@ -2137,7 +2416,7 @@ module jtag_uart_avalon_jtag_slave_arbitrator (
   //assign jtag_uart_avalon_jtag_slave_readdata_from_sa = jtag_uart_avalon_jtag_slave_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign jtag_uart_avalon_jtag_slave_readdata_from_sa = jtag_uart_avalon_jtag_slave_readdata;
 
-  assign cpu_data_master_requests_jtag_uart_avalon_jtag_slave = ({cpu_data_master_address_to_slave[23 : 3] , 3'b0} == 24'hb04050) & (cpu_data_master_read | cpu_data_master_write);
+  assign cpu_data_master_requests_jtag_uart_avalon_jtag_slave = ({cpu_data_master_address_to_slave[23 : 3] , 3'b0} == 24'hb04070) & (cpu_data_master_read | cpu_data_master_write);
   //assign jtag_uart_avalon_jtag_slave_dataavailable_from_sa = jtag_uart_avalon_jtag_slave_dataavailable so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign jtag_uart_avalon_jtag_slave_dataavailable_from_sa = jtag_uart_avalon_jtag_slave_dataavailable;
 
@@ -2300,6 +2579,518 @@ module jtag_uart_avalon_jtag_slave_arbitrator (
           enable_nonzero_assertions <= 0;
       else 
         enable_nonzero_assertions <= 1'b1;
+    end
+
+
+
+//////////////// END SIMULATION-ONLY CONTENTS
+
+//synthesis translate_on
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
+module kernel_clock_0_in_arbitrator (
+                                      // inputs:
+                                       clk,
+                                       cpu_data_master_address_to_slave,
+                                       cpu_data_master_byteenable,
+                                       cpu_data_master_read,
+                                       cpu_data_master_waitrequest,
+                                       cpu_data_master_write,
+                                       cpu_data_master_writedata,
+                                       kernel_clock_0_in_endofpacket,
+                                       kernel_clock_0_in_readdata,
+                                       kernel_clock_0_in_waitrequest,
+                                       reset_n,
+
+                                      // outputs:
+                                       cpu_data_master_granted_kernel_clock_0_in,
+                                       cpu_data_master_qualified_request_kernel_clock_0_in,
+                                       cpu_data_master_read_data_valid_kernel_clock_0_in,
+                                       cpu_data_master_requests_kernel_clock_0_in,
+                                       d1_kernel_clock_0_in_end_xfer,
+                                       kernel_clock_0_in_address,
+                                       kernel_clock_0_in_byteenable,
+                                       kernel_clock_0_in_endofpacket_from_sa,
+                                       kernel_clock_0_in_nativeaddress,
+                                       kernel_clock_0_in_read,
+                                       kernel_clock_0_in_readdata_from_sa,
+                                       kernel_clock_0_in_reset_n,
+                                       kernel_clock_0_in_waitrequest_from_sa,
+                                       kernel_clock_0_in_write,
+                                       kernel_clock_0_in_writedata
+                                    )
+;
+
+  output           cpu_data_master_granted_kernel_clock_0_in;
+  output           cpu_data_master_qualified_request_kernel_clock_0_in;
+  output           cpu_data_master_read_data_valid_kernel_clock_0_in;
+  output           cpu_data_master_requests_kernel_clock_0_in;
+  output           d1_kernel_clock_0_in_end_xfer;
+  output  [ 19: 0] kernel_clock_0_in_address;
+  output  [  1: 0] kernel_clock_0_in_byteenable;
+  output           kernel_clock_0_in_endofpacket_from_sa;
+  output  [ 18: 0] kernel_clock_0_in_nativeaddress;
+  output           kernel_clock_0_in_read;
+  output  [ 15: 0] kernel_clock_0_in_readdata_from_sa;
+  output           kernel_clock_0_in_reset_n;
+  output           kernel_clock_0_in_waitrequest_from_sa;
+  output           kernel_clock_0_in_write;
+  output  [ 15: 0] kernel_clock_0_in_writedata;
+  input            clk;
+  input   [ 23: 0] cpu_data_master_address_to_slave;
+  input   [  3: 0] cpu_data_master_byteenable;
+  input            cpu_data_master_read;
+  input            cpu_data_master_waitrequest;
+  input            cpu_data_master_write;
+  input   [ 31: 0] cpu_data_master_writedata;
+  input            kernel_clock_0_in_endofpacket;
+  input   [ 15: 0] kernel_clock_0_in_readdata;
+  input            kernel_clock_0_in_waitrequest;
+  input            reset_n;
+
+  wire             cpu_data_master_arbiterlock;
+  wire             cpu_data_master_arbiterlock2;
+  wire             cpu_data_master_continuerequest;
+  wire             cpu_data_master_granted_kernel_clock_0_in;
+  wire             cpu_data_master_qualified_request_kernel_clock_0_in;
+  wire             cpu_data_master_read_data_valid_kernel_clock_0_in;
+  wire             cpu_data_master_requests_kernel_clock_0_in;
+  wire             cpu_data_master_saved_grant_kernel_clock_0_in;
+  reg              d1_kernel_clock_0_in_end_xfer;
+  reg              d1_reasons_to_wait;
+  reg              enable_nonzero_assertions;
+  wire             end_xfer_arb_share_counter_term_kernel_clock_0_in;
+  wire             in_a_read_cycle;
+  wire             in_a_write_cycle;
+  wire    [ 19: 0] kernel_clock_0_in_address;
+  wire             kernel_clock_0_in_allgrants;
+  wire             kernel_clock_0_in_allow_new_arb_cycle;
+  wire             kernel_clock_0_in_any_bursting_master_saved_grant;
+  wire             kernel_clock_0_in_any_continuerequest;
+  wire             kernel_clock_0_in_arb_counter_enable;
+  reg     [  2: 0] kernel_clock_0_in_arb_share_counter;
+  wire    [  2: 0] kernel_clock_0_in_arb_share_counter_next_value;
+  wire    [  2: 0] kernel_clock_0_in_arb_share_set_values;
+  wire             kernel_clock_0_in_beginbursttransfer_internal;
+  wire             kernel_clock_0_in_begins_xfer;
+  wire    [  1: 0] kernel_clock_0_in_byteenable;
+  wire             kernel_clock_0_in_end_xfer;
+  wire             kernel_clock_0_in_endofpacket_from_sa;
+  wire             kernel_clock_0_in_firsttransfer;
+  wire             kernel_clock_0_in_grant_vector;
+  wire             kernel_clock_0_in_in_a_read_cycle;
+  wire             kernel_clock_0_in_in_a_write_cycle;
+  wire             kernel_clock_0_in_master_qreq_vector;
+  wire    [ 18: 0] kernel_clock_0_in_nativeaddress;
+  wire             kernel_clock_0_in_non_bursting_master_requests;
+  wire             kernel_clock_0_in_read;
+  wire    [ 15: 0] kernel_clock_0_in_readdata_from_sa;
+  reg              kernel_clock_0_in_reg_firsttransfer;
+  wire             kernel_clock_0_in_reset_n;
+  reg              kernel_clock_0_in_slavearbiterlockenable;
+  wire             kernel_clock_0_in_slavearbiterlockenable2;
+  wire             kernel_clock_0_in_unreg_firsttransfer;
+  wire             kernel_clock_0_in_waitrequest_from_sa;
+  wire             kernel_clock_0_in_waits_for_read;
+  wire             kernel_clock_0_in_waits_for_write;
+  wire             kernel_clock_0_in_write;
+  wire    [ 15: 0] kernel_clock_0_in_writedata;
+  wire    [ 23: 0] shifted_address_to_kernel_clock_0_in_from_cpu_data_master;
+  wire             wait_for_kernel_clock_0_in_counter;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_reasons_to_wait <= 0;
+      else 
+        d1_reasons_to_wait <= ~kernel_clock_0_in_end_xfer;
+    end
+
+
+  assign kernel_clock_0_in_begins_xfer = ~d1_reasons_to_wait & ((cpu_data_master_qualified_request_kernel_clock_0_in));
+  //assign kernel_clock_0_in_readdata_from_sa = kernel_clock_0_in_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign kernel_clock_0_in_readdata_from_sa = kernel_clock_0_in_readdata;
+
+  assign cpu_data_master_requests_kernel_clock_0_in = ({cpu_data_master_address_to_slave[23 : 21] , 21'b0} == 24'h800000) & (cpu_data_master_read | cpu_data_master_write);
+  //assign kernel_clock_0_in_waitrequest_from_sa = kernel_clock_0_in_waitrequest so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign kernel_clock_0_in_waitrequest_from_sa = kernel_clock_0_in_waitrequest;
+
+  //kernel_clock_0_in_arb_share_counter set values, which is an e_mux
+  assign kernel_clock_0_in_arb_share_set_values = 1;
+
+  //kernel_clock_0_in_non_bursting_master_requests mux, which is an e_mux
+  assign kernel_clock_0_in_non_bursting_master_requests = cpu_data_master_requests_kernel_clock_0_in;
+
+  //kernel_clock_0_in_any_bursting_master_saved_grant mux, which is an e_mux
+  assign kernel_clock_0_in_any_bursting_master_saved_grant = 0;
+
+  //kernel_clock_0_in_arb_share_counter_next_value assignment, which is an e_assign
+  assign kernel_clock_0_in_arb_share_counter_next_value = kernel_clock_0_in_firsttransfer ? (kernel_clock_0_in_arb_share_set_values - 1) : |kernel_clock_0_in_arb_share_counter ? (kernel_clock_0_in_arb_share_counter - 1) : 0;
+
+  //kernel_clock_0_in_allgrants all slave grants, which is an e_mux
+  assign kernel_clock_0_in_allgrants = |kernel_clock_0_in_grant_vector;
+
+  //kernel_clock_0_in_end_xfer assignment, which is an e_assign
+  assign kernel_clock_0_in_end_xfer = ~(kernel_clock_0_in_waits_for_read | kernel_clock_0_in_waits_for_write);
+
+  //end_xfer_arb_share_counter_term_kernel_clock_0_in arb share counter enable term, which is an e_assign
+  assign end_xfer_arb_share_counter_term_kernel_clock_0_in = kernel_clock_0_in_end_xfer & (~kernel_clock_0_in_any_bursting_master_saved_grant | in_a_read_cycle | in_a_write_cycle);
+
+  //kernel_clock_0_in_arb_share_counter arbitration counter enable, which is an e_assign
+  assign kernel_clock_0_in_arb_counter_enable = (end_xfer_arb_share_counter_term_kernel_clock_0_in & kernel_clock_0_in_allgrants) | (end_xfer_arb_share_counter_term_kernel_clock_0_in & ~kernel_clock_0_in_non_bursting_master_requests);
+
+  //kernel_clock_0_in_arb_share_counter counter, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_in_arb_share_counter <= 0;
+      else if (kernel_clock_0_in_arb_counter_enable)
+          kernel_clock_0_in_arb_share_counter <= kernel_clock_0_in_arb_share_counter_next_value;
+    end
+
+
+  //kernel_clock_0_in_slavearbiterlockenable slave enables arbiterlock, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_in_slavearbiterlockenable <= 0;
+      else if ((|kernel_clock_0_in_master_qreq_vector & end_xfer_arb_share_counter_term_kernel_clock_0_in) | (end_xfer_arb_share_counter_term_kernel_clock_0_in & ~kernel_clock_0_in_non_bursting_master_requests))
+          kernel_clock_0_in_slavearbiterlockenable <= |kernel_clock_0_in_arb_share_counter_next_value;
+    end
+
+
+  //cpu/data_master kernel_clock_0/in arbiterlock, which is an e_assign
+  assign cpu_data_master_arbiterlock = kernel_clock_0_in_slavearbiterlockenable & cpu_data_master_continuerequest;
+
+  //kernel_clock_0_in_slavearbiterlockenable2 slave enables arbiterlock2, which is an e_assign
+  assign kernel_clock_0_in_slavearbiterlockenable2 = |kernel_clock_0_in_arb_share_counter_next_value;
+
+  //cpu/data_master kernel_clock_0/in arbiterlock2, which is an e_assign
+  assign cpu_data_master_arbiterlock2 = kernel_clock_0_in_slavearbiterlockenable2 & cpu_data_master_continuerequest;
+
+  //kernel_clock_0_in_any_continuerequest at least one master continues requesting, which is an e_assign
+  assign kernel_clock_0_in_any_continuerequest = 1;
+
+  //cpu_data_master_continuerequest continued request, which is an e_assign
+  assign cpu_data_master_continuerequest = 1;
+
+  assign cpu_data_master_qualified_request_kernel_clock_0_in = cpu_data_master_requests_kernel_clock_0_in & ~((cpu_data_master_read & (~cpu_data_master_waitrequest)) | ((~cpu_data_master_waitrequest) & cpu_data_master_write));
+  //kernel_clock_0_in_writedata mux, which is an e_mux
+  assign kernel_clock_0_in_writedata = cpu_data_master_writedata;
+
+  //assign kernel_clock_0_in_endofpacket_from_sa = kernel_clock_0_in_endofpacket so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign kernel_clock_0_in_endofpacket_from_sa = kernel_clock_0_in_endofpacket;
+
+  //master is always granted when requested
+  assign cpu_data_master_granted_kernel_clock_0_in = cpu_data_master_qualified_request_kernel_clock_0_in;
+
+  //cpu/data_master saved-grant kernel_clock_0/in, which is an e_assign
+  assign cpu_data_master_saved_grant_kernel_clock_0_in = cpu_data_master_requests_kernel_clock_0_in;
+
+  //allow new arb cycle for kernel_clock_0/in, which is an e_assign
+  assign kernel_clock_0_in_allow_new_arb_cycle = 1;
+
+  //placeholder chosen master
+  assign kernel_clock_0_in_grant_vector = 1;
+
+  //placeholder vector of master qualified-requests
+  assign kernel_clock_0_in_master_qreq_vector = 1;
+
+  //kernel_clock_0_in_reset_n assignment, which is an e_assign
+  assign kernel_clock_0_in_reset_n = reset_n;
+
+  //kernel_clock_0_in_firsttransfer first transaction, which is an e_assign
+  assign kernel_clock_0_in_firsttransfer = kernel_clock_0_in_begins_xfer ? kernel_clock_0_in_unreg_firsttransfer : kernel_clock_0_in_reg_firsttransfer;
+
+  //kernel_clock_0_in_unreg_firsttransfer first transaction, which is an e_assign
+  assign kernel_clock_0_in_unreg_firsttransfer = ~(kernel_clock_0_in_slavearbiterlockenable & kernel_clock_0_in_any_continuerequest);
+
+  //kernel_clock_0_in_reg_firsttransfer first transaction, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_in_reg_firsttransfer <= 1'b1;
+      else if (kernel_clock_0_in_begins_xfer)
+          kernel_clock_0_in_reg_firsttransfer <= kernel_clock_0_in_unreg_firsttransfer;
+    end
+
+
+  //kernel_clock_0_in_beginbursttransfer_internal begin burst transfer, which is an e_assign
+  assign kernel_clock_0_in_beginbursttransfer_internal = kernel_clock_0_in_begins_xfer;
+
+  //kernel_clock_0_in_read assignment, which is an e_mux
+  assign kernel_clock_0_in_read = cpu_data_master_granted_kernel_clock_0_in & cpu_data_master_read;
+
+  //kernel_clock_0_in_write assignment, which is an e_mux
+  assign kernel_clock_0_in_write = cpu_data_master_granted_kernel_clock_0_in & cpu_data_master_write;
+
+  assign shifted_address_to_kernel_clock_0_in_from_cpu_data_master = cpu_data_master_address_to_slave;
+  //kernel_clock_0_in_address mux, which is an e_mux
+  assign kernel_clock_0_in_address = shifted_address_to_kernel_clock_0_in_from_cpu_data_master >> 2;
+
+  //slaveid kernel_clock_0_in_nativeaddress nativeaddress mux, which is an e_mux
+  assign kernel_clock_0_in_nativeaddress = cpu_data_master_address_to_slave >> 2;
+
+  //d1_kernel_clock_0_in_end_xfer register, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_kernel_clock_0_in_end_xfer <= 1;
+      else 
+        d1_kernel_clock_0_in_end_xfer <= kernel_clock_0_in_end_xfer;
+    end
+
+
+  //kernel_clock_0_in_waits_for_read in a cycle, which is an e_mux
+  assign kernel_clock_0_in_waits_for_read = kernel_clock_0_in_in_a_read_cycle & kernel_clock_0_in_waitrequest_from_sa;
+
+  //kernel_clock_0_in_in_a_read_cycle assignment, which is an e_assign
+  assign kernel_clock_0_in_in_a_read_cycle = cpu_data_master_granted_kernel_clock_0_in & cpu_data_master_read;
+
+  //in_a_read_cycle assignment, which is an e_mux
+  assign in_a_read_cycle = kernel_clock_0_in_in_a_read_cycle;
+
+  //kernel_clock_0_in_waits_for_write in a cycle, which is an e_mux
+  assign kernel_clock_0_in_waits_for_write = kernel_clock_0_in_in_a_write_cycle & kernel_clock_0_in_waitrequest_from_sa;
+
+  //kernel_clock_0_in_in_a_write_cycle assignment, which is an e_assign
+  assign kernel_clock_0_in_in_a_write_cycle = cpu_data_master_granted_kernel_clock_0_in & cpu_data_master_write;
+
+  //in_a_write_cycle assignment, which is an e_mux
+  assign in_a_write_cycle = kernel_clock_0_in_in_a_write_cycle;
+
+  assign wait_for_kernel_clock_0_in_counter = 0;
+  //kernel_clock_0_in_byteenable byte enable port mux, which is an e_mux
+  assign kernel_clock_0_in_byteenable = (cpu_data_master_granted_kernel_clock_0_in)? cpu_data_master_byteenable :
+    -1;
+
+
+//synthesis translate_off
+//////////////// SIMULATION-ONLY CONTENTS
+  //kernel_clock_0/in enable non-zero assertions, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          enable_nonzero_assertions <= 0;
+      else 
+        enable_nonzero_assertions <= 1'b1;
+    end
+
+
+
+//////////////// END SIMULATION-ONLY CONTENTS
+
+//synthesis translate_on
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
+module kernel_clock_0_out_arbitrator (
+                                       // inputs:
+                                        clk,
+                                        d1_vga_0_avalon_slave_0_end_xfer,
+                                        kernel_clock_0_out_address,
+                                        kernel_clock_0_out_byteenable,
+                                        kernel_clock_0_out_granted_vga_0_avalon_slave_0,
+                                        kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0,
+                                        kernel_clock_0_out_read,
+                                        kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0,
+                                        kernel_clock_0_out_requests_vga_0_avalon_slave_0,
+                                        kernel_clock_0_out_write,
+                                        kernel_clock_0_out_writedata,
+                                        reset_n,
+                                        vga_0_avalon_slave_0_readdata_from_sa,
+                                        vga_0_avalon_slave_0_wait_counter_eq_0,
+
+                                       // outputs:
+                                        kernel_clock_0_out_address_to_slave,
+                                        kernel_clock_0_out_readdata,
+                                        kernel_clock_0_out_reset_n,
+                                        kernel_clock_0_out_waitrequest
+                                     )
+;
+
+  output  [ 19: 0] kernel_clock_0_out_address_to_slave;
+  output  [ 15: 0] kernel_clock_0_out_readdata;
+  output           kernel_clock_0_out_reset_n;
+  output           kernel_clock_0_out_waitrequest;
+  input            clk;
+  input            d1_vga_0_avalon_slave_0_end_xfer;
+  input   [ 19: 0] kernel_clock_0_out_address;
+  input   [  1: 0] kernel_clock_0_out_byteenable;
+  input            kernel_clock_0_out_granted_vga_0_avalon_slave_0;
+  input            kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0;
+  input            kernel_clock_0_out_read;
+  input            kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0;
+  input            kernel_clock_0_out_requests_vga_0_avalon_slave_0;
+  input            kernel_clock_0_out_write;
+  input   [ 15: 0] kernel_clock_0_out_writedata;
+  input            reset_n;
+  input   [ 15: 0] vga_0_avalon_slave_0_readdata_from_sa;
+  input            vga_0_avalon_slave_0_wait_counter_eq_0;
+
+  reg              active_and_waiting_last_time;
+  reg     [ 19: 0] kernel_clock_0_out_address_last_time;
+  wire    [ 19: 0] kernel_clock_0_out_address_to_slave;
+  reg     [  1: 0] kernel_clock_0_out_byteenable_last_time;
+  reg              kernel_clock_0_out_read_last_time;
+  wire    [ 15: 0] kernel_clock_0_out_readdata;
+  wire             kernel_clock_0_out_reset_n;
+  wire             kernel_clock_0_out_run;
+  wire             kernel_clock_0_out_waitrequest;
+  reg              kernel_clock_0_out_write_last_time;
+  reg     [ 15: 0] kernel_clock_0_out_writedata_last_time;
+  wire             r_2;
+  //r_2 master_run cascaded wait assignment, which is an e_assign
+  assign r_2 = 1 & ((~kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0 | ~kernel_clock_0_out_read | (1 & ~d1_vga_0_avalon_slave_0_end_xfer & kernel_clock_0_out_read))) & ((~kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0 | ~kernel_clock_0_out_write | (1 & ((vga_0_avalon_slave_0_wait_counter_eq_0 & ~d1_vga_0_avalon_slave_0_end_xfer)) & kernel_clock_0_out_write)));
+
+  //cascaded wait assignment, which is an e_assign
+  assign kernel_clock_0_out_run = r_2;
+
+  //optimize select-logic by passing only those address bits which matter.
+  assign kernel_clock_0_out_address_to_slave = kernel_clock_0_out_address;
+
+  //kernel_clock_0/out readdata mux, which is an e_mux
+  assign kernel_clock_0_out_readdata = vga_0_avalon_slave_0_readdata_from_sa;
+
+  //actual waitrequest port, which is an e_assign
+  assign kernel_clock_0_out_waitrequest = ~kernel_clock_0_out_run;
+
+  //kernel_clock_0_out_reset_n assignment, which is an e_assign
+  assign kernel_clock_0_out_reset_n = reset_n;
+
+
+//synthesis translate_off
+//////////////// SIMULATION-ONLY CONTENTS
+  //kernel_clock_0_out_address check against wait, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_out_address_last_time <= 0;
+      else 
+        kernel_clock_0_out_address_last_time <= kernel_clock_0_out_address;
+    end
+
+
+  //kernel_clock_0/out waited last time, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          active_and_waiting_last_time <= 0;
+      else 
+        active_and_waiting_last_time <= kernel_clock_0_out_waitrequest & (kernel_clock_0_out_read | kernel_clock_0_out_write);
+    end
+
+
+  //kernel_clock_0_out_address matches last port_name, which is an e_process
+  always @(posedge clk)
+    begin
+      if (active_and_waiting_last_time & (kernel_clock_0_out_address != kernel_clock_0_out_address_last_time))
+        begin
+          $write("%0d ns: kernel_clock_0_out_address did not heed wait!!!", $time);
+          $stop;
+        end
+    end
+
+
+  //kernel_clock_0_out_byteenable check against wait, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_out_byteenable_last_time <= 0;
+      else 
+        kernel_clock_0_out_byteenable_last_time <= kernel_clock_0_out_byteenable;
+    end
+
+
+  //kernel_clock_0_out_byteenable matches last port_name, which is an e_process
+  always @(posedge clk)
+    begin
+      if (active_and_waiting_last_time & (kernel_clock_0_out_byteenable != kernel_clock_0_out_byteenable_last_time))
+        begin
+          $write("%0d ns: kernel_clock_0_out_byteenable did not heed wait!!!", $time);
+          $stop;
+        end
+    end
+
+
+  //kernel_clock_0_out_read check against wait, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_out_read_last_time <= 0;
+      else 
+        kernel_clock_0_out_read_last_time <= kernel_clock_0_out_read;
+    end
+
+
+  //kernel_clock_0_out_read matches last port_name, which is an e_process
+  always @(posedge clk)
+    begin
+      if (active_and_waiting_last_time & (kernel_clock_0_out_read != kernel_clock_0_out_read_last_time))
+        begin
+          $write("%0d ns: kernel_clock_0_out_read did not heed wait!!!", $time);
+          $stop;
+        end
+    end
+
+
+  //kernel_clock_0_out_write check against wait, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_out_write_last_time <= 0;
+      else 
+        kernel_clock_0_out_write_last_time <= kernel_clock_0_out_write;
+    end
+
+
+  //kernel_clock_0_out_write matches last port_name, which is an e_process
+  always @(posedge clk)
+    begin
+      if (active_and_waiting_last_time & (kernel_clock_0_out_write != kernel_clock_0_out_write_last_time))
+        begin
+          $write("%0d ns: kernel_clock_0_out_write did not heed wait!!!", $time);
+          $stop;
+        end
+    end
+
+
+  //kernel_clock_0_out_writedata check against wait, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          kernel_clock_0_out_writedata_last_time <= 0;
+      else 
+        kernel_clock_0_out_writedata_last_time <= kernel_clock_0_out_writedata;
+    end
+
+
+  //kernel_clock_0_out_writedata matches last port_name, which is an e_process
+  always @(posedge clk)
+    begin
+      if (active_and_waiting_last_time & (kernel_clock_0_out_writedata != kernel_clock_0_out_writedata_last_time) & kernel_clock_0_out_write)
+        begin
+          $write("%0d ns: kernel_clock_0_out_writedata did not heed wait!!!", $time);
+          $stop;
+        end
     end
 
 
@@ -3358,6 +4149,279 @@ module onchip_memory_s1_arbitrator (
           $write("%0d ns: > 1 of saved_grant signals are active simultaneously", $time);
           $stop;
         end
+    end
+
+
+
+//////////////// END SIMULATION-ONLY CONTENTS
+
+//synthesis translate_on
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
+module pll_pll_slave_arbitrator (
+                                  // inputs:
+                                   clk,
+                                   cpu_data_master_address_to_slave,
+                                   cpu_data_master_read,
+                                   cpu_data_master_waitrequest,
+                                   cpu_data_master_write,
+                                   cpu_data_master_writedata,
+                                   pll_pll_slave_readdata,
+                                   reset_n,
+
+                                  // outputs:
+                                   cpu_data_master_granted_pll_pll_slave,
+                                   cpu_data_master_qualified_request_pll_pll_slave,
+                                   cpu_data_master_read_data_valid_pll_pll_slave,
+                                   cpu_data_master_requests_pll_pll_slave,
+                                   d1_pll_pll_slave_end_xfer,
+                                   pll_pll_slave_address,
+                                   pll_pll_slave_read,
+                                   pll_pll_slave_readdata_from_sa,
+                                   pll_pll_slave_reset,
+                                   pll_pll_slave_write,
+                                   pll_pll_slave_writedata
+                                )
+;
+
+  output           cpu_data_master_granted_pll_pll_slave;
+  output           cpu_data_master_qualified_request_pll_pll_slave;
+  output           cpu_data_master_read_data_valid_pll_pll_slave;
+  output           cpu_data_master_requests_pll_pll_slave;
+  output           d1_pll_pll_slave_end_xfer;
+  output  [  1: 0] pll_pll_slave_address;
+  output           pll_pll_slave_read;
+  output  [ 31: 0] pll_pll_slave_readdata_from_sa;
+  output           pll_pll_slave_reset;
+  output           pll_pll_slave_write;
+  output  [ 31: 0] pll_pll_slave_writedata;
+  input            clk;
+  input   [ 23: 0] cpu_data_master_address_to_slave;
+  input            cpu_data_master_read;
+  input            cpu_data_master_waitrequest;
+  input            cpu_data_master_write;
+  input   [ 31: 0] cpu_data_master_writedata;
+  input   [ 31: 0] pll_pll_slave_readdata;
+  input            reset_n;
+
+  wire             cpu_data_master_arbiterlock;
+  wire             cpu_data_master_arbiterlock2;
+  wire             cpu_data_master_continuerequest;
+  wire             cpu_data_master_granted_pll_pll_slave;
+  wire             cpu_data_master_qualified_request_pll_pll_slave;
+  wire             cpu_data_master_read_data_valid_pll_pll_slave;
+  wire             cpu_data_master_requests_pll_pll_slave;
+  wire             cpu_data_master_saved_grant_pll_pll_slave;
+  reg              d1_pll_pll_slave_end_xfer;
+  reg              d1_reasons_to_wait;
+  reg              enable_nonzero_assertions;
+  wire             end_xfer_arb_share_counter_term_pll_pll_slave;
+  wire             in_a_read_cycle;
+  wire             in_a_write_cycle;
+  wire    [  1: 0] pll_pll_slave_address;
+  wire             pll_pll_slave_allgrants;
+  wire             pll_pll_slave_allow_new_arb_cycle;
+  wire             pll_pll_slave_any_bursting_master_saved_grant;
+  wire             pll_pll_slave_any_continuerequest;
+  wire             pll_pll_slave_arb_counter_enable;
+  reg     [  2: 0] pll_pll_slave_arb_share_counter;
+  wire    [  2: 0] pll_pll_slave_arb_share_counter_next_value;
+  wire    [  2: 0] pll_pll_slave_arb_share_set_values;
+  wire             pll_pll_slave_beginbursttransfer_internal;
+  wire             pll_pll_slave_begins_xfer;
+  wire             pll_pll_slave_end_xfer;
+  wire             pll_pll_slave_firsttransfer;
+  wire             pll_pll_slave_grant_vector;
+  wire             pll_pll_slave_in_a_read_cycle;
+  wire             pll_pll_slave_in_a_write_cycle;
+  wire             pll_pll_slave_master_qreq_vector;
+  wire             pll_pll_slave_non_bursting_master_requests;
+  wire             pll_pll_slave_read;
+  wire    [ 31: 0] pll_pll_slave_readdata_from_sa;
+  reg              pll_pll_slave_reg_firsttransfer;
+  wire             pll_pll_slave_reset;
+  reg              pll_pll_slave_slavearbiterlockenable;
+  wire             pll_pll_slave_slavearbiterlockenable2;
+  wire             pll_pll_slave_unreg_firsttransfer;
+  wire             pll_pll_slave_waits_for_read;
+  wire             pll_pll_slave_waits_for_write;
+  wire             pll_pll_slave_write;
+  wire    [ 31: 0] pll_pll_slave_writedata;
+  wire    [ 23: 0] shifted_address_to_pll_pll_slave_from_cpu_data_master;
+  wire             wait_for_pll_pll_slave_counter;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_reasons_to_wait <= 0;
+      else 
+        d1_reasons_to_wait <= ~pll_pll_slave_end_xfer;
+    end
+
+
+  assign pll_pll_slave_begins_xfer = ~d1_reasons_to_wait & ((cpu_data_master_qualified_request_pll_pll_slave));
+  //assign pll_pll_slave_readdata_from_sa = pll_pll_slave_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
+  assign pll_pll_slave_readdata_from_sa = pll_pll_slave_readdata;
+
+  assign cpu_data_master_requests_pll_pll_slave = ({cpu_data_master_address_to_slave[23 : 4] , 4'b0} == 24'hb04050) & (cpu_data_master_read | cpu_data_master_write);
+  //pll_pll_slave_arb_share_counter set values, which is an e_mux
+  assign pll_pll_slave_arb_share_set_values = 1;
+
+  //pll_pll_slave_non_bursting_master_requests mux, which is an e_mux
+  assign pll_pll_slave_non_bursting_master_requests = cpu_data_master_requests_pll_pll_slave;
+
+  //pll_pll_slave_any_bursting_master_saved_grant mux, which is an e_mux
+  assign pll_pll_slave_any_bursting_master_saved_grant = 0;
+
+  //pll_pll_slave_arb_share_counter_next_value assignment, which is an e_assign
+  assign pll_pll_slave_arb_share_counter_next_value = pll_pll_slave_firsttransfer ? (pll_pll_slave_arb_share_set_values - 1) : |pll_pll_slave_arb_share_counter ? (pll_pll_slave_arb_share_counter - 1) : 0;
+
+  //pll_pll_slave_allgrants all slave grants, which is an e_mux
+  assign pll_pll_slave_allgrants = |pll_pll_slave_grant_vector;
+
+  //pll_pll_slave_end_xfer assignment, which is an e_assign
+  assign pll_pll_slave_end_xfer = ~(pll_pll_slave_waits_for_read | pll_pll_slave_waits_for_write);
+
+  //end_xfer_arb_share_counter_term_pll_pll_slave arb share counter enable term, which is an e_assign
+  assign end_xfer_arb_share_counter_term_pll_pll_slave = pll_pll_slave_end_xfer & (~pll_pll_slave_any_bursting_master_saved_grant | in_a_read_cycle | in_a_write_cycle);
+
+  //pll_pll_slave_arb_share_counter arbitration counter enable, which is an e_assign
+  assign pll_pll_slave_arb_counter_enable = (end_xfer_arb_share_counter_term_pll_pll_slave & pll_pll_slave_allgrants) | (end_xfer_arb_share_counter_term_pll_pll_slave & ~pll_pll_slave_non_bursting_master_requests);
+
+  //pll_pll_slave_arb_share_counter counter, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          pll_pll_slave_arb_share_counter <= 0;
+      else if (pll_pll_slave_arb_counter_enable)
+          pll_pll_slave_arb_share_counter <= pll_pll_slave_arb_share_counter_next_value;
+    end
+
+
+  //pll_pll_slave_slavearbiterlockenable slave enables arbiterlock, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          pll_pll_slave_slavearbiterlockenable <= 0;
+      else if ((|pll_pll_slave_master_qreq_vector & end_xfer_arb_share_counter_term_pll_pll_slave) | (end_xfer_arb_share_counter_term_pll_pll_slave & ~pll_pll_slave_non_bursting_master_requests))
+          pll_pll_slave_slavearbiterlockenable <= |pll_pll_slave_arb_share_counter_next_value;
+    end
+
+
+  //cpu/data_master pll/pll_slave arbiterlock, which is an e_assign
+  assign cpu_data_master_arbiterlock = pll_pll_slave_slavearbiterlockenable & cpu_data_master_continuerequest;
+
+  //pll_pll_slave_slavearbiterlockenable2 slave enables arbiterlock2, which is an e_assign
+  assign pll_pll_slave_slavearbiterlockenable2 = |pll_pll_slave_arb_share_counter_next_value;
+
+  //cpu/data_master pll/pll_slave arbiterlock2, which is an e_assign
+  assign cpu_data_master_arbiterlock2 = pll_pll_slave_slavearbiterlockenable2 & cpu_data_master_continuerequest;
+
+  //pll_pll_slave_any_continuerequest at least one master continues requesting, which is an e_assign
+  assign pll_pll_slave_any_continuerequest = 1;
+
+  //cpu_data_master_continuerequest continued request, which is an e_assign
+  assign cpu_data_master_continuerequest = 1;
+
+  assign cpu_data_master_qualified_request_pll_pll_slave = cpu_data_master_requests_pll_pll_slave & ~((cpu_data_master_read & (~cpu_data_master_waitrequest)) | ((~cpu_data_master_waitrequest) & cpu_data_master_write));
+  //pll_pll_slave_writedata mux, which is an e_mux
+  assign pll_pll_slave_writedata = cpu_data_master_writedata;
+
+  //master is always granted when requested
+  assign cpu_data_master_granted_pll_pll_slave = cpu_data_master_qualified_request_pll_pll_slave;
+
+  //cpu/data_master saved-grant pll/pll_slave, which is an e_assign
+  assign cpu_data_master_saved_grant_pll_pll_slave = cpu_data_master_requests_pll_pll_slave;
+
+  //allow new arb cycle for pll/pll_slave, which is an e_assign
+  assign pll_pll_slave_allow_new_arb_cycle = 1;
+
+  //placeholder chosen master
+  assign pll_pll_slave_grant_vector = 1;
+
+  //placeholder vector of master qualified-requests
+  assign pll_pll_slave_master_qreq_vector = 1;
+
+  //~pll_pll_slave_reset assignment, which is an e_assign
+  assign pll_pll_slave_reset = ~reset_n;
+
+  //pll_pll_slave_firsttransfer first transaction, which is an e_assign
+  assign pll_pll_slave_firsttransfer = pll_pll_slave_begins_xfer ? pll_pll_slave_unreg_firsttransfer : pll_pll_slave_reg_firsttransfer;
+
+  //pll_pll_slave_unreg_firsttransfer first transaction, which is an e_assign
+  assign pll_pll_slave_unreg_firsttransfer = ~(pll_pll_slave_slavearbiterlockenable & pll_pll_slave_any_continuerequest);
+
+  //pll_pll_slave_reg_firsttransfer first transaction, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          pll_pll_slave_reg_firsttransfer <= 1'b1;
+      else if (pll_pll_slave_begins_xfer)
+          pll_pll_slave_reg_firsttransfer <= pll_pll_slave_unreg_firsttransfer;
+    end
+
+
+  //pll_pll_slave_beginbursttransfer_internal begin burst transfer, which is an e_assign
+  assign pll_pll_slave_beginbursttransfer_internal = pll_pll_slave_begins_xfer;
+
+  //pll_pll_slave_read assignment, which is an e_mux
+  assign pll_pll_slave_read = cpu_data_master_granted_pll_pll_slave & cpu_data_master_read;
+
+  //pll_pll_slave_write assignment, which is an e_mux
+  assign pll_pll_slave_write = cpu_data_master_granted_pll_pll_slave & cpu_data_master_write;
+
+  assign shifted_address_to_pll_pll_slave_from_cpu_data_master = cpu_data_master_address_to_slave;
+  //pll_pll_slave_address mux, which is an e_mux
+  assign pll_pll_slave_address = shifted_address_to_pll_pll_slave_from_cpu_data_master >> 2;
+
+  //d1_pll_pll_slave_end_xfer register, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          d1_pll_pll_slave_end_xfer <= 1;
+      else 
+        d1_pll_pll_slave_end_xfer <= pll_pll_slave_end_xfer;
+    end
+
+
+  //pll_pll_slave_waits_for_read in a cycle, which is an e_mux
+  assign pll_pll_slave_waits_for_read = pll_pll_slave_in_a_read_cycle & 0;
+
+  //pll_pll_slave_in_a_read_cycle assignment, which is an e_assign
+  assign pll_pll_slave_in_a_read_cycle = cpu_data_master_granted_pll_pll_slave & cpu_data_master_read;
+
+  //in_a_read_cycle assignment, which is an e_mux
+  assign in_a_read_cycle = pll_pll_slave_in_a_read_cycle;
+
+  //pll_pll_slave_waits_for_write in a cycle, which is an e_mux
+  assign pll_pll_slave_waits_for_write = pll_pll_slave_in_a_write_cycle & 0;
+
+  //pll_pll_slave_in_a_write_cycle assignment, which is an e_assign
+  assign pll_pll_slave_in_a_write_cycle = cpu_data_master_granted_pll_pll_slave & cpu_data_master_write;
+
+  //in_a_write_cycle assignment, which is an e_mux
+  assign in_a_write_cycle = pll_pll_slave_in_a_write_cycle;
+
+  assign wait_for_pll_pll_slave_counter = 0;
+
+//synthesis translate_off
+//////////////// SIMULATION-ONLY CONTENTS
+  //pll/pll_slave enable non-zero assertions, which is an e_register
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          enable_nonzero_assertions <= 0;
+      else 
+        enable_nonzero_assertions <= 1'b1;
     end
 
 
@@ -4807,19 +5871,20 @@ endmodule
 module vga_0_avalon_slave_0_arbitrator (
                                          // inputs:
                                           clk,
-                                          cpu_data_master_address_to_slave,
-                                          cpu_data_master_read,
-                                          cpu_data_master_write,
-                                          cpu_data_master_writedata,
+                                          kernel_clock_0_out_address_to_slave,
+                                          kernel_clock_0_out_nativeaddress,
+                                          kernel_clock_0_out_read,
+                                          kernel_clock_0_out_write,
+                                          kernel_clock_0_out_writedata,
                                           reset_n,
                                           vga_0_avalon_slave_0_readdata,
 
                                          // outputs:
-                                          cpu_data_master_granted_vga_0_avalon_slave_0,
-                                          cpu_data_master_qualified_request_vga_0_avalon_slave_0,
-                                          cpu_data_master_read_data_valid_vga_0_avalon_slave_0,
-                                          cpu_data_master_requests_vga_0_avalon_slave_0,
                                           d1_vga_0_avalon_slave_0_end_xfer,
+                                          kernel_clock_0_out_granted_vga_0_avalon_slave_0,
+                                          kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0,
+                                          kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0,
+                                          kernel_clock_0_out_requests_vga_0_avalon_slave_0,
                                           vga_0_avalon_slave_0_address,
                                           vga_0_avalon_slave_0_chipselect,
                                           vga_0_avalon_slave_0_read,
@@ -4831,11 +5896,11 @@ module vga_0_avalon_slave_0_arbitrator (
                                        )
 ;
 
-  output           cpu_data_master_granted_vga_0_avalon_slave_0;
-  output           cpu_data_master_qualified_request_vga_0_avalon_slave_0;
-  output           cpu_data_master_read_data_valid_vga_0_avalon_slave_0;
-  output           cpu_data_master_requests_vga_0_avalon_slave_0;
   output           d1_vga_0_avalon_slave_0_end_xfer;
+  output           kernel_clock_0_out_granted_vga_0_avalon_slave_0;
+  output           kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0;
+  output           kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0;
+  output           kernel_clock_0_out_requests_vga_0_avalon_slave_0;
   output  [ 18: 0] vga_0_avalon_slave_0_address;
   output           vga_0_avalon_slave_0_chipselect;
   output           vga_0_avalon_slave_0_read;
@@ -4845,37 +5910,37 @@ module vga_0_avalon_slave_0_arbitrator (
   output           vga_0_avalon_slave_0_write;
   output  [ 15: 0] vga_0_avalon_slave_0_writedata;
   input            clk;
-  input   [ 23: 0] cpu_data_master_address_to_slave;
-  input            cpu_data_master_read;
-  input            cpu_data_master_write;
-  input   [ 31: 0] cpu_data_master_writedata;
+  input   [ 19: 0] kernel_clock_0_out_address_to_slave;
+  input   [ 18: 0] kernel_clock_0_out_nativeaddress;
+  input            kernel_clock_0_out_read;
+  input            kernel_clock_0_out_write;
+  input   [ 15: 0] kernel_clock_0_out_writedata;
   input            reset_n;
   input   [ 15: 0] vga_0_avalon_slave_0_readdata;
 
-  wire             cpu_data_master_arbiterlock;
-  wire             cpu_data_master_arbiterlock2;
-  wire             cpu_data_master_continuerequest;
-  wire             cpu_data_master_granted_vga_0_avalon_slave_0;
-  wire             cpu_data_master_qualified_request_vga_0_avalon_slave_0;
-  wire             cpu_data_master_read_data_valid_vga_0_avalon_slave_0;
-  wire             cpu_data_master_requests_vga_0_avalon_slave_0;
-  wire             cpu_data_master_saved_grant_vga_0_avalon_slave_0;
   reg              d1_reasons_to_wait;
   reg              d1_vga_0_avalon_slave_0_end_xfer;
   reg              enable_nonzero_assertions;
   wire             end_xfer_arb_share_counter_term_vga_0_avalon_slave_0;
   wire             in_a_read_cycle;
   wire             in_a_write_cycle;
-  wire    [ 23: 0] shifted_address_to_vga_0_avalon_slave_0_from_cpu_data_master;
+  wire             kernel_clock_0_out_arbiterlock;
+  wire             kernel_clock_0_out_arbiterlock2;
+  wire             kernel_clock_0_out_continuerequest;
+  wire             kernel_clock_0_out_granted_vga_0_avalon_slave_0;
+  wire             kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0;
+  wire             kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0;
+  wire             kernel_clock_0_out_requests_vga_0_avalon_slave_0;
+  wire             kernel_clock_0_out_saved_grant_vga_0_avalon_slave_0;
   wire    [ 18: 0] vga_0_avalon_slave_0_address;
   wire             vga_0_avalon_slave_0_allgrants;
   wire             vga_0_avalon_slave_0_allow_new_arb_cycle;
   wire             vga_0_avalon_slave_0_any_bursting_master_saved_grant;
   wire             vga_0_avalon_slave_0_any_continuerequest;
   wire             vga_0_avalon_slave_0_arb_counter_enable;
-  reg     [  2: 0] vga_0_avalon_slave_0_arb_share_counter;
-  wire    [  2: 0] vga_0_avalon_slave_0_arb_share_counter_next_value;
-  wire    [  2: 0] vga_0_avalon_slave_0_arb_share_set_values;
+  reg              vga_0_avalon_slave_0_arb_share_counter;
+  wire             vga_0_avalon_slave_0_arb_share_counter_next_value;
+  wire             vga_0_avalon_slave_0_arb_share_set_values;
   wire             vga_0_avalon_slave_0_beginbursttransfer_internal;
   wire             vga_0_avalon_slave_0_begins_xfer;
   wire             vga_0_avalon_slave_0_chipselect;
@@ -4910,16 +5975,16 @@ module vga_0_avalon_slave_0_arbitrator (
     end
 
 
-  assign vga_0_avalon_slave_0_begins_xfer = ~d1_reasons_to_wait & ((cpu_data_master_qualified_request_vga_0_avalon_slave_0));
+  assign vga_0_avalon_slave_0_begins_xfer = ~d1_reasons_to_wait & ((kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0));
   //assign vga_0_avalon_slave_0_readdata_from_sa = vga_0_avalon_slave_0_readdata so that symbol knows where to group signals which may go to master only, which is an e_assign
   assign vga_0_avalon_slave_0_readdata_from_sa = vga_0_avalon_slave_0_readdata;
 
-  assign cpu_data_master_requests_vga_0_avalon_slave_0 = ({cpu_data_master_address_to_slave[23 : 21] , 21'b0} == 24'h800000) & (cpu_data_master_read | cpu_data_master_write);
+  assign kernel_clock_0_out_requests_vga_0_avalon_slave_0 = (1) & (kernel_clock_0_out_read | kernel_clock_0_out_write);
   //vga_0_avalon_slave_0_arb_share_counter set values, which is an e_mux
   assign vga_0_avalon_slave_0_arb_share_set_values = 1;
 
   //vga_0_avalon_slave_0_non_bursting_master_requests mux, which is an e_mux
-  assign vga_0_avalon_slave_0_non_bursting_master_requests = cpu_data_master_requests_vga_0_avalon_slave_0;
+  assign vga_0_avalon_slave_0_non_bursting_master_requests = kernel_clock_0_out_requests_vga_0_avalon_slave_0;
 
   //vga_0_avalon_slave_0_any_bursting_master_saved_grant mux, which is an e_mux
   assign vga_0_avalon_slave_0_any_bursting_master_saved_grant = 0;
@@ -4959,30 +6024,30 @@ module vga_0_avalon_slave_0_arbitrator (
     end
 
 
-  //cpu/data_master vga_0/avalon_slave_0 arbiterlock, which is an e_assign
-  assign cpu_data_master_arbiterlock = vga_0_avalon_slave_0_slavearbiterlockenable & cpu_data_master_continuerequest;
+  //kernel_clock_0/out vga_0/avalon_slave_0 arbiterlock, which is an e_assign
+  assign kernel_clock_0_out_arbiterlock = vga_0_avalon_slave_0_slavearbiterlockenable & kernel_clock_0_out_continuerequest;
 
   //vga_0_avalon_slave_0_slavearbiterlockenable2 slave enables arbiterlock2, which is an e_assign
   assign vga_0_avalon_slave_0_slavearbiterlockenable2 = |vga_0_avalon_slave_0_arb_share_counter_next_value;
 
-  //cpu/data_master vga_0/avalon_slave_0 arbiterlock2, which is an e_assign
-  assign cpu_data_master_arbiterlock2 = vga_0_avalon_slave_0_slavearbiterlockenable2 & cpu_data_master_continuerequest;
+  //kernel_clock_0/out vga_0/avalon_slave_0 arbiterlock2, which is an e_assign
+  assign kernel_clock_0_out_arbiterlock2 = vga_0_avalon_slave_0_slavearbiterlockenable2 & kernel_clock_0_out_continuerequest;
 
   //vga_0_avalon_slave_0_any_continuerequest at least one master continues requesting, which is an e_assign
   assign vga_0_avalon_slave_0_any_continuerequest = 1;
 
-  //cpu_data_master_continuerequest continued request, which is an e_assign
-  assign cpu_data_master_continuerequest = 1;
+  //kernel_clock_0_out_continuerequest continued request, which is an e_assign
+  assign kernel_clock_0_out_continuerequest = 1;
 
-  assign cpu_data_master_qualified_request_vga_0_avalon_slave_0 = cpu_data_master_requests_vga_0_avalon_slave_0;
+  assign kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0 = kernel_clock_0_out_requests_vga_0_avalon_slave_0;
   //vga_0_avalon_slave_0_writedata mux, which is an e_mux
-  assign vga_0_avalon_slave_0_writedata = cpu_data_master_writedata;
+  assign vga_0_avalon_slave_0_writedata = kernel_clock_0_out_writedata;
 
   //master is always granted when requested
-  assign cpu_data_master_granted_vga_0_avalon_slave_0 = cpu_data_master_qualified_request_vga_0_avalon_slave_0;
+  assign kernel_clock_0_out_granted_vga_0_avalon_slave_0 = kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0;
 
-  //cpu/data_master saved-grant vga_0/avalon_slave_0, which is an e_assign
-  assign cpu_data_master_saved_grant_vga_0_avalon_slave_0 = cpu_data_master_requests_vga_0_avalon_slave_0;
+  //kernel_clock_0/out saved-grant vga_0/avalon_slave_0, which is an e_assign
+  assign kernel_clock_0_out_saved_grant_vga_0_avalon_slave_0 = kernel_clock_0_out_requests_vga_0_avalon_slave_0;
 
   //allow new arb cycle for vga_0/avalon_slave_0, which is an e_assign
   assign vga_0_avalon_slave_0_allow_new_arb_cycle = 1;
@@ -4996,7 +6061,7 @@ module vga_0_avalon_slave_0_arbitrator (
   //vga_0_avalon_slave_0_reset_n assignment, which is an e_assign
   assign vga_0_avalon_slave_0_reset_n = reset_n;
 
-  assign vga_0_avalon_slave_0_chipselect = cpu_data_master_granted_vga_0_avalon_slave_0;
+  assign vga_0_avalon_slave_0_chipselect = kernel_clock_0_out_granted_vga_0_avalon_slave_0;
   //vga_0_avalon_slave_0_firsttransfer first transaction, which is an e_assign
   assign vga_0_avalon_slave_0_firsttransfer = vga_0_avalon_slave_0_begins_xfer ? vga_0_avalon_slave_0_unreg_firsttransfer : vga_0_avalon_slave_0_reg_firsttransfer;
 
@@ -5017,14 +6082,13 @@ module vga_0_avalon_slave_0_arbitrator (
   assign vga_0_avalon_slave_0_beginbursttransfer_internal = vga_0_avalon_slave_0_begins_xfer;
 
   //vga_0_avalon_slave_0_read assignment, which is an e_mux
-  assign vga_0_avalon_slave_0_read = ((cpu_data_master_granted_vga_0_avalon_slave_0 & cpu_data_master_read))& ~vga_0_avalon_slave_0_begins_xfer;
+  assign vga_0_avalon_slave_0_read = ((kernel_clock_0_out_granted_vga_0_avalon_slave_0 & kernel_clock_0_out_read))& ~vga_0_avalon_slave_0_begins_xfer;
 
   //vga_0_avalon_slave_0_write assignment, which is an e_mux
-  assign vga_0_avalon_slave_0_write = ((cpu_data_master_granted_vga_0_avalon_slave_0 & cpu_data_master_write)) & ~vga_0_avalon_slave_0_begins_xfer & (vga_0_avalon_slave_0_wait_counter >= 1);
+  assign vga_0_avalon_slave_0_write = ((kernel_clock_0_out_granted_vga_0_avalon_slave_0 & kernel_clock_0_out_write)) & ~vga_0_avalon_slave_0_begins_xfer & (vga_0_avalon_slave_0_wait_counter >= 1);
 
-  assign shifted_address_to_vga_0_avalon_slave_0_from_cpu_data_master = cpu_data_master_address_to_slave;
   //vga_0_avalon_slave_0_address mux, which is an e_mux
-  assign vga_0_avalon_slave_0_address = shifted_address_to_vga_0_avalon_slave_0_from_cpu_data_master >> 2;
+  assign vga_0_avalon_slave_0_address = kernel_clock_0_out_nativeaddress;
 
   //d1_vga_0_avalon_slave_0_end_xfer register, which is an e_register
   always @(posedge clk or negedge reset_n)
@@ -5040,7 +6104,7 @@ module vga_0_avalon_slave_0_arbitrator (
   assign vga_0_avalon_slave_0_waits_for_read = vga_0_avalon_slave_0_in_a_read_cycle & vga_0_avalon_slave_0_begins_xfer;
 
   //vga_0_avalon_slave_0_in_a_read_cycle assignment, which is an e_assign
-  assign vga_0_avalon_slave_0_in_a_read_cycle = cpu_data_master_granted_vga_0_avalon_slave_0 & cpu_data_master_read;
+  assign vga_0_avalon_slave_0_in_a_read_cycle = kernel_clock_0_out_granted_vga_0_avalon_slave_0 & kernel_clock_0_out_read;
 
   //in_a_read_cycle assignment, which is an e_mux
   assign in_a_read_cycle = vga_0_avalon_slave_0_in_a_read_cycle;
@@ -5049,7 +6113,7 @@ module vga_0_avalon_slave_0_arbitrator (
   assign vga_0_avalon_slave_0_waits_for_write = vga_0_avalon_slave_0_in_a_write_cycle & wait_for_vga_0_avalon_slave_0_counter;
 
   //vga_0_avalon_slave_0_in_a_write_cycle assignment, which is an e_assign
-  assign vga_0_avalon_slave_0_in_a_write_cycle = cpu_data_master_granted_vga_0_avalon_slave_0 & cpu_data_master_write;
+  assign vga_0_avalon_slave_0_in_a_write_cycle = kernel_clock_0_out_granted_vga_0_avalon_slave_0 & kernel_clock_0_out_write;
 
   //in_a_write_cycle assignment, which is an e_mux
   assign in_a_write_cycle = vga_0_avalon_slave_0_in_a_write_cycle;
@@ -5146,13 +6210,65 @@ endmodule
 // altera message_level Level1 
 // altera message_off 10034 10035 10036 10037 10230 10240 10030 
 
+module kernel_reset_pll_c0_out_domain_synch_module (
+                                                     // inputs:
+                                                      clk,
+                                                      data_in,
+                                                      reset_n,
+
+                                                     // outputs:
+                                                      data_out
+                                                   )
+;
+
+  output           data_out;
+  input            clk;
+  input            data_in;
+  input            reset_n;
+
+  reg              data_in_d1 /* synthesis ALTERA_ATTRIBUTE = "{-from \"*\"} CUT=ON ; PRESERVE_REGISTER=ON ; SUPPRESS_DA_RULE_INTERNAL=R101"  */;
+  reg              data_out /* synthesis ALTERA_ATTRIBUTE = "PRESERVE_REGISTER=ON ; SUPPRESS_DA_RULE_INTERNAL=R101"  */;
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          data_in_d1 <= 0;
+      else 
+        data_in_d1 <= data_in;
+    end
+
+
+  always @(posedge clk or negedge reset_n)
+    begin
+      if (reset_n == 0)
+          data_out <= 0;
+      else 
+        data_out <= data_in_d1;
+    end
+
+
+
+endmodule
+
+
+// synthesis translate_off
+`timescale 1ns / 1ps
+// synthesis translate_on
+
+// turn off superfluous verilog processor warnings 
+// altera message_level Level1 
+// altera message_off 10034 10035 10036 10037 10230 10240 10030 
+
 module kernel (
                 // 1) global signals:
                  clk_50,
+                 pll_c0_out,
                  reset_n,
 
                 // the_gpio
                  in_port_to_the_gpio,
+
+                // the_hardmodle
+                 in_port_to_the_hardmodle,
 
                 // the_key
                  in_port_to_the_key,
@@ -5162,6 +6278,11 @@ module kernel (
                  LCD_RS_from_the_lcd_0,
                  LCD_RW_from_the_lcd_0,
                  LCD_data_to_and_from_the_lcd_0,
+
+                // the_pll
+                 areset_to_the_pll,
+                 locked_from_the_pll,
+                 phasedone_from_the_pll,
 
                 // the_sram_16bit_512k_0
                  SRAM_ADDR_from_the_sram_16bit_512k_0,
@@ -5211,14 +6332,19 @@ module kernel (
   output  [  9: 0] VGA_R_from_the_vga_0;
   output           VGA_SYNC_from_the_vga_0;
   output           VGA_VS_from_the_vga_0;
+  output           locked_from_the_pll;
+  output           phasedone_from_the_pll;
+  output           pll_c0_out;
   output           select_n_to_the_cfi_flash;
   output  [ 21: 0] tri_state_bridge_address;
   inout   [  7: 0] tri_state_bridge_data;
   output           tri_state_bridge_readn;
   output           write_n_to_the_cfi_flash;
+  input            areset_to_the_pll;
   input            clk_50;
   input            iCLK_25_to_the_vga_0;
   input            in_port_to_the_gpio;
+  input   [  3: 0] in_port_to_the_hardmodle;
   input            in_port_to_the_key;
   input            reset_n;
 
@@ -5257,50 +6383,58 @@ module kernel (
   wire             cpu_data_master_granted_cpu_jtag_debug_module;
   wire             cpu_data_master_granted_epcs_flash_controller_epcs_control_port;
   wire             cpu_data_master_granted_gpio_s1;
+  wire             cpu_data_master_granted_hardmodle_s1;
   wire             cpu_data_master_granted_jtag_uart_avalon_jtag_slave;
+  wire             cpu_data_master_granted_kernel_clock_0_in;
   wire             cpu_data_master_granted_key_s1;
   wire             cpu_data_master_granted_lcd_0_control_slave;
   wire             cpu_data_master_granted_onchip_memory_s1;
+  wire             cpu_data_master_granted_pll_pll_slave;
   wire             cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0;
   wire             cpu_data_master_granted_timer_s1;
-  wire             cpu_data_master_granted_vga_0_avalon_slave_0;
   wire    [ 31: 0] cpu_data_master_irq;
   wire             cpu_data_master_no_byte_enables_and_last_term;
   wire             cpu_data_master_qualified_request_cfi_flash_s1;
   wire             cpu_data_master_qualified_request_cpu_jtag_debug_module;
   wire             cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port;
   wire             cpu_data_master_qualified_request_gpio_s1;
+  wire             cpu_data_master_qualified_request_hardmodle_s1;
   wire             cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave;
+  wire             cpu_data_master_qualified_request_kernel_clock_0_in;
   wire             cpu_data_master_qualified_request_key_s1;
   wire             cpu_data_master_qualified_request_lcd_0_control_slave;
   wire             cpu_data_master_qualified_request_onchip_memory_s1;
+  wire             cpu_data_master_qualified_request_pll_pll_slave;
   wire             cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0;
   wire             cpu_data_master_qualified_request_timer_s1;
-  wire             cpu_data_master_qualified_request_vga_0_avalon_slave_0;
   wire             cpu_data_master_read;
   wire             cpu_data_master_read_data_valid_cfi_flash_s1;
   wire             cpu_data_master_read_data_valid_cpu_jtag_debug_module;
   wire             cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port;
   wire             cpu_data_master_read_data_valid_gpio_s1;
+  wire             cpu_data_master_read_data_valid_hardmodle_s1;
   wire             cpu_data_master_read_data_valid_jtag_uart_avalon_jtag_slave;
+  wire             cpu_data_master_read_data_valid_kernel_clock_0_in;
   wire             cpu_data_master_read_data_valid_key_s1;
   wire             cpu_data_master_read_data_valid_lcd_0_control_slave;
   wire             cpu_data_master_read_data_valid_onchip_memory_s1;
+  wire             cpu_data_master_read_data_valid_pll_pll_slave;
   wire             cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0;
   wire             cpu_data_master_read_data_valid_timer_s1;
-  wire             cpu_data_master_read_data_valid_vga_0_avalon_slave_0;
   wire    [ 31: 0] cpu_data_master_readdata;
   wire             cpu_data_master_requests_cfi_flash_s1;
   wire             cpu_data_master_requests_cpu_jtag_debug_module;
   wire             cpu_data_master_requests_epcs_flash_controller_epcs_control_port;
   wire             cpu_data_master_requests_gpio_s1;
+  wire             cpu_data_master_requests_hardmodle_s1;
   wire             cpu_data_master_requests_jtag_uart_avalon_jtag_slave;
+  wire             cpu_data_master_requests_kernel_clock_0_in;
   wire             cpu_data_master_requests_key_s1;
   wire             cpu_data_master_requests_lcd_0_control_slave;
   wire             cpu_data_master_requests_onchip_memory_s1;
+  wire             cpu_data_master_requests_pll_pll_slave;
   wire             cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0;
   wire             cpu_data_master_requests_timer_s1;
-  wire             cpu_data_master_requests_vga_0_avalon_slave_0;
   wire             cpu_data_master_waitrequest;
   wire             cpu_data_master_write;
   wire    [ 31: 0] cpu_data_master_writedata;
@@ -5347,10 +6481,13 @@ module kernel (
   wire             d1_cpu_jtag_debug_module_end_xfer;
   wire             d1_epcs_flash_controller_epcs_control_port_end_xfer;
   wire             d1_gpio_s1_end_xfer;
+  wire             d1_hardmodle_s1_end_xfer;
   wire             d1_jtag_uart_avalon_jtag_slave_end_xfer;
+  wire             d1_kernel_clock_0_in_end_xfer;
   wire             d1_key_s1_end_xfer;
   wire             d1_lcd_0_control_slave_end_xfer;
   wire             d1_onchip_memory_s1_end_xfer;
+  wire             d1_pll_pll_slave_end_xfer;
   wire             d1_sram_16bit_512k_0_avalon_slave_0_end_xfer;
   wire             d1_timer_s1_end_xfer;
   wire             d1_tri_state_bridge_avalon_slave_end_xfer;
@@ -5380,6 +6517,10 @@ module kernel (
   wire             gpio_s1_reset_n;
   wire             gpio_s1_write_n;
   wire    [ 31: 0] gpio_s1_writedata;
+  wire    [  1: 0] hardmodle_s1_address;
+  wire    [ 31: 0] hardmodle_s1_readdata;
+  wire    [ 31: 0] hardmodle_s1_readdata_from_sa;
+  wire             hardmodle_s1_reset_n;
   wire    [  7: 0] incoming_tri_state_bridge_data;
   wire    [  7: 0] incoming_tri_state_bridge_data_with_Xs_converted_to_0;
   wire             jtag_uart_avalon_jtag_slave_address;
@@ -5398,6 +6539,34 @@ module kernel (
   wire             jtag_uart_avalon_jtag_slave_waitrequest_from_sa;
   wire             jtag_uart_avalon_jtag_slave_write_n;
   wire    [ 31: 0] jtag_uart_avalon_jtag_slave_writedata;
+  wire    [ 19: 0] kernel_clock_0_in_address;
+  wire    [  1: 0] kernel_clock_0_in_byteenable;
+  wire             kernel_clock_0_in_endofpacket;
+  wire             kernel_clock_0_in_endofpacket_from_sa;
+  wire    [ 18: 0] kernel_clock_0_in_nativeaddress;
+  wire             kernel_clock_0_in_read;
+  wire    [ 15: 0] kernel_clock_0_in_readdata;
+  wire    [ 15: 0] kernel_clock_0_in_readdata_from_sa;
+  wire             kernel_clock_0_in_reset_n;
+  wire             kernel_clock_0_in_waitrequest;
+  wire             kernel_clock_0_in_waitrequest_from_sa;
+  wire             kernel_clock_0_in_write;
+  wire    [ 15: 0] kernel_clock_0_in_writedata;
+  wire    [ 19: 0] kernel_clock_0_out_address;
+  wire    [ 19: 0] kernel_clock_0_out_address_to_slave;
+  wire    [  1: 0] kernel_clock_0_out_byteenable;
+  wire             kernel_clock_0_out_endofpacket;
+  wire             kernel_clock_0_out_granted_vga_0_avalon_slave_0;
+  wire    [ 18: 0] kernel_clock_0_out_nativeaddress;
+  wire             kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0;
+  wire             kernel_clock_0_out_read;
+  wire             kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0;
+  wire    [ 15: 0] kernel_clock_0_out_readdata;
+  wire             kernel_clock_0_out_requests_vga_0_avalon_slave_0;
+  wire             kernel_clock_0_out_reset_n;
+  wire             kernel_clock_0_out_waitrequest;
+  wire             kernel_clock_0_out_write;
+  wire    [ 15: 0] kernel_clock_0_out_writedata;
   wire    [  1: 0] key_s1_address;
   wire             key_s1_chipselect;
   wire             key_s1_irq;
@@ -5417,6 +6586,7 @@ module kernel (
   wire             lcd_0_control_slave_wait_counter_eq_1;
   wire             lcd_0_control_slave_write;
   wire    [  7: 0] lcd_0_control_slave_writedata;
+  wire             locked_from_the_pll;
   wire    [  9: 0] onchip_memory_s1_address;
   wire    [  3: 0] onchip_memory_s1_byteenable;
   wire             onchip_memory_s1_chipselect;
@@ -5426,6 +6596,17 @@ module kernel (
   wire             onchip_memory_s1_reset;
   wire             onchip_memory_s1_write;
   wire    [ 31: 0] onchip_memory_s1_writedata;
+  wire             out_clk_pll_c0;
+  wire             phasedone_from_the_pll;
+  wire             pll_c0_out;
+  wire             pll_c0_out_reset_n;
+  wire    [  1: 0] pll_pll_slave_address;
+  wire             pll_pll_slave_read;
+  wire    [ 31: 0] pll_pll_slave_readdata;
+  wire    [ 31: 0] pll_pll_slave_readdata_from_sa;
+  wire             pll_pll_slave_reset;
+  wire             pll_pll_slave_write;
+  wire    [ 31: 0] pll_pll_slave_writedata;
   wire             registered_cpu_data_master_read_data_valid_cfi_flash_s1;
   wire             registered_cpu_data_master_read_data_valid_onchip_memory_s1;
   wire             reset_n_sources;
@@ -5515,50 +6696,58 @@ module kernel (
       .cpu_data_master_granted_cpu_jtag_debug_module                             (cpu_data_master_granted_cpu_jtag_debug_module),
       .cpu_data_master_granted_epcs_flash_controller_epcs_control_port           (cpu_data_master_granted_epcs_flash_controller_epcs_control_port),
       .cpu_data_master_granted_gpio_s1                                           (cpu_data_master_granted_gpio_s1),
+      .cpu_data_master_granted_hardmodle_s1                                      (cpu_data_master_granted_hardmodle_s1),
       .cpu_data_master_granted_jtag_uart_avalon_jtag_slave                       (cpu_data_master_granted_jtag_uart_avalon_jtag_slave),
+      .cpu_data_master_granted_kernel_clock_0_in                                 (cpu_data_master_granted_kernel_clock_0_in),
       .cpu_data_master_granted_key_s1                                            (cpu_data_master_granted_key_s1),
       .cpu_data_master_granted_lcd_0_control_slave                               (cpu_data_master_granted_lcd_0_control_slave),
       .cpu_data_master_granted_onchip_memory_s1                                  (cpu_data_master_granted_onchip_memory_s1),
+      .cpu_data_master_granted_pll_pll_slave                                     (cpu_data_master_granted_pll_pll_slave),
       .cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0                  (cpu_data_master_granted_sram_16bit_512k_0_avalon_slave_0),
       .cpu_data_master_granted_timer_s1                                          (cpu_data_master_granted_timer_s1),
-      .cpu_data_master_granted_vga_0_avalon_slave_0                              (cpu_data_master_granted_vga_0_avalon_slave_0),
       .cpu_data_master_irq                                                       (cpu_data_master_irq),
       .cpu_data_master_no_byte_enables_and_last_term                             (cpu_data_master_no_byte_enables_and_last_term),
       .cpu_data_master_qualified_request_cfi_flash_s1                            (cpu_data_master_qualified_request_cfi_flash_s1),
       .cpu_data_master_qualified_request_cpu_jtag_debug_module                   (cpu_data_master_qualified_request_cpu_jtag_debug_module),
       .cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port (cpu_data_master_qualified_request_epcs_flash_controller_epcs_control_port),
       .cpu_data_master_qualified_request_gpio_s1                                 (cpu_data_master_qualified_request_gpio_s1),
+      .cpu_data_master_qualified_request_hardmodle_s1                            (cpu_data_master_qualified_request_hardmodle_s1),
       .cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave             (cpu_data_master_qualified_request_jtag_uart_avalon_jtag_slave),
+      .cpu_data_master_qualified_request_kernel_clock_0_in                       (cpu_data_master_qualified_request_kernel_clock_0_in),
       .cpu_data_master_qualified_request_key_s1                                  (cpu_data_master_qualified_request_key_s1),
       .cpu_data_master_qualified_request_lcd_0_control_slave                     (cpu_data_master_qualified_request_lcd_0_control_slave),
       .cpu_data_master_qualified_request_onchip_memory_s1                        (cpu_data_master_qualified_request_onchip_memory_s1),
+      .cpu_data_master_qualified_request_pll_pll_slave                           (cpu_data_master_qualified_request_pll_pll_slave),
       .cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0        (cpu_data_master_qualified_request_sram_16bit_512k_0_avalon_slave_0),
       .cpu_data_master_qualified_request_timer_s1                                (cpu_data_master_qualified_request_timer_s1),
-      .cpu_data_master_qualified_request_vga_0_avalon_slave_0                    (cpu_data_master_qualified_request_vga_0_avalon_slave_0),
       .cpu_data_master_read                                                      (cpu_data_master_read),
       .cpu_data_master_read_data_valid_cfi_flash_s1                              (cpu_data_master_read_data_valid_cfi_flash_s1),
       .cpu_data_master_read_data_valid_cpu_jtag_debug_module                     (cpu_data_master_read_data_valid_cpu_jtag_debug_module),
       .cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port   (cpu_data_master_read_data_valid_epcs_flash_controller_epcs_control_port),
       .cpu_data_master_read_data_valid_gpio_s1                                   (cpu_data_master_read_data_valid_gpio_s1),
+      .cpu_data_master_read_data_valid_hardmodle_s1                              (cpu_data_master_read_data_valid_hardmodle_s1),
       .cpu_data_master_read_data_valid_jtag_uart_avalon_jtag_slave               (cpu_data_master_read_data_valid_jtag_uart_avalon_jtag_slave),
+      .cpu_data_master_read_data_valid_kernel_clock_0_in                         (cpu_data_master_read_data_valid_kernel_clock_0_in),
       .cpu_data_master_read_data_valid_key_s1                                    (cpu_data_master_read_data_valid_key_s1),
       .cpu_data_master_read_data_valid_lcd_0_control_slave                       (cpu_data_master_read_data_valid_lcd_0_control_slave),
       .cpu_data_master_read_data_valid_onchip_memory_s1                          (cpu_data_master_read_data_valid_onchip_memory_s1),
+      .cpu_data_master_read_data_valid_pll_pll_slave                             (cpu_data_master_read_data_valid_pll_pll_slave),
       .cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0          (cpu_data_master_read_data_valid_sram_16bit_512k_0_avalon_slave_0),
       .cpu_data_master_read_data_valid_timer_s1                                  (cpu_data_master_read_data_valid_timer_s1),
-      .cpu_data_master_read_data_valid_vga_0_avalon_slave_0                      (cpu_data_master_read_data_valid_vga_0_avalon_slave_0),
       .cpu_data_master_readdata                                                  (cpu_data_master_readdata),
       .cpu_data_master_requests_cfi_flash_s1                                     (cpu_data_master_requests_cfi_flash_s1),
       .cpu_data_master_requests_cpu_jtag_debug_module                            (cpu_data_master_requests_cpu_jtag_debug_module),
       .cpu_data_master_requests_epcs_flash_controller_epcs_control_port          (cpu_data_master_requests_epcs_flash_controller_epcs_control_port),
       .cpu_data_master_requests_gpio_s1                                          (cpu_data_master_requests_gpio_s1),
+      .cpu_data_master_requests_hardmodle_s1                                     (cpu_data_master_requests_hardmodle_s1),
       .cpu_data_master_requests_jtag_uart_avalon_jtag_slave                      (cpu_data_master_requests_jtag_uart_avalon_jtag_slave),
+      .cpu_data_master_requests_kernel_clock_0_in                                (cpu_data_master_requests_kernel_clock_0_in),
       .cpu_data_master_requests_key_s1                                           (cpu_data_master_requests_key_s1),
       .cpu_data_master_requests_lcd_0_control_slave                              (cpu_data_master_requests_lcd_0_control_slave),
       .cpu_data_master_requests_onchip_memory_s1                                 (cpu_data_master_requests_onchip_memory_s1),
+      .cpu_data_master_requests_pll_pll_slave                                    (cpu_data_master_requests_pll_pll_slave),
       .cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0                 (cpu_data_master_requests_sram_16bit_512k_0_avalon_slave_0),
       .cpu_data_master_requests_timer_s1                                         (cpu_data_master_requests_timer_s1),
-      .cpu_data_master_requests_vga_0_avalon_slave_0                             (cpu_data_master_requests_vga_0_avalon_slave_0),
       .cpu_data_master_waitrequest                                               (cpu_data_master_waitrequest),
       .cpu_data_master_write                                                     (cpu_data_master_write),
       .cpu_data_master_writedata                                                 (cpu_data_master_writedata),
@@ -5566,37 +6755,41 @@ module kernel (
       .d1_cpu_jtag_debug_module_end_xfer                                         (d1_cpu_jtag_debug_module_end_xfer),
       .d1_epcs_flash_controller_epcs_control_port_end_xfer                       (d1_epcs_flash_controller_epcs_control_port_end_xfer),
       .d1_gpio_s1_end_xfer                                                       (d1_gpio_s1_end_xfer),
+      .d1_hardmodle_s1_end_xfer                                                  (d1_hardmodle_s1_end_xfer),
       .d1_jtag_uart_avalon_jtag_slave_end_xfer                                   (d1_jtag_uart_avalon_jtag_slave_end_xfer),
+      .d1_kernel_clock_0_in_end_xfer                                             (d1_kernel_clock_0_in_end_xfer),
       .d1_key_s1_end_xfer                                                        (d1_key_s1_end_xfer),
       .d1_lcd_0_control_slave_end_xfer                                           (d1_lcd_0_control_slave_end_xfer),
       .d1_onchip_memory_s1_end_xfer                                              (d1_onchip_memory_s1_end_xfer),
+      .d1_pll_pll_slave_end_xfer                                                 (d1_pll_pll_slave_end_xfer),
       .d1_sram_16bit_512k_0_avalon_slave_0_end_xfer                              (d1_sram_16bit_512k_0_avalon_slave_0_end_xfer),
       .d1_timer_s1_end_xfer                                                      (d1_timer_s1_end_xfer),
       .d1_tri_state_bridge_avalon_slave_end_xfer                                 (d1_tri_state_bridge_avalon_slave_end_xfer),
-      .d1_vga_0_avalon_slave_0_end_xfer                                          (d1_vga_0_avalon_slave_0_end_xfer),
       .epcs_flash_controller_epcs_control_port_irq_from_sa                       (epcs_flash_controller_epcs_control_port_irq_from_sa),
       .epcs_flash_controller_epcs_control_port_readdata_from_sa                  (epcs_flash_controller_epcs_control_port_readdata_from_sa),
       .gpio_s1_irq_from_sa                                                       (gpio_s1_irq_from_sa),
       .gpio_s1_readdata_from_sa                                                  (gpio_s1_readdata_from_sa),
+      .hardmodle_s1_readdata_from_sa                                             (hardmodle_s1_readdata_from_sa),
       .incoming_tri_state_bridge_data_with_Xs_converted_to_0                     (incoming_tri_state_bridge_data_with_Xs_converted_to_0),
       .jtag_uart_avalon_jtag_slave_irq_from_sa                                   (jtag_uart_avalon_jtag_slave_irq_from_sa),
       .jtag_uart_avalon_jtag_slave_readdata_from_sa                              (jtag_uart_avalon_jtag_slave_readdata_from_sa),
       .jtag_uart_avalon_jtag_slave_waitrequest_from_sa                           (jtag_uart_avalon_jtag_slave_waitrequest_from_sa),
+      .kernel_clock_0_in_readdata_from_sa                                        (kernel_clock_0_in_readdata_from_sa),
+      .kernel_clock_0_in_waitrequest_from_sa                                     (kernel_clock_0_in_waitrequest_from_sa),
       .key_s1_irq_from_sa                                                        (key_s1_irq_from_sa),
       .key_s1_readdata_from_sa                                                   (key_s1_readdata_from_sa),
       .lcd_0_control_slave_readdata_from_sa                                      (lcd_0_control_slave_readdata_from_sa),
       .lcd_0_control_slave_wait_counter_eq_0                                     (lcd_0_control_slave_wait_counter_eq_0),
       .lcd_0_control_slave_wait_counter_eq_1                                     (lcd_0_control_slave_wait_counter_eq_1),
       .onchip_memory_s1_readdata_from_sa                                         (onchip_memory_s1_readdata_from_sa),
+      .pll_pll_slave_readdata_from_sa                                            (pll_pll_slave_readdata_from_sa),
       .registered_cpu_data_master_read_data_valid_cfi_flash_s1                   (registered_cpu_data_master_read_data_valid_cfi_flash_s1),
       .registered_cpu_data_master_read_data_valid_onchip_memory_s1               (registered_cpu_data_master_read_data_valid_onchip_memory_s1),
       .reset_n                                                                   (clk_50_reset_n),
       .sram_16bit_512k_0_avalon_slave_0_readdata_from_sa                         (sram_16bit_512k_0_avalon_slave_0_readdata_from_sa),
       .sram_16bit_512k_0_avalon_slave_0_wait_counter_eq_0                        (sram_16bit_512k_0_avalon_slave_0_wait_counter_eq_0),
       .timer_s1_irq_from_sa                                                      (timer_s1_irq_from_sa),
-      .timer_s1_readdata_from_sa                                                 (timer_s1_readdata_from_sa),
-      .vga_0_avalon_slave_0_readdata_from_sa                                     (vga_0_avalon_slave_0_readdata_from_sa),
-      .vga_0_avalon_slave_0_wait_counter_eq_0                                    (vga_0_avalon_slave_0_wait_counter_eq_0)
+      .timer_s1_readdata_from_sa                                                 (timer_s1_readdata_from_sa)
     );
 
   cpu_instruction_master_arbitrator the_cpu_instruction_master
@@ -5767,6 +6960,33 @@ module kernel (
       .writedata  (gpio_s1_writedata)
     );
 
+  hardmodle_s1_arbitrator the_hardmodle_s1
+    (
+      .clk                                            (clk_50),
+      .cpu_data_master_address_to_slave               (cpu_data_master_address_to_slave),
+      .cpu_data_master_granted_hardmodle_s1           (cpu_data_master_granted_hardmodle_s1),
+      .cpu_data_master_qualified_request_hardmodle_s1 (cpu_data_master_qualified_request_hardmodle_s1),
+      .cpu_data_master_read                           (cpu_data_master_read),
+      .cpu_data_master_read_data_valid_hardmodle_s1   (cpu_data_master_read_data_valid_hardmodle_s1),
+      .cpu_data_master_requests_hardmodle_s1          (cpu_data_master_requests_hardmodle_s1),
+      .cpu_data_master_write                          (cpu_data_master_write),
+      .d1_hardmodle_s1_end_xfer                       (d1_hardmodle_s1_end_xfer),
+      .hardmodle_s1_address                           (hardmodle_s1_address),
+      .hardmodle_s1_readdata                          (hardmodle_s1_readdata),
+      .hardmodle_s1_readdata_from_sa                  (hardmodle_s1_readdata_from_sa),
+      .hardmodle_s1_reset_n                           (hardmodle_s1_reset_n),
+      .reset_n                                        (clk_50_reset_n)
+    );
+
+  hardmodle the_hardmodle
+    (
+      .address  (hardmodle_s1_address),
+      .clk      (clk_50),
+      .in_port  (in_port_to_the_hardmodle),
+      .readdata (hardmodle_s1_readdata),
+      .reset_n  (hardmodle_s1_reset_n)
+    );
+
   jtag_uart_avalon_jtag_slave_arbitrator the_jtag_uart_avalon_jtag_slave
     (
       .clk                                                           (clk_50),
@@ -5813,6 +7033,84 @@ module kernel (
       .dataavailable  (jtag_uart_avalon_jtag_slave_dataavailable),
       .readyfordata   (jtag_uart_avalon_jtag_slave_readyfordata),
       .rst_n          (jtag_uart_avalon_jtag_slave_reset_n)
+    );
+
+  kernel_clock_0_in_arbitrator the_kernel_clock_0_in
+    (
+      .clk                                                 (clk_50),
+      .cpu_data_master_address_to_slave                    (cpu_data_master_address_to_slave),
+      .cpu_data_master_byteenable                          (cpu_data_master_byteenable),
+      .cpu_data_master_granted_kernel_clock_0_in           (cpu_data_master_granted_kernel_clock_0_in),
+      .cpu_data_master_qualified_request_kernel_clock_0_in (cpu_data_master_qualified_request_kernel_clock_0_in),
+      .cpu_data_master_read                                (cpu_data_master_read),
+      .cpu_data_master_read_data_valid_kernel_clock_0_in   (cpu_data_master_read_data_valid_kernel_clock_0_in),
+      .cpu_data_master_requests_kernel_clock_0_in          (cpu_data_master_requests_kernel_clock_0_in),
+      .cpu_data_master_waitrequest                         (cpu_data_master_waitrequest),
+      .cpu_data_master_write                               (cpu_data_master_write),
+      .cpu_data_master_writedata                           (cpu_data_master_writedata),
+      .d1_kernel_clock_0_in_end_xfer                       (d1_kernel_clock_0_in_end_xfer),
+      .kernel_clock_0_in_address                           (kernel_clock_0_in_address),
+      .kernel_clock_0_in_byteenable                        (kernel_clock_0_in_byteenable),
+      .kernel_clock_0_in_endofpacket                       (kernel_clock_0_in_endofpacket),
+      .kernel_clock_0_in_endofpacket_from_sa               (kernel_clock_0_in_endofpacket_from_sa),
+      .kernel_clock_0_in_nativeaddress                     (kernel_clock_0_in_nativeaddress),
+      .kernel_clock_0_in_read                              (kernel_clock_0_in_read),
+      .kernel_clock_0_in_readdata                          (kernel_clock_0_in_readdata),
+      .kernel_clock_0_in_readdata_from_sa                  (kernel_clock_0_in_readdata_from_sa),
+      .kernel_clock_0_in_reset_n                           (kernel_clock_0_in_reset_n),
+      .kernel_clock_0_in_waitrequest                       (kernel_clock_0_in_waitrequest),
+      .kernel_clock_0_in_waitrequest_from_sa               (kernel_clock_0_in_waitrequest_from_sa),
+      .kernel_clock_0_in_write                             (kernel_clock_0_in_write),
+      .kernel_clock_0_in_writedata                         (kernel_clock_0_in_writedata),
+      .reset_n                                             (clk_50_reset_n)
+    );
+
+  kernel_clock_0_out_arbitrator the_kernel_clock_0_out
+    (
+      .clk                                                       (pll_c0_out),
+      .d1_vga_0_avalon_slave_0_end_xfer                          (d1_vga_0_avalon_slave_0_end_xfer),
+      .kernel_clock_0_out_address                                (kernel_clock_0_out_address),
+      .kernel_clock_0_out_address_to_slave                       (kernel_clock_0_out_address_to_slave),
+      .kernel_clock_0_out_byteenable                             (kernel_clock_0_out_byteenable),
+      .kernel_clock_0_out_granted_vga_0_avalon_slave_0           (kernel_clock_0_out_granted_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0 (kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_read                                   (kernel_clock_0_out_read),
+      .kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0   (kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_readdata                               (kernel_clock_0_out_readdata),
+      .kernel_clock_0_out_requests_vga_0_avalon_slave_0          (kernel_clock_0_out_requests_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_reset_n                                (kernel_clock_0_out_reset_n),
+      .kernel_clock_0_out_waitrequest                            (kernel_clock_0_out_waitrequest),
+      .kernel_clock_0_out_write                                  (kernel_clock_0_out_write),
+      .kernel_clock_0_out_writedata                              (kernel_clock_0_out_writedata),
+      .reset_n                                                   (pll_c0_out_reset_n),
+      .vga_0_avalon_slave_0_readdata_from_sa                     (vga_0_avalon_slave_0_readdata_from_sa),
+      .vga_0_avalon_slave_0_wait_counter_eq_0                    (vga_0_avalon_slave_0_wait_counter_eq_0)
+    );
+
+  kernel_clock_0 the_kernel_clock_0
+    (
+      .master_address       (kernel_clock_0_out_address),
+      .master_byteenable    (kernel_clock_0_out_byteenable),
+      .master_clk           (pll_c0_out),
+      .master_endofpacket   (kernel_clock_0_out_endofpacket),
+      .master_nativeaddress (kernel_clock_0_out_nativeaddress),
+      .master_read          (kernel_clock_0_out_read),
+      .master_readdata      (kernel_clock_0_out_readdata),
+      .master_reset_n       (kernel_clock_0_out_reset_n),
+      .master_waitrequest   (kernel_clock_0_out_waitrequest),
+      .master_write         (kernel_clock_0_out_write),
+      .master_writedata     (kernel_clock_0_out_writedata),
+      .slave_address        (kernel_clock_0_in_address),
+      .slave_byteenable     (kernel_clock_0_in_byteenable),
+      .slave_clk            (clk_50),
+      .slave_endofpacket    (kernel_clock_0_in_endofpacket),
+      .slave_nativeaddress  (kernel_clock_0_in_nativeaddress),
+      .slave_read           (kernel_clock_0_in_read),
+      .slave_readdata       (kernel_clock_0_in_readdata),
+      .slave_reset_n        (kernel_clock_0_in_reset_n),
+      .slave_waitrequest    (kernel_clock_0_in_waitrequest),
+      .slave_write          (kernel_clock_0_in_write),
+      .slave_writedata      (kernel_clock_0_in_writedata)
     );
 
   key_s1_arbitrator the_key_s1
@@ -5940,6 +7238,47 @@ module kernel (
       .reset      (onchip_memory_s1_reset),
       .write      (onchip_memory_s1_write),
       .writedata  (onchip_memory_s1_writedata)
+    );
+
+  pll_pll_slave_arbitrator the_pll_pll_slave
+    (
+      .clk                                             (clk_50),
+      .cpu_data_master_address_to_slave                (cpu_data_master_address_to_slave),
+      .cpu_data_master_granted_pll_pll_slave           (cpu_data_master_granted_pll_pll_slave),
+      .cpu_data_master_qualified_request_pll_pll_slave (cpu_data_master_qualified_request_pll_pll_slave),
+      .cpu_data_master_read                            (cpu_data_master_read),
+      .cpu_data_master_read_data_valid_pll_pll_slave   (cpu_data_master_read_data_valid_pll_pll_slave),
+      .cpu_data_master_requests_pll_pll_slave          (cpu_data_master_requests_pll_pll_slave),
+      .cpu_data_master_waitrequest                     (cpu_data_master_waitrequest),
+      .cpu_data_master_write                           (cpu_data_master_write),
+      .cpu_data_master_writedata                       (cpu_data_master_writedata),
+      .d1_pll_pll_slave_end_xfer                       (d1_pll_pll_slave_end_xfer),
+      .pll_pll_slave_address                           (pll_pll_slave_address),
+      .pll_pll_slave_read                              (pll_pll_slave_read),
+      .pll_pll_slave_readdata                          (pll_pll_slave_readdata),
+      .pll_pll_slave_readdata_from_sa                  (pll_pll_slave_readdata_from_sa),
+      .pll_pll_slave_reset                             (pll_pll_slave_reset),
+      .pll_pll_slave_write                             (pll_pll_slave_write),
+      .pll_pll_slave_writedata                         (pll_pll_slave_writedata),
+      .reset_n                                         (clk_50_reset_n)
+    );
+
+  //pll_c0_out out_clk assignment, which is an e_assign
+  assign pll_c0_out = out_clk_pll_c0;
+
+  pll the_pll
+    (
+      .address   (pll_pll_slave_address),
+      .areset    (areset_to_the_pll),
+      .c0        (out_clk_pll_c0),
+      .clk       (clk_50),
+      .locked    (locked_from_the_pll),
+      .phasedone (phasedone_from_the_pll),
+      .read      (pll_pll_slave_read),
+      .readdata  (pll_pll_slave_readdata),
+      .reset     (pll_pll_slave_reset),
+      .write     (pll_pll_slave_write),
+      .writedata (pll_pll_slave_writedata)
     );
 
   sram_16bit_512k_0_avalon_slave_0_arbitrator the_sram_16bit_512k_0_avalon_slave_0
@@ -6075,26 +7414,27 @@ module kernel (
 
   vga_0_avalon_slave_0_arbitrator the_vga_0_avalon_slave_0
     (
-      .clk                                                    (clk_50),
-      .cpu_data_master_address_to_slave                       (cpu_data_master_address_to_slave),
-      .cpu_data_master_granted_vga_0_avalon_slave_0           (cpu_data_master_granted_vga_0_avalon_slave_0),
-      .cpu_data_master_qualified_request_vga_0_avalon_slave_0 (cpu_data_master_qualified_request_vga_0_avalon_slave_0),
-      .cpu_data_master_read                                   (cpu_data_master_read),
-      .cpu_data_master_read_data_valid_vga_0_avalon_slave_0   (cpu_data_master_read_data_valid_vga_0_avalon_slave_0),
-      .cpu_data_master_requests_vga_0_avalon_slave_0          (cpu_data_master_requests_vga_0_avalon_slave_0),
-      .cpu_data_master_write                                  (cpu_data_master_write),
-      .cpu_data_master_writedata                              (cpu_data_master_writedata),
-      .d1_vga_0_avalon_slave_0_end_xfer                       (d1_vga_0_avalon_slave_0_end_xfer),
-      .reset_n                                                (clk_50_reset_n),
-      .vga_0_avalon_slave_0_address                           (vga_0_avalon_slave_0_address),
-      .vga_0_avalon_slave_0_chipselect                        (vga_0_avalon_slave_0_chipselect),
-      .vga_0_avalon_slave_0_read                              (vga_0_avalon_slave_0_read),
-      .vga_0_avalon_slave_0_readdata                          (vga_0_avalon_slave_0_readdata),
-      .vga_0_avalon_slave_0_readdata_from_sa                  (vga_0_avalon_slave_0_readdata_from_sa),
-      .vga_0_avalon_slave_0_reset_n                           (vga_0_avalon_slave_0_reset_n),
-      .vga_0_avalon_slave_0_wait_counter_eq_0                 (vga_0_avalon_slave_0_wait_counter_eq_0),
-      .vga_0_avalon_slave_0_write                             (vga_0_avalon_slave_0_write),
-      .vga_0_avalon_slave_0_writedata                         (vga_0_avalon_slave_0_writedata)
+      .clk                                                       (pll_c0_out),
+      .d1_vga_0_avalon_slave_0_end_xfer                          (d1_vga_0_avalon_slave_0_end_xfer),
+      .kernel_clock_0_out_address_to_slave                       (kernel_clock_0_out_address_to_slave),
+      .kernel_clock_0_out_granted_vga_0_avalon_slave_0           (kernel_clock_0_out_granted_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_nativeaddress                          (kernel_clock_0_out_nativeaddress),
+      .kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0 (kernel_clock_0_out_qualified_request_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_read                                   (kernel_clock_0_out_read),
+      .kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0   (kernel_clock_0_out_read_data_valid_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_requests_vga_0_avalon_slave_0          (kernel_clock_0_out_requests_vga_0_avalon_slave_0),
+      .kernel_clock_0_out_write                                  (kernel_clock_0_out_write),
+      .kernel_clock_0_out_writedata                              (kernel_clock_0_out_writedata),
+      .reset_n                                                   (pll_c0_out_reset_n),
+      .vga_0_avalon_slave_0_address                              (vga_0_avalon_slave_0_address),
+      .vga_0_avalon_slave_0_chipselect                           (vga_0_avalon_slave_0_chipselect),
+      .vga_0_avalon_slave_0_read                                 (vga_0_avalon_slave_0_read),
+      .vga_0_avalon_slave_0_readdata                             (vga_0_avalon_slave_0_readdata),
+      .vga_0_avalon_slave_0_readdata_from_sa                     (vga_0_avalon_slave_0_readdata_from_sa),
+      .vga_0_avalon_slave_0_reset_n                              (vga_0_avalon_slave_0_reset_n),
+      .vga_0_avalon_slave_0_wait_counter_eq_0                    (vga_0_avalon_slave_0_wait_counter_eq_0),
+      .vga_0_avalon_slave_0_write                                (vga_0_avalon_slave_0_write),
+      .vga_0_avalon_slave_0_writedata                            (vga_0_avalon_slave_0_writedata)
     );
 
   vga_0 the_vga_0
@@ -6108,7 +7448,7 @@ module kernel (
       .VGA_SYNC  (VGA_SYNC_from_the_vga_0),
       .VGA_VS    (VGA_VS_from_the_vga_0),
       .iADDR     (vga_0_avalon_slave_0_address),
-      .iCLK      (clk_50),
+      .iCLK      (pll_c0_out),
       .iCLK_25   (iCLK_25_to_the_vga_0),
       .iCS       (vga_0_avalon_slave_0_chipselect),
       .iDATA     (vga_0_avalon_slave_0_writedata),
@@ -6131,7 +7471,20 @@ module kernel (
   assign reset_n_sources = ~(~reset_n |
     0 |
     cpu_jtag_debug_module_resetrequest_from_sa |
-    cpu_jtag_debug_module_resetrequest_from_sa);
+    cpu_jtag_debug_module_resetrequest_from_sa |
+    0);
+
+  //reset is asserted asynchronously and deasserted synchronously
+  kernel_reset_pll_c0_out_domain_synch_module kernel_reset_pll_c0_out_domain_synch
+    (
+      .clk      (pll_c0_out),
+      .data_in  (1'b1),
+      .data_out (pll_c0_out_reset_n),
+      .reset_n  (reset_n_sources)
+    );
+
+  //kernel_clock_0_out_endofpacket of type endofpacket does not connect to anything so wire it to default (0)
+  assign kernel_clock_0_out_endofpacket = 0;
 
 
 endmodule
@@ -6306,6 +7659,7 @@ endmodule
 `include "c:/altera/12.0/quartus/eda/sim_lib/altera_mf.v"
 `include "c:/altera/12.0/quartus/eda/sim_lib/220model.v"
 `include "c:/altera/12.0/quartus/eda/sim_lib/sgate.v"
+`include "pll.vo"
 `include "ip/SRAM_16Bit_512K/hdl/SRAM_16Bit_512K.v"
 `include "sram_16bit_512k_0.v"
 `include "ip/Binary_VGA_Controller/hdl/Img_RAM.v"
@@ -6323,6 +7677,8 @@ endmodule
 `include "cpu_jtag_debug_module_sysclk.v"
 `include "cpu_jtag_debug_module_wrapper.v"
 `include "cpu.v"
+`include "hardmodle.v"
+`include "kernel_clock_0.v"
 `include "timer.v"
 `include "key.v"
 `include "gpio.v"
@@ -6353,6 +7709,7 @@ module test_bench
   wire    [  9: 0] VGA_R_from_the_vga_0;
   wire             VGA_SYNC_from_the_vga_0;
   wire             VGA_VS_from_the_vga_0;
+  wire             areset_to_the_pll;
   wire             clk;
   reg              clk_50;
   wire             epcs_flash_controller_epcs_control_port_dataavailable_from_sa;
@@ -6360,9 +7717,15 @@ module test_bench
   wire             epcs_flash_controller_epcs_control_port_readyfordata_from_sa;
   wire             iCLK_25_to_the_vga_0;
   wire             in_port_to_the_gpio;
+  wire    [  3: 0] in_port_to_the_hardmodle;
   wire             in_port_to_the_key;
   wire             jtag_uart_avalon_jtag_slave_dataavailable_from_sa;
   wire             jtag_uart_avalon_jtag_slave_readyfordata_from_sa;
+  wire             kernel_clock_0_in_endofpacket_from_sa;
+  wire             kernel_clock_0_out_endofpacket;
+  wire             locked_from_the_pll;
+  wire             phasedone_from_the_pll;
+  wire             pll_c0_out;
   reg              reset_n;
   wire             select_n_to_the_cfi_flash;
   wire    [ 21: 0] tri_state_bridge_address;
@@ -6397,10 +7760,15 @@ module test_bench
       .VGA_R_from_the_vga_0                      (VGA_R_from_the_vga_0),
       .VGA_SYNC_from_the_vga_0                   (VGA_SYNC_from_the_vga_0),
       .VGA_VS_from_the_vga_0                     (VGA_VS_from_the_vga_0),
+      .areset_to_the_pll                         (areset_to_the_pll),
       .clk_50                                    (clk_50),
       .iCLK_25_to_the_vga_0                      (iCLK_25_to_the_vga_0),
       .in_port_to_the_gpio                       (in_port_to_the_gpio),
+      .in_port_to_the_hardmodle                  (in_port_to_the_hardmodle),
       .in_port_to_the_key                        (in_port_to_the_key),
+      .locked_from_the_pll                       (locked_from_the_pll),
+      .phasedone_from_the_pll                    (phasedone_from_the_pll),
+      .pll_c0_out                                (pll_c0_out),
       .reset_n                                   (reset_n),
       .select_n_to_the_cfi_flash                 (select_n_to_the_cfi_flash),
       .tri_state_bridge_address                  (tri_state_bridge_address),

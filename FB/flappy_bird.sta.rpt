@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for flappy_bird
-Sun Dec 07 23:11:56 2014
+Tue Dec 30 12:17:02 2014
 Quartus II 64-Bit Version 12.0 Build 178 05/31/2012 SJ Full Version
 
 
@@ -88,13 +88,14 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------+
-; SDC File List                                     ;
-+---------------+--------+--------------------------+
-; SDC File Path ; Status ; Read at                  ;
-+---------------+--------+--------------------------+
-; cpu.sdc       ; OK     ; Sun Dec 07 23:11:55 2014 ;
-+---------------+--------+--------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; SDC File List                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------------------------+--------+--------------------------+
+; SDC File Path                                                                                                       ; Status ; Read at                  ;
++---------------------------------------------------------------------------------------------------------------------+--------+--------------------------+
+; cpu.sdc                                                                                                             ; OK     ; Tue Dec 30 12:17:00 2014 ;
+; ../../../../../../altera/12.0/ip/altera/sopc_builder_ip/altera_avalon_clock_adapter/altera_avalon_clock_adapter.sdc ; OK     ; Tue Dec 30 12:17:00 2014 ;
++---------------------------------------------------------------------------------------------------------------------+--------+--------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -160,8 +161,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 9.542  ;       ;       ; 9.542  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.650 ; 5.650 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.952 ;       ;       ; 10.952 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.647 ; 5.647 ;        ;
+; KEY[0]      ; TD_RESET    ; 11.010 ;       ;       ; 11.010 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -171,8 +172,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 9.542  ;       ;       ; 9.542  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.650 ; 5.650 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.952 ;       ;       ; 10.952 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.647 ; 5.647 ;        ;
+; KEY[0]      ; TD_RESET    ; 11.010 ;       ;       ; 11.010 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -224,8 +225,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
-; CLOCK_27    ; VGA_CLK     ;       ; 2.795 ; 2.795 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.750 ;       ;       ; 5.750 ;
+; CLOCK_27    ; VGA_CLK     ;       ; 2.793 ; 2.793 ;       ;
+; KEY[0]      ; TD_RESET    ; 5.790 ;       ;       ; 5.790 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -235,8 +236,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
-; CLOCK_27    ; VGA_CLK     ;       ; 2.795 ; 2.795 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.750 ;       ;       ; 5.750 ;
+; CLOCK_27    ; VGA_CLK     ;       ; 2.793 ; 2.793 ;       ;
+; KEY[0]      ; TD_RESET    ; 5.790 ;       ;       ; 5.790 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -258,8 +259,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR     ; RF    ; FR    ; FF     ;
 +-------------+-------------+--------+-------+-------+--------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 9.542  ;       ;       ; 9.542  ;
-; CLOCK_27    ; VGA_CLK     ;        ; 5.650 ; 5.650 ;        ;
-; KEY[0]      ; TD_RESET    ; 10.952 ;       ;       ; 10.952 ;
+; CLOCK_27    ; VGA_CLK     ;        ; 5.647 ; 5.647 ;        ;
+; KEY[0]      ; TD_RESET    ; 11.010 ;       ;       ; 11.010 ;
 +-------------+-------------+--------+-------+-------+--------+
 
 
@@ -269,8 +270,8 @@ No paths to report.
 ; Input Port  ; Output Port ; RR    ; RF    ; FR    ; FF    ;
 +-------------+-------------+-------+-------+-------+-------+
 ; AUD_DACLRCK ; AUD_ADCLRCK ; 5.024 ;       ;       ; 5.024 ;
-; CLOCK_27    ; VGA_CLK     ;       ; 2.795 ; 2.795 ;       ;
-; KEY[0]      ; TD_RESET    ; 5.750 ;       ;       ; 5.750 ;
+; CLOCK_27    ; VGA_CLK     ;       ; 2.793 ; 2.793 ;       ;
+; KEY[0]      ; TD_RESET    ; 5.790 ;       ;       ; 5.790 ;
 +-------------+-------------+-------+-------+-------+-------+
 
 
@@ -299,8 +300,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 2     ; 2    ;
-; Unconstrained Input Ports       ; 37    ; 37   ;
-; Unconstrained Input Port Paths  ; 116   ; 116  ;
+; Unconstrained Input Ports       ; 41    ; 41   ;
+; Unconstrained Input Port Paths  ; 120   ; 120  ;
 ; Unconstrained Output Ports      ; 119   ; 119  ;
 ; Unconstrained Output Port Paths ; 1842  ; 1842 ;
 +---------------------------------+-------+------+
@@ -312,7 +313,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 12.0 Build 178 05/31/2012 SJ Full Version
-    Info: Processing started: Sun Dec 07 23:11:53 2014
+    Info: Processing started: Tue Dec 30 12:16:59 2014
 Info: Command: quartus_sta flappy_bird -c flappy_bird
 Info: qsta_default_script.tcl version: #4
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -352,8 +353,11 @@ Info (332164): Evaluating HDL-embedded SDC commands
         Info (332166): create_clock -period 10MHz -name altera_reserved_tck [get_ports {altera_reserved_tck}]
         Info (332166): set_clock_groups -asynchronous -group {altera_reserved_tck}
 Info (332104): Reading SDC File: 'cpu.sdc'
+Info (332104): Reading SDC File: '../../../../../../altera/12.0/ip/altera/sopc_builder_ip/altera_avalon_clock_adapter/altera_avalon_clock_adapter.sdc'
 Warning (332060): Node: CLOCK_27 was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: kernel_inst|the_pll|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Info (332140): No fmax paths to report
@@ -369,6 +373,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info: Analyzing Fast Model
 Warning (332060): Node: CLOCK_27 was determined to be a clock but was found without an associated clock assignment.
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
+Warning (332056): PLL cross checking found inconsistent PLL clock settings:
+    Warning (332056): Node: kernel_inst|the_pll|sd1|pll|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 20.000
 Info (332140): No Setup paths to report
 Info (332140): No Hold paths to report
 Info (332140): No Recovery paths to report
@@ -380,9 +386,9 @@ Info (332146): Worst-case minimum pulse width slack is 97.778
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 462 megabytes
-    Info: Processing ended: Sun Dec 07 23:11:56 2014
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 466 megabytes
+    Info: Processing ended: Tue Dec 30 12:17:02 2014
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 

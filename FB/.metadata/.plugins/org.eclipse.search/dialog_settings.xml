@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
+	</section>
 	<section name="DialogBounds_SearchDialog">
 		<item value="595" key="DIALOG_WIDTH"/>
 		<item value="229" key="DIALOG_Y_ORIGIN"/>
-		<item value="449" key="DIALOG_HEIGHT"/>
 		<item value="671" key="DIALOG_X_ORIGIN"/>
+		<item value="449" key="DIALOG_HEIGHT"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -18,6 +21,9 @@
 			<item value="org.eclipse.mylyn.tasks.ui.search.page"/>
 			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
 		</list>
+	</section>
+	<section name="org.eclipse.search.text.FileSearchResultPage">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.pdomSearchViewPage">
 		<item value="true" key="showEnclosingDefinitions"/>

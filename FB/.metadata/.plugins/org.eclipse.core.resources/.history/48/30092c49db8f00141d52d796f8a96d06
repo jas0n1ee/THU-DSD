@@ -1,0 +1,251 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "VGA.h"
+#include <system.h>
+#include <io.h>
+
+#define H_B 480                         //Background Height
+#define W_B 640                         //Background Width
+#define H_G 80                          //Ground Height
+#define W_P 50                          //Pillar Width
+#define H_H 100                         //Hole Height
+#define I_P 100                         //Pillar Interval
+#define Sh_step 5                       //Background Shift Step
+#define H_P_up 330                      //Pillar Height upper limit
+#define H_P_low 130                     //Pillar Height lower limit
+#define bird_size 10                    //Bird size
+#define TRUE 1
+#define FALSE 0
+
+typedef struct Pillar
+{
+    /* data */
+    int x;
+    int y;
+}Pillar;
+
+int max(int x, int y)
+{
+	if (x>=y)
+		return x;
+	else
+		return y;
+}
+
+int min(int x, int y)
+{
+	if (x<=y)
+		return x;
+	else
+		return y;
+}
+
+void Erase_Bird(int VGA_BASE, int bird_h)
+{
+    int x,y;
+	for (y = H_B-1-bird_h + bird_size; y >= H_B-1-bird_h - bird_size; y--)
+        for (x = (W_B/2 - bird_size); x < (W_B/2 + bird_size); x++)
+            Vga_Clr_Pixel(VGA_BASE,x,y);
+        	//Vga_Clr_Pixel(VGA_BASE,x,y);
+}
+
+void Print_Bird(int VGA_BASE, int bird_h)
+{
+	int x,y;
+	for (y = H_B-1-bird_h + bird_size; y >= H_B-1-bird_h - bird_size; y--)
+        for (x = (W_B/2 - bird_size); x < (W_B/2 + bird_size); x++)
+//            Vga_Set_Pixel(VGA_BASE,x,H_B-1-y);
+        	 Vga_Set_Pixel(VGA_BASE,x,y);
+}
+
+int Shift_Pl(int VGA_BASE, Pillar *p)
+{
+    int x,y;
+    if (p->x <= -W_P)
+    {
+        p->x = p->x + 5 * (W_P + I_P);
+        p->y = rand()%(H_P_up - H_P_low + 1) + H_P_low;
+        return 1;
+    }
+    else
+    {
+        if (p->x <= 0)
+            for (x = max(0, p->x + W_P - Sh_step); x < (p->x + W_P); x++)
+            {
+                for (y = H_B-1-H_G; y >H_B-1- p->y; y--)
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
+                for (y = H_B-1-p->y - H_H; y >H_B-1- H_B; y--)
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
+            }
+        else if (p->x < (W_B - W_P + Sh_step))
+        {
+            for (x = max(0, p->x - Sh_step); x < p->x; x++)
+            {
+                for (y = H_B-1-H_G; y > H_B-1-p->y; y--)
+                    Vga_Set_Pixel(VGA_BASE,x,y);
+                for (y = H_B-1-p->y - H_H; y >H_B-1- H_B; y--)
+                    Vga_Set_Pixel(VGA_BASE,x,y);
+            }
+            for (x = p->x + W_P - Sh_step; x < min(p->x + W_P, W_B); x++)
+            {
+                for (y = H_B-1-H_G; y >H_B-1- p->y; y--)
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
+                for (y =H_B-1- p->y - H_H; y >H_B-1- H_B; y--)
+                    Vga_Clr_Pixel(VGA_BASE,x,y);
+            }
+        }
+        else if (p->x < (W_B + Sh_step))
+            for (x = p->x - Sh_step; x < min(p->x, W_B); x++)
+            {
+                for (y = H_B-1-H_G; y >H_B-1- p->y; y--)
+                    Vga_Set_Pixel(VGA_BASE,x,y);
+                for (y = H_B-1-p->y - H_H; y >H_B-1- H_B; y--)
+                    Vga_Set_Pixel(VGA_BASE,x,y);
+            }
+        p->x = p->x - Sh_step;
+        return 0;
+    }
+}
+
+int Collide(Pillar *pl, int bird_h)
+{
+    if (pl->x >= (W_B/2 + bird_size) || pl->x <= (W_B/2 - bird_size - W_P))
+        return FALSE;
+    else if ((bird_h - bird_size) >= pl->y && (bird_h + bird_size) <= (pl->y + H_H))
+        return FALSE;
+    else
+        return TRUE;
+}
+
+int HitGround(int bird_h)
+{
+    if ((bird_h - bird_size) < H_G)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+int main()
+{
+while (1){
+//////////////////   Initialization   ////////////////////////////////////////
+    // VGA Init
+	VGA_Ctrl_Reg VCR;
+    VCR.VGA_Ctrl_Flags.RED_ON=1;
+    VCR.VGA_Ctrl_Flags.GREEN_ON=1;
+    VCR.VGA_Ctrl_Flags.BLUE_ON=1;
+    VCR.VGA_Ctrl_Flags.CURSOR_ON=0;
+    Vga_Write_Ctrl(VGA_0_BASE,VCR.Value);
+    Set_Pixel_Off_Color(1023,1023,1023);
+    Set_Pixel_On_Color(0,0,0);
+    //printf("%d\n",VCR.Value);
+    // Background Init
+    int x = 0; int y = 0;
+    for (x=0;x<640;x++)
+    	for(y=0;y<480;y++)
+    		Vga_Clr_Pixel(VGA_0_BASE,x,y);
+
+    for (x = 0; x < W_B; x++)
+    {
+        for (y = 0; y < H_B-H_G; y++)
+            Vga_Clr_Pixel(VGA_0_BASE, x, y);
+        for (y = H_B-H_G; y<H_B; y++)
+            Vga_Set_Pixel(VGA_0_BASE, x, y);
+    }
+
+    // Pillar Init
+    Pillar pl[5];
+    int i; int k;
+    for (i = 0; i < 5; i++)
+    {
+        pl[i].x = W_B + (W_P + I_P) * i;
+        pl[i].y = rand()%(H_P_up - H_P_low + 1) + H_P_low;
+       // printf("%d\n",pl[i].y);
+    }
+    int hardchoice=0;
+    int bird_h = 280;
+    int temp = 0;
+    int jump = 0;
+    int v = 0;
+    int press_button = 0;
+    unsigned int time_cnt = 0;
+    unsigned int press_cnt = 0;
+    hardchoice=IORD(HARDMODLE_BASE,0);
+    int hard=hardchoice/4+1;
+    int time=hardchoice%4+1;
+    printf("%d\n%d\n%d\n",hardchoice,hard,time);
+////////////////////////////// Flappy Bird ///////////////////////////////////
+
+    while(1){
+        press_button = IORD(KEY_BASE,0);
+        if (press_button)
+        {
+            press_cnt++;
+            if(press_cnt == 500000)
+            {
+                press_cnt = 0;
+                printf("Game Started!\n");
+                break;
+            }
+        }
+    }
+
+    while(1){
+        press_button = IORD(KEY_BASE,0);
+        hardchoice=IORD(HARDMODLE_BASE,0);
+        hard=hardchoice/4+1;
+        time=hardchoice%4+1;
+        time_th=100000/time;
+        //Jump judgement
+        if (press_button && jump == 0)
+        {
+            press_cnt++;
+            if (press_cnt == 50000)       //Need to be tested 50k
+            {
+                jump = 1;
+                press_cnt = 0;
+            }
+        }
+        if (time_cnt == time_th)            //Need to be tested 100k
+        {
+        	//printf("One frame started.\n");
+        	if (jump)
+        		{v = -10; jump = 0;}
+        	v = v + 2;
+        	Erase_Bird(VGA_0_BASE, bird_h);
+        	bird_h = bird_h - v;
+
+
+        	temp = 0;
+            for (k = 0; k < 5; k++)
+            {
+                Shift_Pl(VGA_0_BASE, pl+k);
+                if ((pl+k)->x > (W_B/2-W_P-I_P/2) && (pl+k)->x < (W_B/2+I_P/2))
+                	temp = k;
+            }
+            Print_Bird(VGA_0_BASE, bird_h);
+            if (Collide(pl + temp, bird_h) || HitGround(bird_h))
+                break;
+            //printf("One frame passed.\n");
+            time_cnt = 0;
+        }
+        time_cnt++;
+    }
+    printf("You Lose!\n");
+
+    while(1){
+            press_button = IORD(KEY_BASE,0);
+            if (press_button)
+            {
+                press_cnt++;
+                if(press_cnt == 500000)
+                {
+                    press_cnt = 0;
+                    break;
+                }
+            }
+        }
+}
+    return 0;
+
+}

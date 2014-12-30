@@ -311,8 +311,8 @@ ELF_PATCH_FLAG  += --stdin_dev jtag_uart
 
 # Slave descriptor of STDOUT character-mode device. This setting is used by the 
 # ALT_STDOUT family of defines in system.h. none 
-# setting hal.stdout is jtag_uart
-ELF_PATCH_FLAG  += --stdout_dev jtag_uart
+# setting hal.stdout is lcd_0
+ELF_PATCH_FLAG  += --stdout_dev lcd_0
 
 
 #------------------------------------------------------------------------------

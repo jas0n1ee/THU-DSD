@@ -171,12 +171,7 @@ while (1){
     int time_th=10000;
     unsigned int time_cnt = 0;
     unsigned int press_cnt = 0;
-    hardchoice=IORD(HARDMODLE_BASE,0);
-    int hard=hardchoice/8;
-    int time=hardchoice%8+1;
-    H_H=100-hard*50;
-    time_th=100000/time;
-    printf("%d\n%d\n%d\n",hardchoice,hard,time);
+
 ////////////////////////////// Flappy Bird ///////////////////////////////////
 
     while(1){
@@ -192,7 +187,12 @@ while (1){
             }
         }
     }
-
+    hardchoice=IORD(HARDMODLE_BASE,0);
+    int hard=hardchoice/8;
+    int time=hardchoice%8+1;
+    H_H=100-hard*50;
+    time_th=100000/time;
+    //printf("%d\n%d\n%d\n",hardchoice,hard,time);
     while(1){
         press_button = IORD(KEY_BASE,0);
         //Jump judgement

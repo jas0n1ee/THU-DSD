@@ -318,6 +318,7 @@ Reset_Delay	delay1	(.iRST(KEY[0]),.iCLK(CLOCK_50),.oRESET(CPU_RESET_N));
 		.iCLK_25_to_the_vga_0					  (CLOCK_27),
       .in_port_to_the_gpio                       (GPIO_0[0]),
       .in_port_to_the_key                        (~KEY[1]),
+		.in_port_to_the_hardmodle						(SW[3:0]),
 		.LCD_E_from_the_lcd_0                  (LCD_EN),
       .LCD_RS_from_the_lcd_0                 (LCD_RS),
       .LCD_RW_from_the_lcd_0                 (LCD_RW),
